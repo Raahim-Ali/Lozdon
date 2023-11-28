@@ -5,7 +5,7 @@ import React from "react";
 const Pages = ["Home", "Services", "Our Work", "About Us", "Contact Us"];
 const Resources = ["Blog", "Careers", "Podcast", "Forum"];
 
-export default function MainFooter() {
+export default function Footer() {
   return (
     <div className="flex flex-col  bg-primaryBlack">
       <div

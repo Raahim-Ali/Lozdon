@@ -1,10 +1,10 @@
-import Image from "next/image";
-import Footer from "./Footer/Footer";
+import React from "react";
+import HomePage from "./HomePage/page";
 
-export default function Home() {
+export default function page() {
   return (
     <>
-      <Footer />
+      <HomePage />
     </>
   );
 }
