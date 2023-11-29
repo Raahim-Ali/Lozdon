@@ -1,0 +1,41 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  padding: 20.5px 165px;
+  font-size: 2vw;
+  background-color: #f9f9f9;
+}
+
+.logo {
+  color: #3fba00;
+  font-weight: 900;
+  font-size: 2vw;
+}
+.navbar-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 358px;
+  width: 565px;
+  font: "Poppins";
+  font-size: 1vw;
+  font-weight: 700;
+}
+
+.btn {
+  background-color: #3fba00;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  color: white;
+  height: 47px;
+  width: 154px;
+  font-size: 0.9vw;
+  font-weight: 500;
+  line-height: 23.364px;
+}
