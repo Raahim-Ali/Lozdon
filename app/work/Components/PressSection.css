@@ -1,0 +1,21 @@
+.press-main {
+  padding: 96px;
+}
+.press-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #667085;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.companies-logos {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 32px;
+}
