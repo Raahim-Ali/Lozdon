@@ -1,5 +1,5 @@
 import "./Navbar.css";
-function Page() {
+function Navbar() {
   return (
     <div className="navbar">
       <div className="logo">OCTALCODE</div>
@@ -8,10 +8,12 @@ function Page() {
         <div>WHY US</div>
         <div>CASE STUDIES</div>
         <div>FAQs</div>
+        <button className="btn">
+          <p className="btnText">CONTACT US</p>
+        </button>
       </div>
-      <button className="btn">CONTACT US</button>
     </div>
   );
 }
 
-export default Page;
+export default Navbar;
