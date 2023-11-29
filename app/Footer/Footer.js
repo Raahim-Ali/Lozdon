@@ -92,9 +92,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Divider */}
-      {/* <hr className="my-4" /> */}
-
       {/* Additional Content */}
       <div className="text-center text-gray-600 pt-5 pb-5">
         © 2023 OctalCode. All rights reserved.
