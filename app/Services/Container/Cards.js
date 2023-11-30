@@ -1,4 +1,4 @@
-import Greenbtn from "@/app/Components/Greenbtn";
+import Greenbtn from "@/app/components/Greenbtn";
 import Image from "next/image";
 import React from "react";
 const cardData = [

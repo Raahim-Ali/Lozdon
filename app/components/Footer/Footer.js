@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Pages = ["Home", "Services", "Our Work", "About Us", "Contact Us"];
@@ -29,9 +30,23 @@ export default function Footer() {
               lifecycle.
             </p>
             <div className="flex gap-5">
-              <Image src="/Assets/Footer/Facebook.svg" width={30} height={30} />
-              <Image src="/Assets/Footer/Insta.svg" width={30} height={30} />
-              <Image src="/Assets/Footer/Twitter.svg" width={30} height={30} />
+              <Link href="#">
+                <Image
+                  src="/Assets/Footer/Facebook.svg"
+                  width={30}
+                  height={30}
+                />
+              </Link>
+              <Link href="#">
+                <Image src="/Assets/Footer/Insta.svg" width={30} height={30} />
+              </Link>
+              <Link href="#">
+                <Image
+                  src="/Assets/Footer/Twitter.svg"
+                  width={30}
+                  height={30}
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -79,13 +94,13 @@ export default function Footer() {
             </p>
             <div className="flex flex-col gap-3">
               <p className="text-whitePrimary text-sm font-normal inter">
-                Terms
+                <Link href="#">Terms</Link>
               </p>
               <p className="text-whitePrimary text-sm font-normal inter">
-                Privacy
+                <Link href="#">Privacy</Link>
               </p>
               <p className="text-whitePrimary text-sm font-normal inter">
-                Others
+                <Link href="#">Others</Link>
               </p>
             </div>
           </div>
