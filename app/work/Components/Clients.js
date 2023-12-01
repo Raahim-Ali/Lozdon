@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Clients.css";
 import Image from "next/image";
 import PaginationLeft from "../../../public/Assets/Work/PaginationLeft.svg";
@@ -47,10 +47,18 @@ function Clients() {
     },
   ];
 
-  const visibleCards = cards.slice(currentIndex, currentIndex + 2);
+  useEffect(() => {
+    const cardsContainer = document.querySelector(".cardsContainer");
+    const cards = document.querySelectorAll(".clientfeedback");
+
+    // Update the transform property for animation
+    cardsContainer.style.transform = `translateX(-${
+      currentIndex * (220 / cards.length)
+    }%)`; // Adjusted to divide by the number of cards
+  }, [currentIndex, cards]);
 
   const handlePagination = (direction) => {
-    const lastIndex = cards.length - 2;
+    const lastIndex = cards.length - 1;
 
     if (direction === "left" && currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
@@ -77,22 +85,24 @@ function Clients() {
           </div>
         </div>
       </div>
-      <div className="cardsContainer">
-        {visibleCards.map((card, index) => (
-          <div className="clientfeedback" key={index}>
-            <div className="feedbackContent">
-              <p className="cardHeading">{card.heading}</p>
-              <p className="cardContent">{card.content}</p>
-            </div>
-            <div className="clientDetail">
-              <Image src={ClientOne} alt="/" />
-              <div>
-                <p className="clientName">{card.name}</p>
-                <p className="clientInfo">{card.role}</p>
+      <div style={{ overflow: "hidden" }}>
+        <div className="cardsContainer">
+          {cards.map((card, index) => (
+            <div className="clientfeedback" key={index}>
+              <div className="feedbackContent">
+                <p className="cardHeading">{card.heading}</p>
+                <p className="cardContent">{card.content}</p>
+              </div>
+              <div className="clientDetail">
+                <Image src={ClientOne} alt="/" />
+                <div>
+                  <p className="clientName">{card.name}</p>
+                  <p className="clientInfo">{card.role}</p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
       <div className="videoContainer">
         <iframe
