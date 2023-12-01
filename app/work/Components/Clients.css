@@ -1,7 +1,9 @@
 .clientmain {
   background-color: #f9f9f9;
   padding: 0px 280px 80px 280px;
+  overflow: hidden;
 }
+
 .clientheading {
   display: flex;
   justify-content: space-between;
@@ -22,8 +24,8 @@
 
 .cardsContainer {
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  justify-content: space-around;
+  overflow: hidden;
 }
 
 .clientfeedback {
@@ -33,6 +35,7 @@
   background-color: #ffffff;
   border-radius: 20px;
 }
+
 .cardHeading {
   font-family: Inter;
   font-size: 20px;
@@ -80,11 +83,15 @@
 .videoContainer {
   display: flex;
   padding: 30px 0px 0px 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .video {
   border-radius: 20px;
   width: 560px;
+  display: flex;
+  justify-content: center;
 }
 .videotext {
   padding: 23px 0px 24px 0px;
