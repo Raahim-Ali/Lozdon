@@ -1,8 +1,4 @@
 import React from "react";
-<<<<<<< Updated upstream
-import HeroSection from "../components/HeroSection";
-=======
->>>>>>> Stashed changes
 import ContentAfterHeroSection from "./ContentAfterHeroSection";
 import HeroSection from "../components/HeroSection";
 

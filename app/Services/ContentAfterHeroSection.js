@@ -1,6 +1,6 @@
 import React from "react";
-import Cards from "./Container/Cards";
-import ImageAndDiv from "./Container/ImageAndDiv";
+import Cards from "./container/Cards";
+import ImageAndDiv from "./container/ImageAndDiv";
 
 export default function ContentAfterHeroSection() {
   return (

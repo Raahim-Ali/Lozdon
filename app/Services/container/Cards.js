@@ -1,4 +1,3 @@
-import Greenbtn from "@/app/components/Greenbtn";
 import Image from "next/image";
 import React from "react";
 const cardData = [
@@ -36,7 +35,10 @@ export default function Cards() {
   return (
     <div className="flex pt-20 pb-20 pr-36 pl-36">
       {cardData.map((card, index) => (
-        <div key={index} className="max-w-sm p-10 flex flex-col gap-6">
+        <div
+          key={index}
+          className=" p-10 flex flex-col gap-6 lg:w-1/3 xl:w-1/4"
+        >
           <div className="flex justify-center align-center">
             <Image src={card.imageSrc} width={62} height={62} />
           </div>

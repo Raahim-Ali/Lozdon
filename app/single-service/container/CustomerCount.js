@@ -3,10 +3,10 @@ import React from "react";
 export default function CustomerCount() {
   return (
     <div
-      className="flex justify-between pt-20 pb-20 pr-36 pl-36"
-      style={{ width: "100%" }}
+      className="flex w-full justify-between pt-20 pb-20 pr-36 pl-36"
+      style={{}}
     >
-      <div style={{ width: "40%" }}>
+      <div style={{ width: "50%" }}>
         <h5 className="inter text-2xl font-light text-gray-700">
           We tailor solutions to meet the diverse needs of businesses, ensuring
           efficiency and innovation in the ever-evolving digital landscape

@@ -12,8 +12,6 @@
   font-family: "Poppins", sans-serif;
 }
 .custom-text-24 {
-  color: #3b3f5c;
-
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
@@ -21,7 +19,6 @@
   line-height: normal;
 }
 .custom-text-64 {
-  color: #3b3f5c;
   font-family: Poppins;
   font-size: 64px;
   font-style: normal;
