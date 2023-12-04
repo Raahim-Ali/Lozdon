@@ -1,0 +1,60 @@
+.Process {
+  padding: 80px 150px;
+}
+.ProcessHeading {
+  color: #3b3f5c;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 0px 0px 48px 0px;
+}
+.ElipseLine {
+  position: relative;
+  top: 45px;
+  left: 125px;
+}
+.ProcessContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: space-around;
+}
+.ProcessCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  flex: 1 0 0;
+  color: #3b3f5c;
+}
+.ProcessNumber {
+  color: rgba(63, 186, 0, 0.2);
+  font-family: Inter;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.ProcessTitle {
+  color: #3b3f5c;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 28px */
+  letter-spacing: 0.14px;
+  text-transform: uppercase;
+}
+.ProcessDescription {
+  color: #3b3f5c;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 146.023%; /* 26.284px */
+}

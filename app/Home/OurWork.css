@@ -1,0 +1,39 @@
+.buttons {
+  display: flex;
+  gap: 20px;
+  padding: 0px 0px 0px 25px;
+}
+
+.OurWork {
+  background: var(--blackGradient, #151515);
+  padding: 120px 150px;
+}
+.workCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.workcard {
+  display: flex;
+  padding: 30px 30px;
+  margin-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  width: 45%;
+  border-radius: 11px;
+  background: #434343;
+}
+.cardLogo {
+  padding: 0px 0px 21px 0px;
+}
+.cardTextContent {
+  color: var(--whitePrimary, #fff);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 146.023%; /* 29.205px */
+}

@@ -36,6 +36,25 @@ body {
   align-items: center;
   background: #3fba00;
 }
+.TransparentBtn {
+  height: 47px;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid var(--greenMain, #3fba00);
+  background: transparent;
+}
+.TransparentBtnText {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #3fba00;
+}
 .btnText {
   font-family: Inter;
   font-size: 16px;

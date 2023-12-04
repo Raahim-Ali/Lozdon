@@ -1,6 +1,6 @@
 .clientmain {
   background-color: #f9f9f9;
-  padding: 80px 280px 80px 280px;
+  padding: 80px 150px;
   overflow: hidden;
 }
 
@@ -10,7 +10,8 @@
 }
 .clientheadingText {
   font-family: Poppins;
-  font-size: 40px;
+  font-size: 64px;
+  font-style: normal;
   font-weight: 800;
   line-height: 96px;
   letter-spacing: 0em;
