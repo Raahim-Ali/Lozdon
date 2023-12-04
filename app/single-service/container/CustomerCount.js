@@ -7,7 +7,10 @@ export default function CustomerCount() {
       style={{}}
     >
       <div style={{ width: "50%" }}>
-        <h5 className="inter text-2xl font-light text-gray-700">
+        <h5
+          className="inter text-2xl font-light text-gray-700"
+          style={{ color: "#3B3F5C" }}
+        >
           We tailor solutions to meet the diverse needs of businesses, ensuring
           efficiency and innovation in the ever-evolving digital landscape
         </h5>

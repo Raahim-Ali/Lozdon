@@ -24,8 +24,8 @@ export default function LatestTechnologies() {
       <div className="flex flex-col justify-between pt-20 pb-20 pr-40 pl-40 gap-12 ">
         <div className="gap-3 flex flex-col">
           {/* text Section */}
-          <p className="custom-text-24">.latest technologies</p>
-          <p className="custom-text-64  poppins">Teck Stack</p>
+          {/* <p className="custom-text-24">.latest technologies</p> */}
+          <p className="custom-text-64  font-bold ">Teck Stack</p>
         </div>
         <div className="flex flex-col">
           <div className="p-12 w-full flex flex-wrap justify-between gap-8">
