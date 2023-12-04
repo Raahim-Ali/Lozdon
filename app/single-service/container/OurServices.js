@@ -55,7 +55,7 @@ export default function OurServices() {
           <p className="custom-text-24">our web expertise</p>
           <p className="custom-text-64  poppins">Our Services</p>
         </div>
-        <div className="flex flex-wrap gap-8 w-full">
+        <div className="flex flex-wrap gap-4 w-full">
           {/* Card Section */}
           {cardData.map((card, index) => (
             <div

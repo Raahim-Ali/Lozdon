@@ -56,7 +56,7 @@ export default function Footer() {
           {/* Explore Section */}
           <div className="w-1/3 flex flex-col  gap-6">
             <p className="text-whitePrimary text-2xl font-bold uppercase poppins">
-              Explore
+              Pages
             </p>
             <div className="flex flex-col gap-3 ">
               {Pages.map((item, index) => (
