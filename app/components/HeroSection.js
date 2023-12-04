@@ -13,8 +13,8 @@ const highlightServices = (title) => {
         word.toLowerCase() === "development" ||
         word.toLowerCase() === "work" ||
         word.toLowerCase() === "us" ||
-        word.toLowerCase() === "Full" ||
-        word.toLowerCase() === "Service" ||
+        word.toLowerCase() === "full" ||
+        word.toLowerCase() === "service" ||
         word.toLowerCase() === "contact"
           ? "text-green-500"
           : "text-whitePrimary"
