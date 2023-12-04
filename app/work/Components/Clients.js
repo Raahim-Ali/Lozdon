@@ -52,13 +52,11 @@ function Clients() {
     const cards = document.querySelectorAll(".clientfeedback");
 
     // Update the transform property for animation
-    cardsContainer.style.transform = `translateX(-${
-      currentIndex * (220 / cards.length)
-    }%)`; // Adjusted to divide by the number of cards
+    cardsContainer.style.transform = `translateX(-${currentIndex * 600}px)`; // Adjusted to divide by the number of cards
   }, [currentIndex, cards]);
 
   const handlePagination = (direction) => {
-    const lastIndex = cards.length - 1;
+    const lastIndex = cards.length - 2;
 
     if (direction === "left" && currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
