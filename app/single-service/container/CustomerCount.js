@@ -14,16 +14,37 @@ export default function CustomerCount() {
       </div>
       <div className="flex gap-16 justify-end" style={{ width: "40%" }}>
         <div className="flex flex-col gap-4 pr-3 pl-3">
-          <p className="text-6xl font-normal poppins">70</p>
-          <p className="uppercase inter text-xl text-gray-600">Clients</p>
+          <p
+            className="text-6xl font-semibold poppins"
+            style={{ color: "#3B3F5C" }}
+          >
+            70
+          </p>
+          <p className="uppercase inter text-center text-xl text-gray-600 font-light">
+            Clients
+          </p>
         </div>
         <div className="flex flex-col gap-4">
-          <p className="text-6xl font-normal poppins">150</p>
-          <p className="uppercase inter text-xl text-gray-600">Projects</p>
+          <p
+            className="text-6xl font-semibold poppins"
+            style={{ color: "#3B3F5C" }}
+          >
+            150
+          </p>
+          <p className="uppercase text-center inter text-xl text-gray-600 font-light">
+            Projects
+          </p>
         </div>
         <div className="flex flex-col gap-4">
-          <p className="text-6xl font-normal poppins">150</p>
-          <p className="uppercase inter text-xl text-gray-600">Experience</p>
+          <p
+            className="text-6xl text-center font-semibold poppins"
+            style={{ color: "#3B3F5C" }}
+          >
+            150
+          </p>
+          <p className="uppercase inter text-center text-xl text-gray-600 font-light">
+            Experience
+          </p>
         </div>
       </div>
     </div>
