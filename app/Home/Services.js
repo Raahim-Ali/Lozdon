@@ -9,36 +9,42 @@ function Services() {
       title: "mobile development",
       description:
         "This metaphor implies every aspect of the industry in recent times",
+      link: "LEARN MORE",
     },
     {
       imageSrc: "/Assets/Home/Webdevelopment.svg",
       title: "web development",
       description:
         "This metaphor implies every aspect of the industry in recent times",
+      link: "LEARN MORE",
     },
     {
       imageSrc: "/Assets/Home/DEVOPS.svg",
       title: "devops",
       description:
         "This metaphor implies every aspect of the industry in recent times",
+      link: "LEARN MORE",
     },
     {
       imageSrc: "/Assets/Home/CloudDevelopment.svg",
       title: "cloud development",
       description:
         "This metaphor implies every aspect of the industry in recent times",
+      link: "LEARN MORE",
     },
     {
       imageSrc: "/Assets/Home/UI-UX.svg",
       title: "ui/ux",
       description:
         "This metaphor implies every aspect of the industry in recent times",
+      link: "LEARN MORE",
     },
     {
       imageSrc: "/Assets/Home/SoftwareTesting.svg",
       title: "software testing",
       description:
         "This metaphor implies every aspect of the industry in recent times",
+      link: "LEARN MORE",
     },
   ];
   return (
@@ -52,8 +58,9 @@ function Services() {
             <div className="cardIcon">
               <Image src={service.imageSrc} alt="/" width={45} height={45} />
             </div>
-            <div className="cardTitle">{service.title}</div>
-            <div className="cardDescription">{service.description}</div>
+            <p className="cardTitle">{service.title}</p>
+            <p className="cardDescription">{service.description}</p>
+            <p className="learnMore">{service.link}</p>
           </div>
         ))}
       </div>

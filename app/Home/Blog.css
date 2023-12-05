@@ -1,0 +1,73 @@
+.Blog {
+  padding: 120px 150px;
+}
+
+.blogContainer {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.blogCard {
+  padding: 32px 32px;
+  width: 31%;
+  border-radius: 11px;
+  box-shadow: 0px 4px 10px 0px rgba(211, 218, 226, 0.5);
+  margin-bottom: 38px;
+  transition: transform 0.5s ease;
+}
+.blogImage {
+  border-radius: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+}
+.devBtn {
+  background-color: rgba(156, 156, 156, 1);
+  width: 9vw;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.devBtn > p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+}
+.readText {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(156, 156, 156, 1);
+}
+.cardTitle > p {
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.14000000059604645px;
+  text-align: left;
+  color: rgba(59, 63, 92, 1);
+}
+
+.cardDescription > p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(59, 63, 92, 1);
+}

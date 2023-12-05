@@ -44,7 +44,7 @@ const HeroSection = ({ title, paragraph, btnText, btnWidth, imgSrc }) => {
           <Greenbtn buttonText={btnText} width={btnWidth} />
         </div>
         <div>
-          <Image src={imgSrc} width={300} height={280} />
+          <Image src={imgSrc} width={800} height={280} />
         </div>
       </div>
     </div>

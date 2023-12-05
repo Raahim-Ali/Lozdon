@@ -1,0 +1,63 @@
+.Awards {
+  padding: 120px 150px;
+}
+
+.awardsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.awardsTextMain {
+  width: 47%;
+}
+.awardsList {
+  width: 48%;
+}
+
+.awardsTextMain > .awardsHeading {
+  font-family: Poppins;
+  font-size: 38px;
+  font-weight: 600;
+  padding: 0px 0px 30px 0px;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(59, 63, 92, 1);
+  text-transform: uppercase;
+}
+.awardsTextMain > .awardsText {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(59, 63, 92, 0.6);
+}
+
+.awardCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.awardImg {
+  padding: 0px 46px 0px 0px;
+}
+.name {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(59, 63, 92, 1);
+}
+
+.description {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(59, 63, 92, 0.6);
+}

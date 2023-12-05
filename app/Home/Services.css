@@ -27,25 +27,23 @@
   justify-content: space-around;
 }
 .card {
-  display: flex;
-  padding: 32px 0px;
+  padding: 32px 32px;
   width: 30%;
   margin-bottom: 38px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  transition: transform 0.5s ease;
+
   gap: 32px;
   border-radius: 8px;
   border: 1px solid rgba(59, 14, 97, 0.1);
 }
 
 .cardIcon {
-  padding: 0px 0px 10px 0px;
+  padding: 0px 0px 24px 0px;
 }
 .cardTitle {
   color: #3b3f5c;
-  text-align: center;
   font-family: Poppins;
+  padding: 0px 0px 12px 0px;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -56,16 +54,28 @@
 
 .cardDescription {
   color: #3b3f5c;
-  text-align: center;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
+  padding: 0px 0px 20px 0px;
   font-weight: 300;
   line-height: 146.023%; /* 26.284px */
 }
 
 .card:hover {
   background: var(--greenMain, #3fba00);
-  color: white;
   cursor: pointer;
+  transform: scale(1.1);
+}
+.card:hover > p {
+  color: white;
+}
+.learnMore {
+  color: #3b3f5c;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.14000000059604645px;
+  text-align: left;
 }

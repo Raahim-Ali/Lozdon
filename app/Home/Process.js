@@ -1,13 +1,10 @@
 import "./Process.css";
-import Image from "next/image";
-import EllipseLine from "../../public/Assets/Home/EllipseLine.svg";
 function Process() {
   return (
     <div className="Process">
       <div>
         <p className="ProcessHeading">our process</p>
       </div>
-      <Image className="ElipseLine" src={EllipseLine} alt="/" />
       <div className="ProcessContainer">
         <div className="ProcessCard">
           <div>

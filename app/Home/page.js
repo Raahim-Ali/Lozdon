@@ -2,6 +2,8 @@ import HeroSection from "../components/HeroSection";
 import CustomerCount from "../single-service/container/CustomerCount";
 import Clients from "../work/Components/Clients";
 import PressSection from "../work/Components/PressSection";
+import Awards from "./Awards";
+import Blog from "./Blog";
 import Idea from "./Idea";
 import Industries from "./Industries";
 import OurWork from "./OurWork";
@@ -26,6 +28,8 @@ function HomePage() {
       <Process />
       <Idea />
       <PressSection />
+      <Blog />
+      <Awards />
     </>
   );
 }

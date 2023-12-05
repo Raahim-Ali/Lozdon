@@ -24,7 +24,12 @@
   gap: 32px;
   width: 45%;
   border-radius: 11px;
+  transition: transform 0.5s ease;
   background: #434343;
+}
+.workcard:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 .cardLogo {
   padding: 0px 0px 21px 0px;
