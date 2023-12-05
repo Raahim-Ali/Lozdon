@@ -53,9 +53,14 @@ export default function OurServices() {
         <div className="gap-3 flex flex-col">
           {/* text Section */}
           {/* <p className="custom-text-24">our web expertise</p> */}
+<<<<<<< HEAD
           <p className="custom-text-64  poppins">Our Services</p>
+=======
+
+          <p className="custom-text-64 font-bold">Our Services</p>
+>>>>>>> d45d7d5c04fd87ac32f5c307f4bc9139fff97483
         </div>
-        <div className="flex flex-wrap gap-4 w-full">
+        <div className="flex flex-wrap gap-6 w-full">
           {/* Card Section */}
           {cardData.map((card, index) => (
             <div
@@ -66,13 +71,10 @@ export default function OurServices() {
               <div className="flex justify-center align-center w-full">
                 <Image src={card.imageSrc} width={62} height={62} />
               </div>
-              <h5
-                className="text-2xl font-bold uppercase text-center tracking-wider poppins w-full pr-5 pl-5"
-                style={{ color: "#3B3F5C" }}
-              >
+              <p className="text-xl font-bold uppercase text-center tracking-wider poppins w-full pr-5 pl-5">
                 {card.title}
-              </h5>
-              <p className="w-2/2  font-normal text-gray-700 dark:text-gray-400 text-center text-lg inter pr-5 pl-5">
+              </p>
+              <p className="w-2/2  font-light  text-center text-lg inter pr-5 pl-5">
                 {card.description}
               </p>
             </div>

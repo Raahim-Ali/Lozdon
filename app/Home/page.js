@@ -14,6 +14,7 @@ function HomePage() {
   return (
     <>
       <HeroSection
+        // titleWidth="70%"
         title="full service software agency"
         paragraph="Octal Code, we excel in web development, offering a comprehensive suite of services and software development lifecycle."
         btnText="See all services"

@@ -26,7 +26,15 @@ const highlightServices = (title) => {
   ));
 };
 
-const HeroSection = ({ title, paragraph, btnText, btnWidth, imgSrc }) => {
+const HeroSection = ({
+  title,
+  paragraph,
+  btnText,
+  btnWidth,
+  imgSrc,
+  titleWidth,
+  pWidth,
+}) => {
   return (
     <div className="bg-primaryBlack">
       <div
@@ -35,10 +43,13 @@ const HeroSection = ({ title, paragraph, btnText, btnWidth, imgSrc }) => {
       >
         <div className="flex flex-col justify-center gap-5">
           {/* Text Section */}
-          <h1 className="custom-text-64 font-extrabold uppercase poppins">
+          <h1
+            style={{ width: titleWidth || "100%" }}
+            className="custom-text-64 font-extrabold uppercase "
+          >
             {highlightServices(title)}
           </h1>
-          <div style={{ width: "70%" }} className="mb-3 ">
+          <div style={{ width: pWidth || "90%" }} className="mb-3 ">
             <p className="text-whitePrimary text-xl pr-9 inter">{paragraph}</p>
           </div>
           <Greenbtn buttonText={btnText} width={btnWidth} />
