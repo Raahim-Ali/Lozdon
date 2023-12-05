@@ -1,0 +1,64 @@
+.Touch {
+  padding: 100px 165px;
+  background: rgba(249, 249, 249, 1);
+}
+.touchHeading {
+  padding: 0px 0px 32px 0px;
+}
+.touchCardsContainer {
+  padding: 24px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.touchCard {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 1);
+
+  padding: 30px;
+}
+.touchCardLogo {
+  padding: 0px 0px 24px 0px;
+}
+.touchCardTitle {
+  padding: 0px 0px 10px 0px;
+}
+.touchCardDescription {
+  padding: 0px 0px 12px 0px;
+}
+.touchHeadingText {
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(59, 63, 92, 1);
+  text-transform: uppercase;
+}
+.touchCardTitleText {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0.14000000059604645px;
+  text-align: left;
+  color: rgba(59, 63, 92, 1);
+}
+.touchCardDescriptionText {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.14000000059604645px;
+  text-align: left;
+  color: rgba(59, 63, 92, 1);
+}
+.touchCardDetailText {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(59, 63, 92, 1);
+}
