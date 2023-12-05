@@ -67,9 +67,7 @@ const HeroSection = ({
           </div>
           <Greenbtn buttonText={btnText} />
         </div>
-        <div>
-          <Image src={imgSrc} width={800} height={280} />
-        </div>
+
         <img
           src={imgSrc}
           className="absolute"
