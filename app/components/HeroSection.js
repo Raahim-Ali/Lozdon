@@ -52,7 +52,7 @@ const HeroSection = ({
           <div style={{ width: pWidth || "90%" }} className="mb-3 ">
             <p className="text-whitePrimary text-xl pr-9 inter">{paragraph}</p>
           </div>
-          <Greenbtn buttonText={btnText} width={btnWidth} />
+          <Greenbtn buttonText={btnText} />
         </div>
         <div>
           <Image src={imgSrc} width={800} height={280} />

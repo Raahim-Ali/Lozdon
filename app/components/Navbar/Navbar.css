@@ -67,6 +67,9 @@ body {
 .menu-btn {
   display: none;
 }
+.navbarIcon {
+  cursor: pointer;
+}
 
 /* @media (max-width: 1110px) {
   .logo {
