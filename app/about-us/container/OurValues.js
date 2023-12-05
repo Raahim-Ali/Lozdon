@@ -41,7 +41,12 @@ export default function OurValues() {
               className="flex-grow flex flex-col gap-6  border-2 border-solid border-opacity-20 border-gray-300 rounded-md pl-8 pr-8 pt-6 pb-6  bg-whitePrimary"
             >
               <div className="flex justify-center items-center w-full">
-                <Image src={card.imageSrc} width={62} height={62} />
+                <Image
+                  src={card.imageSrc}
+                  width={62}
+                  height={62}
+                  alt="Card Image"
+                />
               </div>
               <p className="text-xl font-medium uppercase text-center tracking-tight poppins w-full ">
                 {card.title}

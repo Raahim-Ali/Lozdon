@@ -24,6 +24,7 @@ module.exports = {
         rgb: "rgba(59, 63, 92, 0.60)",
         cardBg: "#282828",
         primaryTextColor: "#3B3F5C",
+        grey: "#E8E5E5",
       },
     },
   },

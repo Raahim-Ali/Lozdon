@@ -62,7 +62,7 @@ export default function HealthTech() {
             Madeup your mind?
           </p>
           <p
-            className="custom-text-64 text-white font-extrabold  "
+            className=" text-white font-extrabold poppins uppercase "
             style={{ fontSize: "64px" }}
           >
             Let&apos;s craft your idea 🚀

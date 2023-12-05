@@ -32,16 +32,23 @@ export default function Footer() {
             <div className="flex gap-5">
               <Link href="#">
                 <Image
+                  alt="Social Media"
                   src="/Assets/Footer/Facebook.svg"
                   width={30}
                   height={30}
                 />
               </Link>
               <Link href="#">
-                <Image src="/Assets/Footer/Insta.svg" width={30} height={30} />
+                <Image
+                  alt="Social Media"
+                  src="/Assets/Footer/Insta.svg"
+                  width={30}
+                  height={30}
+                />
               </Link>
               <Link href="#">
                 <Image
+                  alt="Social Media"
                   src="/Assets/Footer/Twitter.svg"
                   width={30}
                   height={30}

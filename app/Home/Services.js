@@ -65,7 +65,7 @@ function Services() {
         ))}
       </div>
       <div className="buttons">
-        <Greenbtn buttonText="see all services" />
+        <Greenbtn buttonText="see all services" href="/Services" />
         <Transparentbtn buttonText="contact us" />
       </div>
     </div>

@@ -26,6 +26,7 @@ export default function LatestTechnologies() {
           {/* <p className="custom-text-24">.latest technologies</p> */}
           <p className="custom-text-64  font-bold ">Teck Stack</p>
         </div>
+        a
         <div className="flex flex-col">
           <div className="p-12 w-full flex flex-wrap justify-between gap-8">
             {Data.map((item, i) => (

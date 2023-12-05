@@ -51,7 +51,12 @@ export default function OurStory() {
                 style={{ padding: "19px 0px" }}
               >
                 <div>
-                  <Image src={card.imageSrc} width={62} height={62} />
+                  <Image
+                    src={card.imageSrc}
+                    width={62}
+                    height={62}
+                    alt="Card Image"
+                  />
                 </div>
                 <p
                   className="font-bold uppercase  poppins tracking-wider pr-5 "

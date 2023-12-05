@@ -2,7 +2,7 @@ import React from "react";
 import "../components/Navbar/Navbar.css";
 import Link from "next/link";
 
-export default function Greenbtn({ buttonText, width }) {
+export default function Greenbtn({ buttonText, width, href }) {
   return (
     <Link href="#">
       <button className="btn" style={width ? { width } : {}}>

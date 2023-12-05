@@ -52,10 +52,6 @@ export default function TakeAdvantage() {
               style={{}}
               className="pt-10 pb-10  flex flex-col gap-6"
             >
-              <div
-                className="h-2 bg-green-400  relative   "
-                style={{ width: `${card.progress}%`, top: "4.7rem" }}
-              ></div>
               <p
                 className="  text-green-500 text-center text-opacity-20  custom-text-64  font-bold relative"
                 style={{ zIndex: 1 }}
