@@ -1,6 +1,5 @@
 import Greenbtn from "@/app/components/Greenbtn";
 import Image from "next/image";
-import React from "react";
 
 export default function HealthTech() {
   return (
@@ -50,6 +49,7 @@ export default function HealthTech() {
             <Image
               style={{ objectFit: "contain" }}
               src="/Assets/SIngleService/HealthTech/Image.svg"
+              alt="HealthtechImage"
               width={564}
               height={541}
             />
@@ -65,7 +65,7 @@ export default function HealthTech() {
             className="custom-text-64 text-white font-extrabold  "
             style={{ fontSize: "64px" }}
           >
-            Let's craft your idea 🚀
+            Let&apos;s craft your idea 🚀
           </p>
         </div>
         <Greenbtn buttonText="Let's collaborate" />

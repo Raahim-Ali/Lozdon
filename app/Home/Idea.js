@@ -7,7 +7,7 @@ function Idea() {
           Madeup your mind?
         </p>
         <p className="custom-text-64 text-white uppercase poppins font-bold">
-          Let's craft your idea 🚀
+          Let&apos;s craft your idea 🚀
         </p>
       </div>
       <Greenbtn buttonText="Let's collaborate" />

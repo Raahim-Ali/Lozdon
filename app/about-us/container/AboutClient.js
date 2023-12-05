@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 const cardData = [
   {
     imageSrc: "/Assets/OurServices/CardImage.svg",
@@ -62,7 +61,12 @@ export default function AboutClient() {
               className="flex-grow flex flex-col gap-6 md:w-1/3 lg:w-1/4 border-2 border-solid border-opacity-20 border-gray-300 rounded-md self-stretch bg-cardBg  pl-8 pr-8 pt-6 pb-6"
             >
               <div className="flex w-full">
-                <Image src={card.imageSrc} width={62} height={62} />
+                <Image
+                  src={card.imageSrc}
+                  width={62}
+                  height={62}
+                  alt="CardImage"
+                />
               </div>
               <p className="text-xl text-whitePrimary font-bold uppercase  tracking-tight poppins w-full ">
                 {card.title}

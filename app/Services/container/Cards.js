@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 const cardData = [
   {
     imageSrc: "/Assets/OurServices/CardImage.svg",
@@ -40,7 +39,7 @@ export default function Cards() {
           className=" p-10 flex flex-col gap-6 lg:w-1/3 xl:w-1/4"
         >
           <div className="flex justify-center align-center">
-            <Image src={card.imageSrc} width={62} height={62} />
+            <Image src={card.imageSrc} width={62} height={62} alt="cardImage" />
           </div>
           <h5
             className="text-2xl font-bold uppercase text-center tracking-wider poppins"

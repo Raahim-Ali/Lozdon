@@ -1,11 +1,11 @@
 "use client";
-import { useState, useEffect } from "react";
-import "./Clients.css";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import AirTable from "../../../public/Assets/Work/AirTable.svg";
+import ClientOne from "../../../public/Assets/Work/ClientOne.svg";
 import PaginationLeft from "../../../public/Assets/Work/PaginationLeft.svg";
 import PaginationRight from "../../../public/Assets/Work/PaginationRight.svg";
-import ClientOne from "../../../public/Assets/Work/ClientOne.svg";
-import AirTable from "../../../public/Assets/Work/AirTable.svg";
+import "./Clients.css";
 function Clients() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -119,9 +119,9 @@ function Clients() {
           </div>
           <div>
             <p className="videotext">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim
-              ad minim veniam, quis nostrud"
+              &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua ut
+              enim ad minim veniam, quis nostrud&quot;
             </p>
           </div>
           <div className="clientDetail">

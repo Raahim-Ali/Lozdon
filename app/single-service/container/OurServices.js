@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 const cardData = [
@@ -53,12 +52,8 @@ export default function OurServices() {
         <div className="gap-3 flex flex-col">
           {/* text Section */}
           {/* <p className="custom-text-24">our web expertise</p> */}
-<<<<<<< HEAD
-          <p className="custom-text-64  poppins">Our Services</p>
-=======
 
           <p className="custom-text-64 font-bold">Our Services</p>
->>>>>>> d45d7d5c04fd87ac32f5c307f4bc9139fff97483
         </div>
         <div className="flex flex-wrap gap-6 w-full">
           {/* Card Section */}

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 const cardData = [
   {
     imageSrc: "/Assets/aboutUs/bulb.svg",
@@ -29,15 +28,18 @@ export default function OurStory() {
             needs and objectives. From conceptualization to design, coding,
             rigorous testing, and final deployment, we ensure that the resulting
             software aligns seamlessly with your business processes. With Octal
-            Code, you'll experience the power of custom-built software that
+            Code, you&apos;ll experience the power of custom-built software that
             optimizes efficiency, productivity, and innovation, giving your
-            organization a competitive edge in today's dynamic business
+            organization a competitive edge in today&apos;s dynamic business
             landscape
           </p>
         </div>
-        <img
+        <Image
+          alt="AboutUsImage"
           src="/Assets/aboutUs/Image.svg"
-          style={{ borderRadius: "18px", width: "100%" }}
+          style={{ borderRadius: "18px" }}
+          width={100}
+          height={100}
         />
         <div>
           <div className="flex gap-12">

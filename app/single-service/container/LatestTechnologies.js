@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 const Data = [
   {
     ImageSrc: "/Assets/SIngleService/LatestTechnology/Firebase.svg",
@@ -30,7 +29,7 @@ export default function LatestTechnologies() {
         <div className="flex flex-col">
           <div className="p-12 w-full flex flex-wrap justify-between gap-8">
             {Data.map((item) => (
-              <div className="flex flex-col gap-2">
+              <div key={`${item.text}-${i}`} className="flex flex-col gap-2">
                 <div
                   style={{
                     display: "flex",
@@ -45,8 +44,8 @@ export default function LatestTechnologies() {
             ))}
           </div>{" "}
           <div className="p-12 w-full flex flex-wrap justify-between gap-8">
-            {Data.map((item) => (
-              <div className="flex flex-col gap-2">
+            {Data.map((item, i) => (
+              <div key={`${item.text}-${i}`} className="flex flex-col gap-2">
                 <div
                   style={{
                     display: "flex",
