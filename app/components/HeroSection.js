@@ -14,14 +14,8 @@ const highlightServices = (title) => {
         word.toLowerCase() === "work" ||
         word.toLowerCase() === "us" ||
         word.toLowerCase() === "full" ||
-<<<<<<< Updated upstream
-        word.toLowerCase() === "service" ||
-        word.toLowerCase() === "contact"
-          ? "text-green-600"
-=======
         word.toLowerCase() === "service"
           ? "text-green-500"
->>>>>>> Stashed changes
           : "text-whitePrimary"
       }
     >

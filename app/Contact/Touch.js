@@ -24,7 +24,9 @@ function Touch() {
   return (
     <div className="Touch">
       <div className="touchHeading">
-        <p className="touchHeadingText">get in touch with us and let's talk</p>
+        <p className="touchHeadingText">
+          get in touch with us and let&apos;s talk
+        </p>
       </div>
       <div className="touchCardsContainer">
         {touchCards.map((touch, index) => (

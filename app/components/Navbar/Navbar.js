@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import "./Navbar.css";
 import { useRouter } from "next/navigation";
 function Navbar() {
@@ -25,16 +26,9 @@ function Navbar() {
         </div>
         <div className="navbarIcon">CASE STUDIES</div>
         <div className="navbarIcon">FAQs</div>
-        <button className="btn">
-          <p
-            className="btnText"
-            onClick={() => {
-              router.push("/about-us");
-            }}
-          >
-            CONTACT US
-          </p>
-        </button>
+        <Link href="/Contact" className="btn">
+          <span className="btnText">CONTACT US</span>
+        </Link>
       </div>
     </div>
   );
