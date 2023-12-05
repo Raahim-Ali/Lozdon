@@ -34,7 +34,7 @@ const HeroSection = ({
       style={{ width: "100%", padding: "123.5px 165px" }}
     >
       {/* Ellipse Section */}
-      {/* <div
+      <div
         className="absolute left-0 bottom-0"
         style={{
           background: "#B318FF",
@@ -45,7 +45,7 @@ const HeroSection = ({
           filter: "blur(200px)",
           // overflow: "hidden", // Adjust the blur value as needed
         }}
-      ></div> */}
+      ></div>
       <div
         className="flex justify-between align-center  z-10"
         style={{ width: "70%" }}
