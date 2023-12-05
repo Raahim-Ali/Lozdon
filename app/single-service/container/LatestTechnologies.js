@@ -28,7 +28,7 @@ export default function LatestTechnologies() {
         </div>
         <div className="flex flex-col">
           <div className="p-12 w-full flex flex-wrap justify-between gap-8">
-            {Data.map((item) => (
+            {Data.map((item, i) => (
               <div key={`${item.text}-${i}`} className="flex flex-col gap-2">
                 <div
                   style={{
