@@ -1,9 +1,9 @@
-import HeroSection from "../components/HeroSection";
 import CustomerCount from "../single-service/container/CustomerCount";
 import Clients from "../work/Components/Clients";
 import PressSection from "../work/Components/PressSection";
 import Awards from "./Awards";
 import Blog from "./Blog";
+import HeroSection from "./HeroSection";
 import Idea from "./Idea";
 import Industries from "./Industries";
 import OurWork from "./OurWork";
@@ -14,11 +14,12 @@ function HomePage() {
   return (
     <>
       <HeroSection
-        // titleWidth="70%"
+        titleWidth="80%"
         title="full service software agency"
         paragraph="Octal Code, we excel in web development, offering a comprehensive suite of services and software development lifecycle."
         btnText="See all services"
-        btnWidth="28%"
+        // btnWidth="28%"
+        pWidth="70%"
         imgSrc="/Assets/Home/HeroSectionImage.svg"
       />
       <CustomerCount />

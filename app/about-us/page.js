@@ -9,7 +9,7 @@ export default function page() {
         title="About Us"
         paragraph="Octal Code, we excel in web development, offering a comprehensive suite of services."
         btnText="let’s work together"
-        imgSrc="/Assets/OurServices/HeroSectionImage.svg"
+        imgSrc="/Assets/Herosection/HeroSectionImage.svg"
         // btnWidth="28%"
         // pWidth=""
         // titleWidth=""

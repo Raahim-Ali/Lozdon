@@ -11,7 +11,7 @@ export default function Work() {
         paragraph="Octal Code, we excel in web development, offering a comprehensive suite of services."
         btnText="let’s work together"
         // btnWidth="28%"
-        imgSrc="/Assets/OurServices/HeroSectionImage.svg"
+        imgSrc="/Assets/Herosection/HeroSectionImage.svg"
       />
       <PressSection />
       <CompanyOne />
