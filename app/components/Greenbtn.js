@@ -3,9 +3,12 @@ import "../components/Navbar/Navbar.css";
 import Link from "next/link";
 
 export default function Greenbtn({ buttonText, width, href }) {
+  const buttonStyle = {
+    width: width || null,
+  };
   return (
-    <Link href="#">
-      <button className="btn" style={width ? { width } : {}}>
+    <Link href={href && href}>
+      <button className="btn" style={buttonStyle}>
         <p className="btnText poppins uppercase">{buttonText}</p>
       </button>
     </Link>

@@ -43,8 +43,8 @@ function Industries() {
         ))}
       </div>
       <div className="buttons">
-        <Greenbtn buttonText="see all services" />
-        <Transparentbtn buttonText="contact us" />
+        <Greenbtn buttonText="see all services" href="/Services" />
+        <Transparentbtn buttonText="contact us" href="/Contact" />
       </div>
     </div>
   );

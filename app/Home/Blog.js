@@ -62,8 +62,8 @@ function Blog() {
         ))}
       </div>
       <div className="buttons">
-        <Greenbtn buttonText="see all blogs" />
-        <Transparentbtn buttonText="contact us" />
+        <Greenbtn buttonText="see all blogs" href="/Blog" />
+        <Transparentbtn buttonText="contact us" href="#" />
       </div>
     </div>
   );

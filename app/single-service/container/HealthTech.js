@@ -43,7 +43,7 @@ export default function HealthTech() {
                 Moonfare is only charged $0.20 for every million requests.
               </p>
             </div>
-            <Greenbtn buttonText="Read Full Case Study" />
+            <Greenbtn buttonText="Read Full Case Study" href="#" />
           </d>
           <div className="" style={{}}>
             <Image
@@ -68,7 +68,7 @@ export default function HealthTech() {
             Let&apos;s craft your idea 🚀
           </p>
         </div>
-        <Greenbtn buttonText="Let's collaborate" />
+        <Greenbtn buttonText="Let's collaborate" href="#" />
       </div>
     </>
   );

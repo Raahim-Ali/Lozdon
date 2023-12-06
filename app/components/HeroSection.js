@@ -64,7 +64,7 @@ const HeroSection = ({
           <div style={{ width: pWidth || "90%" }} className="mb-3 ">
             <p className="text-whitePrimary text-xl pr-9 inter">{paragraph}</p>
           </div>
-          <Greenbtn buttonText={btnText} />
+          <Greenbtn buttonText={btnText} href="#" />
         </div>
 
         <img

@@ -2,6 +2,7 @@
 import Link from "next/link";
 import "./Navbar.css";
 import { useRouter } from "next/navigation";
+import Greenbtn from "../Greenbtn";
 function Navbar() {
   const router = useRouter();
   return (
@@ -26,22 +27,11 @@ function Navbar() {
         </div>
         <div className="navbarIcon">CASE STUDIES</div>
         <div className="navbarIcon">FAQs</div>
-<<<<<<< Updated upstream
-        <Link href="/Contact" className="btn">
+        {/* <Link href="/Contact" className="btn">
           <span className="btnText">CONTACT US</span>
-        </Link>
-=======
-        <button className="btn">
-          <p
-            className="btnText"
-            onClick={() => {
-              router.push("/Contact");
-            }}
-          >
-            CONTACT US
-          </p>
-        </button>
->>>>>>> Stashed changes
+        </Link> */}
+
+        <Greenbtn buttonText="Contact us" href="#" />
       </div>
     </div>
   );

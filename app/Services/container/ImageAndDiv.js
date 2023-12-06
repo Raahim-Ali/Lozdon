@@ -74,7 +74,7 @@ export default function ImageAndDiv() {
                 {item.text}
               </p>
               {/* ... Other text elements */}
-              <Greenbtn buttonText="Learn more" />
+              <Greenbtn buttonText="Learn more" href="#" />
             </div>
 
             {/* Image Section on the right */}

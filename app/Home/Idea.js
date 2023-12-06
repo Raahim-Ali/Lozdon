@@ -10,7 +10,7 @@ function Idea() {
           Let&apos;s craft your idea 🚀
         </p>
       </div>
-      <Greenbtn buttonText="Let's collaborate" />
+      <Greenbtn buttonText="Let's collaborate" href="#" />
     </div>
   );
 }
