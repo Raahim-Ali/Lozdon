@@ -27,11 +27,7 @@ function Navbar() {
         </div>
         <div className="navbarIcon">CASE STUDIES</div>
         <div className="navbarIcon">FAQs</div>
-        {/* <Link href="/Contact" className="btn">
-          <span className="btnText">CONTACT US</span>
-        </Link> */}
-
-        <Greenbtn buttonText="Contact us" href="#" />
+        <Greenbtn buttonText="Contact us" href="/Contact" />
       </div>
     </div>
   );

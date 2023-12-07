@@ -1,5 +1,6 @@
 import Greenbtn from "@/app/components/Greenbtn";
 import React from "react";
+import Link from "next/link";
 
 export default function UltimateGuideToWeb() {
   return (
@@ -40,9 +41,11 @@ export default function UltimateGuideToWeb() {
 
           <div>
             <button className="bg-grey py-3 px-6 flex gap-3 rounded-xl justify-center items-center">
-              <span className="text-base inter font-semibold uppercase">
-                Continue Reading
-              </span>
+              <Link href="/BlogDetails">
+                <span className="text-base inter font-semibold uppercase">
+                  Continue Reading
+                </span>
+              </Link>
               <img src="/Assets/Blog/Arrow.svg" alt="Continue Reading Arrow" />
             </button>
           </div>

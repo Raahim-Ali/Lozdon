@@ -24,6 +24,7 @@ body {
   align-items: center;
   font-size: 1vw;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .btn {
@@ -35,6 +36,9 @@ body {
   justify-content: center;
   align-items: center;
   background: #3fba00;
+}
+a {
+  cursor: pointer;
 }
 .TransparentBtn {
   height: 47px;
@@ -68,9 +72,6 @@ body {
   display: none;
 }
 .navbarIcon {
-  cursor: pointer;
-}
-.btn {
   cursor: pointer;
 }
 
