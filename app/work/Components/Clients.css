@@ -21,6 +21,13 @@
 
 .Pagination {
   display: flex;
+  gap: 50px;
+}
+.PaginationLeftImg {
+  cursor: pointer;
+}
+.PaginationRightImg {
+  cursor: pointer;
 }
 .custom-slider {
   background-color: red;
@@ -88,15 +95,12 @@
 .videoContainer {
   display: flex;
   padding: 30px 0px 0px 50px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .video {
   border-radius: 20px;
-  width: 560px;
-  display: flex;
-  justify-content: center;
 }
 .videotext {
   padding: 23px 0px 24px 0px;
