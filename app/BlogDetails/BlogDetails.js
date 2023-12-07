@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./BlogDetails.css";
 import Image from "next/image";
 function BlogDetails() {
@@ -22,15 +23,18 @@ function BlogDetails() {
     <div className="blogDetailsPage">
       <div className="blogDetailsContent">
         <div className="navigationSection">
-          <div className="navigator">
-            <Image
-              src="/Assets/BlogsDetails/BackIcon.svg"
-              alt=""
-              width={30}
-              height={30}
-            />
-            <p className="BackIconText">Blogs</p>
-          </div>
+          <Link href={"/Blog"}>
+            <div className="navigator">
+              <Image
+                className="backimgicon"
+                src="/Assets/BlogsDetails/BackIcon.svg"
+                alt=""
+                width={30}
+                height={30}
+              />
+              <p className="BackIconText">Blogs</p>
+            </div>
+          </Link>
           <div className="navigatorSectionDetails">
             <div className="navigatorHeading">
               <p className="navigatorHeadingText">In the Blog Post</p>

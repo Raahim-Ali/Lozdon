@@ -12,11 +12,14 @@
 .navigator {
   display: flex;
   gap: 8px;
-  padding: 0px 0px 24px 0px;
+  margin-bottom: 24px;
 }
-.navigator:hover {
+.BackIconText:hover {
   color: rgba(69, 126, 255, 1);
   cursor: pointer;
+}
+.backimgicon:hover {
+  fill: #3fba00;
 }
 .BackIconText {
   font-family: Poppins;
@@ -27,6 +30,7 @@
   text-align: left;
   color: rgba(26, 32, 46, 1);
 }
+
 .navigatorHeading {
   padding: 15px 15px;
 }
@@ -51,7 +55,7 @@
   color: rgba(94, 106, 134, 1);
 }
 .navigatorTextDetails:hover {
-  color: rgba(69, 126, 255, 1);
+  color: #3fba00;
   cursor: pointer;
 }
 .UltimateGuideContentHeading {
