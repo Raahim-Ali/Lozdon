@@ -26,7 +26,6 @@ function BlogDetails() {
           <Link href={"/Blog"}>
             <div className="navigator">
               <Image
-                className="backimgicon"
                 src="/Assets/BlogsDetails/BackIcon.svg"
                 alt=""
                 width={30}
