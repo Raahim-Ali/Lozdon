@@ -7,7 +7,7 @@ export default function Greenbtn({ buttonText, width, href }) {
     width: width || null,
   };
   return (
-    <Link href={href && href}>
+    <Link className="w-fit" href={href}>
       <button className="btn" style={buttonStyle}>
         <p className="btnText poppins uppercase">{buttonText}</p>
       </button>

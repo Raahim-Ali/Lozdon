@@ -28,10 +28,10 @@ body {
 }
 
 .btn {
-  height: 47px;
+  /* height: 47px; */
   padding: 12px 24px;
   border-radius: 10px;
-  border: none;
+  /* border: none; */
   display: flex;
   justify-content: center;
   align-items: center;
