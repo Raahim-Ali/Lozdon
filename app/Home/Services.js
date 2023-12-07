@@ -12,7 +12,7 @@ function Services() {
       link: "LEARN MORE",
     },
     {
-      imageSrc: "/Assets/Home/Webdevelopment.svg",
+      imageSrc: "/Assets/Home/WebDevelopment.svg",
       title: "web development",
       description:
         "This metaphor implies every aspect of the industry in recent times",
