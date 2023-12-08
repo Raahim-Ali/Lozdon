@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function UltimateGuideToWeb() {
   return (
-    <div className="flex gap-4">
+    <div className="flex" style={{ gap: "2.625rem" }}>
       {/* Left Section: Image */}
       <div
         style={{
-          width: "100%",
+          width: "40%",
           overflow: "hidden",
           height: "500px",
           borderRadius: "14px",
@@ -26,7 +26,7 @@ export default function UltimateGuideToWeb() {
         />
       </div>
 
-      <div className="flex flex-col max-w-xl gap-16">
+      <div className="flex flex-col max-w-xl gap-16" style={{ width: "50%" }}>
         <div className="flex flex-col gap-6 ">
           <p className="poppins font-bold tracking-wide text-4xl">
             Ultimate Guide to Web Authentication
