@@ -87,7 +87,6 @@ const HeroSection = ({
             style={{
               objectFit: "fill",
               width: "900px",
-              height: "900px",
               maxWidth: "180%",
             }}
           />
