@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import "./Navbar.css";
 import { useRouter } from "next/navigation";
 import Greenbtn from "../Greenbtn";
@@ -7,7 +6,14 @@ function Navbar() {
   const router = useRouter();
   return (
     <div className="navbar">
-      <div className="logo">OCTALCODE</div>
+      <div
+        className="logo"
+        onClick={() => {
+          router.push("/Home");
+        }}
+      >
+        OCTALCODE
+      </div>
       <div className="navbar-items">
         <div
           className="navbarIcon"
