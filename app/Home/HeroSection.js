@@ -30,7 +30,7 @@ const HeroSection = ({
 }) => {
   return (
     <div
-      className="bg-primaryBlack flex relative  "
+      className="bg-primaryBlack flex relative overflow-hidden "
       style={{ width: "100%", padding: "123.5px 165px" }}
     >
       {/* Ellipse Section */}
