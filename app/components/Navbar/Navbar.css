@@ -45,9 +45,12 @@ a {
 .TransparentBtn {
   padding: 1vw 1.2vw;
   border-radius: 10px;
+  height: 47px;
   display: flex;
+  justify-content: center;
   align-items: center;
-
+  border-radius: 10px;
+  border: 2px solid var(--greenMain, #3fba00);
   background: transparent;
 }
 .TransparentBtnText {

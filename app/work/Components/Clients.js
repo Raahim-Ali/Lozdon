@@ -56,7 +56,7 @@ function Clients() {
   }, [currentIndex, cards]);
 
   const handlePagination = (direction) => {
-    const lastIndex = cards.length - 2;
+    const lastIndex = cards.length - 1;
 
     if (direction === "left" && currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);

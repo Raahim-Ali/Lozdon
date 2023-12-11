@@ -54,6 +54,7 @@ export default function OurServices() {
           {/* <p className="custom-text-24">our web expertise</p> */}
 
           <p className="custom-text-64 font-bold">Our Services</p>
+          <p className="custom-text-64  poppins">Our Services</p>
         </div>
         <div className="flex flex-wrap gap-6 w-full">
           {/* Card Section */}
