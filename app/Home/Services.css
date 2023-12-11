@@ -4,7 +4,7 @@
 .Heading {
   color: #3b3f5c;
   font-family: Poppins;
-  font-size: 4.5vw;
+  font-size: 64px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -31,6 +31,7 @@
   width: 30%;
   margin-bottom: 38px;
   transition: transform 0.5s ease;
+
   gap: 32px;
   border-radius: 8px;
   border: 1px solid rgba(59, 14, 97, 0.1);
@@ -43,7 +44,7 @@
   color: #3b3f5c;
   font-family: Poppins;
   padding: 0px 0px 12px 0px;
-  font-size: 1.6vw;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 140%; /* 28px */
@@ -54,7 +55,7 @@
 .cardDescription {
   color: #3b3f5c;
   font-family: Inter;
-  font-size: 1.4vw;
+  font-size: 18px;
   font-style: normal;
   padding: 0px 0px 20px 0px;
   font-weight: 300;
@@ -78,7 +79,6 @@
   letter-spacing: 0.14000000059604645px;
   text-align: left;
 }
-
 @media (1000px<width<1400px) {
   .ServicesContainer {
     display: flex;
@@ -95,15 +95,29 @@
     border: 1px solid rgba(59, 14, 97, 0.1);
   }
 }
-@media (width<1000px) {
+@media (200px < width<1000px) {
+  .Services {
+    padding: 80px 50px;
+  }
+  .Heading {
+    color: #3b3f5c;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 0px 0px 48px 0px;
+  }
   .ServicesContainer {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   .card {
     padding: 32px 32px;
-    width: 70%;
+    width: 100%;
     margin-bottom: 38px;
     transition: transform 0.5s ease;
     gap: 32px;

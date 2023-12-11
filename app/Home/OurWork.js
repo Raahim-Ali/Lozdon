@@ -32,7 +32,9 @@ function OurWork() {
   return (
     <div className="OurWork">
       <div>
-        <p className="Heading2">our work</p>
+        <p className="Heading" style={{ color: "white" }}>
+          our work
+        </p>
       </div>
       <div className="workCardsContainer">
         {works.map((work, index) => (
