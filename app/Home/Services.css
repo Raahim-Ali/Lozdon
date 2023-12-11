@@ -4,7 +4,7 @@
 .Heading {
   color: #3b3f5c;
   font-family: Poppins;
-  font-size: 64px;
+  font-size: 4.5vw;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -31,7 +31,6 @@
   width: 30%;
   margin-bottom: 38px;
   transition: transform 0.5s ease;
-
   gap: 32px;
   border-radius: 8px;
   border: 1px solid rgba(59, 14, 97, 0.1);
@@ -44,7 +43,7 @@
   color: #3b3f5c;
   font-family: Poppins;
   padding: 0px 0px 12px 0px;
-  font-size: 20px;
+  font-size: 1.6vw;
   font-style: normal;
   font-weight: 600;
   line-height: 140%; /* 28px */
@@ -55,7 +54,7 @@
 .cardDescription {
   color: #3b3f5c;
   font-family: Inter;
-  font-size: 18px;
+  font-size: 1.4vw;
   font-style: normal;
   padding: 0px 0px 20px 0px;
   font-weight: 300;
@@ -78,4 +77,37 @@
   line-height: 26px;
   letter-spacing: 0.14000000059604645px;
   text-align: left;
+}
+
+@media (1000px<width<1400px) {
+  .ServicesContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    padding: 32px 32px;
+    width: 47%;
+    margin-bottom: 38px;
+    transition: transform 0.5s ease;
+    gap: 32px;
+    border-radius: 8px;
+    border: 1px solid rgba(59, 14, 97, 0.1);
+  }
+}
+@media (width<1000px) {
+  .ServicesContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .card {
+    padding: 32px 32px;
+    width: 70%;
+    margin-bottom: 38px;
+    transition: transform 0.5s ease;
+    gap: 32px;
+    border-radius: 8px;
+    border: 1px solid rgba(59, 14, 97, 0.1);
+  }
 }

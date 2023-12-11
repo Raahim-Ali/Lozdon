@@ -28,18 +28,37 @@ body {
   font-weight: 700;
 }
 
+a {
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
 .btn {
-  padding: 12px 24px;
+  padding: 1vw 1.2vw;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #3fba00;
 }
-a {
-  cursor: pointer;
-}
+.TransparentBtn {
+  padding: 1vw 1.2vw;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
 
+  background: transparent;
+}
+.TransparentBtnText {
+  font-family: Inter;
+  font-size: 1.2vw;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #3fba00;
+}
 .btnText {
   font-family: Inter;
   font-size: 1.2vw;
@@ -54,6 +73,10 @@ a {
 }
 .navbarIcon {
   cursor: pointer;
+}
+.navbarIcon:hover {
+  color: #3fba00;
+  transform: scale(1.1);
 }
 
 @media (width<600px) {
