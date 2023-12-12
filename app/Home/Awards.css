@@ -10,6 +10,9 @@
   width: 47%;
 }
 .awardsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   width: 48%;
 }
 
@@ -60,4 +63,78 @@
   letter-spacing: 0em;
   text-align: left;
   color: rgba(59, 63, 92, 0.6);
+}
+@media (1000px<width<1400px) {
+  .awardsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .buttons {
+    display: flex;
+    padding: 0px 0px 0px 25px;
+    flex-direction: column;
+  }
+  .blogCard {
+    padding: 32px 32px;
+    width: 47%;
+    margin-bottom: 38px;
+    transition: transform 0.5s ease;
+    gap: 32px;
+    border-radius: 8px;
+    border: 1px solid rgba(59, 14, 97, 0.1);
+  }
+}
+@media (200px < width<1000px) {
+  .Awards {
+    padding: 80px 50px;
+    width: 100%;
+  }
+  .awardsContainer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+  .awardsTextMain {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .awardsTextMain > .awardsHeading {
+    color: #3b3f5c;
+    font-family: Poppins;
+    font-size: 30px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 0px 0px 48px 0px;
+  }
+  .blogContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .awardCard {
+    width: 200%;
+    margin-bottom: 38px;
+    transition: transform 0.5s ease;
+    gap: 32px;
+    border-radius: 8px;
+  }
+
+  .buttons {
+    display: flex;
+    padding: 0px 0px 0px 25px;
+    flex-direction: column;
+  }
+  .buttonContainer {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    text-align: left;
+  }
 }

@@ -2,13 +2,10 @@ import React from "react";
 import "../components/Navbar/Navbar.css";
 import Link from "next/link";
 
-export default function Greenbtn({ buttonText, width, href }) {
-  const buttonStyle = {
-    width: width || null,
-  };
+export default function Greenbtn({ buttonText, href }) {
   return (
     <Link className="w-fit" href={href}>
-      <button className="btn" style={buttonStyle}>
+      <button className="btn">
         <p className="btnText poppins uppercase">{buttonText}</p>
       </button>
     </Link>

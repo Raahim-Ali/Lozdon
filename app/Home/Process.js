@@ -1,4 +1,6 @@
+import Greenbtn from "../components/Greenbtn";
 import "./Process.css";
+import Image from "next/image";
 function Process() {
   return (
     <div className="Process">
@@ -8,10 +10,15 @@ function Process() {
       <div className="ProcessContainer">
         <div className="ProcessCard">
           <div>
-            <p className="ProcessNumber">01</p>
+            <Image
+              src="/Assets/Home/Process1.svg"
+              alt=""
+              width={70}
+              height={70}
+            />
           </div>
           <div className="ProcessTitle">
-            <p>explore idea</p>
+            <p>explore together</p>
           </div>
           <div className="ProcessDescription">
             <p>
@@ -21,10 +28,15 @@ function Process() {
         </div>
         <div className="ProcessCard">
           <div>
-            <p className="ProcessNumber">02</p>
+            <Image
+              src="/Assets/Home/Process2.svg"
+              alt=""
+              width={70}
+              height={70}
+            />
           </div>
           <div className="ProcessTitle">
-            <p>choose technology</p>
+            <p>define strategy</p>
           </div>
           <div className="ProcessDescription">
             <p>
@@ -34,10 +46,15 @@ function Process() {
         </div>
         <div className="ProcessCard">
           <div>
-            <p className="ProcessNumber">03</p>
+            <Image
+              src="/Assets/Home/Process3.svg"
+              alt=""
+              width={70}
+              height={70}
+            />
           </div>
           <div className="ProcessTitle">
-            <p>design</p>
+            <p>Build & iterate</p>
           </div>
           <div className="ProcessDescription">
             <p>
@@ -45,18 +62,8 @@ function Process() {
             </p>
           </div>
         </div>
-        <div className="ProcessCard">
-          <div>
-            <p className="ProcessNumber">04</p>
-          </div>
-          <div className="ProcessTitle">
-            <p>develop</p>
-          </div>
-          <div className="ProcessDescription">
-            <p>
-              This metaphor implies every aspect of the industry in recent times
-            </p>
-          </div>
+        <div className="buttons">
+          <Greenbtn buttonText="start your journey with us" href="/Contact" />
         </div>
       </div>
     </div>

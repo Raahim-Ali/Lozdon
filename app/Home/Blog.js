@@ -31,7 +31,7 @@ function Blog() {
   ];
   return (
     <div className="Blog">
-      <p className="Heading">our blog</p>
+      <p className="Heading">our blogs</p>
 
       <div className="blogContainer">
         {blogs.map((blog, index) => (

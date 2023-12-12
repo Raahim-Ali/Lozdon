@@ -85,6 +85,11 @@
     align-items: center;
     flex-wrap: wrap;
   }
+  .buttons {
+    display: flex;
+    padding: 0px 0px 0px 25px;
+    flex-direction: column;
+  }
   .card {
     padding: 32px 32px;
     width: 47%;
@@ -98,6 +103,7 @@
 @media (200px < width<1000px) {
   .Services {
     padding: 80px 50px;
+    width: 100%;
   }
   .Heading {
     color: #3b3f5c;
@@ -123,5 +129,17 @@
     gap: 32px;
     border-radius: 8px;
     border: 1px solid rgba(59, 14, 97, 0.1);
+  }
+  .cardContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5px;
+  }
+  .buttons {
+    display: flex;
+    padding: 0px 0px 0px 25px;
+    flex-direction: column;
   }
 }

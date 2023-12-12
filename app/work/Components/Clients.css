@@ -117,3 +117,9 @@
   padding: 30px 100px;
   flex-direction: column;
 }
+
+@media (width < 1400px) {
+  .clientmain {
+    display: none;
+  }
+}
