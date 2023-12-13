@@ -46,3 +46,52 @@
   text-align: left;
   color: #3fba00;
 }
+@media (width<1400px) {
+  .main {
+    padding: 40px 80px;
+  }
+  .Card {
+    background-color: #f8f8f8;
+    border-radius: 20px;
+  }
+  .Content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .ContentText {
+    padding: 20px 20px;
+  }
+  .text {
+    margin-top: 24px;
+    width: 350px;
+    font-size: 20px;
+    color: #3b3f5c;
+  }
+}
+@media (width<600px) {
+  .main {
+    padding: 40px 50px;
+    display: flex;
+    align-items: center;
+  }
+  .ContentText {
+    padding: 20px 20px;
+  }
+  .Card {
+    padding: 30px 20px;
+    border-radius: 20px;
+    background-color: #f8f8f8;
+  }
+  .Content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .LearnMore {
+    display: flex;
+    margin-top: 45px;
+  }
+}
