@@ -68,7 +68,11 @@ function Navbar() {
           </div>
           <div className="navbarIcon">CASE STUDIES</div>
           <div className="navbarIcon">FAQs</div>
-          <Greenbtn buttonText="Contact us" href="/Contact" />
+          <Greenbtn
+            buttonText="Contact us"
+            href="/Contact"
+            onClick={toggleDropdown}
+          />
         </div>
       ) : null}
     </>
