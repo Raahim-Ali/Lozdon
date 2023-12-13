@@ -7,7 +7,6 @@ function Navbar() {
   const router = useRouter();
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const toggleDropdown = () => {
-    console.log("hi");
     setDropdownOpen((prev) => !prev);
   };
 
@@ -53,6 +52,7 @@ function Navbar() {
             className="navbarIcon"
             onClick={() => {
               router.push("/");
+              toggleDropdown();
             }}
           >
             HOME
@@ -61,6 +61,7 @@ function Navbar() {
             className="navbarIcon"
             onClick={() => {
               router.push("/work");
+              toggleDropdown();
             }}
           >
             WHY US
