@@ -4,6 +4,11 @@ body {
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   padding: 1.2vw 6.45vw;
@@ -15,6 +20,7 @@ body {
   font-family: Inter;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-weight: 900;
   font-size: 2.5vw;
   cursor: pointer;
@@ -71,9 +77,9 @@ a {
   color: #ffffff;
 }
 .sidebarBtn {
-  background: inherit;
   cursor: pointer;
   font-size: 20px;
+  display: none;
 }
 
 .navbarIcon {
@@ -83,9 +89,27 @@ a {
   color: #3fba00;
   transform: scale(1.1);
 }
+.dropdownMenu {
+  padding: 20px 0px;
+  font-weight: bold;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100vw;
+  top: 40px;
+  height: 100vh;
+  flex-direction: column;
+  background-color: grey; /* Add your desired background color */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a shadow for a dropdown effect */
+  z-index: 1000;
+}
 
-@media (width<600px) {
+@media (max-width: 600px) {
   .navbar-items {
     display: none;
+  }
+  .sidebarBtn {
+    display: block;
   }
 }
