@@ -62,9 +62,9 @@ function Process() {
             </p>
           </div>
         </div>
-        <div className="buttons">
-          <Greenbtn buttonText="start your journey with us" href="/Contact" />
-        </div>
+      </div>
+      <div className="Processbuttons">
+        <Greenbtn buttonText="start your journey with us" href="/Contact" />
       </div>
     </div>
   );

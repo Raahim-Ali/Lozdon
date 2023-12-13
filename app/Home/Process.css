@@ -13,7 +13,12 @@
   text-transform: uppercase;
   padding: 0px 0px 48px 0px;
 }
-
+.Processbuttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
 .ProcessContainer {
   display: flex;
   flex-wrap: wrap;

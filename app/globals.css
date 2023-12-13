@@ -7,6 +7,9 @@
 .inter {
   font-family: "Inter", sans-serif;
 }
+.navbarOpen {
+  overflow: hidden;
+}
 
 .poppins {
   font-family: "Poppins" sans-serif;

@@ -35,6 +35,7 @@ function Navbar() {
         <div className="navbarIcon">FAQs</div>
         <Greenbtn buttonText="Contact us" href="/Contact" />
       </div>
+      <button className="sidebarBtn">☰</button>
     </div>
   );
 }

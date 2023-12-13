@@ -38,7 +38,6 @@ a {
   padding: 15px 15px;
   border-radius: 10px;
   display: flex;
-  width: 170px;
   justify-content: center;
   align-items: center;
   background: #3fba00;
@@ -48,7 +47,6 @@ a {
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  width: 150px;
   align-items: center;
   border-radius: 10px;
   border: 2px solid var(--greenMain, #3fba00);
@@ -72,9 +70,12 @@ a {
   text-align: center;
   color: #ffffff;
 }
-.menu-btn {
-  display: none;
+.sidebarBtn {
+  background: inherit;
+  cursor: pointer;
+  font-size: 20px;
 }
+
 .navbarIcon {
   cursor: pointer;
 }
