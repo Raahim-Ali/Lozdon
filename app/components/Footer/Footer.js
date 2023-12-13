@@ -10,21 +10,18 @@ export default function Footer() {
   return (
     <div className="flex flex-col  bg-primaryBlack">
       <div
-        className="flex gap-10"
-        style={{
-          padding: "130px 165px",
-        }}
+        className="flex flex-col gap-10 sm:flex-row px-10 py-11 sm:px-36 sm:py-40"
+        // style={{
+        //   padding: "130px 165px",
+        // }}
       >
         {/* Left Section */}
-        <div className="flex flex-col w-2/5 gap-6">
+        <div className="flex flex-col sm:w-2/5 gap-6">
           <div>
             <p className="text-main text-4xl font-bold poppins">OCTALCODE</p>
           </div>
           <div className="flex flex-col gap-8">
-            <p
-              className="text-sm text-whitePrimary font-medium inter"
-              style={{ width: "426px" }}
-            >
+            <p className="text-sm text-whitePrimary font-medium inter  ">
               Octal Code, we excel in web development, offering a comprehensive
               suite of services encompassing the entire software development
               lifecycle.
@@ -59,9 +56,9 @@ export default function Footer() {
         </div>
 
         {/* Right Section */}
-        <div className="flex w-3/5 justify-end gap-16">
-          {/* Explore Section */}
-          <div className="w-1/3 flex flex-col  gap-6">
+        <div className="flex flex-col gap-8 sm:flex-row sm:w-3/5 justify-end sm:gap-16">
+          {/* pages Section */}
+          <div className="sm:w-1/3 flex flex-col  gap-6">
             <p className="text-whitePrimary text-2xl font-bold uppercase poppins">
               Pages
             </p>

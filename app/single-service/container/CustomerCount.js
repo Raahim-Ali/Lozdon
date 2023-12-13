@@ -2,23 +2,17 @@ import React from "react";
 
 export default function CustomerCount() {
   return (
-    <div
-      className="flex w-full justify-between pt-20 pb-20 pr-36 pl-36"
-      style={{}}
-    >
-      <div style={{ width: "50%" }}>
-        <h5
-          className="inter text-2xl font-light text-gray-700"
-          style={{ color: "#3B3F5C" }}
-        >
+    <div className="flex flex-col gap-8 sm:flex-row sm:justify-between sm:items-center p-6 md:p-12 lg:p-20 xl:p-24 ">
+      <div className="w-full sm:w-1/2">
+        <h5 className="inter text-2xl text-center font-light  text-primaryTextColor sm:text-left">
           We tailor solutions to meet the diverse needs of businesses, ensuring
           efficiency and innovation in the ever-evolving digital landscape
         </h5>
       </div>
-      <div className="flex gap-16 justify-end" style={{ width: "40%" }}>
-        <div className="flex flex-col gap-4 pr-3 pl-3">
+      <div className="flex flex-col gap-4 sm:flex-row sm:gap-16 justify-center ">
+        <div className="flex flex-row justify-center gap-4 sm:flex-col ">
           <p
-            className="text-6xl font-semibold poppins"
+            className="text-3xl sm:text-6xl font-semibold poppins"
             style={{ color: "#3B3F5C" }}
           >
             70
@@ -27,9 +21,9 @@ export default function CustomerCount() {
             Clients
           </p>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-row justify-center gap-4 sm:flex-col">
           <p
-            className="text-6xl font-semibold poppins"
+            className="text-3xl sm:text-6xl font-semibold poppins"
             style={{ color: "#3B3F5C" }}
           >
             150
@@ -38,9 +32,9 @@ export default function CustomerCount() {
             Projects
           </p>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-row justify-center gap-4 sm:flex-col ">
           <p
-            className="text-6xl text-center font-semibold poppins"
+            className="text-3xl sm:text-6xl text-center font-semibold poppins "
             style={{ color: "#3B3F5C" }}
           >
             150

@@ -30,11 +30,11 @@ const HeroSection = ({
 }) => {
   return (
     <div
-      className="bg-primaryBlack flex relative overflow-hidden "
-      style={{ width: "100%", padding: "123.5px 165px" }}
+      className="bg-primaryBlack flex  relative overflow-hidden w-full h-full"
+      style={{ padding: "123.5px 165px" }}
     >
       {/* Ellipse Section */}
-      <div
+      {/* <div
         className="absolute left-0 bottom-0"
         style={{
           background: "#B318FF",
@@ -45,27 +45,23 @@ const HeroSection = ({
           filter: "blur(200px)",
           // overflow: "hidden", // Adjust the blur value as needed
         }}
-      ></div>
+      ></div> */}
+
       <div
-        className="flex justify-between align-center  z-10"
-        style={{ width: "70%" }}
+        className="flex flex-col justify-center gap-5"
+        style={{ maxWidth: "70%" }}
       >
-        <div
-          className="flex flex-col justify-center gap-5"
-          style={{ width: "100%" }}
+        {/* Text Section */}
+        <h1
+          style={{ width: titleWidth || "100%", fontSize: "86px" }}
+          className="custom-text-64  poppins font-black uppercase "
         >
-          {/* Text Section */}
-          <h1
-            style={{ width: titleWidth || "100%", fontSize: "86px" }}
-            className="custom-text-64  poppins font-black uppercase "
-          >
-            {highlightServices(title)}
-          </h1>
-          <div style={{ width: pWidth || "90%" }} className="mb-3 ">
-            <p className="text-whitePrimary text-xl pr-9 inter">{paragraph}</p>
-          </div>
-          <Greenbtn buttonText={btnText} width={btnWidth} href="#" />
+          {highlightServices(title)}
+        </h1>
+        <div style={{ width: pWidth || "90%" }} className="mb-3 ">
+          <p className="text-whitePrimary text-xl pr-9 inter">{paragraph}</p>
         </div>
+        <Greenbtn buttonText={btnText} width={btnWidth} href="#" />
       </div>
       <div
         className="top-0 right-0"
@@ -86,7 +82,7 @@ const HeroSection = ({
             alt="Image Lgai yaar"
             style={{
               objectFit: "fill",
-              width: "900px",
+              // width: "900px",
               maxWidth: "180%",
             }}
           />
