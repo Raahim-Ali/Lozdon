@@ -10,18 +10,16 @@ export default function Footer() {
   return (
     <div className="flex flex-col  bg-primaryBlack">
       <div
-        className="flex flex-col gap-10 sm:flex-row px-10 py-11 sm:px-36 sm:py-40"
+        className="flex flex-col gap-10 md:flex-row px-10 py-11 lg:px-40 lg:py-32"
         // style={{
         //   padding: "130px 165px",
         // }}
       >
         {/* Left Section */}
-        <div className="flex flex-col sm:w-2/5 gap-6">
-          <div>
-            <p className="text-main text-4xl font-bold poppins">OCTALCODE</p>
-          </div>
+        <div className="flex flex-col w-full gap-6">
+          <p className="text-main text-4xl font-bold poppins">OCTALCODE</p>
           <div className="flex flex-col gap-8">
-            <p className="text-sm text-whitePrimary font-medium inter  ">
+            <p className="text-base text-whitePrimary font-medium inter ">
               Octal Code, we excel in web development, offering a comprehensive
               suite of services encompassing the entire software development
               lifecycle.
@@ -56,7 +54,7 @@ export default function Footer() {
         </div>
 
         {/* Right Section */}
-        <div className="flex flex-col gap-8 sm:flex-row sm:w-3/5 justify-end sm:gap-16">
+        <div className="w-4/5 flex flex-col gap-6 md:flex-row  justify-end md:gap-10">
           {/* pages Section */}
           <div className="sm:w-1/3 flex flex-col  gap-6">
             <p className="text-whitePrimary text-2xl font-bold uppercase poppins">
@@ -65,7 +63,7 @@ export default function Footer() {
             <div className="flex flex-col gap-3 ">
               {Pages.map((item, index) => (
                 <p
-                  className="text-sm text-whitePrimary font-medium inter"
+                  className="text-base text-whitePrimary font-medium inter"
                   key={index}
                 >
                   {item}
@@ -82,7 +80,7 @@ export default function Footer() {
             <div className="flex flex-col gap-3">
               {Resources.map((item, index) => (
                 <p
-                  className="text-sm text-whitePrimary font-medium inter"
+                  className="text-base text-whitePrimary font-medium inter"
                   key={index}
                 >
                   {item}
@@ -92,18 +90,18 @@ export default function Footer() {
           </div>
 
           {/* Legal Section */}
-          <div className="w-1/3 flex flex-col  gap-6">
+          <div className=" flex flex-col  gap-6">
             <p className="text-whitePrimary text-2xl font-bold uppercase poppins">
               Legal
             </p>
             <div className="flex flex-col gap-3">
-              <p className="text-whitePrimary text-sm font-normal inter">
+              <p className="text-whitePrimary text-base font-normal inter">
                 <Link href="#">Terms</Link>
               </p>
-              <p className="text-whitePrimary text-sm font-normal inter">
+              <p className="text-whitePrimary text-base font-normal inter">
                 <Link href="#">Privacy</Link>
               </p>
-              <p className="text-whitePrimary text-sm font-normal inter">
+              <p className="text-whitePrimary text-base font-normal inter">
                 <Link href="#">Others</Link>
               </p>
             </div>
