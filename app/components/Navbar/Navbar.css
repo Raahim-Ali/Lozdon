@@ -50,6 +50,7 @@ a {
 .TransparentBtn {
   padding: 15px 15px;
   border-radius: 10px;
+  height: 47px;
   display: flex;
   justify-content: center;
   align-items: center;
