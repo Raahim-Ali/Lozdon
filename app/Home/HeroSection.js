@@ -43,7 +43,7 @@ const HeroSection = ({
   return (
     <div className="flex flex-col w-full lg:flex-row">
       <div
-        className="bg-primaryBlack flex flex-col relative overflow-hidden  py-20 px-8 w-full   md:px-12 md:py-20 lg:w-3/4 lg:px-40  lg:py-24"
+        className="bg-primaryBlack flex flex-col relative overflow-hidden  pt-20 pb-0  px-8 w-full sm:pt-20 sm:pb-0  md:px-12 md:py-20 lg:w-3/4 lg:px-40  lg:py-24"
         // style={{ height: "100vh" }}
       >
         {/* Ellipse Section */}
