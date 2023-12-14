@@ -104,7 +104,7 @@ a {
     display: block;
   }
   .dropdownMenu {
-    padding: 20px 0px;
+    padding: 160px 75px 0px 75px;
     font-weight: bold;
     position: fixed;
     display: flex;
@@ -118,6 +118,13 @@ a {
     z-index: 1000;
   }
   .navbarIcon {
-    color: #ffffff;
+    color: var(--whitePrimary, #fff);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 143.944%; /* 46.062px */
+    text-transform: uppercase;
   }
 }
