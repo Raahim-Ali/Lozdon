@@ -48,6 +48,9 @@
   font-weight: bolder;
   line-height: 146.023%; /* 26.284px */
 }
+.touch-slider {
+  display: none;
+}
 @media (1000px<width<1400px) {
   .IndustriesContainer {
     display: flex;

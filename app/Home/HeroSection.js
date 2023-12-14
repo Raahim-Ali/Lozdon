@@ -43,7 +43,7 @@ const HeroSection = ({
   return (
     <div className="flex flex-col w-full lg:flex-row">
       <div
-        className="bg-primaryBlack flex flex-col relative overflow-hidden  py-10 px-8 w-full   md:px-12 lg:w-3/4 lg:px-40  lg:py-24"
+        className="bg-primaryBlack flex flex-col relative overflow-hidden  py-20 px-8 w-full   md:px-12 md:py-20 lg:w-3/4 lg:px-40  lg:py-24"
         // style={{ height: "100vh" }}
       >
         {/* Ellipse Section */}
@@ -66,7 +66,7 @@ const HeroSection = ({
         >
           {/* Text Section */}
           <h1
-            className="  poppins font-black uppercase text-5xl w-3/4  md:text-7xl md:w-2/4"
+            className="  poppins font-black uppercase text-5xl w-2/4  sm:w-2/4 md:text-7xl md:w-2/4"
             style={{ lineHeight: 1.3 }}
           >
             {highlightServices(title)}
@@ -76,7 +76,7 @@ const HeroSection = ({
               {paragraph}
             </p>
           </div>
-          <div className="sm:flex hidden">
+          <div className="sm:flex md:flex lg:flex hidden">
             <Greenbtn buttonText={btnText} href="#" />
           </div>
         </div>

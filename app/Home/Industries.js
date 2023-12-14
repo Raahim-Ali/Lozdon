@@ -1,5 +1,6 @@
 import Greenbtn from "../components/Greenbtn";
 import Transparentbtn from "../components/Transparentbtn";
+
 import "./Industries.css";
 function Industries() {
   const industries = [
@@ -42,6 +43,7 @@ function Industries() {
           </div>
         ))}
       </div>
+
       <div className="buttons">
         <Greenbtn buttonText="see all services" href="/Services" />
         <Transparentbtn buttonText="contact us" href="/Contact" />
