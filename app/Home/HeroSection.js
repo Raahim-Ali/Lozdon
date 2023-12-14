@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Greenbtn from "../components/Greenbtn";
 
@@ -28,9 +29,20 @@ const HeroSection = ({
   titleWidth,
   pWidth,
 }) => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const showImage = windowWidth <= 1023;
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="flex flex-col w-full lg:flex-row">
-      <div className="bg-primaryBlack flex  relative overflow-hidden  py-10 px-8 w-full lg:w-3/4 sm:px-40  sm:py-24">
+      <div className="bg-primaryBlack flex flex-col relative overflow-hidden  py-10 px-8 w-full lg:w-3/4 lg:px-40  lg:py-24">
         {/* Ellipse Section */}
         <div
           className="absolute left-0 bottom-0 lg:flex hidden"
@@ -46,20 +58,31 @@ const HeroSection = ({
         ></div>
 
         <div
-          className="flex flex-col justify-center gap-5 w-full sm:w-3/4 z-10 "
+          className="flex flex-col justify-center gap-5 w-full  z-10 "
           // style={{ maxWidth: "70%" }}
         >
           {/* Text Section */}
-          <h1 className="  poppins font-black uppercase text-4xl w-full sm:text-7xl sm:w-2/4">
+          <h1
+            className="  poppins font-black uppercase text-5xl w-3/4  md:text-7xl md:w-2/4"
+            style={{ lineHeight: 1.3 }}
+          >
             {highlightServices(title)}
           </h1>
           <div className="mb-3 ">
-            <p className="sm:text-whitePrimary text-restext  text-base sm:text-xl sm:pr-9 inter">
+            <p className="sm:text-whitePrimary text-restext w-3/4 text-base sm:text-xl sm:pr-9 inter">
               {paragraph}
             </p>
           </div>
-          <Greenbtn buttonText={btnText} href="#" />
+          <div className="sm:flex hidden">
+            <Greenbtn buttonText={btnText} href="#" />
+          </div>
         </div>
+        {showImage && (
+          <div className="flex justify-center align-center">
+            {/* Your Image Component */}
+            <img src={imgSrc} alt="your-image" />
+          </div>
+        )}
       </div>
 
       <div
