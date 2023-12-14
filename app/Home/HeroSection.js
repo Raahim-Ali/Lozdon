@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import Greenbtn from "../components/Greenbtn";
 
 const highlightServices = (title) => {
@@ -29,13 +28,13 @@ const HeroSection = ({
   titleWidth,
   pWidth,
 }) => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(400);
   const showImage = windowWidth <= 1023;
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
 
     window.addEventListener("resize", handleResize);
-
+    handleResize();
     return () => {
       window.removeEventListener("resize", handleResize);
     };
