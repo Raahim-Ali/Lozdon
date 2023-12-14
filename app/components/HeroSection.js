@@ -35,7 +35,7 @@ const HeroSection = ({
   pWidth,
 }) => {
   return (
-    <div className="bg-primaryBlack flex relative overflow-hidden">
+    <div className="bg-primaryBlack flex relative overflow-hidden sm:px-10 ">
       {/* Ellipse Section */}
       {/* <div
         className="absolute left-0 bottom-0"
@@ -49,36 +49,35 @@ const HeroSection = ({
           // overflow: "hidden", // Adjust the blur value as needed
         }}
       ></div> */}
-      <div
-        className="flex justify-between align-center  z-10"
-        style={{ padding: "123.5px 165px" }}
-      >
+      <div className="flex justify-between align-center xl:px-40  pt-20 pb-10  px-8 xl:py-32 z-10">
         <div className="flex flex-col justify-center gap-5">
           {/* Text Section */}
           <h1
-            style={{ width: titleWidth || "100%", fontSize: "86px" }}
-            className="custom-text-64  poppins font-black uppercase "
+            style={{ lineHeight: 1.2 }}
+            className="poppins text-5xl w-2/4 sm:texl-6xl md:text-7xl  md:w-full lg:text-7xl lg:w-full xl:w-full xl:text-7xl font-black uppercase "
           >
             {highlightServices(title)}
           </h1>
-          <div style={{ width: pWidth || "90%" }} className="mb-3 ">
-            <p className="text-whitePrimary text-xl pr-9 inter">{paragraph}</p>
+          <div className="mb-3 ">
+            <p className="text-whitePrimary text-xs sm:w-full sm:text-lg md:text-xl  md:w-full lg:w-full lg:text-xl xl:w-full xl:text-xl   inter">
+              {paragraph}
+            </p>
           </div>
           <Greenbtn buttonText={btnText} href="/Services" />
         </div>
 
-        <img
-          src={imgSrc}
-          className="absolute"
-          style={{
-            // width: "502px",
-            // height: "540px",
-            right: "0px",
-            overflow: "hidden",
-            bottom: "-160px",
-            objectFit: "fill",
-          }}
-        />
+        {/* <div className="">
+          <img
+            src={imgSrc}
+            className="absolute "
+            style={{
+              right: "0px",
+              overflow: "hidden",
+              bottom: "-160px",
+              objectFit: "fill",
+            }}
+          />
+        </div> */}
       </div>
     </div>
   );

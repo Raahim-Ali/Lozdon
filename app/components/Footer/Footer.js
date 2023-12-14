@@ -19,7 +19,11 @@ export default function Footer() {
         <div className="flex flex-col w-full gap-6">
           <p className="text-main text-4xl font-bold poppins">OCTALCODE</p>
           <div className="flex flex-col gap-8">
-            <p className="text-base text-whitePrimary font-medium inter ">
+            <p
+              className="text-base text-whitePrimary font-medium inter xl:w-2/4"
+              // change thw width if wants
+              style={{ lineHeight: 1.6 }}
+            >
               Octal Code, we excel in web development, offering a comprehensive
               suite of services encompassing the entire software development
               lifecycle.

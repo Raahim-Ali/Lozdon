@@ -28,7 +28,7 @@ const HeroSection = ({
   titleWidth,
   pWidth,
 }) => {
-  const [windowWidth, setWindowWidth] = useState(400);
+  const [windowWidth, setWindowWidth] = useState(1200);
   const showImage = windowWidth <= 1023;
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
@@ -42,7 +42,7 @@ const HeroSection = ({
   return (
     <div className="flex flex-col w-full lg:flex-row">
       <div
-        className="bg-primaryBlack flex flex-col relative overflow-hidden  pt-20 pb-0  px-8 w-full sm:pt-20 sm:pb-0  md:px-12 md:py-20 lg:w-3/4 lg:px-40  lg:py-24"
+        className="bg-primaryBlack flex flex-col relative overflow-hidden  pt-20 pb-0  px-8 w-full sm:pt-20 sm:pb-0  md:px-12 md:pt-20 lg:w-3/4 lg:px-40  lg:py-28  "
         // style={{ height: "100vh" }}
       >
         {/* Ellipse Section */}
@@ -65,13 +65,13 @@ const HeroSection = ({
         >
           {/* Text Section */}
           <h1
-            className="  poppins font-black uppercase text-5xl w-2/4  sm:w-2/4 md:text-7xl md:w-2/4"
+            className="  poppins font-black uppercase text-5xl w-2/4  sm:w-2/4 md:text-7xl md:w-2/4 lg:w-1/4"
             style={{ lineHeight: 1.3 }}
           >
             {highlightServices(title)}
           </h1>
           <div className="mb-3 ">
-            <p className="sm:text-whitePrimary text-restext w-3/4 text-base sm:text-xl sm:pr-9 inter">
+            <p className="sm:text-whitePrimary text-restext w-full text-base sm:text-xl  lg:w-3/4 inter">
               {paragraph}
             </p>
           </div>
