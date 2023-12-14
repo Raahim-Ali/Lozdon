@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import Greenbtn from "../components/Greenbtn";
 
 const highlightServices = (title) => {
@@ -29,13 +28,13 @@ const HeroSection = ({
   titleWidth,
   pWidth,
 }) => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(400);
   const showImage = windowWidth <= 1023;
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
 
     window.addEventListener("resize", handleResize);
-
+    handleResize();
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -43,7 +42,7 @@ const HeroSection = ({
   return (
     <div className="flex flex-col w-full lg:flex-row">
       <div
-        className="bg-primaryBlack flex flex-col relative overflow-hidden  py-20 px-8 w-full   md:px-12 md:py-20 lg:w-3/4 lg:px-40  lg:py-24"
+        className="bg-primaryBlack flex flex-col relative overflow-hidden  pt-20 pb-0  px-8 w-full sm:pt-20 sm:pb-0  md:px-12 md:py-20 lg:w-3/4 lg:px-40  lg:py-24"
         // style={{ height: "100vh" }}
       >
         {/* Ellipse Section */}
