@@ -1,6 +1,6 @@
 import Awards from "./Awards";
 import Blog from "./Blog";
-import HeroSection from "../components/HeroSection";
+import HeroSection from "./HeroSection";
 import CustomerCount from "../single-service/container/CustomerCount";
 import Clients from "../work/Components/Clients";
 import PressSection from "../work/Components/PressSection";
