@@ -3,8 +3,6 @@ import Image from "next/image";
 import Slider from "../Components/Slider";
 import AirTable from "../../../public/Assets/Work/AirTable.svg";
 import ClientOne from "../../../public/Assets/Work/ClientOne.svg";
-import PaginationLeft from "../../../public/Assets/Work/PaginationLeft.svg";
-import PaginationRight from "../../../public/Assets/Work/PaginationRight.svg";
 import "./Clients.css";
 function Clients() {
   return (
