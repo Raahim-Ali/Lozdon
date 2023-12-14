@@ -29,48 +29,47 @@ const HeroSection = ({
   pWidth,
 }) => {
   return (
-    <div
-      className="bg-primaryBlack flex  relative overflow-hidden w-full h-full"
-      style={{ padding: "123.5px 165px" }}
-    >
-      {/* Ellipse Section */}
-      {/* <div
-        className="absolute left-0 bottom-0"
-        style={{
-          background: "#B318FF",
-          width: "340px",
-          zIndex: 1,
-          height: "200px",
-          borderRadius: "30%",
-          filter: "blur(200px)",
-          // overflow: "hidden", // Adjust the blur value as needed
-        }}
-      ></div> */}
+    <div className="flex flex-col w-full lg:flex-row">
+      <div className="bg-primaryBlack flex  relative overflow-hidden  py-10 px-8 w-full lg:w-3/4 sm:px-40  sm:py-24">
+        {/* Ellipse Section */}
+        <div
+          className="absolute left-0 bottom-0 lg:flex hidden"
+          style={{
+            background: "#B318FF",
+            width: "340px",
+            zIndex: 1,
+            height: "200px",
+            borderRadius: "30%",
+            filter: "blur(200px)",
+            // overflow: "hidden", // Adjust the blur value as needed
+          }}
+        ></div>
+
+        <div
+          className="flex flex-col justify-center gap-5 w-full sm:w-3/4 z-10 "
+          // style={{ maxWidth: "70%" }}
+        >
+          {/* Text Section */}
+          <h1 className="  poppins font-black uppercase text-4xl w-full sm:text-7xl sm:w-2/4">
+            {highlightServices(title)}
+          </h1>
+          <div className="mb-3 ">
+            <p className="sm:text-whitePrimary text-restext  text-base sm:text-xl sm:pr-9 inter">
+              {paragraph}
+            </p>
+          </div>
+          <Greenbtn buttonText={btnText} href="#" />
+        </div>
+      </div>
 
       <div
-        className="flex flex-col justify-center gap-5"
-        style={{ maxWidth: "70%" }}
-      >
-        {/* Text Section */}
-        <h1
-          style={{ width: titleWidth || "100%", fontSize: "86px" }}
-          className="custom-text-64  poppins font-black uppercase "
-        >
-          {highlightServices(title)}
-        </h1>
-        <div style={{ width: pWidth || "90%" }} className="mb-3 ">
-          <p className="text-whitePrimary text-xl pr-9 inter">{paragraph}</p>
-        </div>
-        <Greenbtn buttonText={btnText} width={btnWidth} href="#" />
-      </div>
-      <div
-        className="top-0 right-0"
+        className="top-0 right-0 w-1/4 lg:flex hidden"
         style={{
           background:
             "linear-gradient(157deg, #389D04 -6.19%, #B318FF 140.72%)",
-          position: "absolute",
+          position: "relative",
           width: "30%", // Adjust as needed
-          height: "100%", // Adjust as needed
+          // height: "100%", // Adjust as needed
         }}
       >
         <div
@@ -82,7 +81,6 @@ const HeroSection = ({
             alt="Image Lgai yaar"
             style={{
               objectFit: "fill",
-              // width: "900px",
               maxWidth: "180%",
             }}
           />

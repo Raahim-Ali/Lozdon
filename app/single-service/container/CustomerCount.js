@@ -3,7 +3,7 @@ import React from "react";
 export default function CustomerCount() {
   return (
     <div
-      className="flex flex-col gap-8 sm:justify-between sm:items-center p-6 md:p-12 lg:p-20 xl:p-24 md:flex-row
+      className="flex flex-col gap-8 text-center px-8 py-6 sm:justify-between sm:items-center  md:p-12 lg:p-20 xl:p-24 md:flex-row
      "
     >
       <div className="w-full md:w-1/2">

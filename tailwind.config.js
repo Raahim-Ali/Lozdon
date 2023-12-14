@@ -25,6 +25,7 @@ module.exports = {
         cardBg: "#282828",
         primaryTextColor: "#3B3F5C",
         grey: "#E8E5E5",
+        restext: "#D1DCDC",
       },
     },
   },

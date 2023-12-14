@@ -32,11 +32,11 @@ const cardData = [
 ];
 export default function Cards() {
   return (
-    <div className="flex pt-20 pb-20 pr-36 pl-36">
+    <div className=" pt-20 pb-20 pr-6 pl-6 md:pr-36 md:pl-36 flex-wrap md:flex hidden">
       {cardData.map((card, index) => (
         <div
           key={index}
-          className=" p-10 flex flex-col gap-6 lg:w-1/3 xl:w-1/4"
+          className="p-10  flex-col gap-6 lg:w-1/3 xl:w-1/4 md:flex hidden"
         >
           <div className="flex justify-center align-center">
             <Image src={card.imageSrc} width={62} height={62} alt="cardImage" />
