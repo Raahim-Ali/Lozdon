@@ -14,7 +14,7 @@ function CompanyOne() {
             </div>
             <div className="heading">
               <p>Vehicle Sale System</p>
-              <p>Enable Digital Record and Payments</p>
+              <p className="headingtext2">Enable Digital Record and Payments</p>
             </div>
             <div className="text">
               <p>

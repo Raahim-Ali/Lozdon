@@ -2,7 +2,6 @@
   padding: 40px 150px;
 }
 .Card {
-  padding: 60px 60px;
   background-color: #f8f8f8;
 }
 
@@ -47,9 +46,6 @@
   color: #3fba00;
 }
 @media (width<1400px) {
-  .main {
-    padding: 40px 80px;
-  }
   .Card {
     background-color: #f8f8f8;
     border-radius: 20px;
@@ -80,19 +76,44 @@
     padding: 20px 20px;
   }
   .Card {
-    padding: 30px 20px;
     border-radius: 20px;
     background-color: #f8f8f8;
+    border: 2px solid red;
   }
   .Content {
     display: flex;
     padding: 0px 0px;
+    overflow: hidden;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
+  .heading {
+    font-family: Inter;
+    font-size: 24px;
+    margin-top: 24px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: max-content;
+    color: #3b3f5c;
+  }
+
   .LearnMore {
     display: flex;
     margin-top: 45px;
+  }
+  .LearnMoreText {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3fba00;
+  }
+  .headingtext2 {
+    display: none;
   }
 }
