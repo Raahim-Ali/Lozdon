@@ -99,3 +99,42 @@ input {
   position: relative;
   top: -10px;
 }
+@media (800px<width<1400px) {
+  .Contact {
+    display: flex;
+    padding: 20px 50px;
+    gap: 30px;
+  }
+  .firstSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .formSection {
+    padding: 0px 50px;
+    background: rgba(248, 248, 248, 1);
+    border-radius: 20px;
+    width: 50%;
+  }
+}
+@media (width<800px) {
+  .Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 50px;
+    gap: 30px;
+  }
+  .firstSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 50px;
+  }
+  .formSection {
+    padding: 20px 50px;
+    background: rgba(248, 248, 248, 1);
+    border-radius: 20px;
+    width: 100%;
+  }
+}

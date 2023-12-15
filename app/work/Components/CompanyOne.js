@@ -6,29 +6,37 @@ import CardImage from "../../../public/Assets/Work/CardOneImage.svg";
 function CompanyOne() {
   return (
     <div className="main">
-      <div className="Card">
-        <div className="Content">
-          <div className="ContentText">
-            <div className="logo">
-              <Image src={Logo} alt="/" />
+      <div
+        style={{
+          padding: "20px",
+        }}
+      >
+        <div className="Card">
+          <div className="Content">
+            <div className="ContentText">
+              <div className="logo">
+                <Image src={Logo} alt="/" />
+              </div>
+              <div className="heading">
+                <p>Vehicle Sale System</p>
+                <p className="headingtext2">
+                  Enable Digital Record and Payments
+                </p>
+              </div>
+              <div className="text">
+                <p>
+                  We advise property owners in all issues in respect of such
+                  works and entitlements in respect of boundaries. We assess the
+                  location of the boundaries and advise.
+                </p>
+              </div>
+              <div className="LearnMore">
+                <p className="LearnMoreText">LEARN MORE</p>
+                <Image style={{ marginLeft: "10px" }} src={LearnMore} alt="/" />
+              </div>
             </div>
-            <div className="heading">
-              <p>Vehicle Sale System</p>
-              <p className="headingtext2">Enable Digital Record and Payments</p>
-            </div>
-            <div className="text">
-              <p>
-                We advise property owners in all issues in respect of such works
-                and entitlements in respect of boundaries. We assess the
-                location of the boundaries and advise.
-              </p>
-            </div>
-            <div className="LearnMore">
-              <p className="LearnMoreText">LEARN MORE</p>
-              <Image style={{ marginLeft: "10px" }} src={LearnMore} alt="/" />
-            </div>
+            <Image src={CardImage} alt="/" />
           </div>
-          <Image src={CardImage} alt="/" />
         </div>
       </div>
     </div>

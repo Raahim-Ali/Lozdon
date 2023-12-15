@@ -62,3 +62,45 @@
   text-align: left;
   color: rgba(59, 63, 92, 1);
 }
+@media (850px < width<1320px) {
+  .Touch {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 80px;
+    width: 100%;
+    background: rgba(249, 249, 249, 1);
+  }
+  .touchCardsContainer {
+    padding: 24px 0px;
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .touchCard {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 1);
+    padding: 30px;
+  }
+}
+@media (width<850px) {
+  .Touch {
+    padding: 100px 80px;
+    background: rgba(249, 249, 249, 1);
+  }
+  .touchCardsContainer {
+    padding: 24px 0px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .touchCard {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 1);
+    width: 80%;
+    padding: 30px;
+  }
+}
