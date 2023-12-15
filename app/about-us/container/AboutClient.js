@@ -42,10 +42,7 @@ const cardData = [
 export default function AboutClient() {
   return (
     <>
-      <div
-        className="flex flex-col py-10 px-8 md:py-20  md:px-36  bg-primaryBlack gap-12"
-        style={{ paddingTop: "100px", paddingBottom: "100px" }}
-      >
+      <div className="flex flex-col py-10 px-8 md:py-20  md:px-36  bg-primaryBlack gap-12">
         <div className="gap-3 flex flex-col">
           {/* text Section */}
           {/* <p className="custom-text-24 text-whitePrimary">.why they love</p> */}

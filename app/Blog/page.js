@@ -6,10 +6,7 @@ import BlogCard from "./container/BlogCard";
 export default function page() {
   return (
     <>
-      <div
-        className="flex flex-col gap-12"
-        style={{ padding: "5rem 10.3125rem 6.25rem 10.3125rem" }}
-      >
+      <div className="flex flex-col gap-12 py-14 px-10 md:py-16 md:px-12  xl:pt-20 xl:pb-24 xl:px-40">
         <UltimateGuideToWeb />
         <BlogCard />
       </div>
