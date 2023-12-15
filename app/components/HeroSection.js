@@ -66,7 +66,7 @@ const HeroSection = ({
           <Greenbtn buttonText={btnText} href="/Services" />
         </div>
 
-        <div className="">
+        {/* <div className="">
           <img
             src={imgSrc}
             className="absolute "
@@ -77,7 +77,7 @@ const HeroSection = ({
               objectFit: "fill",
             }}
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
