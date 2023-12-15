@@ -31,7 +31,7 @@ const cardData = [
 export default function TakeAdvantage() {
   return (
     <>
-      <div className="flex flex-col justify-between pt-20 pb-20 pr-36 pl-36 gap-12 w-full bg-newGrey">
+      <div className=" flex-col justify-between pt-20 pb-20 pr-36 pl-36 gap-12 w-full bg-newGrey  lg:flex  hidden">
         <div className="flex gap-8  ">
           <p className="text-4xl font-medium poppins leading-relaxed">
             Take advantage of our proven web development process and make your

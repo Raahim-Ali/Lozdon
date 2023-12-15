@@ -48,7 +48,7 @@ const cardData = [
 export default function OurServices() {
   return (
     <>
-      <div className="flex flex-col justify-between pt-20 pb-20 pr-36 pl-36 gap-12 ">
+      <div className="flex flex-col justify-between  py-20  px-36 gap-12 ">
         <div className="gap-3 flex flex-col">
           {/* text Section */}
           <p className="custom-text-64  poppins">Our Services</p>

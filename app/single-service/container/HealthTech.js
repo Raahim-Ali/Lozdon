@@ -4,17 +4,9 @@ import Image from "next/image";
 export default function HealthTech() {
   return (
     <>
-      <div div style={{ padding: "100px 0px" }}>
-        <div
-          className="flex gap-3"
-          style={{
-            width: "100%",
-            padding: "0px 165px",
-            justifyContent: "center",
-            fontStretch: "expanded",
-          }}
-        >
-          <d iv style={{ width: "50%" }} className=" flex flex-col gap-5">
+      <div style={{ padding: "100px 0px" }} className="xl:flex  hidden">
+        <div className="flex w-full gap-3 py-0 px-40 justify-center tracking-widest">
+          <div style={{ width: "50%" }} className=" flex flex-col gap-5">
             <p
               className="text-BlackPrimary poppins text-3xl font-semibold"
               style={{ lineHeight: " 144.622%", width: "95%" }}
@@ -44,7 +36,7 @@ export default function HealthTech() {
               </p>
             </div>
             <Greenbtn buttonText="Read Full Case Study" href="#" />
-          </d>
+          </div>
           <div className="" style={{}}>
             <Image
               style={{ objectFit: "contain" }}
@@ -56,7 +48,7 @@ export default function HealthTech() {
           </div>
         </div>
       </div>
-      <div className="bg-primaryBlack text-gray-50 pt-20 pb-20 flex flex-col gap-10 justify-center items-center">
+      <div className="bg-primaryBlack text-gray-50 pt-20 pb-20 flex-col gap-10 justify-center items-center xl:flex hidden">
         <div className="flex flex-col jusify-center items-center gap-3">
           <p className="text-center inter text-xl text-white font-normal">
             Madeup your mind?
