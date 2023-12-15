@@ -38,7 +38,7 @@ export default function OurTeam() {
   return (
     <>
       <div
-        className="flex flex-col  pr-36 pl-36 gap-12 "
+        className=" flex-col  pr-36 pl-36 gap-12 lg:flex hidden"
         style={{ paddingTop: "100px", paddingBottom: "100px" }}
       >
         <div className="gap-3 flex flex-col">
@@ -60,9 +60,8 @@ export default function OurTeam() {
                 <img
                   src={card.imageSrc}
                   style={{
-                    width: "484px",
                     borderRadius: "10px",
-                    height: "316px",
+                    // height: "316px",
                   }}
                 />
               </div>

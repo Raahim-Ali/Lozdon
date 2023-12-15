@@ -24,7 +24,7 @@ export default function OurValues() {
   return (
     <>
       <div
-        className="flex flex-col  pr-36 pl-36 gap-12 bg-newGrey"
+        className=" flex-col  pr-36 pl-36 gap-12 bg-newGrey lg:flex hidden"
         style={{ paddingTop: "100px", paddingBottom: "100px" }}
       >
         <div className="gap-3 flex flex-col">
