@@ -6,44 +6,30 @@ export default function HealthTech() {
     <>
       <div style={{ padding: "100px 0px" }} className="xl:flex  hidden">
         <div className="flex w-full gap-3 py-0 px-40 justify-center tracking-widest">
-          <div style={{ width: "50%" }} className=" flex flex-col gap-5">
-            <p
-              className="text-BlackPrimary poppins text-3xl font-semibold"
-              style={{ lineHeight: " 144.622%", width: "95%" }}
-            >
+          <div className=" flex flex-col gap-5 w-1/2">
+            <p className="text-blackPrimary  poppins text-3xl font-semibold leading-10">
               HealthTech Startup re-create serves 1000 customers in their first
               year with zero costs using AWS
             </p>
-            <p className="custom-text-24 font-medium inter">
-              Power of AWS Lambda
-            </p>
+            <p className=" text-2xl  font-medium inter">Power of AWS Lambda</p>
             <div className="flex flex-col gap-3">
-              <p
-                className="text-xl poppins font-light text-rgb"
-                style={{ width: "95%" }}
-              >
+              <p className="text-xl poppins font-light text-rgb leading-8">
                 Lambda functions were used in the project allowing Moonfare to
                 pay micropayments only for requests that have been handled –
                 serverless lets you process the code without needing to scale up
                 servers.
               </p>
-              <p
-                className="text-xl poppins font-light text-rgb"
-                style={{ width: "95%" }}
-              >
+              <p className="text-xl poppins font-light text-rgb leading-8">
                 The cost? The first million requests in a month are exceeded
                 Moonfare is only charged $0.20 for every million requests.
               </p>
             </div>
             <Greenbtn buttonText="Read Full Case Study" href="#" />
           </div>
-          <div className="" style={{}}>
-            <Image
-              style={{ objectFit: "contain" }}
+          <div>
+            <img
               src="/Assets/SIngleService/HealthTech/Image.svg"
               alt="HealthtechImage"
-              width={564}
-              height={541}
             />
           </div>
         </div>

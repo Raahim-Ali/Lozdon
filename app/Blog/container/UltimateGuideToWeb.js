@@ -20,7 +20,7 @@ export default function UltimateGuideToWeb() {
             Ultimate Guide to Web Authentication
           </p>
 
-          <p className="inter font-normal tracking-wide text-base">
+          <p className="inter font-normal md:tracking-wide text-base">
             When we talk about authentication, we&apos;re referring to the
             process of verifying someone is who they say they are. In turn,
             authorization is the process of verifying that person has the right

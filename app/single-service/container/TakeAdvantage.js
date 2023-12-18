@@ -31,13 +31,13 @@ const cardData = [
 export default function TakeAdvantage() {
   return (
     <>
-      <div className=" flex-col justify-between pt-20 pb-20 pr-36 pl-36 gap-12 w-full bg-newGrey  lg:flex  hidden">
-        <div className="flex gap-8  ">
-          <p className="text-4xl font-medium poppins leading-relaxed">
+      <div className=" flex-col justify-between pt-20 pb-20 pr-36 pl-36 gap-12 w-full bg-newGrey  xl:flex  hidden">
+        <div className="flex gap-8  w-full">
+          <p className="text-4xl font-medium poppins leading-relaxed w-1/2">
             Take advantage of our proven web development process and make your
             project a success
           </p>
-          <p className="text-xl font-light inter " style={{ width: "95%" }}>
+          <p className="text-xl font-light inter w-1/2 ">
             We advise property owners in all issues in respect of such works and
             entitlements in respect of boundari- -es. We assess the location of
             the boundaries and advise. We advise property owners in all issues
