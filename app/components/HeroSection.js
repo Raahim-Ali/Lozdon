@@ -35,20 +35,9 @@ const HeroSection = ({
   pWidth,
 }) => {
   return (
-    <div className="bg-primaryBlack flex relative overflow-hidden sm:px-10 ">
+    <div className="bg-primaryBlack flex relative overflow-hidden sm:px-10  sm:py-10 pb-16">
       {/* Ellipse Section */}
-      {/* <div
-        className="absolute left-0 bottom-0"
-        style={{
-          background: "#B318FF",
-          width: "340px",
-          zIndex: 1,
-          height: "200px",
-          borderRadius: "30%",
-          filter: "blur(200px)",
-          // overflow: "hidden", // Adjust the blur value as needed
-        }}
-      ></div> */}
+      <div className="absolute left-0 bottom-0  bg-[#B318FF] w-48 h-52 lg:w-80 z-0 lg:h-52 rounded-3xl blur-[200px]"></div>
       <div className="flex justify-between align-center xl:px-40  pt-20 pb-10  px-8 xl:py-32 z-10">
         <div className="flex flex-col justify-center gap-5">
           {/* Text Section */}
@@ -59,25 +48,21 @@ const HeroSection = ({
             {highlightServices(title)}
           </h1>
           <div className="mb-3 ">
-            <p className="text-whitePrimary text-xs  sm:w-full sm:text-lg md:text-xl  md:w-full lg:w-full lg:text-xl xl:w-full xl:text-xl   inter">
+            <p className="text-whitePrimary text-xs  w-4/5 sm:w-4/5 sm:text-lg md:text-xl inter">
               {paragraph}
             </p>
           </div>
-          <Greenbtn buttonText={btnText} href="/Services" />
+          <div className="z-10">
+            <Greenbtn buttonText={btnText} href="/Services" />
+          </div>
         </div>
 
-        {/* <div className="">
+        <div>
           <img
             src={imgSrc}
-            className="absolute "
-            style={{
-              right: "0px",
-              overflow: "hidden",
-              bottom: "-160px",
-              objectFit: "fill",
-            }}
+            className="absolute right-0 sm:right-0  bottom-0 sm:bottom-[-160px] overflow-hidden object-fill w-64 z-1 md:w-auto"
           />
-        </div> */}
+        </div>
       </div>
     </div>
   );
