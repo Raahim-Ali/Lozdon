@@ -15,6 +15,10 @@ const highlightServices = (title) => {
         word.toLowerCase() === "us" ||
         word.toLowerCase() === "full" ||
         word.toLowerCase() === "devops" ||
+        word.toLowerCase() === "mobile" ||
+        word.toLowerCase() === "software" ||
+        word.toLowerCase() === "ui" ||
+        word.toLowerCase() === "Software" ||
         word.toLowerCase() === "service"
           ? "text-green-500"
           : "text-whitePrimary"

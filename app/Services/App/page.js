@@ -6,7 +6,7 @@ export default function page() {
   return (
     <>
       <HeroSection
-        title="App Devlopment"
+        title="Mobile Devlopment"
         paragraph="It encompasses design, coding, testing and optimization to deliver user-friendly and efficient mobile applications across iOS and Android platforms."
         btnText="let’s work together"
         btnWidth="28%"

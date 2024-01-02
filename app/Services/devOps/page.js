@@ -6,7 +6,7 @@ export default function page() {
   return (
     <>
       <HeroSection
-        title="Devops"
+        title="Dev ops"
         paragraph="Integrating development and operations, emphasizing collaboration, automation, and continuous delivery to streamline software development for faster and more reliable results."
         btnText="let’s work together"
         btnWidth="28%"
