@@ -54,15 +54,16 @@ a {
 .TransparentBtn {
   padding: 15px 30px;
   border-radius: 10px;
-  height: 54px;
+  height: 51px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  border: 2px solid var(--greenMain, #3fba00);
+  border: 1.5px solid var(--greenMain, #3fba00);
   background: transparent;
   transition: transform 0.5s ease-in-out;
 }
+
 .TransparentBtnText {
   font-family: Inter;
   font-size: 15px;
@@ -72,16 +73,7 @@ a {
   text-align: center;
   color: #3fba00;
 }
-.TransparentBtn {
-  height: 47px;
-  padding: 12px 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  border: 2px solid var(--greenMain, #3fba00);
-  background: transparent;
-}
+
 .TransparentBtnText {
   font-family: Inter;
   font-size: 16px;
