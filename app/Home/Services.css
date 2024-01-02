@@ -26,12 +26,16 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.card {
-  padding: 32px 32px;
+.cardMain {
   width: 30%;
   margin-bottom: 38px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 32px;
+
   transition: transform 0.5s ease;
-  gap: 32px;
   border-radius: 8px;
   border: 1px solid rgba(59, 14, 97, 0.1);
 }
@@ -63,7 +67,7 @@
 
 .card:hover {
   background: var(--greenMain, #3fba00);
-  cursor: pointer;
+  /* cursor: pointer; */
   transform: scale(1.1);
 }
 .card:hover > p {

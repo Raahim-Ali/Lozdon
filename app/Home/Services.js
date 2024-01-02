@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Greenbtn from "../components/Greenbtn";
 import Transparentbtn from "../components/Transparentbtn";
 import "./Services.css";
@@ -11,6 +12,7 @@ function Services() {
       description:
         "This metaphor implies every aspect of the industry in recent times",
       link: "LEARN MORE",
+      href: "/Services/App",
     },
     {
       imageSrc: "/Assets/Home/WebDevelopment.svg",
@@ -18,6 +20,7 @@ function Services() {
       description:
         "This metaphor implies every aspect of the industry in recent times",
       link: "LEARN MORE",
+      href: "/Services/Web",
     },
     {
       imageSrc: "/Assets/Home/DEVOPS.svg",
@@ -25,13 +28,15 @@ function Services() {
       description:
         "This metaphor implies every aspect of the industry in recent times",
       link: "LEARN MORE",
+      href: "/Services/devOps",
     },
     {
       imageSrc: "/Assets/Home/CloudDevelopment.svg",
-      title: "cloud development",
+      title: "Special Services",
       description:
         "This metaphor implies every aspect of the industry in recent times",
       link: "LEARN MORE",
+      href: "/Services/special-services",
     },
     {
       imageSrc: "/Assets/Home/UI-UX.svg",
@@ -39,6 +44,7 @@ function Services() {
       description:
         "This metaphor implies every aspect of the industry in recent times",
       link: "LEARN MORE",
+      href: "/Services/UiUx",
     },
     {
       imageSrc: "/Assets/Home/SoftwareTesting.svg",
@@ -46,6 +52,7 @@ function Services() {
       description:
         "This metaphor implies every aspect of the industry in recent times",
       link: "LEARN MORE",
+      href: "/Services/software-testing",
     },
   ];
   return (
@@ -55,13 +62,23 @@ function Services() {
       </div>
       <div className="ServicesContainer">
         {services.map((service, index) => (
-          <div className="card" key={index}>
-            <div className="cardIcon">
-              <Image src={service.imageSrc} alt="/" width={45} height={45} />
-            </div>
-            <p className="cardTitle">{service.title}</p>
-            <p className="cardDescription">{service.description}</p>
-            {/* <p className="learnMore">{service.link}</p> */}
+          <div className="cardMain" key={index}>
+            <Link href={service.href} className="w-fit">
+              <div className="card">
+                <div className="cardIcon">
+                  <Image
+                    src={service.imageSrc}
+                    alt="/"
+                    width={45}
+                    height={45}
+                  />
+                </div>
+                <p className="cardTitle">{service.title}</p>
+                <p className="cardDescription">{service.description}</p>
+
+                {/* <p className="learnMore w-fit">{service.link}</p> */}
+              </div>
+            </Link>
           </div>
         ))}
       </div>
