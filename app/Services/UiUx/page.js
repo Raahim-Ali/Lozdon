@@ -6,7 +6,7 @@ export default function page() {
   return (
     <>
       <HeroSection
-        title="UI/UX"
+        title="UI / UX"
         paragraph="seamless and engaging user interfaces. We prioritize user satisfaction,
         making software more intuitive and efficient."
         btnText="let’s work together"
