@@ -1,6 +1,7 @@
 import React from "react";
 import ContentAfterHeroSection from "./ContentAfterHeroSection";
 import HeroSection from "../../components/HeroSection";
+import ProcessCards from "@/app/Home/ProcessCards";
 
 export default function page() {
   return (
@@ -12,6 +13,7 @@ export default function page() {
         btnWidth="28%"
         imgSrc="/Assets/Herosection/HeroSectionImage.svg"
       />
+      <ProcessCards />
       <ContentAfterHeroSection />
     </>
   );

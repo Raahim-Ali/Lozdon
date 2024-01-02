@@ -1,6 +1,4 @@
 import Link from "next/link";
-import Greenbtn from "../components/Greenbtn";
-import Transparentbtn from "../components/Transparentbtn";
 import "./Services.css";
 
 import Image from "next/image";
