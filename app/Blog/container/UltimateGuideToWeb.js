@@ -4,35 +4,23 @@ import Link from "next/link";
 
 export default function UltimateGuideToWeb() {
   return (
-    <div className="flex" style={{ gap: "2.625rem" }}>
+    <div className="flex flex-col gap-7 sm:gap-11 xl:flex-row w-full">
       {/* Left Section: Image */}
-      <div
-        style={{
-          width: "40%",
-          overflow: "hidden",
-          height: "500px",
-          borderRadius: "14px",
-        }}
-      >
+      <div className="xl:w-2/5 overflow-hidden xl:h-96 rounded-2xl">
         <img
           src="/Assets/Blog/UltimateGuideToWebImage.svg"
-          className="max-w-full h-auto"
+          className="max-w-full w-full object-cover"
           alt="Web Authentication"
-          style={{
-            width: "100%",
-            // height: "70s%",
-            objectFit: "cover",
-          }}
         />
       </div>
 
-      <div className="flex flex-col max-w-xl gap-16" style={{ width: "50%" }}>
-        <div className="flex flex-col gap-6 ">
-          <p className="poppins font-bold tracking-wide text-4xl">
+      <div className="flex flex-col gap-12 xl:max-w-xl xl:gap-16 xl:w-1/2">
+        <div className="flex flex-col gap-6  w-full">
+          <p className="poppins font-semibold text-3xl md:font-bold md:tracking-wide md:text-4xl">
             Ultimate Guide to Web Authentication
           </p>
 
-          <p className="inter font-normal tracking-wide text-base">
+          <p className="inter font-normal md:tracking-wide text-base">
             When we talk about authentication, we&apos;re referring to the
             process of verifying someone is who they say they are. In turn,
             authorization is the process of verifying that person has the right
@@ -42,11 +30,16 @@ export default function UltimateGuideToWeb() {
           <div>
             <button className="bg-grey py-3 px-6 flex gap-3 rounded-xl justify-center items-center">
               <Link href="/BlogDetails">
-                <span className="text-base inter font-semibold uppercase">
+                <span className="text-sm md:text-base inter font-semibold uppercase">
                   Continue Reading
                 </span>
               </Link>
-              <img src="/Assets/Blog/Arrow.svg" alt="Continue Reading Arrow" />
+              <div className="w-4 md:w-5">
+                <img
+                  src="/Assets/Blog/Arrow.svg"
+                  alt="Continue Reading Arrow"
+                />
+              </div>
             </button>
           </div>
         </div>

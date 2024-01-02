@@ -71,11 +71,7 @@
     align-items: center;
     gap: 50px;
   }
-  .buttons {
-    display: flex;
-    padding: 0px 0px 0px 25px;
-    flex-direction: column;
-  }
+
   .blogCard {
     padding: 32px 32px;
     width: 47%;
@@ -126,11 +122,6 @@
     border-radius: 8px;
   }
 
-  .buttons {
-    display: flex;
-    padding: 0px 0px 0px 25px;
-    flex-direction: column;
-  }
   .buttonContainer {
     display: flex;
     width: fit-content;

@@ -1,9 +1,3 @@
-.buttons {
-  display: flex;
-  gap: 20px;
-  padding: 0px 0px 0px 25px;
-}
-
 .OurWork {
   background: var(--blackGradient, #151515);
   padding: 120px 150px;

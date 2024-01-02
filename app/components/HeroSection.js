@@ -54,12 +54,12 @@ const HeroSection = ({
           {/* Text Section */}
           <h1
             style={{ lineHeight: 1.2 }}
-            className="poppins text-5xl w-2/4 sm:texl-6xl md:text-7xl  md:w-full lg:text-7xl lg:w-full xl:w-full xl:text-7xl font-black uppercase "
+            className="poppins text-4xl w-full sm:texl-6xl md:text-7xl  md:w-full lg:text-7xl lg:w-full xl:w-full xl:text-7xl font-black uppercase "
           >
             {highlightServices(title)}
           </h1>
           <div className="mb-3 ">
-            <p className="text-whitePrimary text-xs sm:w-full sm:text-lg md:text-xl  md:w-full lg:w-full lg:text-xl xl:w-full xl:text-xl   inter">
+            <p className="text-whitePrimary text-xs  sm:w-full sm:text-lg md:text-xl  md:w-full lg:w-full lg:text-xl xl:w-full xl:text-xl   inter">
               {paragraph}
             </p>
           </div>

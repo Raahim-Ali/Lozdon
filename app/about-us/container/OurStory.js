@@ -18,10 +18,12 @@ const cardData = [
 export default function OurStory() {
   return (
     <>
-      <div className="pt-20 pb-20 pr-36 pl-36 flex flex-col gap-12">
-        <div className="flex flex-col gap-8">
-          <p className="poppins text-5xl uppercase font-bold">Our Story</p>
-          <p className="custom-text-24 font-light inter">
+      <div className="py-10 px-8  md:py-20  md:px-36  flex flex-col gap-12">
+        <div className="flex flex-col gap-3 lg:gap-8">
+          <p className="poppins text-3xl font-extrabold md:text-5xl uppercase sm:font-black">
+            Our Story
+          </p>
+          <p className="text-base w-full md:text-xl lg:text-2xl font-light inter">
             Octal Code specializes in crafting bespoke software solutions
             tailored to meet the unique requirements of your organization. Our
             dedicated team works closely with you to understand your specific
@@ -34,37 +36,29 @@ export default function OurStory() {
             landscape
           </p>
         </div>
-        <Image
-          alt="AboutUsImage"
-          src="/Assets/aboutUs/Image.svg"
-          style={{ borderRadius: "18px" }}
-          width={100}
-          height={100}
-        />
+        <div className="w-full ">
+          <img
+            alt="AboutUsImage"
+            src="/Assets/aboutUs/Image.svg"
+            className="rounded-3xl object-cover w-full"
+          />
+        </div>
         <div>
-          <div className="flex gap-12">
+          <div className="flex gap-12 flex-col lg:flex-row">
             {/* Card Section */}
             {cardData.map((card, index) => (
               <div
                 key={index}
-                className="  flex flex-col gap-6 w-1/2"
+                className="  flex flex-col gap-6  lg:w-1/2"
                 style={{ padding: "19px 0px" }}
               >
                 <div>
-                  <Image
-                    src={card.imageSrc}
-                    width={62}
-                    height={62}
-                    alt="Card Image"
-                  />
+                  <img src={card.imageSrc} alt="Card Image" />
                 </div>
-                <p
-                  className="font-bold uppercase  poppins tracking-wider pr-5 "
-                  style={{ fontSize: "32px" }}
-                >
+                <p className="font-bold uppercase  text-2xl md:text-3xl poppins tracking-wider">
                   {card.title}
                 </p>
-                <p className="font-light custom-text-24  inter pr-5 ">
+                <p className="font-light text-base md:text-2xl  inter ">
                   {card.description}
                 </p>
               </div>

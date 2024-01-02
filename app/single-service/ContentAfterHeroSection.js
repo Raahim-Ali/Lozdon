@@ -5,13 +5,14 @@ import TakeAdvantage from "./container/TakeAdvantage";
 import LatestTechnologies from "./container/LatestTechnologies";
 import HealthTech from "./container/HealthTech";
 import Clients from "../work/Components/Clients";
-
+import Services from "../Home/Services";
+// import "../Home/Services.css";
 export default function ContentAfterHeroSection() {
   return (
     <>
       <div>
         <CustomerCount />
-        <OurServices />
+        <Services />
         <TakeAdvantage />
         <LatestTechnologies />
         <HealthTech />

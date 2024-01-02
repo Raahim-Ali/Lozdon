@@ -32,60 +32,48 @@ const yourArray = [
   // Add more items as needed
 ];
 export default function ImageAndDiv() {
-  const getModulesForFLex = (index) => {
-    if (index % 2 === 0) {
-      return "row";
-    } else if (index % 2 !== 0) {
-      return "row-reverse";
-    }
-    console.log("index", index);
-    return index;
-  };
+  // const getModulesForFLex = (index) => {
+  //   if (index % 2 === 0) {
+  //     return "row";
+  //   } else if (index % 2 !== 0) {
+  //     return "row-reverse";
+  //   }
+  //   console.log("index", index);
+  //   return index;
+  // };
   return (
     <>
       {yourArray.map((item, index) => (
         <div
           key={index}
-          className={` flex sm:flex-col ${
+          className={`flex  flex-col${
+            index % 2 === 0 ? " xl:flex-row" : " xl:flex-row-reverse"
+          } ${
             index % 2 === 0 ? "bg-newGrey" : "bg-anotherColor"
-          } pt-20 pb-20 pr-36 pl-36    `}
-          style={{
-            width: "100%",
-            gap: "56px",
-            flexDirection: getModulesForFLex(index),
-          }}
+          } md:py-20 md:px-36 gap-12  py-10 px-10 `}
+          // style={{ flexDirection: "column" }}
         >
-          {/* Text Section on the left */}
-          <div className="flex flex-col gap-8 " style={{ width: "50%" }}>
-            <h5
-              className="text-4xl font-bold uppercase  tracking-wider poppins"
-              style={{ color: "#3B3F5C" }}
-            >
+          {/* Image Section on the top for small screens */}
+          <div className="xl:w-1/2">
+            <img
+              className="w-full object-cover rounded-2xl  xl:max-h-96"
+              src={item.imageSrc}
+            />
+          </div>
+
+          {/* Text Section on the bottom for small screens */}
+          <div className="flex flex-col gap-8 w-full xl:w-1/2">
+            <h5 className="md:text-4xl text-2xl font-bold uppercase tracking-wider poppins text-primaryTextColor ">
               {item.title}
             </h5>
-            <h5
-              className="text-xl font-medium uppercase  inter tracking-wider "
-              style={{ color: "#3B3F5C" }}
-            >
+            <h5 className="text-xl font-medium uppercase inter tracking-wider text-primaryTextColor md:flex hidden ">
               {item.description}
             </h5>
-            <p className="mb-3 font-light text-gray-700 dark:text-gray-400  text-xl inter  ">
+            <p className="mb-3 font-light text-base text-primaryTextColor  md:text-xl inter ">
               {item.text}
             </p>
             {/* ... Other text elements */}
             <Greenbtn buttonText="Learn more" href="#" />
-          </div>
-
-          {/* Image Section on the right */}
-          <div
-            style={{
-              width: "50%",
-              background: `url(${item.imageSrc})`,
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-            }}
-          >
-            {/* <Image width={544} height={415} src={item.imageSrc} /> */}
           </div>
         </div>
       ))}

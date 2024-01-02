@@ -65,7 +65,7 @@ const HeroSection = ({
         >
           {/* Text Section */}
           <h1
-            className="  poppins font-black uppercase text-5xl w-2/4  sm:w-2/4 md:text-7xl md:w-2/4 lg:w-1/4"
+            className="font-black uppercase text-5xl w-2/4  sm:w-2/4 md:text-7xl md:w-2/4 lg:w-1/4"
             style={{ lineHeight: 1.3 }}
           >
             {highlightServices(title)}
