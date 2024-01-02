@@ -10,11 +10,10 @@
 }
 .clientheadingText {
   font-family: Poppins;
-  font-size: 64px;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 800;
   line-height: 96px;
-  margin-bottom: 20px;
   letter-spacing: 0em;
   text-align: left;
   color: #3b3f5c;
@@ -22,13 +21,6 @@
 
 .Pagination {
   display: flex;
-  gap: 50px;
-}
-.PaginationLeftImg {
-  cursor: pointer;
-}
-.PaginationRightImg {
-  cursor: pointer;
 }
 .custom-slider {
   background-color: red;
@@ -95,22 +87,16 @@
 
 .videoContainer {
   display: flex;
-  height: 600px;
-  padding: 0px 0px 0px 50px;
+  padding: 30px 0px 0px 50px;
   justify-content: center;
   align-items: center;
 }
 
 .video {
   border-radius: 20px;
-  width: 40%;
-  height: 80%;
-}
-.videoContent {
+  width: 560px;
   display: flex;
-  padding: 30px 100px;
-  flex-direction: column;
-  width: 50%;
+  justify-content: center;
 }
 .videotext {
   padding: 23px 0px 24px 0px;
@@ -122,9 +108,25 @@
   text-align: left;
   color: #6f6c90;
 }
-
-@media (width < 1400px) {
+.videoContent {
+  display: flex;
+  padding: 30px 100px;
+  flex-direction: column;
+}
+@media (width< 770px) {
   .clientmain {
-    display: none;
+    padding: 30px 75px;
+  }
+  .clientheadingText {
+    font-size: 30px;
+  }
+  @media (width< 600px) {
+    .clientmain {
+      padding: 30px 50px;
+    }
+
+    .clientheadingText {
+      font-size: 30px;
+    }
   }
 }
