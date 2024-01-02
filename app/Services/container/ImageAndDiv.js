@@ -32,15 +32,6 @@ const yourArray = [
   // Add more items as needed
 ];
 export default function ImageAndDiv() {
-  // const getModulesForFLex = (index) => {
-  //   if (index % 2 === 0) {
-  //     return "row";
-  //   } else if (index % 2 !== 0) {
-  //     return "row-reverse";
-  //   }
-  //   console.log("index", index);
-  //   return index;
-  // };
   return (
     <>
       {yourArray.map((item, index) => (

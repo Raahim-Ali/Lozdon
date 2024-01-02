@@ -61,13 +61,9 @@ function Services() {
             </div>
             <p className="cardTitle">{service.title}</p>
             <p className="cardDescription">{service.description}</p>
-            <p className="learnMore">{service.link}</p>
+            {/* <p className="learnMore">{service.link}</p> */}
           </div>
         ))}
-      </div>
-      <div className="buttons">
-        <Greenbtn buttonText="see all services" href="/Services" />
-        <Transparentbtn buttonText="contact us" href="/Contact" />
       </div>
     </div>
   );
