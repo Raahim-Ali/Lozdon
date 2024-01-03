@@ -14,7 +14,7 @@ const highlightServices = (title) => {
         word.toLowerCase() === "work" ||
         word.toLowerCase() === "us" ||
         word.toLowerCase() === "full" ||
-        word.toLowerCase() === "devops" ||
+        word.toLowerCase() === "ops" ||
         word.toLowerCase() === "mobile" ||
         word.toLowerCase() === "software" ||
         word.toLowerCase() === "ui" ||
