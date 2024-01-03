@@ -8,7 +8,7 @@ function Services() {
       imageSrc: "/Assets/Home/MobileDevelopment.svg",
       title: "mobile development",
       description:
-        "This metaphor implies every aspect of the industry in recent times",
+        "Elevate Experiences, Empower Businesses: Unleashing the Power of Seamless Mobile Solutions.",
       link: "LEARN MORE",
       href: "/Services/App",
     },
@@ -16,7 +16,7 @@ function Services() {
       imageSrc: "/Assets/Home/WebDevelopment.svg",
       title: "web development",
       description:
-        "This metaphor implies every aspect of the industry in recent times",
+        "Crafting Digital Excellence: Transforming Ideas into Dynamic Web Solutions.",
       link: "LEARN MORE",
       href: "/Services/Web",
     },
@@ -24,7 +24,7 @@ function Services() {
       imageSrc: "/Assets/Home/DEVOPS.svg",
       title: "devops",
       description:
-        "This metaphor implies every aspect of the industry in recent times",
+        "Streamlined DevOps Solutions: Elevate Your Development and Operations Efficiency.",
       link: "LEARN MORE",
       href: "/Services/devOps",
     },
@@ -32,7 +32,7 @@ function Services() {
       imageSrc: "/Assets/Home/CloudDevelopment.svg",
       title: "Special Services",
       description:
-        "This metaphor implies every aspect of the industry in recent times",
+        "Specialized Services, Tailored Solutions: Turning Visions into Reality.",
       link: "LEARN MORE",
       href: "/Services/special-services",
     },
@@ -40,7 +40,7 @@ function Services() {
       imageSrc: "/Assets/Home/UI-UX.svg",
       title: "ui/ux",
       description:
-        "This metaphor implies every aspect of the industry in recent times",
+        "Crafting Intuitive Experiences: Designing Seamless Interfaces for Lasting Impressions.",
       link: "LEARN MORE",
       href: "/Services/UiUx",
     },
@@ -48,7 +48,7 @@ function Services() {
       imageSrc: "/Assets/Home/SoftwareTesting.svg",
       title: "software testing",
       description:
-        "This metaphor implies every aspect of the industry in recent times",
+        "Quality Beyond Measure: Unleashing Precision Through Comprehensive Software Testing Solutions.",
       link: "LEARN MORE",
       href: "/Services/software-testing",
     },
