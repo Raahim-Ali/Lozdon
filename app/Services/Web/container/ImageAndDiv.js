@@ -3,30 +3,36 @@ import Image from "next/image";
 import React from "react";
 const yourArray = [
   {
-    title: "Web Development",
+    title: "Advanced Frontend Technologies",
     description: "Custom development to meet your needs",
-    text: " We advise property owners in all issues in respect of such works and entitlements in respect of boundari- -es. We assess the location of the boundaries and advise. We advise property owners in all issues in respect of such works and entitlements in respect of boundari- -es. We assess the location of the boundaries and advise.",
+    li1: " Single Page Application (SPA).",
+    li2: "Development Progressive Web App (PWA).",
+    li3: "  Development Web Components Integration.",
     imageSrc: "/Assets/OurServices/WebDevelopment.svg",
   },
   {
-    title: "Mobile Development",
+    title: "Backend Technologies",
     description: "Custom development to meet your needs",
-    text: " We advise property owners in all issues in respect of such works and entitlements in respect of boundari- -es. We assess the location of the boundaries and advise. We advise property owners in all issues in respect of such works and entitlements in respect of boundari- -es. We assess the location of the boundaries and advise.",
+    li1: " Single Page Application (SPA).",
+    li2: "Development Progressive Web App (PWA).",
+    li3: "  Development Web Components Integration.",
 
     imageSrc: "/Assets/OurServices/WebDevelopment.svg",
   },
   {
-    title: "Web Development",
+    title: "Database Solutions",
     description: "Custom development to meet your needs",
-    text: " We advise property owners in all issues in respect of such works and entitlements in respect of boundari- -es. We assess the location of the boundaries and advise. We advise property owners in all issues in respect of such works and entitlements in respect of boundari- -es. We assess the location of the boundaries and advise.",
-
+    li1: " Single Page Application (SPA).",
+    li2: "Development Progressive Web App (PWA).",
+    li3: "  Development Web Components Integration.",
     imageSrc: "/Assets/OurServices/WebDevelopment.svg",
   },
   {
-    title: "Web Development",
+    title: "Cloud Services Integration",
     description: "Custom development to meet your needs",
-    text: " We advise property owners in all issues in respect of such works and entitlements in respect of boundari- -es. We assess the location of the boundaries and advise. We advise property owners in all issues in respect of such works and entitlements in respect of boundari- -es. We assess the location of the boundaries and advise.",
-
+    li1: " Single Page Application (SPA).",
+    li2: "Development Progressive Web App (PWA).",
+    li3: "  Development Web Components Integration.",
     imageSrc: "/Assets/OurServices/WebDevelopment.svg",
   },
   // Add more items as needed
@@ -66,12 +72,16 @@ export default function ImageAndDiv() {
             <h5 className="md:text-4xl text-2xl font-bold uppercase tracking-wider poppins text-primaryTextColor ">
               {item.title}
             </h5>
-            <h5 className="text-xl font-medium uppercase inter tracking-wider text-primaryTextColor md:flex hidden ">
-              {item.description}
-            </h5>
-            <p className="mb-3 font-light text-base text-primaryTextColor  md:text-xl inter ">
-              {item.text}
-            </p>
+            <div className="flex flex-col gap-2">
+              <h5 className="text-xl font-medium uppercase inter tracking-wider text-primaryTextColor md:flex hidden ">
+                {item.description}
+              </h5>
+              <ol className="font-light text-base text-primaryTextColor  md:text-xl inter ">
+                <li>{item.li1}</li>
+                <li>{item.li2}</li>
+                <li>{item.li3}</li>
+              </ol>
+            </div>
             {/* ... Other text elements */}
             <Greenbtn buttonText="Learn more" href="#" />
           </div>
