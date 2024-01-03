@@ -8,7 +8,7 @@ function Services() {
       imageSrc: "/Assets/Home/MobileDevelopment.svg",
       title: "mobile development",
       description:
-        "Elevate Experiences, Empower Businesses: Unleashing the Power of Seamless Mobile Solutions.",
+        "Elevate Experiences: Unleash Seamless Power for Empowered Mobile Solutions.",
       link: "LEARN MORE",
       href: "/Services/App",
     },
@@ -24,7 +24,7 @@ function Services() {
       imageSrc: "/Assets/Home/DEVOPS.svg",
       title: "devops",
       description:
-        "Streamlined DevOps Solutions: Elevate Your Development and Operations Efficiency.",
+        "Streamlined DevOps: Elevate Development and Operations Efficiency.",
       link: "LEARN MORE",
       href: "/Services/devOps",
     },
@@ -40,15 +40,14 @@ function Services() {
       imageSrc: "/Assets/Home/UI-UX.svg",
       title: "ui/ux",
       description:
-        "Crafting Intuitive Experiences: Designing Seamless Interfaces for Lasting Impressions.",
+        "Crafting Intuitive Experiences: Lasting Impressions and Seamless Interfaces.",
       link: "LEARN MORE",
       href: "/Services/UiUx",
     },
     {
       imageSrc: "/Assets/Home/SoftwareTesting.svg",
       title: "software testing",
-      description:
-        "Quality Beyond Measure: Unleashing Precision Through Comprehensive Software Testing Solutions.",
+      description: "Quality Unleashed: Precision in Software Testing Solutions",
       link: "LEARN MORE",
       href: "/Services/software-testing",
     },

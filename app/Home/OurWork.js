@@ -48,7 +48,7 @@ function OurWork() {
               <div className="cardLogo">
                 <Image src={work.imageSrc1} alt="/" width={115} height={45} />
               </div>
-              <div className="cardText">
+              <div>
                 <p className="cardTextContent">{work.description}</p>
               </div>
             </div>
