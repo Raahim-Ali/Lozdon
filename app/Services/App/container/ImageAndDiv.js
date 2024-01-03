@@ -4,7 +4,8 @@ import React from "react";
 const yourArray = [
   {
     title: "iOS App Development",
-    description: "Custom development to meet your needs",
+    description:
+      "Crafting iOS Excellence: Seamless Solutions, Endless Possibilities",
     text: "Our iOS App Development service creates sleek and functional applications for iPhones, iPads, and Apple Watches. Our expert developers prioritize user-friendly interfaces and seamless experiences. Whether you're targeting the App Store or need custom enterprise solutions, we deliver quality with a focus on the latest Apple technologies. Our commitment is to bring your ideas to life in the vibrant iOS ecosystem.",
     imageSrc: "/Assets/OurServices/WebDevelopment.svg",
   },
