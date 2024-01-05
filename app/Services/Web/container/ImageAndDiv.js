@@ -1,5 +1,3 @@
-import Greenbtn from "@/app/components/Greenbtn";
-import Image from "next/image";
 import React from "react";
 const yourArray = [
   {
@@ -32,15 +30,6 @@ const yourArray = [
   // Add more items as needed
 ];
 export default function ImageAndDiv() {
-  // const getModulesForFLex = (index) => {
-  //   if (index % 2 === 0) {
-  //     return "row";
-  //   } else if (index % 2 !== 0) {
-  //     return "row-reverse";
-  //   }
-  //   console.log("index", index);
-  //   return index;
-  // };
   return (
     <>
       {yourArray.map((item, index) => (
@@ -51,7 +40,6 @@ export default function ImageAndDiv() {
           } ${
             index % 2 === 0 ? "bg-newGrey" : "bg-anotherColor"
           } md:py-20 md:px-36 gap-12  py-10 px-10 `}
-          // style={{ flexDirection: "column" }}
         >
           {/* Image Section on the top for small screens */}
           <div className="xl:w-1/2">

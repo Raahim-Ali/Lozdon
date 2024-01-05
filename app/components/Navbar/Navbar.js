@@ -9,10 +9,14 @@ function Navbar() {
   const toggleDropdown = () => {
     setDropdownOpen((prev) => !prev);
   };
+  // const backgroundImageUrl = "/Assets/Herosection/heroBg.svg";
 
   return (
     <>
-      <div className="navbar">
+      <div
+        className="navbar"
+        // style={{ backgroundImage: `url(${backgroundImageUrl})` }}
+      >
         <div
           className="logo"
           onClick={() => {
