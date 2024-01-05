@@ -29,6 +29,10 @@ body {
 .logo:hover {
   transform: scale(1.2);
 }
+.logoImg {
+  width: 50px;
+  height: 80px;
+}
 .navbar-items {
   font-family: Inter;
   gap: 30px;
@@ -151,7 +155,7 @@ a {
     color: var(--whitePrimary, #fff);
     text-align: center;
     font-family: Poppins;
-    font-size: 32px;
+    font-size: 31px;
     font-style: normal;
     font-weight: 600;
     line-height: 143.944%; /* 46.062px */

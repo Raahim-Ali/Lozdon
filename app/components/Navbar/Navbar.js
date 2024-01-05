@@ -23,24 +23,24 @@ function Navbar() {
           <p>OCTALCODE</p>
         </div>
         <div className="navbar-items">
-          <div
+          <p
             className="navbarIcon"
             onClick={() => {
               router.push("/");
             }}
           >
             HOME
-          </div>
-          <div
+          </p>
+          <p
             className="navbarIcon"
             onClick={() => {
               router.push("/work");
             }}
           >
             WHY US
-          </div>
-          <div className="navbarIcon">CASE STUDIES</div>
-          <div className="navbarIcon">FAQs</div>
+          </p>
+          <p className="navbarIcon">CASE STUDIES</p>
+          <p className="navbarIcon">FAQs</p>
           <Greenbtn buttonText="Contact us" href="/Contact" />
         </div>
         <button className="sidebarBtn" onClick={toggleDropdown}>
