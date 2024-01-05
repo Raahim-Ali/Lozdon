@@ -123,6 +123,13 @@ a {
   .navbar-items {
     display: none;
   }
+  .logo {
+    gap: 10px;
+  }
+  .logoImg {
+    height: 30px;
+    width: 30px;
+  }
   .sidebarBtn {
     display: block;
   }

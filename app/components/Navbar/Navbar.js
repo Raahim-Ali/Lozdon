@@ -3,7 +3,6 @@ import "./Navbar.css";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import Greenbtn from "../Greenbtn";
-import Image from "next/image";
 function Navbar() {
   const router = useRouter();
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -20,12 +19,7 @@ function Navbar() {
             router.push("/Home");
           }}
         >
-          <Image
-            src="/Assets/Navbar/logo.svg"
-            width={50}
-            height={50}
-            alt="logo"
-          />
+          <img className="logoImg" src="/Assets/Navbar/logo.svg" alt="logo" />
           <p>OCTALCODE</p>
         </div>
         <div className="navbar-items">
