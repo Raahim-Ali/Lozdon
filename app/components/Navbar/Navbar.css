@@ -128,11 +128,14 @@ a {
     display: none;
   }
   .logo {
-    gap: 10px;
+    gap: 2px;
   }
   .logoImg {
     height: 30px;
     width: 30px;
+  }
+  .logoText {
+    font-size: 17px;
   }
   .sidebarBtn {
     display: block;
@@ -151,6 +154,7 @@ a {
     background-color: rgb(24, 23, 23);
     z-index: 1000;
   }
+
   .navbarIcon {
     color: var(--whitePrimary, #fff);
     text-align: center;

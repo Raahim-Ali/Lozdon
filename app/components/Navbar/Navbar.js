@@ -20,7 +20,7 @@ function Navbar() {
           }}
         >
           <img className="logoImg" src="/Assets/Navbar/logo.svg" alt="logo" />
-          <p>OCTALCODE</p>
+          <p className="logoText">OCTALCODE</p>
         </div>
         <div className="navbar-items">
           <p
