@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1.2vw 6.45vw;
-  background-color: #f9f9f9;
+  background-color: transparent;
 }
 
 .logo {
@@ -20,6 +20,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 20px;
   font-weight: 900;
   font-size: 2.5vw;
   cursor: pointer;
@@ -117,6 +118,7 @@ a {
 @media (max-width: 600px) {
   .navbar {
     position: fixed;
+    background-color: #fff;
   }
   .navbar-items {
     display: none;
@@ -125,14 +127,14 @@ a {
     display: block;
   }
   .dropdownMenu {
-    padding: 160px 75px 0px 75px;
+    padding: 120px 75px 0px 75px;
     font-weight: bold;
     position: fixed;
     display: flex;
     align-items: center;
     gap: 30px;
     width: 100vw;
-    top: 38px;
+    top: 80px;
     height: 100vh;
     flex-direction: column;
     background-color: rgb(24, 23, 23);
