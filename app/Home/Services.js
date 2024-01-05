@@ -5,7 +5,7 @@ import Image from "next/image";
 function Services() {
   const services = [
     {
-      imageSrc: "/Assets/Home/MobileDevelopment.svg",
+      imageSrc: "/Assets/Home/icon.png",
       title: "mobile development",
       description:
         "Elevate Experiences: Unleash Seamless Power for Empowered Mobile Solutions.",

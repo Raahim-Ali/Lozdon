@@ -16,7 +16,7 @@ function HomePage() {
       <HeroSection
         titleWidth="80%"
         title="full service software agency"
-        paragraph="Octal Code, we excel in web development, offering a comprehensive suite of services and software development lifecycle."
+        paragraph="Elevating your digital presence through a symphony of expertise, weaving technological brilliance, innovative designs, and seamless functionality into every project."
         btnText="See all services"
         // btnWidth="28%"
         pWidth="70%"

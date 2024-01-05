@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Greenbtn from "../components/Greenbtn";
 import Transparentbtn from "../components/Transparentbtn";
 
@@ -5,28 +6,28 @@ import "./Industries.css";
 function Industries() {
   const industries = [
     {
-      imageSrc: "/Assets/Home/IndustryCardBg.svg",
-      description: "Information Tech",
+      imageSrc: "/Assets/Home/indTele.png",
+      description: "Information Technology",
     },
     {
-      imageSrc: "/Assets/Home/IndustryCardBg.svg",
-      description: "Information Tech",
+      imageSrc: "/Assets/Home/indFin.png",
+      description: "Fintech",
     },
     {
-      imageSrc: "/Assets/Home/IndustryCardBg.svg",
-      description: "Information Tech",
+      imageSrc: "/Assets/Home/indEqu.png",
+      description: "Equipment Financing",
     },
     {
-      imageSrc: "/Assets/Home/IndustryCardBg.svg",
-      description: "Information Tech",
+      imageSrc: "/Assets/Home/IndEcom.png",
+      description: "E-Commerce",
     },
     {
-      imageSrc: "/Assets/Home/IndustryCardBg.svg",
-      description: "Information Tech",
+      imageSrc: "/Assets/Home/indHeal.png",
+      description: "Healthcare",
     },
     {
-      imageSrc: "/Assets/Home/IndustryCardBg.svg",
-      description: "Information Tech",
+      imageSrc: "/Assets/Home/indTele.png",
+      description: "Telecommunication",
     },
   ];
   return (
@@ -37,6 +38,13 @@ function Industries() {
       <div className="IndustriesContainer">
         {industries.map((industry, index) => (
           <div className="Industrycard" key={index}>
+            <Image
+              src={industry.imageSrc}
+              width={500}
+              height={250}
+              alt="img"
+              style={{ paddingTop: "200px" }}
+            />
             <div className="IndustrycardDescription">
               {industry.description}
             </div>
