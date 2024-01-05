@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Greenbtn from "../components/Greenbtn";
 import Transparentbtn from "../components/Transparentbtn";
 
@@ -37,14 +36,11 @@ function Industries() {
       </div>
       <div className="IndustriesContainer">
         {industries.map((industry, index) => (
-          <div className="Industrycard" key={index}>
-            <Image
-              src={industry.imageSrc}
-              width={500}
-              height={250}
-              alt="img"
-              style={{ paddingTop: "200px" }}
-            />
+          <div
+            className="Industrycard"
+            key={index}
+            style={{ backgroundImage: `url(${industry.imageSrc})` }}
+          >
             <div className="IndustrycardDescription">
               {industry.description}
             </div>

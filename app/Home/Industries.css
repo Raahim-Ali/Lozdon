@@ -16,24 +16,25 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 100px;
 }
 .Industrycard {
   display: flex;
-  position: relative;
   padding: 32px 0px;
   justify-content: flex-end;
   transition: transform 0.5s ease;
+
   width: 30%;
   height: 350px;
   margin-bottom: 38px;
   background-size: cover;
   flex-direction: column;
+  gap: 32px;
   border-radius: 8px;
 }
 
 .Industrycard:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .IndustrycardDescription {
@@ -43,11 +44,7 @@
   font-size: 30px;
   font-style: normal;
   font-weight: bolder;
-  position: absolute;
-  bottom: 30;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
+  line-height: 146.023%; /* 26.284px */
 }
 .touch-slider {
   display: none;
@@ -66,7 +63,6 @@
     transition: transform 0.5s ease;
     gap: 32px;
     border-radius: 8px;
-    border: 1px solid rgba(59, 14, 97, 0.1);
   }
 }
 @media (200px < width<1000px) {
@@ -97,7 +93,6 @@
     transition: transform 0.5s ease;
     gap: 32px;
     border-radius: 8px;
-    border: 1px solid rgba(59, 14, 97, 0.1);
   }
   .IndustrycardDescription {
     display: flex;
