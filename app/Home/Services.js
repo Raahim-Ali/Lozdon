@@ -53,7 +53,7 @@ function Services() {
     },
   ];
   return (
-    <div className="Services">
+    <div className="Services" id="Services">
       <div>
         <p className="Heading">our services</p>
       </div>

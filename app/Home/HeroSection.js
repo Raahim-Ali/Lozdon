@@ -66,7 +66,7 @@ const HeroSection = ({
             </p>
           </div>
           <div className="sm:flex md:flex lg:flex hidden">
-            <Greenbtn buttonText={btnText} href="#" />
+            <Greenbtn buttonText={btnText} href="/#Services" />
           </div>
         </div>
         {showImage && (

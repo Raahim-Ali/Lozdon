@@ -148,8 +148,8 @@ a {
     align-items: center;
     gap: 30px;
     width: 100vw;
-    top: 80px;
-    height: 100vh;
+    top: 45px;
+    height: 120%;
     flex-direction: column;
     background-color: rgb(24, 23, 23);
     z-index: 1000;
