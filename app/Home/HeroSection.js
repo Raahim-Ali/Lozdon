@@ -1,6 +1,8 @@
 "use client";
+import "./Style.css";
 import React, { useEffect, useState } from "react";
 import Greenbtn from "../components/Greenbtn";
+import Transparentbtn from "../components/Transparentbtn";
 
 const highlightServices = (title) => {
   const words = title.split(" ");
@@ -23,6 +25,7 @@ const HeroSection = ({
   title,
   paragraph,
   btnText,
+  TbtnText,
   btnWidth,
   imgSrc,
   titleWidth,
@@ -41,32 +44,54 @@ const HeroSection = ({
   }, []);
   const backgroundImageUrl = "/Assets/Herosection/heroBg.svg";
   return (
-    <div className="flex flex-col w-full lg:flex-row">
+    <div
+      className="flex flex-col w-full lg:flex-row"
+      style={{
+        backgroundImage: `url(${backgroundImageUrl})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <div
-        style={{ backgroundImage: `url(${backgroundImageUrl})` }}
         className="flex flex-col relative overflow-hidden  pt-20 pb-0  px-8 w-full sm:pt-20 sm:pb-0  md:px-12 md:pt-20  lg:px-40  lg:pt-28  lg:pb-36 "
         // style={{ height: "100vh" }}
       >
         {/* Ellipse Section */}
 
         <div
-          className="flex flex-col justify-center items-center gap-5 w-full  z-10  "
+          className="flex flex-col justify-center md:items-center  w-full  z-10 gap-20  "
           // style={{ maxWidth: "70%" }}
         >
           {/* Text Section */}
-          <h1
-            className="font-black uppercase text-5xl w-full  sm:w-2/4 md:text-7xl md:w-2/4 lg:text-center "
-            style={{ lineHeight: 1.3 }}
-          >
-            {highlightServices(title)}
-          </h1>
-          <div className="mb-3 lg:w-2/4 ">
-            <p className="sm:text-whitePrimary text-restext w-full text-base sm:text-xl   lg:text-center inter">
-              {paragraph}
-            </p>
+          <div className="flex flex-col justify-center md:items-center gap-5 w-full">
+            <h1
+              className="font-black uppercase text-4xl md:text-[5.125rem] w-full  sm:w-2/4 md:text-7xl md:w-full lg:w-3/4  md:text-center res "
+              style={{ lineHeight: 1.3 }}
+            >
+              {highlightServices(title)}
+            </h1>
+            <div className="mb-3 md:w-3/4 xl:w-[54%] flex flex-col gap-6 ">
+              <p className="sm:text-whitePrimary text-restext w-full text-base sm:text-xl   md:text-center inter">
+                {paragraph}
+              </p>
+              <div className="sm:flex md:justify-center hidden">
+                <ul className="flex gap-10 list-disc items-center text-center">
+                  <li className="text-white text-lg inter marker:font-normal list-none">
+                    Business Analysis
+                  </li>
+                  <li className="text-white text-lg inter marker:font-normal ">
+                    Development
+                  </li>
+                  <li className="text-white text-lg inter marker:font-normal">
+                    Consultancy
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div className="sm:flex md:flex lg:flex hidden">
+          <div className="sm:flex md:flex lg:flex hidden gap-8">
             <Greenbtn buttonText={btnText} href="#" />
+            <Transparentbtn TbtnText={TbtnText} href="#" />
           </div>
         </div>
         {showImage && (

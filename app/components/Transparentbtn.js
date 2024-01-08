@@ -1,11 +1,11 @@
 import Link from "next/link";
 import React from "react";
 
-export default function Transparentbtn({ buttonText, href }) {
+export default function Transparentbtn({ TbtnText, href }) {
   return (
     <Link href={href && href}>
       <button className="TransparentBtn">
-        <p className="TransparentBtnText poppins uppercase">{buttonText}</p>
+        <p className="TransparentBtnText poppins uppercase">{TbtnText}</p>
       </button>
     </Link>
   );
