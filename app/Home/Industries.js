@@ -50,7 +50,7 @@ function Industries() {
 
       <div className="buttons">
         <Greenbtn buttonText="see all services" href="/Services" />
-        <Transparentbtn buttonText="contact us" href="/Contact" />
+        <Transparentbtn TbtnText="contact us" href="/Contact" />
       </div>
     </div>
   );

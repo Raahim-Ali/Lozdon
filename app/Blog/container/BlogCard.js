@@ -1,6 +1,3 @@
-import Greenbtn from "@/app/components/Greenbtn";
-import Transparentbtn from "@/app/components/Transparentbtn";
-import Image from "next/image";
 import React from "react";
 // import "./Blog.css";
 export default function BlogCard() {

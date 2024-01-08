@@ -53,29 +53,29 @@ const HeroSection = ({
       }}
     >
       <div
-        className="flex flex-col relative overflow-hidden  pt-20 pb-0  px-8 w-full sm:pt-20 sm:pb-0  md:px-12 md:pt-20  lg:px-40  lg:pt-28  lg:pb-36 "
+        className="flex flex-col relative overflow-hidden  pt-20 pb-0  px-8 w-full sm:pt-20 sm:pb-0  md:px-12 md:pt-20  lg:px-36  lg:pt-28  lg:pb-36 "
         // style={{ height: "100vh" }}
       >
         {/* Ellipse Section */}
 
         <div
-          className="flex flex-col justify-center md:items-center  w-full  z-10 gap-20  "
+          className="flex flex-col justify-center md:items-center  w-full  z-10 gap-16  "
           // style={{ maxWidth: "70%" }}
         >
           {/* Text Section */}
-          <div className="flex flex-col justify-center md:items-center gap-5 w-full">
+          <div className="flex flex-col justify-center md:items-center gap-5 w-[82%]">
             <h1
-              className="font-black uppercase text-4xl md:text-[5.125rem] w-full  sm:w-2/4 md:text-7xl md:w-full lg:w-3/4  md:text-center res "
+              className="font-black uppercase text-4xl sm:text-5xl md:text-[5.125rem] w-full  sm:w-2/4 md:text-7xl md:w-full lg:w-3/4  md:text-center res "
               style={{ lineHeight: 1.3 }}
             >
               {highlightServices(title)}
             </h1>
-            <div className="mb-3 md:w-3/4 xl:w-[54%] flex flex-col gap-6 ">
+            <div className="mb-3 md:w-3/4 xl:w-[54%] flex flex-col gap-6 w-full">
               <p className="sm:text-whitePrimary text-restext w-full text-base sm:text-xl   md:text-center inter">
                 {paragraph}
               </p>
               <div className="sm:flex md:justify-center hidden">
-                <ul className="flex gap-10 list-disc items-center text-center">
+                <ul className="flex gap-8 list-disc items-center text-center">
                   <li className="text-white text-lg inter marker:font-normal list-none">
                     Business Analysis
                   </li>

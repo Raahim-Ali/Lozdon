@@ -57,7 +57,7 @@ function OurWork() {
       </div>
       <div className="buttons">
         <Greenbtn buttonText="see all services" href="/work" />
-        <Transparentbtn buttonText="contact us" href="/Contact" />
+        <Transparentbtn TbtnText="contact us" href="/Contact" />
       </div>
     </div>
   );

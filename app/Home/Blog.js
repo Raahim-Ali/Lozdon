@@ -63,7 +63,7 @@ function Blog() {
       </div>
       <div className="buttons">
         <Greenbtn buttonText="see all blogs" href="/Blog" />
-        <Transparentbtn buttonText="contact us" href="#" />
+        <Transparentbtn TbtnText="contact us" href="#" />
       </div>
     </div>
   );
