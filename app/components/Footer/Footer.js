@@ -60,6 +60,24 @@ export default function Footer() {
                 />
               </Link>
             </div>
+            <div className="flex flex-col gap-4">
+              <div className="flex gap-3">
+                <img src="/Assets/Footer/mail.svg" />
+                <Link href="mailto:Info@octalcode.com">
+                  <p className="inter text-white text-base font-normal">
+                    Info@octalcode.com
+                  </p>
+                </Link>
+              </div>
+              <div className="flex gap-3">
+                <img src="/Assets/Footer/Call.svg" />
+                <Link href="tel:0342-32020441">
+                  <p className="inter text-white text-base font-normal">
+                    +92 42 32020441
+                  </p>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
 
