@@ -91,7 +91,7 @@ const HeroSection = ({
           </div>
           <div className="sm:flex md:flex lg:flex hidden gap-8">
             <Greenbtn buttonText={btnText} href="/#Services" />
-            <Transparentbtn TbtnText={TbtnText} href="#" />
+            <Transparentbtn TbtnText={TbtnText} href="/Contact" />
           </div>
         </div>
         {showImage && (

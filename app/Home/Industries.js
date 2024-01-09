@@ -47,11 +47,6 @@ function Industries() {
           </div>
         ))}
       </div>
-
-      <div className="buttons">
-        <Greenbtn buttonText="see all services" href="/Services" />
-        <Transparentbtn TbtnText="contact us" href="/Contact" />
-      </div>
     </div>
   );
 }

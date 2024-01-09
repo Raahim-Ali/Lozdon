@@ -9,7 +9,7 @@ function ContactUs() {
         <HeroSection
           title="Contact us"
           paragraph="Octal Code, we excel in web development, offering a comprehensive suite of services and software development lifecycle."
-          btnText="See all services"
+          btnText="book session with us"
           btnWidth="28%"
           imgSrc="/Assets/Herosection/HeroSectionImage.svg"
         />

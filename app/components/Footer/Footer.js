@@ -48,7 +48,7 @@ export default function Footer() {
                 target="_blank"
               >
                 <Image
-                  alt="Social Media"
+                  alt="Facebook"
                   src="/Assets/Footer/Facebook.svg"
                   width={30}
                   height={30}
@@ -59,7 +59,7 @@ export default function Footer() {
                 target="_blank"
               >
                 <Image
-                  alt="Social Media"
+                  alt="Instagram"
                   src="/Assets/Footer/Insta.svg"
                   width={30}
                   height={30}
@@ -67,8 +67,30 @@ export default function Footer() {
               </Link>
               <Link href="https://twitter.com/octalcode_info" target="_blank">
                 <Image
-                  alt="Social Media"
+                  alt="Twitter"
                   src="/Assets/Footer/Twitter.svg"
+                  width={30}
+                  height={30}
+                />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/octal-code/?originalSubdomain=pk"
+                target="_blank"
+              >
+                <Image
+                  alt="LinkedIn"
+                  src="/Assets/Footer/linkedin.png"
+                  width={30}
+                  height={30}
+                />
+              </Link>
+              <Link
+                href="https://www.quora.com/profile/Octalcode"
+                target="_blank"
+              >
+                <Image
+                  alt="Quora"
+                  src="/Assets/Footer/quora.png"
                   width={30}
                   height={30}
                 />
