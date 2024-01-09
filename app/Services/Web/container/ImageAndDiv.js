@@ -55,7 +55,7 @@ export default function ImageAndDiv() {
           </div>
 
           {/* Text Section on the bottom for small screens */}
-          <div className="flex flex-col gap-8 w-full xl:w-1/2 justify-center ">
+          <div className="flex flex-col gap-8 w-full xl:w-1/2 justify-center">
             <h5 className="md:text-4xl text-2xl font-bold uppercase tracking-wider poppins text-primaryTextColor ">
               {item.title}
             </h5>
