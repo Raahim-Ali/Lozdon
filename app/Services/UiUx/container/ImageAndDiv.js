@@ -4,27 +4,27 @@ const yourArray = [
     title: "User Research and Analysis",
     description: "Understanding user needs, behaviors, and preferences.",
     text: "User Research and Analysis is the foundation of exceptional design, delving into the intricacies of user behaviors and preferences. Through surveys, interviews, and usability testing, we extract valuable insights to inform every aspect of the design process. By understanding your users intimately, we create interfaces that not only meet their needs but also exceed expectations. Our meticulous research ensures a user-centric approach, fostering a seamless and engaging experience that resonates with your target audience.",
-    imageSrc: "/Assets/OurServices/WebDevelopment.svg",
+    imageSrc: "/Assets/OurServices/uiux6.jpg",
   },
   {
     title: "Information Architecture and Wireframing",
     description: "Organizing content and creating structural blueprints.",
     text: "Crafting seamless user experiences starts with Information Architecture and Wireframing. We meticulously organize content, creating a strategic structural blueprint for intuitive navigation. Our wireframing process visualizes the layout, ensuring clarity and simplicity. This approach guarantees user-friendly designs that enhance overall satisfaction and usability.",
-    imageSrc: "/Assets/OurServices/WebDevelopment.svg",
+    imageSrc: "/Assets/OurServices/uiux1.jpg",
   },
   {
     title: "Visual Design and Branding",
     description:
       "Crafting visually appealing interfaces and establishing brand identity.",
     text: "Visual Design and Branding bring interfaces to life with captivating aesthetics and a strong brand identity. We specialize in creating visually stunning elements, including color schemes, typography, and imagery, aligned with your brand. By harmonizing these elements, we ensure a cohesive and memorable user experience. Elevate your digital presence with our expertise, where every design choice reflects your brand essence, fostering recognition and user engagement.",
-    imageSrc: "/Assets/OurServices/WebDevelopment.svg",
+    imageSrc: "/Assets/OurServices/uiux2.jpg",
   },
   {
     title: "Interaction and Responsive Design",
     description:
       "Defining user interactions and ensuring adaptability across devices.",
     text: "Transforming user engagement, our Interaction and Responsive Design expertise focuses on seamless interactions and adaptability across devices. Captivate users with engaging designs that ensure a consistent, user-friendly experience on every platform, creating dynamic and enjoyable digital journeys.",
-    imageSrc: "/Assets/OurServices/WebDevelopment.svg",
+    imageSrc: "/Assets/OurServices/uiux4.jpg",
   },
   {
     title: "Prototyping and Usability Testing",
@@ -32,14 +32,14 @@ const yourArray = [
       "Creating interactive prototypes and evaluating user experience.",
     text: "Elevate design precision with Prototyping and Usability Testing. Our interactive prototypes ensure optimal functionality, complemented by rigorous usability testing to guarantee a user-friendly final product. Meticulously refining the user journey, we deliver a seamless and purpose-aligned experience, ensuring your objectives are met with precision and user satisfaction.",
 
-    imageSrc: "/Assets/OurServices/WebDevelopment.svg",
+    imageSrc: "/Assets/OurServices/uiux5.jpg",
   },
   {
     title: "Accessibility and Inclusive Design",
     description:
       "Designing interfaces that are accessible to diverse user groups.",
     text: "Accessibility and Inclusive Design are the foundation of user-centric solutions. Committed to diversity, we craft interfaces catering to users with varied needs. Our focus ensures seamless access and interaction for everyone, regardless of abilities. Through inclusive design, we foster an environment where every user feels valued, contributing to a more equitable and user-friendly digital experience for all.",
-    imageSrc: "/Assets/OurServices/WebDevelopment.svg",
+    imageSrc: "/Assets/OurServices/uiux3.jpg",
   },
   // Add more items as needed
 ];

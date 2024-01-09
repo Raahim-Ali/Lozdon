@@ -57,7 +57,7 @@ const HeroSection = ({
               {paragraph}
             </p>
           </div>
-          <div className="z-10">
+          <div className="z-10 flex w-fit">
             <Greenbtn buttonText={btnText} href="/Services" />
           </div>
         </div>

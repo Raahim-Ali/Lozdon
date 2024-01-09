@@ -6,7 +6,7 @@ const yourArray = [
     description:
       "Frontiers Redefined: Mastering Advanced Frontend Technologies for Tomorrow's Experiences.",
     text: " SPA development loads a single HTML page, updating content dynamically for a seamless user experience. PWAs combine web and mobile app features, offering offline capabilities and push notifications. Web Components Integration enables reusable, modular frontend code, enhancing maintainability in web projects.",
-    imageSrc: "/Assets/OurServices/WebDevelopment.svg",
+    imageSrc: "/Assets/OurServices/web1.jpeg",
   },
   {
     title: "Advanced Backend Technologies",
@@ -14,7 +14,7 @@ const yourArray = [
       "Empowering Tomorrow's Backends: Elevate Your Digital Infrastructure with Advanced Technologies.",
     text: " Serverless Architecture streamlines application development by eliminating server management, automatically scaling and reducing infrastructure overhead. Microservices Development enhances scalability and maintainability by breaking down large applications into independent services. API Development and Integration are crucial for seamless communication between software systems, creating interconnected and interoperable components.",
 
-    imageSrc: "/Assets/OurServices/WebDevelopment.svg",
+    imageSrc: "/Assets/OurServices/web2.jpeg",
   },
   {
     title: "Database Solutions",
@@ -22,7 +22,7 @@ const yourArray = [
       "Data Dynamics, Seamless Solutions: Crafting Tomorrow’s Success with Database Expertise.",
     text: "NoSQL databases like MongoDB and Cassandra offer flexibility and scalability for handling large unstructured or semi-structured data. SQL databases such as MySQL and PostgreSQL ensure structured data storage with integrity. Database Scaling distributes load for performance, and Sharding horizontally partitions data, enhancing scalability.",
 
-    imageSrc: "/Assets/OurServices/WebDevelopment.svg",
+    imageSrc: "/Assets/OurServices/web4.jpeg",
   },
   {
     title: "Cloud Services Integration",
@@ -30,7 +30,7 @@ const yourArray = [
       "Elevate, Unify, Thrive: Seamlessly Integrating Your Business with Cloud Excellence.",
     text: "AWS Integration brings Amazon Web Services' cloud services, ensuring scalable and reliable infrastructure. Microsoft Azure Integration offers diverse cloud tools for global application development. Google Cloud Platform Integration enhances web app scalability and performance with cloud services.",
 
-    imageSrc: "/Assets/OurServices/WebDevelopment.svg",
+    imageSrc: "/Assets/OurServices/web3.jpeg",
   },
   // Add more items as needed
 ];
