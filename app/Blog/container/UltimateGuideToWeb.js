@@ -24,9 +24,9 @@ export default function UltimateGuideToWeb() {
             application framework written in the Ruby programming language.
             Known for its convention over configuration principle, Rails offers
             developers a streamlined and efficient way to build robust web
-            applications. If you're new to Rails or considering learning it,
-            this article will provide you with a foundational understanding of
-            its key concepts and benefits.
+            applications. If you`&apos;`re new to Rails or considering learning
+            it, this article will provide you with a foundational understanding
+            of its key concepts and benefits.
           </p>
 
           <div>

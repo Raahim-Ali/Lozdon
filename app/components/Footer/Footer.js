@@ -126,11 +126,8 @@ export default function Footer() {
             </p>
             <div className="flex flex-col gap-3 w-fit ">
               {Pages.map((item, index) => (
-                <Link href={item.link}>
-                  <p
-                    className="text-base text-whitePrimary font-medium inter"
-                    key={index}
-                  >
+                <Link href={item.link} key={index}>
+                  <p className="text-base text-whitePrimary font-medium inter">
                     {item.name}
                   </p>
                 </Link>
@@ -145,7 +142,7 @@ export default function Footer() {
             </p>
             <div className="flex flex-col gap-3 w-fit">
               {Resources.map((item, index) => (
-                <Link href={item.link}>
+                <Link href={item.link} key={index}>
                   <p
                     className="text-base text-whitePrimary font-medium inter"
                     key={index}
