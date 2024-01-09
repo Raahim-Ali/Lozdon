@@ -66,14 +66,27 @@ function Navbar() {
           <div
             className="navbarIcon"
             onClick={() => {
-              router.push("/work");
               toggleDropdown();
             }}
           >
-            WHY US
+            <Link href="/#Services">SERVICES</Link>
           </div>
-          <div className="navbarIcon">CASE STUDIES</div>
-          <div className="navbarIcon">FAQs</div>
+          <div
+            className="navbarIcon"
+            onClick={() => {
+              toggleDropdown();
+            }}
+          >
+            <Link href="/#Work">PORTFOLIO</Link>
+          </div>
+          <div
+            className="navbarIcon"
+            onClick={() => {
+              toggleDropdown();
+            }}
+          >
+            <Link href="/#Industries">INDUSTRIES</Link>
+          </div>
           <Greenbtn
             buttonText="Contact us"
             href="/Contact"
