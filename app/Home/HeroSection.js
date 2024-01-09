@@ -50,17 +50,17 @@ const HeroSection = ({
         backgroundImage: `url(${backgroundImageUrl})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        height: "100vh",
       }}
     >
       <div
-        className="flex flex-col relative overflow-hidden  pt-20 pb-0  px-8 w-full sm:pt-20 sm:pb-0  md:px-12 md:pt-20  lg:px-36  lg:pt-28  lg:pb-36"
-        style={{ marginTop: "150px" }}
+        className="flex flex-col relative overflow-hidden  pt-20 pb-0  px-8 w-full sm:pt-20 sm:pb-0  md:px-12 md:pt-20  lg:px-36  lg:pt-28  lg:pb-36 "
         // style={{ height: "100vh" }}
       >
         {/* Ellipse Section */}
 
         <div
-          className="flex flex-col justify-center md:items-center  w-full  z-10 gap-16  "
+          className="flex flex-col justify-center md:items-center  w-full  z-10 gap-16 pt-20  "
           // style={{ maxWidth: "70%" }}
         >
           {/* Text Section */}
