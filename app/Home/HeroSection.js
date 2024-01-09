@@ -53,7 +53,8 @@ const HeroSection = ({
       }}
     >
       <div
-        className="flex flex-col relative overflow-hidden  pt-20 pb-0  px-8 w-full sm:pt-20 sm:pb-0  md:px-12 md:pt-20  lg:px-36  lg:pt-28  lg:pb-36 "
+        className="flex flex-col relative overflow-hidden  pt-20 pb-0  px-8 w-full sm:pt-20 sm:pb-0  md:px-12 md:pt-20  lg:px-36  lg:pt-28  lg:pb-36"
+        style={{ marginTop: "150px" }}
         // style={{ height: "100vh" }}
       >
         {/* Ellipse Section */}
