@@ -29,7 +29,10 @@ export default function Footer() {
               functionality into every project.
             </p>
             <div className="flex gap-5">
-              <Link href="#">
+              <Link
+                href="https://www.facebook.com/OctalCode.code?_rdc=2&_rdr"
+                target="_blank"
+              >
                 <Image
                   alt="Social Media"
                   src="/Assets/Footer/Facebook.svg"
@@ -37,7 +40,10 @@ export default function Footer() {
                   height={30}
                 />
               </Link>
-              <Link href="#">
+              <Link
+                href="https://www.instagram.com/octalcode2/"
+                target="_blank"
+              >
                 <Image
                   alt="Social Media"
                   src="/Assets/Footer/Insta.svg"
@@ -45,7 +51,7 @@ export default function Footer() {
                   height={30}
                 />
               </Link>
-              <Link href="#">
+              <Link href="https://twitter.com/octalcode_info" target="_blank">
                 <Image
                   alt="Social Media"
                   src="/Assets/Footer/Twitter.svg"
