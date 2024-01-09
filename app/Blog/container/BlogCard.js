@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 // import "./Blog.css";
 export default function BlogCard() {
@@ -6,73 +7,28 @@ export default function BlogCard() {
       imageSrc: "/Assets/Home/BlogCard.svg",
       buttonText: "development",
       read: "10 min read",
-      title: "Why Conversational Banking is the Future of Customer Experience",
+      title: "Ruby on Rails A Comprehensive Guide for Beginners",
       description:
-        "This metaphor implies every aspect of the industry in recent times",
+        "Ruby on Rails, often simply called Rails, is a popular web application framework written in the Ruby programming...",
     },
     {
       imageSrc: "/Assets/Home/BlogCard.svg",
       buttonText: "development",
       read: "10 min read",
-      title: "Why Conversational Banking is the Future of Customer Experience",
+      title:
+        "The Power and Potential of Ruby on Rails Unveiling the Web Development Marvel",
       description:
-        "This metaphor implies every aspect of the industry in recent times",
+        "The Power and Potential of Ruby on Rails Unveiling the Web Development Marvels...",
     },
+
     {
       imageSrc: "/Assets/Home/BlogCard.svg",
       buttonText: "development",
       read: "10 min read",
-      title: "Why Conversational Banking is the Future of Customer Experience",
+      title:
+        "OctalCode Your Trusted Partner in Web Development and Digital Solutions",
       description:
-        "This metaphor implies every aspect of the industry in recent times",
-    },
-    {
-      imageSrc: "/Assets/Home/BlogCard.svg",
-      buttonText: "development",
-      read: "10 min read",
-      title: "Why Conversational Banking is the Future of Customer Experience",
-      description:
-        "This metaphor implies every aspect of the industry in recent times",
-    },
-    {
-      imageSrc: "/Assets/Home/BlogCard.svg",
-      buttonText: "development",
-      read: "10 min read",
-      title: "Why Conversational Banking is the Future of Customer Experience",
-      description:
-        "This metaphor implies every aspect of the industry in recent times",
-    },
-    {
-      imageSrc: "/Assets/Home/BlogCard.svg",
-      buttonText: "development",
-      read: "10 min read",
-      title: "Why Conversational Banking is the Future of Customer Experience",
-      description:
-        "This metaphor implies every aspect of the industry in recent times",
-    },
-    {
-      imageSrc: "/Assets/Home/BlogCard.svg",
-      buttonText: "development",
-      read: "10 min read",
-      title: "Why Conversational Banking is the Future of Customer Experience",
-      description:
-        "This metaphor implies every aspect of the industry in recent times",
-    },
-    {
-      imageSrc: "/Assets/Home/BlogCard.svg",
-      buttonText: "development",
-      read: "10 min read",
-      title: "Why Conversational Banking is the Future of Customer Experience",
-      description:
-        "This metaphor implies every aspect of the industry in recent times",
-    },
-    {
-      imageSrc: "/Assets/Home/BlogCard.svg",
-      buttonText: "development",
-      read: "10 min read",
-      title: "Why Conversational Banking is the Future of Customer Experience",
-      description:
-        "This metaphor implies every aspect of the industry in recent times",
+        "OctalCode is a leading provider of web development, mobile application development...",
     },
   ];
   return (
@@ -80,7 +36,7 @@ export default function BlogCard() {
       <div className="flex flex-wrap gap-8 ">
         {blogs.map((blog, index) => (
           <div
-            className="flex-grow flex flex-col  w-full  md:w-1/2 lg:w-2/5  xl:w-1/4 rounded-md self-stretch"
+            className="flex-grow flex flex-col  w-full  md:w-1/2   lg:w-1/4 rounded-md self-stretch"
             key={index}
           >
             <img
@@ -110,6 +66,11 @@ export default function BlogCard() {
                 <p className="text-base font-light text-gray-700">
                   {blog.description}
                 </p>
+                <Link href="#" className="flex w-fit">
+                  <p className="learnMore w-fit mt-3 hover:text-main">
+                    Learn more
+                  </p>
+                </Link>
               </div>
             </div>
           </div>

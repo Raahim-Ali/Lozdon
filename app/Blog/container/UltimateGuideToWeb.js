@@ -1,12 +1,11 @@
-import Greenbtn from "@/app/components/Greenbtn";
 import React from "react";
 import Link from "next/link";
 
 export default function UltimateGuideToWeb() {
   return (
-    <div className="flex flex-col gap-7 sm:gap-11 xl:flex-row w-full">
+    <div className="flex flex-col gap-7 sm:gap-11 lg:flex-row w-full">
       {/* Left Section: Image */}
-      <div className="xl:w-2/5 overflow-hidden xl:h-96 rounded-2xl">
+      <div className="lg:w-2/5 overflow-hidden xl:h-96 rounded-2xl">
         <img
           src="/Assets/Blog/UltimateGuideToWebImage.svg"
           className="max-w-full w-full object-cover"
@@ -14,24 +13,27 @@ export default function UltimateGuideToWeb() {
         />
       </div>
 
-      <div className="flex flex-col gap-12 xl:max-w-xl xl:gap-16 xl:w-1/2">
+      <div className="flex flex-col gap-12  xl:gap-8 lg:w-1/2">
         <div className="flex flex-col gap-6  w-full">
           <p className="poppins font-semibold text-3xl md:font-bold md:tracking-wide md:text-4xl">
-            Ultimate Guide to Web Authentication
+            Ruby on Rails A Comprehensive Guide for Beginners
           </p>
 
           <p className="inter font-normal md:tracking-wide text-base">
-            When we talk about authentication, we&apos;re referring to the
-            process of verifying someone is who they say they are. In turn,
-            authorization is the process of verifying that person has the right
-            to do something.
+            Ruby on Rails, often simply called Rails, is a popular web
+            application framework written in the Ruby programming language.
+            Known for its convention over configuration principle, Rails offers
+            developers a streamlined and efficient way to build robust web
+            applications. If you're new to Rails or considering learning it,
+            this article will provide you with a foundational understanding of
+            its key concepts and benefits.
           </p>
 
           <div>
             <button className="bg-grey py-3 px-6 flex gap-3 rounded-xl justify-center items-center">
               <Link href="/BlogDetails">
                 <span className="text-sm md:text-base inter font-semibold uppercase">
-                  Continue Reading
+                  <p className="learnMore w-fit">Learn more</p>
                 </span>
               </Link>
               <div className="w-4 md:w-5">

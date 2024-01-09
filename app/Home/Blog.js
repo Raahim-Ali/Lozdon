@@ -8,25 +8,26 @@ function Blog() {
       imageSrc: "/Assets/Home/BlogCard.svg",
       buttonText: "development",
       read: "10 min read",
-      title: "Why Conversational Banking is the Future of Customer Experience",
+      title: "Ruby on Rails A Comprehensive Guide for Beginners",
       description:
-        "This metaphor implies every aspect of the industry in recent times",
+        "Ruby on Rails, often simply called Rails, is a popular web application framework written in the Ruby programming...",
     },
     {
       imageSrc: "/Assets/Home/BlogCard.svg",
       buttonText: "development",
       read: "10 min read",
-      title: "Why Conversational Banking is the Future of Customer Experience",
+      title:
+        "The Power and Potential of Ruby on Rails Unveiling the Web Development Marvel",
       description:
-        "This metaphor implies every aspect of the industry in recent times",
+        "The Power and Potential of Ruby on Rails Unveiling the Web Development Marvels...",
     },
     {
       imageSrc: "/Assets/Home/BlogCard.svg",
       buttonText: "development",
       read: "10 min read",
-      title: "Why Conversational Banking is the Future of Customer Experience",
+      title: "Harnessing the Power of React.js A Comprehensive Guide",
       description:
-        "This metaphor implies every aspect of the industry in recent times",
+        "In the ever-evolving world of web development, React.js has emerged as a game-changing library that...",
     },
   ];
   return (
@@ -36,15 +37,14 @@ function Blog() {
       <div className="blogContainer">
         {blogs.map((blog, index) => (
           <div className="blogCard" key={index}>
+            <Image
+              className="blogImage"
+              src={blog.imageSrc}
+              alt="/"
+              width={395}
+              height={269}
+            />
             <div className="blogCardTop">
-              <Image
-                className="blogImage"
-                src={blog.imageSrc}
-                alt="/"
-                width={395}
-                height={269}
-              />
-
               <div className="buttonContainer">
                 <button className="devBtn">
                   <p>{blog.buttonText}</p>
