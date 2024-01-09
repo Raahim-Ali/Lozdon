@@ -24,7 +24,7 @@ function OurWork() {
       link: "https://www.daileybythesea.com/",
       title: "REALTY ONE GROUP",
       description:
-        "OctalCodemeticulously designed and developed a website that mirrors the sophistication and diversity of Realty One Group's property portfolio. From intuitive property search to immersive visual tours, our digital architecture ensures a seamless online experience for potential buyers and investors.",
+        "OctalCode meticulously designed and developed a website that mirrors the sophistication and diversity of Realty One Group's property portfolio. From intuitive property search to immersive visual tours, our digital architecture ensures a seamless online experience for potential buyers and investors.",
     },
     {
       imageSrc: "/Assets/Home/Work4.JPG",
