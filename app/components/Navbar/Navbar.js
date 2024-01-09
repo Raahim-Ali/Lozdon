@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import Greenbtn from "../Greenbtn";
+import Link from "next/link";
 function Navbar() {
   const router = useRouter();
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -35,16 +36,16 @@ function Navbar() {
           >
             HOME
           </p>
-          <p
-            className="navbarIcon"
-            onClick={() => {
-              router.push("/work");
-            }}
-          >
-            WHY US
+
+          <p className="navbarIcon">
+            <Link href="/#Services">SERVICES</Link>
           </p>
-          <p className="navbarIcon">CASE STUDIES</p>
-          <p className="navbarIcon">FAQs</p>
+          <p className="navbarIcon">
+            <Link href="/#Work">PORTFOLIO</Link>
+          </p>
+          <p className="navbarIcon">
+            <Link href="/#Industries">INDUSTRIES</Link>
+          </p>
           <Greenbtn buttonText="Contact us" href="/Contact" />
         </div>
         <button className="sidebarBtn" onClick={toggleDropdown}>

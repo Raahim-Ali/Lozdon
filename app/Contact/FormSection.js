@@ -92,7 +92,7 @@ function FormSection() {
             <input
               type="text"
               className="nameInput"
-              placeholder="MONTHLY BUDGET"
+              placeholder="YOUR BUDGET"
             />
           </div>
           <div className="formName">

@@ -35,7 +35,7 @@ function OurWork() {
     },
   ];
   return (
-    <div className="OurWork">
+    <div className="OurWork" id="Work">
       <div>
         <p className="Heading" style={{ color: "white" }}>
           our work

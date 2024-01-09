@@ -30,7 +30,7 @@ function Industries() {
     },
   ];
   return (
-    <div className="Industries">
+    <div className="Industries" id="Industries">
       <div>
         <p className="IndustriesHeading">industries we focus</p>
       </div>
