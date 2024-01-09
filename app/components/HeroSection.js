@@ -40,7 +40,7 @@ const HeroSection = ({
   pWidth,
 }) => {
   return (
-    <div className="bg-primaryBlack flex relative overflow-hidden sm:px-10  sm:py-10 pb-16">
+    <div className="bg-primaryBlack flex relative overflow-hidden sm:px-10  sm:py-20 pb-16">
       {/* Ellipse Section */}
       <div className="absolute left-0 bottom-0  bg-[#B318FF] w-48 h-52 lg:w-80 z-0 lg:h-52 rounded-3xl blur-[200px]"></div>
       <div className="flex justify-between align-center xl:px-40  pt-20 pb-10  px-8 xl:py-32 z-10">
