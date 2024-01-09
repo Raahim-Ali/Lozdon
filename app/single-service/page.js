@@ -6,7 +6,7 @@ export default function page() {
   return (
     <>
       <HeroSection
-        title="custom Web Development "
+        title="Our Services "
         paragraph="We design and build industry-leading web-based products that bring 
         value to your customers, delivered with compelling UX."
         btnText="let’s work together"

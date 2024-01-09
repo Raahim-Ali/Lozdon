@@ -3,8 +3,19 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Pages = ["Home", "Services", "Our Work", "About Us", "Contact Us"];
-const Resources = ["Blog", "Careers", "Podcast", "Forum"];
+const Pages = [
+  { name: "Home", link: "/Home" },
+  { name: "Services", link: "/single-service" },
+  { name: "Our Work", link: "/work" },
+  { name: "About Us", link: "/about-us" },
+  { name: "Contact Us", link: "/Contact" },
+];
+const Resources = [
+  { name: "Blog", link: "/Blog" },
+  { name: "Careers", link: "#" },
+  { name: "Podcast", link: "#" },
+  { name: "Forum", link: "#" },
+];
 
 export default function Footer() {
   return (
@@ -24,9 +35,12 @@ export default function Footer() {
               // change thw width if wants
               style={{ lineHeight: 1.6 }}
             >
-              Elevating your digital presence through a symphony of expertise,
-              weaving technological brilliance, innovative designs, and seamless
-              functionality into every project.
+              Octal Code, we excel in web development, offering a comprehensive
+              suite of services encompassing the entire software development
+              lifecycle. Octal Code, we excel in web development, offering a
+              comprehensive suite of services encompassing the entire software
+              offering a comprehensive suite of services and encompassing the
+              entire software lifecycle.
             </p>
             <div className="flex gap-5">
               <Link
@@ -88,14 +102,16 @@ export default function Footer() {
             <p className="text-whitePrimary text-2xl font-bold uppercase poppins">
               Pages
             </p>
-            <div className="flex flex-col gap-3 ">
+            <div className="flex flex-col gap-3 w-fit ">
               {Pages.map((item, index) => (
-                <p
-                  className="text-base text-whitePrimary font-medium inter"
-                  key={index}
-                >
-                  {item}
-                </p>
+                <Link href={item.link}>
+                  <p
+                    className="text-base text-whitePrimary font-medium inter"
+                    key={index}
+                  >
+                    {item.name}
+                  </p>
+                </Link>
               ))}
             </div>
           </div>
@@ -105,14 +121,16 @@ export default function Footer() {
             <p className="text-whitePrimary text-2xl font-bold uppercase poppins">
               Resources
             </p>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 w-fit">
               {Resources.map((item, index) => (
-                <p
-                  className="text-base text-whitePrimary font-medium inter"
-                  key={index}
-                >
-                  {item}
-                </p>
+                <Link href={item.link}>
+                  <p
+                    className="text-base text-whitePrimary font-medium inter"
+                    key={index}
+                  >
+                    {item.name}
+                  </p>
+                </Link>
               ))}
             </div>
           </div>
