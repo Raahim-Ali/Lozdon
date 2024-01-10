@@ -10,6 +10,7 @@ function ContactUs() {
           title="Contact us"
           paragraph="Octal Code, we excel in web development, offering a comprehensive suite of services and software development lifecycle."
           btnText="book session with us"
+          showButton={false}
           btnWidth="28%"
           imgSrc="/Assets/Herosection/HeroSectionImage.svg"
         />

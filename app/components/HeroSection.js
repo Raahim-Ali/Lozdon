@@ -33,6 +33,7 @@ const highlightServices = (title) => {
 const HeroSection = ({
   title,
   paragraph,
+  showButton, // Add a prop to determine if the button should be visible
   btnText,
   btnWidth,
   imgSrc,
@@ -58,7 +59,7 @@ const HeroSection = ({
             </p>
           </div>
           <div className="z-10 flex w-fit">
-            <Greenbtn buttonText={btnText} href="/Services" />
+            {showButton && <Greenbtn buttonText={btnText} href="/Contact" />}
           </div>
         </div>
 
