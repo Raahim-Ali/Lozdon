@@ -2,7 +2,6 @@
 // Import necessary modules
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import ClientOne from "../../../public/Assets/Work/google.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
@@ -12,35 +11,54 @@ import "./Slider.css";
 
 const sliderData = [
   {
-    title: "Outstanding Service",
-    text: "I recently had a dental checkup at Dental Essence and I'm impressed. The staff is friendly, and the clinic is clean and inviting. The dentists were thorough, explaining each step with patience. I highly recommend Dental Essence for top-notch dental care.",
-    name: "Hammad Abid",
+    title: "Delivering Outstanding Service and Empowering Ecommerce Success.",
+    text: "Octal Code proved to be an excellent collaborator throughout our partnership. The team facilitated a successful negotiation with a development firm to undertake the complete reconstruction of our application suite. This suite is now utilized by over 3000 ecommerce sellers.",
+    name: "Matt Hall",
+    description: "Founder & CEO - Ecom Circles",
+    image: "/Assets/Work/client1.jpg",
   },
 
   {
-    title: " Caring Professionals",
-    text: "My experience at Dental Essence was excellent. The dentists and staff are compassionate and attentive. They made me feel at ease throughout my procedure.",
-    name: "Saad Rana",
+    title: "Elevating Collaboration, Delivering Excellence.",
+    text: "My collaboration with Octal Code has been exceptional. Their technical expertise, skilled team, and effective strategies for product development have proven invaluable. Octal Code consistently delivers outstanding products and seamlessly adapts to the evolving landscape for successful client onboarding.",
+    name: "Jacob Cutler",
+    description: "CEO - Ampli-fi.io",
+    image: "/Assets/Work/client2.jpg",
   },
   {
-    title: "Modern Clinic, Expert Care",
-    text: "I'm impressed with the modern facilities and expert care. The dental team is knowledgeable, and the clinic uses cutting-edge technology. I felt well-informed about my treatment options, and the staff made my visit comfortable.",
-    name: "Ayesha",
+    title: "Empowering Teams, Elevating Collaborations.",
+    text: "Having Octal Code as my professional collaborator has been truly exceptional. Their managerial prowess has created an environment where team members are empowered to depend on their unique strengths. I am enthusiastic about the prospect of future collaborations with Octal Code and its team.",
+    name: "Muqaddas Tahir",
+    description: "BD Executive - Airvon",
+    image: "/Assets/Work/client3.jpg",
   },
   {
-    title: "Quick and Convenient Dental Service",
-    text: "I had a convenient experience. The appointment started on time. The clinic's efficiency and friendliness make it a go-to choice for those with a busy schedule. I'm pleased with the service and will continue to choose Dental Essence for my dental needs.",
-    name: "Muhammad Hasnain",
+    title: "Inspiring Growth, Driving Success.",
+    text: "Octal Code serves as exceptional mentors and excel as Business Development Managers. Their proficiency in the sales process and expertise in constructing effective sales funnels make Octal Code a valuable partner for driving business growth and success. The strategic business development sets them apart, making every collaboration a rewarding experience.",
+    name: "Ali Ahmad",
+    description: "BD Manager - INOVAQO",
+    image: "/Assets/Work/client4.jpg",
   },
   {
-    title: "Top-Notch Cosmetic Dentistry",
-    text: "I recently had cosmetic dental work done, and the results exceeded my expectations. The attention to detail and commitment to achieving the desired outcome were impressive. The cosmetic dentists are true professionals, and the staff provided exceptional service.",
-    name: "Ahmad Kaleem",
+    title: "Crafting Success, Defining Excellence.",
+    text: "Octal Code demonstrates high level of focus on their goals. Over time, they have provided invaluable support, serving as a guiding force in mentoring and enhancing the capabilities of peers and the workforce. This client-centered approach reflects Octal Code's commitment to fostering growth and ensuring the achievement of shared objectives.",
+    name: "Mohammad Ali Khan",
+    description: "BD Manager - Soft Steer Global Tech",
+    image: "/Assets/Work/client5.jpg",
   },
   {
-    title: "Emergency Care Excellence",
-    text: "I had an unexpected dental emergency and needed immediate assistance. The team at Dental Essence demonstrated outstanding responsiveness and professionalism. The dentist addressed my issue promptly, and the support staff was reassuring.",
+    title: "Inspiring Excellence, and Shaping the Future of IT Solutions.",
+    text: "Octal Code stood out as a highly competent and knowledgeable company, demonstrating a keen ability to navigate challenges. The team's professionalism, and commitment to continuous learning inspired me. Octal Code has a promising future, and I look forward to potential collaborations in the near future.",
     name: "Rida Fatima",
+    description: "BD Executive - Brandsafe",
+    image: "/Assets/Work/client6.jpg",
+  },
+  {
+    title: "Inspiring Excellence, and Shaping the Future of IT Solutions.",
+    text: "Octal Code has consistently pursued innovative strategies for business growth and excelled in acquiring new clients and ensuring their retention through the delivery of top-notch services. Octal Code comes highly recommended as a skilled business development partner.",
+    name: "Hasan A.",
+    description: "IT Specialist - AlgoRepublic",
+    image: "/Assets/Work/client7.jpg",
   },
 ];
 
@@ -50,7 +68,7 @@ const Slider = () => {
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
-        loop={true}
+        loop={false}
         pagination={{
           clickable: true,
         }}
@@ -85,10 +103,17 @@ const Slider = () => {
             </div>
             <div className="SwiperClient">
               <div>
-                <Image src={ClientOne} alt="/" width={40} height={40} />
+                <Image
+                  src={slide.image}
+                  alt="/"
+                  width={60}
+                  height={60}
+                  style={{ borderRadius: "50%" }}
+                />
               </div>
               <div>
                 <p className="SwiperClientName">{slide.name}</p>
+                <p className="SwiperText">{slide.description}</p>
               </div>
             </div>
           </SwiperSlide>
