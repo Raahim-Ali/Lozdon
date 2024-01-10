@@ -30,18 +30,21 @@ export default function UltimateGuideToWeb() {
           </p>
 
           <div>
-            <button className="bg-grey py-3 px-6 flex gap-3 rounded-xl justify-center items-center">
-              <Link href="/BlogDetails">
+            <button className="bg-grey py-3 px-6 rounded-xl">
+              <Link
+                href="/BlogDetails/Ruby-on-rails"
+                className="flex justify-center items-center gap-3"
+              >
                 <span className="text-sm md:text-base inter font-semibold uppercase">
                   <p className="learnMore w-fit">Learn more</p>
                 </span>
+                <div className="w-4 md:w-5">
+                  <img
+                    src="/Assets/Blog/Arrow.svg"
+                    alt="Continue Reading Arrow"
+                  />
+                </div>
               </Link>
-              <div className="w-4 md:w-5">
-                <img
-                  src="/Assets/Blog/Arrow.svg"
-                  alt="Continue Reading Arrow"
-                />
-              </div>
             </button>
           </div>
         </div>

@@ -7,9 +7,10 @@ export default function BlogCard() {
       imageSrc: "/Assets/Home/BlogCard.svg",
       buttonText: "development",
       read: "10 min read",
-      title: "Ruby on Rails A Comprehensive Guide for Beginners",
+      title: "Harnessing the Power of React.js A Comprehensive Guide",
       description:
-        "Ruby on Rails, often simply called Rails, is a popular web application framework written in the Ruby programming...",
+        "In the ever-evolving world of web development, React.js has emerged as a game-changing library that has...",
+      link: "/BlogDetails/Harnessing-the-power",
     },
     {
       imageSrc: "/Assets/Home/BlogCard.svg",
@@ -19,6 +20,7 @@ export default function BlogCard() {
         "The Power and Potential of Ruby on Rails Unveiling the Web Development Marvel",
       description:
         "The Power and Potential of Ruby on Rails Unveiling the Web Development Marvels...",
+      link: "/BlogDetails/the-power-potential",
     },
 
     {
@@ -29,6 +31,7 @@ export default function BlogCard() {
         "OctalCode Your Trusted Partner in Web Development and Digital Solutions",
       description:
         "OctalCode is a leading provider of web development, mobile application development...",
+      link: "/BlogDetails/Octalcode-trusted",
     },
   ];
   return (
@@ -46,11 +49,11 @@ export default function BlogCard() {
             />
             <div className="px-4  md:px-8 rounded-lg shadow-md w-full">
               <div className="flex justify-between items-center py-4 ">
-                <button className="bg-gray-300  p-2 flex  sm:items-center sm:justify-center rounded-lg cursor-pointer uppercase">
+                <div className="bg-gray-300  p-2 flex  sm:items-center sm:justify-center rounded-lg cursor-default uppercase">
                   <p className="text-sm font-semibold text-gray-500">
                     {blog.buttonText}
                   </p>
-                </button>
+                </div>
                 <p className="text-base font-medium text-gray-700">
                   {blog.read}
                 </p>
@@ -66,7 +69,7 @@ export default function BlogCard() {
                 <p className="text-base font-light text-gray-700">
                   {blog.description}
                 </p>
-                <Link href="#" className="flex w-fit">
+                <Link href={blog.link} className="flex w-fit">
                   <p className="learnMore w-fit mt-3 hover:text-main">
                     Learn more
                   </p>
