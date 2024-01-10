@@ -54,8 +54,8 @@ const sliderData = [
     image: "/Assets/Work/client6.jpg",
   },
   {
-    title: "Inspiring Excellence, and Shaping the Future of IT Solutions.",
-    text: "Octal Code has consistently pursued innovative strategies for business growth and excelled in acquiring new clients and ensuring their retention through the delivery of top-notch services. Octal Code comes highly recommended as a skilled business development partner.",
+    title: "Pioneering Business Excellence.",
+    text: "Octal Code has consistently pursued innovative strategies for business growth and excelled in acquiring new clients and ensuring their retention through the delivery of top-notch services. Known for their adaptability to various situations, Octal Code comes highly recommended as a skilled business development partner.",
     name: "Hasan A.",
     description: "IT Specialist - AlgoRepublic",
     image: "/Assets/Work/client7.jpg",
