@@ -46,6 +46,9 @@ function Navbar() {
           <p className="navbarIcon">
             <Link href="/#Industries">INDUSTRIES</Link>
           </p>
+          <p className="navbarIcon">
+            <Link href="/Blog">BLOGS</Link>
+          </p>
           <Greenbtn buttonText="Contact us" href="/Contact" />
         </div>
         <button className="sidebarBtn" onClick={toggleDropdown}>
@@ -86,6 +89,14 @@ function Navbar() {
             }}
           >
             <Link href="/#Industries">INDUSTRIES</Link>
+          </div>
+          <div
+            className="navbarIcon"
+            onClick={() => {
+              toggleDropdown();
+            }}
+          >
+            <Link href="/Blog">BLOGS</Link>
           </div>
           <Greenbtn
             buttonText="Contact us"

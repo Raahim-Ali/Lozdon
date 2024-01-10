@@ -19,7 +19,8 @@ const highlightServices = (title) => {
         word.toLowerCase() === "software" ||
         word.toLowerCase() === "ui" ||
         word.toLowerCase() === "Software" ||
-        word.toLowerCase() === "service"
+        word.toLowerCase() === "service" ||
+        word.toLowerCase() === "blogs"
           ? "text-green-500"
           : "text-whitePrimary"
       }
