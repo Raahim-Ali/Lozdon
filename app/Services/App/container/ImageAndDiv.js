@@ -7,7 +7,7 @@ const yourArray = [
     description:
       "Crafting iOS Excellence: Seamless Solutions, Endless Possibilities",
     text: "Our iOS App Development service creates sleek and functional applications for iPhones, iPads, and Apple Watches. Our expert developers prioritize user-friendly interfaces and seamless experiences. Whether you're targeting the App Store or need custom enterprise solutions, we deliver quality with a focus on the latest Apple technologies. Our commitment is to bring your ideas to life in the vibrant iOS ecosystem.",
-    imageSrc: "/Assets/OurServices/WebDevelopment.svg",
+    imageSrc: "/Assets/OurServices/app1.jpg",
   },
   {
     title: "Android App Development",
@@ -15,35 +15,35 @@ const yourArray = [
       "Turning Ideas into Interactive Excellence: Your Vision, Our Code.",
     text: "Our Android App Development service creates user-friendly and efficient applications tailored for various Android devices. With a focus on intuitive interfaces, our skilled developers ensure your app excels in the competitive Android ecosystem. Whether you're aiming for the Google Play Store or need customized business solutions, our team is committed to delivering high-quality applications that leverage the latest Android technologies.",
 
-    imageSrc: "/Assets/OurServices/WebDevelopment.svg",
+    imageSrc: "/Assets/OurServices/app2.jpg",
   },
   {
     title: "Cross-Platform Development",
     description:
       "Code Once, Thrive Everywhere: Seamless Cross-Platform Solutions.",
     text: "Our Cross-Platform App Development service ensures efficient app performance on both iOS and Android using frameworks like Flutter and React Native. With a streamlined development process and a single codebase, we optimize efficiency and reduce time-to-market. Whether you're aiming for a broad user base or optimizing resource utilization, our cross-platform expertise extends your app's reach across different platforms with consistency and impact.",
-    imageSrc: "/Assets/OurServices/WebDevelopment.svg",
+    imageSrc: "/Assets/OurServices/app3.jpg",
   },
   {
     title: "Mobile App Monetization Strategies",
     description:
       "Monetize Smart, Prosper Mobile: Elevating App Revenue Strategies.",
     text: "Maximize your app's earnings with our Mobile App Monetization service. From in-app purchases to ad integration, our experts provide strategic guidance tailored to your app's characteristics and user base. We ensure effective monetization, helping your app achieve financial success in the competitive market.",
-    imageSrc: "/Assets/OurServices/WebDevelopment.svg",
+    imageSrc: "/Assets/OurServices/app4.jpg",
   },
   {
     title: "Mobile App Maintenance and Support",
     description:
       "Sustain, Enhance, Prosper: Elevating Mobile Apps Through Expert Maintenance and Support.",
     text: "Our Mobile App Maintenance service guarantees sustained performance through timely updates and bug fixes. Focused on seamless user experiences, we prioritize enhancements and provide dedicated user support. Committed to your app's lifecycle, we ensure optimal functionality, addressing issues promptly, and implementing improvements to meet evolving user needs.",
-    imageSrc: "/Assets/OurServices/WebDevelopment.svg",
+    imageSrc: "/Assets/OurServices/app5.jpg",
   },
   {
     title: "Mobile App Consulting",
     description:
       "Navigating Success in the App World: Your Vision, Our Expertise.",
     text: "Engage our Mobile App Consulting service for comprehensive guidance in navigating the complexities of app development. From initial project planning and strategic considerations to meticulous technology stack selection, our expert consultants provide invaluable insights. Whether you're a startup embarking on your app journey or an enterprise aiming to optimize processes, we customize strategies to ensure a robust and successful mobile app development experience.",
-    imageSrc: "/Assets/OurServices/WebDevelopment.svg",
+    imageSrc: "/Assets/OurServices/app6.jpg",
   },
   // Add more items as needed
 ];
