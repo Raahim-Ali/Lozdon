@@ -49,7 +49,7 @@ const sliderData = [
   {
     title: "Inspiring Excellence, and Shaping the Future of IT Solutions.",
     text: "Octal Code stood out as a highly competent and knowledgeable company, demonstrating a keen ability to navigate challenges. The team's professionalism, and commitment to continuous learning inspired me. Octal Code has a promising future, and I look forward to potential collaborations in the near future.",
-    name: "Rida Fatima",
+    name: "Farah Arshad",
     description: "BD Executive - Brandsafe",
     image: "/Assets/Work/client6.jpg",
   },
