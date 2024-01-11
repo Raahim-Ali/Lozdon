@@ -9,7 +9,7 @@ export default function page() {
     <>
       <HeroSection
         title="Our Blogs"
-        paragraph="Octal Code, we excel in web development, offering a comprehensive suite of services."
+        paragraph="Tech Insights Unleashed: Explore the future with our blogs"
         btnText="let’s work together"
         // btnWidth="28%"
         imgSrc="/Assets/Herosection/HeroSectionImage.svg"
