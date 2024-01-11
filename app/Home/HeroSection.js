@@ -10,7 +10,7 @@ const highlightServices = (title) => {
     <span
       key={index}
       className={
-        word.toLowerCase() === "full" || word.toLowerCase() === "service"
+        word.toLowerCase() === "infinite" || word.toLowerCase() === "solutions"
           ? "text-green-600"
           : "text-whitePrimary"
       }

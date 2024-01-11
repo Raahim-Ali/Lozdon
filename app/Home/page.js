@@ -15,7 +15,7 @@ function HomePage() {
     <>
       <HeroSection
         // titleWidth="80%"
-        title="full service software agency"
+        title="infinite solutions one agency"
         paragraph="Elevating your digital presence through a symphony of expertise, weaving technological brilliance, innovative designs, and seamless functionality into every project."
         btnText="See all services"
         TbtnText="book session with us"
