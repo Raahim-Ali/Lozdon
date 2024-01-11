@@ -10,7 +10,7 @@ export default function BlogCard() {
       title: "Harnessing the Power of React.js A Comprehensive Guide",
       description:
         "In the ever-evolving world of web development, React.js has emerged as a game-changing library that has...",
-      link: "/BlogDetails/Harnessing-the-power",
+      link: "/Blog/Harnessing-the-power",
     },
     {
       imageSrc: "/Assets/Home/BlogCard.svg",
@@ -29,7 +29,7 @@ export default function BlogCard() {
         "The Power and Potential of Ruby on Rails Unveiling the Web Development Marvel",
       description:
         "The Power and Potential of Ruby on Rails Unveiling the Web Development Marvels...",
-      link: "/BlogDetails/the-power-potential",
+      link: "/Blog/the-power-potential",
     },
 
     {
@@ -37,10 +37,10 @@ export default function BlogCard() {
       buttonText: "development",
       read: "10 min read",
       title:
-        "OctalCode Your Trusted Partner in Web Development and Digital Solutions",
+        "Octal Code Your Trusted Partner in Web Development and Digital Solutions",
       description:
         "OctalCode is a leading provider of web development, mobile application development...",
-      link: "/BlogDetails/Octalcode-trusted",
+      link: "/Blog/Octalcode-trusted",
     },
   ];
   return (

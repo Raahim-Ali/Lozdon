@@ -32,7 +32,7 @@ export default function UltimateGuideToWeb() {
           <div>
             <button className="bg-grey py-3 px-6 rounded-xl">
               <Link
-                href="/BlogDetails/Ruby-on-rails"
+                href="/Blog/Ruby-on-rails"
                 className="flex justify-center items-center gap-3"
               >
                 <span className="text-sm md:text-base inter font-semibold uppercase">
