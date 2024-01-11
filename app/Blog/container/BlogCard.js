@@ -16,6 +16,15 @@ export default function BlogCard() {
       imageSrc: "/Assets/Home/BlogCard.svg",
       buttonText: "development",
       read: "10 min read",
+      title: "Harnessing the Power of React.js A Comprehensive Guide",
+      description:
+        "In the ever-evolving world of web development, React.js has emerged as a game-changing library that has...",
+      link: "/BlogDetails/Harnessing-the-power",
+    },
+    {
+      imageSrc: "/Assets/Home/BlogCard.svg",
+      buttonText: "development",
+      read: "10 min read",
       title:
         "The Power and Potential of Ruby on Rails Unveiling the Web Development Marvel",
       description:
@@ -36,10 +45,10 @@ export default function BlogCard() {
   ];
   return (
     <>
-      <div className="flex flex-wrap gap-8 ">
+      <div className="flex flex-wrap gap-8 w-full ">
         {blogs.map((blog, index) => (
           <div
-            className="flex-grow flex flex-col  w-full  md:w-1/2   lg:w-1/4 rounded-md self-stretch"
+            className="md:flex-grow lg:flex-grow-0 flex flex-col w-full  md:w-1/3 lg:w-[31%] rounded-md self-stretch"
             key={index}
           >
             <img
