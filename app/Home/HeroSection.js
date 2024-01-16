@@ -1,9 +1,7 @@
 "use client";
 import "./Style.css";
 import React, { useEffect, useState } from "react";
-import Greenbtn from "../components/Greenbtn";
 import Transparentbtn from "../components/Transparentbtn";
-import Link from "next/link";
 
 const highlightServices = (title) => {
   const words = title.split(" ");
@@ -109,12 +107,6 @@ const HeroSection = ({
             <Transparentbtn TbtnText={TbtnText} href="#" />
           </div>
         </div>
-        {showImage && (
-          <div className="flex justify-center align-center">
-            {/* Your Image Component */}
-            <img src={imgSrc} alt="your-image" />
-          </div>
-        )}
       </div>
 
       {/* <div
