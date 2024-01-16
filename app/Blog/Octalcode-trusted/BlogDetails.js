@@ -108,8 +108,8 @@ function BlogDetails() {
               </p>
               <div className="Detailsparagraphs">
                 <p className="UltimateGuideContentTextParagraph">
-                  At the core of OctalCode's offerings is its expertise in web
-                  development, with a focus on creating responsive,
+                  At the core of OctalCode&apos;s offerings is its expertise in
+                  web development, with a focus on creating responsive,
                   user-friendly, and SEO-optimized websites that engage users
                   and drive conversions. By utilizing the latest technologies
                   and best practices in web development, OctalCode ensures that
@@ -175,7 +175,7 @@ function BlogDetails() {
                   In conclusion, OctalCode is your trusted partner for web
                   development and digital solutions, offering a comprehensive
                   suite of services designed to help businesses succeed in
-                  today's competitive online landscape. With its innovative
+                  today&apos;s competitive online landscape. With its innovative
                   approach, commitment to excellence, and expertise in emerging
                   technologies, OctalCode is shaping the future of digital
                   innovation and helping businesses achieve their goals.
