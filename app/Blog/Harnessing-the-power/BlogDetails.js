@@ -118,7 +118,7 @@ function BlogDetails() {
             </div>
             <div className="UltimateGuideContentTextDetails">
               <p className="UltimateGuideContentTextHeading">
-                Key Features of React.js :
+                Key Features of React.js:
               </p>
               <div className="Detailsparagraphs">
                 <ul className="UltimateGuideContentTextParagraph list-decimal">
