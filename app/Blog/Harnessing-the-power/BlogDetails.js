@@ -76,7 +76,6 @@ function BlogDetails() {
             style={{
               width: "100%",
               overflow: "hidden",
-              height: "500px",
               borderRadius: "14px",
               marginTop: "41px",
             }}

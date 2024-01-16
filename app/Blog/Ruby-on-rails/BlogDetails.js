@@ -49,7 +49,7 @@ function BlogDetails() {
         </div>
         <div className="UltimateGuideContent">
           <p className="UltimateGuideContentHeading">
-            Ruby on Rails A Comprehensive Guide for Beginners
+            Ruby on Rails - Comprehensive Guide for Beginners
           </p>
           <div className="TeamLogo">
             <div className="flex items-center gap-3">

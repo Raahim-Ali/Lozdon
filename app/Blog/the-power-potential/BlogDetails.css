@@ -96,3 +96,28 @@
   text-align: left;
   color: rgba(59, 63, 92, 1);
 }
+@media (1000px < width < 1400px) {
+  .blogDetailsPage {
+    padding: 0px 50px;
+  }
+}
+@media (width < 1000px) {
+  .blogDetailsPage {
+    padding: 0px 50px;
+  }
+  .navigationSection {
+    display: none;
+  }
+}
+@media (width < 600px) {
+  .blogDetailsPage {
+    padding: 0px 50px;
+  }
+  .blogDetailsContent {
+    padding: 100px 0px;
+  }
+  .UltimateGuideContentHeading {
+    font-size: 34px;
+    line-height: 50px;
+  }
+}
