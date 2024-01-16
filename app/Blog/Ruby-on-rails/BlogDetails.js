@@ -97,8 +97,8 @@ function BlogDetails() {
               application framework written in the Ruby programming language.
               Known for its convention over configuration principle, Rails
               offers developers a streamlined and efficient way to build robust
-              web applications. If you're new to Rails or considering learning
-              it, this article will provide you with a foundational
+              web applications. If you&apos;re new to Rails or considering
+              learning it, this article will provide you with a foundational
               understanding of its key concepts and benefits.
             </p>
             <div className="UltimateGuideContentTextDetails">
@@ -125,14 +125,14 @@ function BlogDetails() {
                     <span className="font-bold">
                       Convention over Configuration (CoC) :
                     </span>{" "}
-                    Rails follows the principle of "convention over
-                    configuration," meaning that it makes assumptions about the
-                    best way to do things, reducing the need for explicit
+                    Rails follows the principle of &quot;convention over
+                    configuration,&quot; meaning that it makes assumptions about
+                    the best way to do things, reducing the need for explicit
                     configuration and boilerplate code.
                   </li>
                   <li>
                     <span className="font-bold">
-                      Don't Repeat Yourself (DRY) :
+                      Don&apos;t Repeat Yourself (DRY) :
                     </span>{" "}
                     Rails encourages the DRY principle by minimizing repetition
                     in code, promoting modular design, and providing built-in
@@ -159,7 +159,7 @@ function BlogDetails() {
               </p>
               <div className="Detailsparagraphs">
                 <p className="UltimateGuideContentTextParagraph">
-                  To start building applications with Rails, you'll need to
+                  To start building applications with Rails, you&apos;ll need to
                   install Ruby and Rails on your system. Once installed, you can
                   create a new Rails application using the Rails new command and
                   follow the conventions and best practices of the framework to
@@ -174,11 +174,11 @@ function BlogDetails() {
               <div className="Detailsparagraphs">
                 <ol className="UltimateGuideContentTextParagraph list-decimal">
                   <li>
-                    <span className="font-bold">Productivity : </span> Rails'
-                    emphasis on convention over configuration and the DRY
-                    principle allows developers to write less code and focus on
-                    solving business problems, leading to faster development
-                    cycles.
+                    <span className="font-bold">Productivity : </span>{" "}
+                    Rails&apos; emphasis on convention over configuration and
+                    the DRY principle allows developers to write less code and
+                    focus on solving business problems, leading to faster
+                    development cycles.
                   </li>
                   <li>
                     <span className="font-bold">Community and Ecosystem :</span>{" "}
@@ -202,10 +202,10 @@ function BlogDetails() {
                 <p className="UltimateGuideContentTextParagraph">
                   Ruby on Rails is a powerful and versatile framework that
                   offers developers a productive and enjoyable experience for
-                  building modern web applications. Whether you're a seasoned
-                  developer or just starting your journey in web development,
-                  Rails provides a solid foundation for creating robust,
-                  maintainable, and scalable applications.
+                  building modern web applications. Whether you&apos;re a
+                  seasoned developer or just starting your journey in web
+                  development, Rails provides a solid foundation for creating
+                  robust, maintainable, and scalable applications.
                 </p>
               </div>
             </div>
