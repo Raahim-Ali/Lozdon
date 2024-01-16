@@ -17,10 +17,6 @@
   cursor: pointer;
   transition: transform 0.5s ease;
 }
-.blogCard:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
 
 .blogImage {
   border-radius: 10px;

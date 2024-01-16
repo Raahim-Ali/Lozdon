@@ -4,7 +4,7 @@ import React from "react";
 export default function BlogCard() {
   const blogs = [
     {
-      imageSrc: "/Assets/Home/BlogCard.svg",
+      imageSrc: "/Assets/Home/react.jpg",
       buttonText: "development",
       read: "10 min read",
       title: "Harnessing the Power of React.js A Comprehensive Guide",
@@ -13,7 +13,7 @@ export default function BlogCard() {
       link: "/Blog/Harnessing-the-power",
     },
     {
-      imageSrc: "/Assets/Home/BlogCard.svg",
+      imageSrc: "/Assets/Home/ruby2.jpg",
       buttonText: "development",
       read: "10 min read",
       title:
@@ -24,7 +24,7 @@ export default function BlogCard() {
     },
 
     {
-      imageSrc: "/Assets/Home/BlogCard.svg",
+      imageSrc: "/Assets/Blog/webdev.jpg",
       buttonText: "development",
       read: "10 min read",
       title:

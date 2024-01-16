@@ -3,6 +3,7 @@ import "./Style.css";
 import React, { useEffect, useState } from "react";
 import Greenbtn from "../components/Greenbtn";
 import Transparentbtn from "../components/Transparentbtn";
+import Link from "next/link";
 
 const highlightServices = (title) => {
   const words = title.split(" ");
@@ -43,6 +44,16 @@ const HeroSection = ({
     };
   }, []);
   const backgroundImageUrl = "/Assets/Herosection/heroBg.svg";
+  const handleWhatsAppClick = () => {
+    // Replace '1234567890' with your actual WhatsApp number
+    const phoneNumber = "+923214349743";
+
+    // Create the WhatsApp URL with a pre-filled message
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hello%20from%20your%20website!`;
+
+    // Open the WhatsApp URL in a new tab/window using the Link component
+    window.open(whatsappUrl, "_blank");
+  };
   return (
     <div
       className="flex flex-col w-full lg:flex-row"
@@ -90,8 +101,12 @@ const HeroSection = ({
               </div>
             </div>
           </div>
-          <div className="sm:flex md:flex lg:flex hidden gap-8">
-            <Transparentbtn TbtnText={TbtnText} href="/Contact" />
+          <div
+            className="sm:flex md:flex lg:flex hidden gap-8"
+            style={{ display: "flex" }}
+            onClick={handleWhatsAppClick}
+          >
+            <Transparentbtn TbtnText={TbtnText} href="#" />
           </div>
         </div>
         {showImage && (

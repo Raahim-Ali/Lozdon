@@ -7,7 +7,7 @@ export default function UltimateGuideToWeb() {
       {/* Left Section: Image */}
       <div className="lg:w-2/5 overflow-hidden xl:h-96 rounded-2xl">
         <img
-          src="/Assets/Blog/UltimateGuideToWebImage.svg"
+          src="/Assets/Home/ruby.jpg"
           className="max-w-full w-full object-cover"
           alt="Web Authentication"
         />
@@ -46,26 +46,6 @@ export default function UltimateGuideToWeb() {
                 </div>
               </Link>
             </button>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-3">
-          <img
-            src="/Assets/Blog/Icon.svg"
-            className=" rounded-full"
-            alt="Author Icon"
-          />
-
-          <div className="flex flex-col">
-            <p className="poppins text-base font-semibold text-gray-700">
-              OctalCode Team
-            </p>
-            <p
-              className="inter font-normal text-sm"
-              style={{ color: "#96A2BE" }}
-            >
-              Jan 12, 2023 • 8 min read
-            </p>
           </div>
         </div>
       </div>

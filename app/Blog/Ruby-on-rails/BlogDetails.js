@@ -76,13 +76,13 @@ function BlogDetails() {
             style={{
               width: "100%",
               overflow: "hidden",
-              height: "500px",
+              height: "700px",
               borderRadius: "14px",
               marginTop: "41px",
             }}
           >
             <img
-              src="/Assets/Blog/UltimateGuideToWebImage.svg"
+              src="/Assets/Home/ruby.jpg"
               className="max-w-full h-auto"
               alt="Web Authentication"
               style={{

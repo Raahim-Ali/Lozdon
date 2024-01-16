@@ -82,7 +82,7 @@ function BlogDetails() {
             }}
           >
             <img
-              src="/Assets/Blog/UltimateGuideToWebImage.svg"
+              src="/Assets/Home/react.jpg"
               className="max-w-full h-auto"
               alt="Web Authentication"
               style={{
