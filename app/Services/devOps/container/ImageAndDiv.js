@@ -42,14 +42,14 @@ const yourArray = [
     description:
       "Manage and maintain the configuration of servers and infrastructure for consistency.",
     text: "Streamline and standardize your IT infrastructure with our Configuration Management service. We automate the setup, maintenance, and tracking of system configurations, ensuring consistency and reliability. From server provisioning to software deployments, our solution optimizes operations, reduces errors, and enhances scalability.",
-    imageSrc: "/Assets/OurServices/dev5.jpg",
+    imageSrc: "/Assets/OurServices/dev6.jpg",
   },
   {
     title: "Collaboration and Communication",
     description:
       "Enhance collaboration and communication between development and operations teams.",
     text: "Empower teamwork and boost productivity with our Collaboration and Communication service. We integrate cutting-edge tools like Slack, Teams, and collaborative platforms to enhance communication and cooperation across your development and operations teams. Break down silos, foster real-time collaboration, and accelerate project delivery.",
-    imageSrc: "/Assets/OurServices/dev5.jpg",
+    imageSrc: "/Assets/OurServices/dev7.jpg",
   },
   // Add more items as needed
 ];

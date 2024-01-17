@@ -16,30 +16,6 @@ const Data = [
     ImageSrc: "/Assets/SIngleService/LatestTechnology/Css.svg",
     text: "CSS",
   },
-  {
-    ImageSrc: "/Assets/SIngleService/LatestTechnology/Css.svg",
-    text: "CSS",
-  },
-  {
-    ImageSrc: "/Assets/SIngleService/LatestTechnology/Firebase.svg",
-    text: "Firebase",
-  },
-  {
-    ImageSrc: "/Assets/SIngleService/LatestTechnology/MUI.svg",
-    text: "Material UI",
-  },
-  {
-    ImageSrc: "/Assets/SIngleService/LatestTechnology/js.svg",
-    text: "JavaScript",
-  },
-  {
-    ImageSrc: "/Assets/SIngleService/LatestTechnology/Css.svg",
-    text: "CSS",
-  },
-  {
-    ImageSrc: "/Assets/SIngleService/LatestTechnology/Css.svg",
-    text: "CSS",
-  },
 ];
 export default function LatestTechnologies() {
   return (
