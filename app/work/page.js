@@ -15,9 +15,6 @@ export default function Work() {
       />
       <PressSection />
       <CompanyOne />
-      <CompanyOne />
-      <CompanyOne />
-      <CompanyOne />
       <Clients />
     </>
   );
