@@ -47,7 +47,7 @@ function Navbar() {
             <Link href="/#Industries">INDUSTRIES</Link>
           </p>
           <p className="navbarIcon">
-            <Link href="/Blog">BLOGS</Link>
+            <Link href="/about-us">ABOUTS US</Link>
           </p>
           <Greenbtn buttonText="Contact us" href="/Contact" />
         </div>
@@ -96,7 +96,7 @@ function Navbar() {
               toggleDropdown();
             }}
           >
-            <Link href="/Blog">BLOGS</Link>
+            <Link href="/about-us">ABOUT US</Link>
           </div>
           <Greenbtn
             buttonText="Contact us"
