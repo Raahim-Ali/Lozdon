@@ -34,7 +34,7 @@ export default function OurValues() {
         <div className="ValuesContainer">
           {cardData.map((cardData, index) => (
             <div className="cardMain" key={index}>
-              <div className="card">
+              <div className="Valuecard">
                 <Image
                   src={cardData.imageSrc}
                   style={{ marginBottom: "20px" }}

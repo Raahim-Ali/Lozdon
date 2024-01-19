@@ -21,7 +21,7 @@
   width: 30%;
   margin-bottom: 38px;
 }
-.card {
+.Valuecard {
   display: flex;
   flex-direction: column;
   padding: 32px 32px;
@@ -66,7 +66,7 @@
     margin-bottom: 38px;
   }
 
-  .card {
+  .Valuecard {
     padding: 32px 32px;
     width: 95%;
     margin-bottom: 38px;
@@ -100,7 +100,7 @@
   .cardMain {
     width: 100%;
   }
-  .card {
+  .Valuecard {
     padding: 32px 20px;
     width: 100%;
     margin-bottom: 38px;
