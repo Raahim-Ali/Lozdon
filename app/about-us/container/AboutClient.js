@@ -2,39 +2,39 @@ import Image from "next/image";
 const cardData = [
   {
     imageSrc: "/Assets/OurServices/CardImage.svg",
-    title: "Transparent processes",
+    title: "Exceptional Quality Deliverables",
     description:
-      "Lorem ipsum dolor sit amet, conse-ctetur adipiscing elit. Nulla in luctus tortor. In molestie diam magna, nec faucibus ex mollis non.,",
+      "Our clients appreciate the unwavering commitment to delivering top-notch, quality solutions that consistently exceed expectations, ensuring their success in every project.",
   },
   {
     imageSrc: "/Assets/OurServices/CardImage.svg",
-    title: "Transparent processes",
+    title: "Innovative Problem Solving",
     description:
-      "Lorem ipsum dolor sit amet, conse-ctetur adipiscing elit. Nulla in luctus tortor. In molestie diam magna, nec faucibus ex mollis non.,",
+      "We are recognized for our innovative problem-solving approach. Clients appreciate our ability to think outside the box, providing creative solutions to complex challenges.",
   },
   {
     imageSrc: "/Assets/OurServices/CardImage.svg",
-    title: "Transparent processes",
+    title: "Tailored Solutions for Every Need",
     description:
-      "Lorem ipsum dolor sit amet, conse-ctetur adipiscing elit. Nulla in luctus tortor. In molestie diam magna, nec faucibus ex mollis non.,",
+      "Clients love our personalized approach. We understand their unique requirements and deliver customized solutions, ensuring our services align seamlessly with their business goals.",
   },
   {
     imageSrc: "/Assets/OurServices/CardImage.svg",
-    title: "Transparent processes",
+    title: "Responsive Communication",
     description:
-      "Lorem ipsum dolor sit amet, conse-ctetur adipiscing elit. Nulla in luctus tortor. In molestie diam magna, nec faucibus ex mollis non.,",
+      "Clients value our transparent and responsive communication. We keep them informed at every step, fostering a collaborative partnership and building trust through open dialogue.",
   },
   {
     imageSrc: "/Assets/OurServices/CardImage.svg",
-    title: "Transparent processes",
+    title: "Timely Project Delivery",
     description:
-      "Lorem ipsum dolor sit amet, conse-ctetur adipiscing elit. Nulla in luctus tortor. In molestie diam magna, nec faucibus ex mollis non.,",
+      "We take pride in our punctuality. Clients consistently commend us for delivering projects on time, allowing them to meet their milestones and launch products with confidence.",
   },
   {
     imageSrc: "/Assets/OurServices/CardImage.svg",
-    title: "Transparent processes",
+    title: "TProactive Support and Maintenance",
     description:
-      "Lorem ipsum dolor sit amet, conse-ctetur adipiscing elit. Nulla in luctus tortor. In molestie diam magna, nec faucibus ex mollis non.,",
+      "Beyond project completion, our commitment extends to proactive support and maintenance. Clients appreciate our ongoing assistance, ensuring their systems remain robust and up-to-date.",
   },
 
   // Add more objects for additional cards

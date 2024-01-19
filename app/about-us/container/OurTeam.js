@@ -45,7 +45,7 @@ export default function OurTeam() {
           {/* text Section */}
           {/* <p className="custom-text-24">.here we are</p> */}
           <p className="text-5xl font-bold uppercase  poppins  ">
-            our Amazing teams
+            our Amazing team
           </p>
         </div>
 

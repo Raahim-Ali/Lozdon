@@ -24,16 +24,26 @@ export default function OurStory() {
             Our Story
           </p>
           <p className="text-base w-full md:text-xl lg:text-2xl font-light inter">
-            Octal Code specializes in crafting bespoke software solutions
-            tailored to meet the unique requirements of your organization. Our
-            dedicated team works closely with you to understand your specific
-            needs and objectives. From conceptualization to design, coding,
-            rigorous testing, and final deployment, we ensure that the resulting
-            software aligns seamlessly with your business processes. With Octal
-            Code, you&apos;ll experience the power of custom-built software that
-            optimizes efficiency, productivity, and innovation, giving your
-            organization a competitive edge in today&apos;s dynamic business
-            landscape
+            At Octal Code, our journey began with a shared passion for
+            transforming ideas into technological marvels. Founded on the
+            principles of innovation and client-centricity, we embarked on a
+            mission to redefine the digital landscape. From our humble
+            beginnings, we've evolved into a dynamic software house known for
+            pushing boundaries, fostering collaboration, and delivering
+            cutting-edge solutions.
+          </p>
+          <p className="text-base w-full md:text-xl lg:text-2xl font-light inter">
+            Our story is one of continuous growth, fueled by a commitment to
+            excellence, an agile mindset, and a relentless pursuit of
+            innovation. Along the way, we've built lasting partnerships, earned
+            the trust of clients worldwide, and embraced the challenges of a
+            fast-paced industry.
+          </p>
+          <p className="text-base w-full md:text-xl lg:text-2xl font-light inter">
+            Join us in celebrating the milestones, challenges, and successes
+            that shape our narrative. Explore the Octal Code story—a journey
+            marked by innovation, collaboration, and a steadfast dedication to
+            shaping the future of technology.
           </p>
         </div>
         <div className="w-full ">
