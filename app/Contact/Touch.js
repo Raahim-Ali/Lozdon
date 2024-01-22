@@ -12,13 +12,13 @@ function Touch() {
       imageSrc: "/Assets/ContactUs/visit.svg",
       title: "Visit us",
       description: "Visit our office HQ.",
-      detail: "4 Herbert PlaceDublin 2Ireland",
+      detail: "Office 1002, 10th floor, Haly Tower, DHA Phase 2, Lahore",
     },
     {
       imageSrc: "/Assets/ContactUs/call.svg",
       title: "Call us",
-      description: "Mon-Fri from 8am to 5pm.",
-      detail: "+353 (0)1 531 3055",
+      description: "Mon-Fri from 9am to 6pm EST",
+      detail: "+92 321 434973",
     },
   ];
   return (

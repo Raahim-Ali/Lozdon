@@ -30,16 +30,16 @@ function FormSection() {
   ];
   const Logos = [
     {
-      imageSrc: "/Assets/Work/CardOneLogo.svg",
+      imageSrc: "/Assets/Work/Work1Logo.JPG",
     },
     {
-      imageSrc: "/Assets/Work/CardOneLogo.svg",
+      imageSrc: "/Assets/Work/Work3Logo.JPG",
     },
     {
-      imageSrc: "/Assets/Work/CardOneLogo.svg",
+      imageSrc: "/Assets/Work/Work5Logo.JPG",
     },
     {
-      imageSrc: "/Assets/Work/CardOneLogo.svg",
+      imageSrc: "/Assets/Work/Work2Logo.JPG",
     },
   ];
   return (
@@ -67,7 +67,13 @@ function FormSection() {
           <div className="companiesLogos">
             {Logos.map((Logo, index) => (
               <div className="companyLogo" key={index}>
-                <Image src={Logo.imageSrc} alt="/" height={150} width={150} />
+                <Image
+                  src={Logo.imageSrc}
+                  alt="/"
+                  height={150}
+                  width={150}
+                  style={{ borderRadius: "10px" }}
+                />
               </div>
             ))}
           </div>
@@ -79,13 +85,19 @@ function FormSection() {
         </div>
         <div className="form">
           <div className="formName">
-            <input type="text" className="nameInput" placeholder="YOUR NAME" />
+            <input
+              type="text"
+              className="nameInput"
+              placeholder="YOUR NAME"
+              required
+            />
           </div>
           <div className="formName">
             <input
               type="text"
               className="nameInput"
               placeholder="COMPANY NAME"
+              required
             />
           </div>
           <div className="formName">
@@ -93,13 +105,57 @@ function FormSection() {
               type="text"
               className="nameInput"
               placeholder="YOUR BUDGET"
+              required
             />
+          </div>
+          <div className="formName">
+            <select
+              className="w-full p-2 mt-1 border rounded-md"
+              style={{
+                color: "black",
+                fontWeight: 600,
+                border: "1px solid #6161619c",
+                background: "transparent",
+              }}
+              required
+            >
+              <option className="text-pTextColor" value="">
+                Select Service
+              </option>
+              <option className="text-pTextColor" value="Web Development">
+                Web Development
+              </option>
+              <option
+                className="text-pTextColor"
+                value="  Application Development"
+              >
+                Application Development
+              </option>
+              <option className="text-pTextColor" value="DevOps">
+                DevOps
+              </option>
+              <option className="text-pTextColor" value="UI/UX">
+                UI/UX
+              </option>
+              <option className="text-pTextColor" value="Software Testing">
+                Software Testing
+              </option>
+
+              <option className="text-pTextColor" value=" Special Services">
+                Special Services
+              </option>
+
+              <option className="text-pTextColor" value="Other Services">
+                Other Services
+              </option>
+            </select>
           </div>
           <div className="formName">
             <textarea
               type="text"
               className="message"
               placeholder="YOUR MESSAGE"
+              required
             />
           </div>
         </div>

@@ -5,7 +5,7 @@ import React from "react";
 
 const Pages = [
   { name: "Home", link: "/Home" },
-  { name: "Services", link: "/single-service" },
+  { name: "Services", link: "/#Services" },
   { name: "Our Work", link: "/work" },
   { name: "About Us", link: "/about-us" },
   { name: "Contact Us", link: "/Contact" },

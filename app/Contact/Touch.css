@@ -8,7 +8,7 @@
 .touchCardsContainer {
   padding: 24px 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .touchCard {
   border-radius: 8px;
