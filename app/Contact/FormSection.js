@@ -92,16 +92,16 @@ function FormSection() {
   ];
   const Logos = [
     {
-      imageSrc: "/Assets/Work/Work1Logo.JPG",
+      imageSrc: "/Assets/Work/work1Logo.JPG",
     },
     {
-      imageSrc: "/Assets/Work/Work3Logo.JPG",
+      imageSrc: "/Assets/Work/work3Logo.JPG",
     },
     {
-      imageSrc: "/Assets/Work/Work5Logo.JPG",
+      imageSrc: "/Assets/Work/work5Logo.JPG",
     },
     {
-      imageSrc: "/Assets/Work/Work2Logo.JPG",
+      imageSrc: "/Assets/Work/work2Logo.JPG",
     },
   ];
   return (
