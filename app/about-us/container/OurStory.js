@@ -4,14 +4,14 @@ const cardData = [
     imageSrc: "/Assets/aboutUs/bulb.svg",
     title: "Mission",
     description:
-      "At Octal Code, our mission is to be a driving force behind digital transformation. We are committed to delivering tailored and innovative solutions that empower businesses to navigate the complexities of the digital landscape. Our expertise lies in harnessing the full potential of technology to create seamless, efficient, and impactful digital experiences. Through collaboration, ingenuity, and a client-centric approach, we aim to be the trusted partner for organizations seeking strategic and future-ready solutions that propel them toward sustained success.",
+      "Octal Code drives digital transformation with tailored solutions. We empower businesses through innovative technology, creating efficient digital experiences. Collaborative, client-centric, and future-focused, we're the trusted partner for sustained success in a complex digital landscape.",
     learnMoreLink: "#",
   },
   {
     imageSrc: "/Assets/aboutUs/bulb.svg",
     title: "Vision  ",
     description:
-      "Octal Code envisions a dynamic digital future where businesses flourish through seamless and transformative technology solutions. We aim to be the foremost choice for organizations seeking a strategic technology partner, setting industry standards for innovation and excellence. Our vision is to consistently pioneer breakthroughs in digital capabilities, ensuring our clients are at the forefront of technological advancements. With an unwavering commitment to quality, Octal Code is shaping a landscape where businesses thrive in the ever-evolving digital ecosystem.",
+      "Octal Code envisions a thriving digital future, offering seamless technology solutions. We aspire to be the top choice for strategic tech partnerships, setting industry standards for innovation. Our commitment to quality shapes a landscape where businesses excel in the evolving digital ecosystem.",
     learnMoreLink: "#",
   },
 ];
