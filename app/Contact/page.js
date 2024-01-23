@@ -8,7 +8,7 @@ function ContactUs() {
       <>
         <HeroSection
           title="Contact us"
-          paragraph=""
+          paragraph="Your Gateway to Seamless Communication with Octal Code."
           btnText="book session with us"
           showButton={false}
           btnWidth="28%"

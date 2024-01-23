@@ -7,7 +7,7 @@ export default function page() {
     <>
       <HeroSection
         title="About Us"
-        paragraph="Octal Code, we excel in web development, offering a comprehensive suite of services."
+        paragraph="Crafting Digital Success Stories, One Innovation at a Time: Unveiling the Essence of Octal Code."
         btnText="let’s work together"
         imgSrc="/Assets/Herosection/HeroSectionImage.svg"
         // btnWidth="28%"
