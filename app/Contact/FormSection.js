@@ -1,7 +1,69 @@
+"use client";
 import Image from "next/image";
+import { useState } from "react";
 import "./FormSection.css";
-import Greenbtn from "../components/Greenbtn";
+
 function FormSection() {
+  const [formDisabled, setFormDisabled] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    companyName: "",
+    budget: "",
+    service: "",
+    message: "",
+  });
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log("Submitting form...");
+    // Validate that all fields are filled
+    if (
+      formData.name.trim() === "" ||
+      formData.companyName.trim() === "" ||
+      formData.budget.trim() === "" ||
+      formData.service.trim() === "" ||
+      formData.message.trim() === ""
+    ) {
+      alert("Please fill in all fields");
+      return;
+    }
+
+    try {
+      setFormDisabled(true);
+      const response = await fetch("/api/OctalCodeEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log("Form submitted successfully");
+        // Optionally, you can reset the form here
+        setFormData({
+          name: "",
+          companyName: "",
+          budget: "",
+          service: "",
+          message: "",
+        });
+        alert("Details Sent.");
+      } else {
+        alert("Failed to send the details. Please try again.");
+      }
+      setFormDisabled(false);
+    } catch (error) {
+      setFormDisabled(false);
+      alert(`Error submitting form: ${error.message}`);
+    }
+  };
   const lists = [
     {
       imageSrc: "/Assets/ContactUs/Tick.svg",
@@ -87,29 +149,42 @@ function FormSection() {
           <div className="formName">
             <input
               type="text"
-              className="nameInput"
-              placeholder="YOUR NAME"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
+              placeholder="ENTER YOUR NAME"
               required
             />
           </div>
           <div className="formName">
             <input
               type="text"
-              className="nameInput"
-              placeholder="COMPANY NAME"
+              id="companyName"
+              name="companyName"
+              value={formData.companyName}
+              onChange={handleInputChange}
+              placeholder="ENTER YOUR COMPANY NAME"
               required
             />
           </div>
           <div className="formName">
             <input
               type="text"
-              className="nameInput"
-              placeholder="YOUR BUDGET"
+              id="budget"
+              name="budget"
+              value={formData.budget}
+              onChange={handleInputChange}
+              placeholder="ENTER YOUR BUDGET"
               required
             />
           </div>
           <div className="formName">
             <select
+              id="service"
+              name="service"
+              value={formData.service}
+              onChange={handleInputChange}
               className="w-full p-2 mt-1 border rounded-md"
               style={{
                 color: "black",
@@ -120,7 +195,7 @@ function FormSection() {
               required
             >
               <option className="text-pTextColor" value="">
-                Select Service
+                SELECT SERVICE
               </option>
               <option className="text-pTextColor" value="Web Development">
                 Web Development
@@ -152,14 +227,29 @@ function FormSection() {
           </div>
           <div className="formName">
             <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleInputChange}
+              placeholder="ENTER YOUR MESSAGE"
               type="text"
               className="message"
-              placeholder="YOUR MESSAGE"
               required
             />
           </div>
         </div>
-        <Greenbtn buttonText="send message" width={"100%"} href="href" />
+        <div className="w-full flex">
+          <button
+            type="submit"
+            disabled={formDisabled}
+            onClick={handleSubmit}
+            className={`w-48 bg-p text-btnTextColor text-lg uppercase st font-bold py-3 rounded-md transition-transform transform hover:-translate-y-1 sans ${
+              !formDisabled ? "bg-btnColor" : "bg-gray-200"
+            } `}
+          >
+            Submit
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -38,16 +38,16 @@ function Navbar() {
           </p>
 
           <p className="navbarIcon">
-            <Link href="/#Services">SERVICES</Link>
+            <Link href="/#Services">EXPERTISE</Link>
           </p>
           <p className="navbarIcon">
-            <Link href="/#Work">PORTFOLIO</Link>
+            <Link href="/#Work">CATALOG</Link>
           </p>
           <p className="navbarIcon">
             <Link href="/#Industries">INDUSTRIES</Link>
           </p>
           <p className="navbarIcon">
-            <Link href="/about-us">ABOUT US</Link>
+            <Link href="/about-us">PROFILE</Link>
           </p>
           <Greenbtn buttonText="Contact us" href="/Contact" />
         </div>
@@ -72,7 +72,7 @@ function Navbar() {
               toggleDropdown();
             }}
           >
-            <Link href="/#Services">SERVICES</Link>
+            <Link href="/#Services">EXPERTISE</Link>
           </div>
           <div
             className="navbarIcon"
@@ -80,7 +80,7 @@ function Navbar() {
               toggleDropdown();
             }}
           >
-            <Link href="/#Work">PORTFOLIO</Link>
+            <Link href="/#Work">CATALOG</Link>
           </div>
           <div
             className="navbarIcon"
@@ -96,7 +96,7 @@ function Navbar() {
               toggleDropdown();
             }}
           >
-            <Link href="/about-us">ABOUT US</Link>
+            <Link href="/about-us">PROFILE</Link>
           </div>
           <Greenbtn
             buttonText="Contact us"

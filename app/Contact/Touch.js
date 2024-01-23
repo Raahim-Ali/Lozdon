@@ -6,7 +6,7 @@ function Touch() {
       imageSrc: "/Assets/ContactUs/mail.svg",
       title: "Chat us",
       description: "Speak to our friendly team.",
-      detail: "info@octalcode.ie",
+      detail: "info@octalcode.com",
     },
     {
       imageSrc: "/Assets/ContactUs/visit.svg",

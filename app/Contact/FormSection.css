@@ -85,6 +85,20 @@ input {
   border: 1px solid rgba(97, 97, 97, 0.5);
   background: transparent;
 }
+input:placeholder-shown {
+  color: rgba(97, 97, 97, 0.61);
+}
+
+input:not(:placeholder-shown) {
+  color: black;
+}
+textarea:placeholder-shown {
+  color: rgba(97, 97, 97, 0.61);
+}
+
+textarea:not(:placeholder-shown) {
+  color: black;
+}
 .message {
   width: 100%;
   resize: none;

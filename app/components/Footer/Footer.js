@@ -157,17 +157,26 @@ export default function Footer() {
           {/* Legal Section */}
           <div className=" flex flex-col  gap-6">
             <p className="text-whitePrimary text-2xl font-bold uppercase poppins">
-              Legal
+              Industries
             </p>
             <div className="flex flex-col gap-3">
               <p className="text-whitePrimary text-base font-normal inter">
-                <Link href="#">Terms</Link>
+                Information Technology
               </p>
               <p className="text-whitePrimary text-base font-normal inter">
-                <Link href="#">Privacy</Link>
+                Fintech
               </p>
               <p className="text-whitePrimary text-base font-normal inter">
-                <Link href="#">Others</Link>
+                Equipment Financing
+              </p>
+              <p className="text-whitePrimary text-base font-normal inter">
+                E-Commerce
+              </p>
+              <p className="text-whitePrimary text-base font-normal inter">
+                Healthcare
+              </p>
+              <p className="text-whitePrimary text-base font-normal inter">
+                Telecommunication
               </p>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
+
 function Idea() {
-  const calendlyLink = "#";
+  const calendlyLink = "https://calendly.com/octalcode/it-consultation";
   return (
     <div className="bg-primaryBlack text-gray-50 py-20 px-6 flex flex-col gap-10 justify-center items-center">
       <div className="flex flex-col jusify-center items-center gap-3">
@@ -26,7 +27,7 @@ function Idea() {
         >
           <img
             style={{ marginRight: "10px" }}
-            src={"Assets/Home/calendly.svg"}
+            src={"/Assets/Home/calendly.svg"}
           />
           <p className="btnText poppins uppercase">Schedule Google Meeting</p>
         </button>
