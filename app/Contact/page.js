@@ -8,7 +8,7 @@ function ContactUs() {
       <>
         <HeroSection
           title="Contact us"
-          paragraph="Octal Code, we excel in web development, offering a comprehensive suite of services and software development lifecycle."
+          paragraph=""
           btnText="book session with us"
           showButton={false}
           btnWidth="28%"
