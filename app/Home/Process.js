@@ -21,9 +21,7 @@ function Process() {
             <p>explore together</p>
           </div>
           <div className="ProcessDescription">
-            <p>
-              This metaphor implies every aspect of the industry in recent times
-            </p>
+            <p>Embark on the Journey of Discovery</p>
           </div>
         </div>
         <div className="ProcessCard">
@@ -39,9 +37,7 @@ function Process() {
             <p>define strategy</p>
           </div>
           <div className="ProcessDescription">
-            <p>
-              This metaphor implies every aspect of the industry in recent times
-            </p>
+            <p>Crafting Precision, Defining Success</p>
           </div>
         </div>
         <div className="ProcessCard">
@@ -57,9 +53,7 @@ function Process() {
             <p>Build & iterate</p>
           </div>
           <div className="ProcessDescription">
-            <p>
-              This metaphor implies every aspect of the industry in recent times
-            </p>
+            <p>Iterate Towards Perfection</p>
           </div>
         </div>
       </div>
