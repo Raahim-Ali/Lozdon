@@ -41,7 +41,7 @@ const HeroSection = ({
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  const backgroundImageUrl = "/Assets/Herosection/heroBg.svg";
+  const backgroundImageUrl = "/Assets/Herosection/heroBg.jpg";
   const handleWhatsAppClick = () => {
     // Replace '1234567890' with your actual WhatsApp number
     const phoneNumber = "+923214349743";
