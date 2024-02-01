@@ -31,8 +31,6 @@ const cardData = [
     title: "Waqas Sarwar",
     description: "Business Development Manager",
   },
-
-  // Add more objects for additional cards
 ];
 export default function OurTeam() {
   return (
@@ -42,15 +40,12 @@ export default function OurTeam() {
         style={{ paddingTop: "100px", paddingBottom: "100px" }}
       >
         <div className="gap-3 flex flex-col">
-          {/* text Section */}
-          {/* <p className="custom-text-24">.here we are</p> */}
           <p className="text-5xl font-bold uppercase  poppins  ">
             our Amazing team
           </p>
         </div>
 
         <div className="flex flex-wrap  w-full" style={{ gap: "20px" }}>
-          {/* Card Section */}
           {cardData.map((card, index) => (
             <div
               key={index}
@@ -61,7 +56,6 @@ export default function OurTeam() {
                   src={card.imageSrc}
                   style={{
                     borderRadius: "10px",
-                    // height: "316px",
                   }}
                 />
               </div>

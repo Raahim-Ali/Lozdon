@@ -17,7 +17,6 @@ transporter.verify((error, success) => {
   if (error) {
     console.log("Mail transport error", error);
   } else {
-    // console.log('Mail server is started');
   }
 });
 

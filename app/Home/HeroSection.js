@@ -75,7 +75,7 @@ const HeroSection = ({
           {/* Text Section */}
           <div className="flex flex-col justify-center md:items-center gap-5 w-[82%]">
             <h1
-              className="font-black uppercase text-4xl sm:text-5xl md:text-[5.125rem] w-full  sm:w-2/4 md:text-7xl md:w-full lg:w-3/4  md:text-center res "
+              className="font-black uppercase text-2xl sm:text-5xl md:text-[5.125rem] w-full  sm:w-2/4 md:text-7xl md:w-full lg:w-3/4  md:text-center res "
               style={{ lineHeight: 1.3 }}
             >
               {highlightServices(title)}

@@ -55,7 +55,6 @@ export default function OurStory() {
         </div>
         <div>
           <div className="flex gap-12 flex-col lg:flex-row">
-            {/* Card Section */}
             {cardData.map((card, index) => (
               <div
                 key={index}

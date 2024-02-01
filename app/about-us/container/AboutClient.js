@@ -36,22 +36,17 @@ const cardData = [
     description:
       "Beyond project completion, our commitment extends to proactive support and maintenance. Clients appreciate our ongoing assistance, ensuring their systems remain robust and up-to-date.",
   },
-
-  // Add more objects for additional cards
 ];
 export default function AboutClient() {
   return (
     <>
       <div className="flex flex-col py-10 px-8 md:py-20  md:px-36  bg-primaryBlack gap-12">
         <div className="gap-3 flex flex-col">
-          {/* text Section */}
-          {/* <p className="custom-text-24 text-whitePrimary">.why they love</p> */}
           <p className="text-3xl md:text-5xl font-bold uppercase text-whitePrimary poppins  ">
             What clients love about us
           </p>
         </div>
         <div className="flex flex-wrap gap-8 w-full">
-          {/* Card Section */}
           {cardData.map((card, index) => (
             <div
               key={index}

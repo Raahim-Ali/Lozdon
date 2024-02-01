@@ -21,8 +21,6 @@ const cardData = [
     description:
       "Adapting swiftly in tech's dynamic landscape, our agile mindset ensures continuous learning, innovation, and staying ahead.",
   },
-
-  // Add more objects for additional cards
 ];
 export default function OurValues() {
   return (
