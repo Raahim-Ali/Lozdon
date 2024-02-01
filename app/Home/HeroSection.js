@@ -52,6 +52,7 @@ const HeroSection = ({
     // Open the WhatsApp URL in a new tab/window using the Link component
     window.open(whatsappUrl, "_blank");
   };
+
   return (
     <div
       className="flex flex-col w-full lg:flex-row"

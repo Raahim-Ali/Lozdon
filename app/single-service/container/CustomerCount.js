@@ -14,7 +14,16 @@ export default function CustomerCount() {
       <div className="flex flex-col justify-center  xl:gap-16 sm:flex-row sm:gap-16 md:w-1/2   md:gap-8 gap-3">
         <div className="flex    items-center  gap-4 flex-col ">
           <p className="text-3xl sm:text-6xl text-center  font-semibold poppins text-primaryTextColor">
-            <CountUp end={50} />
+            <CountUp
+              start={0}
+              end={50}
+              duration={5}
+              useEasing={true}
+              useGrouping={true}
+              separator=","
+              decimal="."
+              onEnd={() => console.log("Counting animation completed")}
+            />
             <span className="text-[#61DF5C]">+</span>
           </p>
           <div className="flex items-center ">
@@ -25,7 +34,17 @@ export default function CustomerCount() {
         </div>
         <div className="flex  items-center gap-4 flex-col">
           <p className="text-3xl sm:text-6xl text-center font-semibold poppins text-primaryTextColor">
-            <CountUp end={70} /> <span className="text-[#61DF5C]">+</span>
+            <CountUp
+              start={0}
+              end={70}
+              duration={5}
+              useEasing={true}
+              useGrouping={true}
+              separator=","
+              decimal="."
+              onEnd={() => console.log("Counting animation completed")}
+            />{" "}
+            <span className="text-[#61DF5C]">+</span>
           </p>
           <div className="flex items-center">
             <p className="uppercase text-center inter text-sm sm:text-xl  text-primaryTextColor font-light">
@@ -35,7 +54,16 @@ export default function CustomerCount() {
         </div>
         <div className="flex   gap-4 flex-col ">
           <p className="text-3xl sm:text-6xl text-center font-semibold poppins text-primaryTextColor ">
-            <CountUp end={100} />
+            <CountUp
+              start={0}
+              end={100}
+              duration={4}
+              useEasing={true}
+              useGrouping={true}
+              separator=","
+              decimal="."
+              onEnd={() => console.log("Counting animation completed")}
+            />
             <span className="text-[#61DF5C]">+</span>
           </p>
           <div className="flex justify-center items-center">
