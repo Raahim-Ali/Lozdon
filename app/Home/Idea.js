@@ -8,7 +8,7 @@ function Idea() {
         <p className="text-center inter text-base font-normal text-white poppins sm:text-xl ">
           Madeup your mind?
         </p>
-        <p className="text-4xl text-center text-white uppercase poppins font-bold sm:text-6xl">
+        <p className="text-3xl text-center text-white uppercase poppins font-bold sm:text-6xl">
           Let&apos;s craft your idea 🚀
         </p>
       </div>
@@ -27,7 +27,8 @@ function Idea() {
         >
           <img
             style={{ marginRight: "10px" }}
-            src="/Assets/Home/calendly.svg"
+            src={"/Assets/Home/calendly.svg"}
+            alt="/"
           />
           <p className="btnText poppins uppercase">Schedule Google Meeting</p>
         </button>

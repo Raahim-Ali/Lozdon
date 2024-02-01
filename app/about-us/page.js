@@ -10,9 +10,6 @@ export default function page() {
         paragraph="Crafting Digital Success Stories, One Innovation at a Time: Unveiling the Essence of Octal Code."
         btnText="let’s work together"
         imgSrc="/Assets/Herosection/HeroSectionImage.svg"
-        // btnWidth="28%"
-        // pWidth=""
-        // titleWidth=""
       />
       <ContentAfterHeroSection />
     </>

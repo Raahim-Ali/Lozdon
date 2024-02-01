@@ -26,15 +26,11 @@ p {
 .buttons {
   display: flex;
   gap: 20px;
-  /* padding: 0px 0px 0px 0px; */
 }
 
 @media (200px<width<700px) {
   .buttons {
     display: flex;
     flex-direction: column;
-
-    /* padding: 0px 0px 0px 0px; */
-    /* flex-direction: column; */
   }
 }
