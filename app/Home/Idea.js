@@ -27,7 +27,7 @@ function Idea() {
         >
           <img
             style={{ marginRight: "10px" }}
-            src={"/Assets/Home/calendly.svg"}
+            src="/Assets/Home/calendly.svg"
           />
           <p className="btnText poppins uppercase">Schedule Google Meeting</p>
         </button>
