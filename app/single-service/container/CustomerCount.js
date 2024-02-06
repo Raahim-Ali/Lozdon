@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 
 export default function CustomerCount() {
   return (
-    <div className="flex flex-col gap-12 text-center px-8 py-6 justify-between items-center w-full  md:py-20  md:px-10  md:gap-4  xl:px-36 ">
+    <div className="flex flex-col gap-12 text-center px-8 py-10 justify-between items-center w-full  md:py-20  md:px-10  md:gap-4  xl:px-36 ">
       <div className="w-full flex justify-center ">
         <h5 className="inter text-xl  font-light  text-primaryTextColor   lg:w-1/2  md:text-2xl sm:text-2xl">
           We tailor solutions to meet the diverse needs of businesses, ensuring

@@ -101,7 +101,7 @@ const HeroSection = ({
             </div>
           </div>
           <div
-            className="sm:flex  hidden gap-8"
+            className="sm:flex  hidden gap-8 mb-10"
             style={{ display: "flex" }}
             onClick={handleWhatsAppClick}
           >
