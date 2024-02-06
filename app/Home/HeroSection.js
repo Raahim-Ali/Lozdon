@@ -60,11 +60,11 @@ const HeroSection = ({
         backgroundImage: `url(${backgroundImageUrl})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "100vh",
+        // height: "100vh",
       }}
     >
       <div
-        className="flex flex-col relative overflow-hidden  pt-20 pb-0  px-8 w-full sm:pt-20 sm:pb-0  md:px-12 md:pt-20  lg:px-36  lg:pt-28  lg:pb-36 "
+        className="flex flex-col relative   pt-20 pb-0  px-8 w-full sm:pt-20 sm:pb-0  md:px-12 md:pt-20  lg:px-36  lg:pt-28  lg:pb-36 "
         // style={{ height: "100vh" }}
       >
         {/* Ellipse Section */}
@@ -101,7 +101,7 @@ const HeroSection = ({
             </div>
           </div>
           <div
-            className="sm:flex md:flex lg:flex hidden gap-8"
+            className="sm:flex  hidden gap-8"
             style={{ display: "flex" }}
             onClick={handleWhatsAppClick}
           >
@@ -109,31 +109,6 @@ const HeroSection = ({
           </div>
         </div>
       </div>
-
-      {/* <div
-        className="top-0 right-0 w-1/4 lg:flex hidden"
-        style={{
-          background:
-            "linear-gradient(157deg, #389D04 -6.19%, #B318FF 140.72%)",
-          position: "relative",
-          width: "30%", // Adjust as needed
-          // height: "100%", // Adjust as needed
-        }}
-      >
-        <div
-          className="flex absolute justify-center items-center"
-          style={{ width: "100%", height: "100%", right: "50%" }}
-        >
-          <img
-            src={imgSrc}
-            alt="Image Lgai yaar"
-            style={{
-              objectFit: "fill",
-              maxWidth: "180%",
-            }}
-          />
-        </div>
-      </div> */}
     </div>
   );
 };
