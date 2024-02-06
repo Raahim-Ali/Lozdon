@@ -17,6 +17,7 @@ export default function CustomerCount() {
             <CountUp
               start={0}
               end={50}
+              delay={1}
               duration={7}
               useEasing={true}
               useGrouping={true}
@@ -39,6 +40,7 @@ export default function CustomerCount() {
             <CountUp
               start={0}
               end={70}
+              delay={1}
               duration={7}
               useEasing={true}
               useGrouping={true}
@@ -61,6 +63,7 @@ export default function CustomerCount() {
             <CountUp
               start={0}
               end={100}
+              delay={1}
               duration={7}
               useEasing={true}
               useGrouping={true}
