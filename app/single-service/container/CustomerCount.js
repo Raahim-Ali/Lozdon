@@ -22,6 +22,8 @@ export default function CustomerCount() {
               useGrouping={true}
               separator=","
               decimal="."
+              scrollSpyOnce="boolean"
+              enableScrollSpy={true}
               onEnd={() => console.log("Counting animation completed")}
             />
             <span className="text-[#61DF5C]">+</span>
@@ -42,6 +44,8 @@ export default function CustomerCount() {
               useGrouping={true}
               separator=","
               decimal="."
+              scrollSpyOnce="boolean"
+              enableScrollSpy={true}
               onEnd={() => console.log("Counting animation completed")}
             />
             <span className="text-[#61DF5C]">+</span>
@@ -52,7 +56,7 @@ export default function CustomerCount() {
             </p>
           </div>
         </div>
-        <div className="flex   gap-4 flex-col ">
+        <div className="flex gap-4 flex-col ">
           <p className="text-3xl sm:text-6xl text-center font-semibold poppins text-primaryTextColor ">
             <CountUp
               start={0}
@@ -62,6 +66,8 @@ export default function CustomerCount() {
               useGrouping={true}
               separator=","
               decimal="."
+              scrollSpyOnce="boolean"
+              enableScrollSpy={true}
               onEnd={() => console.log("Counting animation completed")}
             />
             <span className="text-[#61DF5C]">+</span>
