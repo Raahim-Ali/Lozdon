@@ -73,7 +73,7 @@ a {
   transition: transform 0.5s ease-in-out;
 }
 
-.TransparentBtnText {
+/* .TransparentBtnText {
   font-family: Inter;
   font-size: 15px;
   font-weight: 700;
@@ -81,7 +81,7 @@ a {
   letter-spacing: 0em;
   text-align: center;
   color: #3fba00;
-}
+} */
 
 .TransparentBtnText {
   font-family: Inter;
