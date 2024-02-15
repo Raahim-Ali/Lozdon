@@ -79,7 +79,7 @@ export default function Footer() {
               >
                 <Image
                   alt="LinkedIn"
-                  src="/Assets/Footer/linkedin.png"
+                  src="/Assets/Footer/linkedin.svg"
                   width={30}
                   height={30}
                 />
@@ -90,7 +90,7 @@ export default function Footer() {
               >
                 <Image
                   alt="Quora"
-                  src="/Assets/Footer/quora.png"
+                  src="/Assets/Footer/quora.svg"
                   width={30}
                   height={30}
                 />
