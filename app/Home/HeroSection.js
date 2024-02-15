@@ -55,7 +55,7 @@ const HeroSection = ({
 
   return (
     <div
-      className="flex flex-col w-full lg:flex-row"
+      className="flex flex-col w-full lg:flex-row lg:min-h-screen"
       style={{
         backgroundImage: `url(${backgroundImageUrl})`,
         backgroundSize: "cover",
@@ -76,7 +76,7 @@ const HeroSection = ({
           {/* Text Section */}
           <div className="flex flex-col justify-center md:items-center gap-5 w-[82%]">
             <h1
-              className="font-black uppercase text-2xl sm:text-5xl md:text-[4.125rem] w-full  sm:w-2/4  md:w-full lg:w-[60%]  md:text-center res "
+              className="font-black uppercase text-4xl sm:text-5xl md:text-[4.125rem] w-full  sm:w-2/4  md:w-full lg:w-[60%]  md:text-center "
               style={{ lineHeight: 1.3 }}
             >
               {highlightServices(title)}

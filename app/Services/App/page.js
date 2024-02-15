@@ -1,6 +1,7 @@
 import React from "react";
 import ContentAfterHeroSection from "./ContentAfterHeroSection";
 import HeroSection from "../../components/HeroSection";
+import LatestTechnologies from "@/app/single-service/container/LatestTechnologies";
 
 export default function page() {
   return (
