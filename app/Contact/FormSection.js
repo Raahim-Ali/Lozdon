@@ -7,6 +7,7 @@ function FormSection() {
   const [formDisabled, setFormDisabled] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
+    email: "",
     companyName: "",
     budget: "",
     service: "",
@@ -25,6 +26,7 @@ function FormSection() {
     // Validate that all fields are filled
     if (
       formData.name.trim() === "" ||
+      formData.email.trim() === "" ||
       formData.companyName.trim() === "" ||
       formData.budget.trim() === "" ||
       formData.service.trim() === "" ||
@@ -49,6 +51,7 @@ function FormSection() {
         // Optionally, you can reset the form here
         setFormData({
           name: "",
+          email: "",
           companyName: "",
           budget: "",
           service: "",
@@ -154,6 +157,17 @@ function FormSection() {
               value={formData.name}
               onChange={handleInputChange}
               placeholder="ENTER YOUR NAME"
+              required
+            />
+          </div>
+          <div className="formName">
+            <input
+              type="text"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
+              placeholder="ENTER YOUR EMAIL"
               required
             />
           </div>
