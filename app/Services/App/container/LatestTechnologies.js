@@ -1,19 +1,27 @@
 const Data = [
   {
-    ImageSrc: "/Assets/SIngleService/LatestTechnology/Firebase.svg",
-    text: "Firebase",
+    ImageSrc: "/Assets/OurServices/TechStack/Xamrin.svg",
+    text: "Xamrin",
   },
   {
-    ImageSrc: "/Assets/SIngleService/LatestTechnology/MUI.svg",
-    text: "Material UI",
+    ImageSrc: "/Assets/OurServices/TechStack/Flutter.svg",
+    text: "Flutter",
   },
   {
-    ImageSrc: "/Assets/SIngleService/LatestTechnology/js.svg",
-    text: "JavaScript",
+    ImageSrc: "/Assets/OurServices/TechStack/Kotlin.svg",
+    text: "Kotlin",
   },
   {
-    ImageSrc: "/Assets/SIngleService/LatestTechnology/Css.svg",
-    text: "CSS",
+    ImageSrc: "/Assets/OurServices/TechStack/ReactNative.svg",
+    text: "React Native",
+  },
+  {
+    ImageSrc: "/Assets/OurServices/TechStack/ionic.svg",
+    text: "Ionic",
+  },
+  {
+    ImageSrc: "/Assets/OurServices/TechStack/Java.svg",
+    text: "Java",
   },
 ];
 export default function LatestTechnologies() {
@@ -25,7 +33,7 @@ export default function LatestTechnologies() {
           <p className="text-3xl sm:text-5xl font-bold">Tech Stack</p>
         </div>
         <div className="flex flex-col">
-          <div className="p-4 flex flex-wrap   flex-shrink-0 flex-grow-1 justify-center gap-4 w-full sm:justify-start sm:p-12 lg:gap-24 md:gap-14  xl:gap-28    ">
+          <div className="px-10 flex flex-wrap justify-between gap-4 w-full sm:justify-between sm:p-12 lg:gap-24 md:gap-14  xl:gap-28">
             {Data.map((item, i) => (
               <div key={`${item.text}-${i}`} className="flex flex-col gap-3">
                 <div className="flex justify-center items-center">
