@@ -5,6 +5,7 @@ const transport = require("./transport");
 const sendRegisterEmail = async ({
   name,
   companyName,
+  email,
   budget,
   service,
   message,
@@ -18,6 +19,7 @@ const sendRegisterEmail = async ({
     const data = await ejs.renderFile(requirePath, {
       companyName: companyName,
       name: name,
+      email: email,
       budget: budget,
       service: service,
       message: message,
