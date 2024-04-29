@@ -4,11 +4,11 @@ const registerEmail = require("../mail/sendEmail");
 async function POST(request) {
   try {
     const body = await request.json();
-    const { name, companyName, budget, service, message } = body;
+    const { name, email, companyName, budget, service, message } = body;
 
     console.log("body:", body);
 
-    await registerEmail({ name, companyName, budget, service, message });
+    await registerEmail({ name, email, companyName, budget, service, message });
     return NextResponse.json(
       {
         message: "Email Sent Successfully.",
