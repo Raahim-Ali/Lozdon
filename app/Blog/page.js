@@ -17,6 +17,7 @@ export default function page() {
       <div className="flex flex-col gap-12 py-14 px-10 md:py-16 md:px-12  xl:pt-20 xl:pb-24 xl:px-40">
         <UltimateGuideToWeb />
         <BlogCard />
+      </div>
     </>
   );
 }
