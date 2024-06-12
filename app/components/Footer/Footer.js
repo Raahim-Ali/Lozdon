@@ -109,7 +109,7 @@ export default function Footer() {
                 <img src="/Assets/Footer/Call.svg" />
                 <Link href="tel:0342-32020441">
                   <p className="inter text-white text-base font-normal">
-                    +92 321 4349743
+                    (512) 710-5701
                   </p>
                 </Link>
               </div>
