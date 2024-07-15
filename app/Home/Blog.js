@@ -1,53 +1,84 @@
+"use client";
+import { useEffect, useState } from "react";
 import "./Blog.css";
-import Greenbtn from "../components/Greenbtn";
 import Transparentbtn from "../components/Transparentbtn";
 import Image from "next/image";
 import Link from "next/link";
+
 function Blog() {
-  const blogs = [
-    {
-      imageSrc: "/Assets/Home/ruby.jpg",
-      buttonText: "development",
-      read: "10 min read",
-      title: "Ruby on Rails A Comprehensive Guide for Beginners",
-      description:
-        "Ruby on Rails, often simply called Rails, is a popular web application framework written in the Ruby programming...",
-      link: "/Blog/Ruby-on-rails",
-    },
-    {
-      imageSrc: "/Assets/Home/ruby2.jpg",
-      buttonText: "development",
-      read: "10 min read",
-      title:
-        "The Power and Potential of Ruby on Rails Unveiling the Web Development Marvel",
-      description:
-        "The Power and Potential of Ruby on Rails Unveiling the Web Development Marvels...",
-      link: "/Blog/the-power-potential",
-    },
-    {
-      imageSrc: "/Assets/Home/react.jpg",
-      buttonText: "development",
-      read: "10 min read",
-      title: "Harnessing the Power of React.js A Comprehensive Guide",
-      description:
-        "In the ever-evolving world of web development, React.js has emerged as a game-changing library that...",
-      link: "/Blog/Harnessing-the-power",
-    },
-  ];
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "http://localhost/rar/wp-json/wp/v2/posts?_embed"
+        );
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        const data = await response.json();
+
+        // Extract relevant data from API response
+        const formattedBlogs = await Promise.all(
+          data.map(async (post) => {
+            // Fetch category information using wp:term link
+            const categoryResponse = await fetch(
+              post._links["wp:term"][0].href
+            );
+            if (!categoryResponse.ok) {
+              throw new Error("Failed to fetch category data");
+            }
+            const categories = await categoryResponse.json();
+            const categoryName =
+              categories.length > 0 ? categories[0].name : "Uncategorized";
+
+            const formattedDate = new Date(post.date).toLocaleDateString(
+              "en-US",
+              {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              }
+            );
+
+            return {
+              imageSrc: post._embedded["wp:featuredmedia"][0].source_url,
+              buttonText: categoryName,
+              read: formattedDate,
+              title: post.title.rendered,
+              description: post.excerpt.rendered,
+              link: `/Blog/${post.slug}`,
+            };
+          })
+        );
+
+        setBlogs(formattedBlogs);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div className="Blog">
-      <p className="Heading">our blogs</p>
+      <p className="Heading">Our News</p>
+      <p className="Heading2">What We Are Up To</p>
 
       <div className="blogContainer">
-        {blogs.map((blog, index) => (
+        {blogs.slice(0, 3).map((blog, index) => (
           <div className="blogCard" key={index}>
-            <Image
-              className="blogImage"
-              src={blog.imageSrc}
-              alt="/"
-              width={455}
-              height={269}
-            />
+            <div className="blogImageContainer">
+              <Image
+                className="blogImage"
+                src={blog.imageSrc}
+                alt=""
+                width={455}
+                height={269} // Adjust height as needed to maintain aspect ratio
+              />
+            </div>
             <div className="blogCardTop">
               <div className="buttonContainer">
                 <button className="devBtn">
@@ -56,10 +87,10 @@ function Blog() {
                 <p className="readText">{blog.read}</p>
               </div>
               <div className="cardTitle">
-                <p>{blog.title}</p>
+                <p dangerouslySetInnerHTML={{ __html: blog.title }}></p>
               </div>
               <div className="cardDescription">
-                <p>{blog.description}</p>
+                <p dangerouslySetInnerHTML={{ __html: blog.description }}></p>
               </div>
             </div>
             <Link href={blog.link} className="flex w-fit">
@@ -69,8 +100,7 @@ function Blog() {
         ))}
       </div>
       <div className="buttons">
-        <Greenbtn buttonText="see all blogs" href="/Blog" />
-        <Transparentbtn TbtnText="contact us" href="/Contact" />
+        <Transparentbtn TbtnText="VIEW ALL NEWS" href="/Blog" />
       </div>
     </div>
   );

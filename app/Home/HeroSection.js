@@ -1,115 +1,89 @@
 "use client";
-import "./Style.css";
-import React, { useEffect, useState } from "react";
-import Transparentbtn from "../components/Transparentbtn";
+import React, { useState } from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const highlightServices = (title) => {
-  const words = title.split(" ");
-  return words.map((word, index) => (
-    <span
-      key={index}
-      className={
-        word.toLowerCase() === "infinite" || word.toLowerCase() === "solutions"
-          ? "text-green-600"
-          : "text-whitePrimary"
-      }
-    >
-      {word}
-      {index < words.length - 1 && " "} {/* Add space between words */}
-    </span>
-  ));
-};
+const HeroSection = ({ slides, title, paragraph, imgSrc }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-const HeroSection = ({
-  title,
-  paragraph,
-  btnText,
-  TbtnText,
-  btnWidth,
-  imgSrc,
-  titleWidth,
-  pWidth,
-}) => {
-  const [windowWidth, setWindowWidth] = useState(1200);
-  const showImage = windowWidth <= 1023;
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-  const backgroundImageUrl = "/Assets/Herosection/heroBg.jpg";
-  const handleWhatsAppClick = () => {
-    // Replace '1234567890' with your actual WhatsApp number
-    const phoneNumber = "+923214349743";
-
-    // Create the WhatsApp URL with a pre-filled message
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hello%20from%20your%20website!`;
-
-    // Open the WhatsApp URL in a new tab/window using the Link component
-    window.open(whatsappUrl, "_blank");
+  const handleSlideChange = (index) => {
+    setCurrentSlide(index);
   };
 
   return (
-    <div
-      className="flex flex-col w-full lg:flex-row lg:min-h-screen"
-      style={{
-        backgroundImage: `url(${backgroundImageUrl})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        // height: "100vh",
-      }}
+    <Carousel
+      selectedItem={currentSlide}
+      onChange={handleSlideChange}
+      showThumbs={false}
+      showArrows={false}
+      showStatus={false}
+      infiniteLoop={true}
+      autoPlay={true}
+      interval={200000}
+      stopOnHover={false}
     >
-      <div
-        className="flex flex-col relative   pt-20 pb-0  px-8 w-full sm:pt-20 sm:pb-0  md:px-12 md:pt-20  lg:px-36  lg:pt-28  lg:pb-36 "
-        // style={{ height: "100vh" }}
-      >
-        {/* Ellipse Section */}
-
+      {slides.map((slide, index) => (
         <div
-          className="flex flex-col justify-center md:items-center  w-full  z-10 gap-16 pt-20  "
-          // style={{ maxWidth: "70%" }}
+          key={index}
+          className="min-h-screen bg-cover bg-center flex items-center justify-center shadow-md"
+          style={{
+            backgroundImage: `linear-gradient(256.89deg, rgba(9, 14, 142, 0) -17.66%, rgba(9, 14, 142, 0.9) 90%), url(${imgSrc})`,
+          }}
         >
-          {/* Text Section */}
-          <div className="flex flex-col justify-center md:items-center gap-5 w-[82%]">
-            <h1
-              className="font-black uppercase text-4xl sm:text-5xl md:text-[4.125rem] w-full  sm:w-2/4  md:w-full lg:w-[60%]  md:text-center "
-              style={{ lineHeight: 1.3 }}
-            >
-              {highlightServices(title)}
-            </h1>
-            <div className="mb-3 md:w-3/4 xl:w-[54%] flex flex-col gap-6 w-full">
-              <p className="sm:text-whitePrimary text-restext w-full text-base sm:text-xl   md:text-center inter">
-                {paragraph}
-              </p>
-              <div className="sm:flex md:justify-center hidden">
-                <ul className="flex gap-8 list-disc items-center text-center">
-                  <li className="text-white text-lg inter marker:font-normal list-none">
-                    Business Analysis
-                  </li>
-                  <li className="text-white text-lg inter marker:font-normal ">
-                    Development
-                  </li>
-                  <li className="text-white text-lg inter marker:font-normal">
-                    Consultancy
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
           <div
-            className="sm:flex  hidden gap-8 mb-10"
-            style={{ display: "flex" }}
-            onClick={handleWhatsAppClick}
+            className="text-white px-4 sm:px-8"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "30px",
+              padding: "180px 0px",
+              alignItems: "flex-start", // Aligns content to the left
+              textAlign: "left", // Ensures left alignment of text
+              maxWidth: "100%", // Ensures the text does not overflow
+            }}
           >
-            <Transparentbtn TbtnText={TbtnText} href="#" />
+            <ul
+              className="flex gap-8 list-disc items-start text-left"
+              style={{
+                fontSize: "1.2rem", // 1.25rem equals 20px, adjusts with the root font size
+                textAlign: "center",
+                justifyContent: "left",
+                width: "100%",
+              }}
+            >
+              <li className="marker:font-normal list-none uppercase">
+                Professionalism
+              </li>
+              <li className="marker:font-normal uppercase">Excellence</li>
+              <li className="marker:font-normal uppercase">Timeliness</li>
+            </ul>
+            <h1
+              className="uppercase text-3xl sm:text-5xl md:text-[4rem]"
+              style={{
+                lineHeight: 1.3,
+                fontFamily: "Libre Caslon Text",
+                width: "70vw",
+              }}
+            >
+              {title}
+            </h1>
+            <p
+              className="sm:text-whitePrimary text-restext w-full text-base sm:text-xl"
+              style={{
+                fontFamily: "Inter",
+                paddingTop: "20px",
+                fontWeight: "300",
+                fontSize: "1.25rem", // Adjusts with the root font size
+                lineHeight: "2rem", // 32px, adjusts with the root font size
+                width: "45vw",
+              }}
+            >
+              {paragraph}
+            </p>
           </div>
         </div>
-      </div>
-    </div>
+      ))}
+    </Carousel>
   );
 };
 

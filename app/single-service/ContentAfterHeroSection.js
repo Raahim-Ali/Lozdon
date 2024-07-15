@@ -5,7 +5,7 @@ import TakeAdvantage from "./container/TakeAdvantage";
 import LatestTechnologies from "./container/LatestTechnologies";
 import HealthTech from "./container/HealthTech";
 import Clients from "../work/Components/Clients";
-import Services from "../Home/Services";
+import Services from "../Home/About";
 // import "../Home/Services.css";
 export default function ContentAfterHeroSection() {
   return (

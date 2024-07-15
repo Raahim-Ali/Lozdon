@@ -5,7 +5,7 @@ export default function Transparentbtn({ TbtnText, href }) {
   return (
     <Link href={href && href}>
       <button className="TransparentBtn">
-        <p className="TransparentBtnText poppins uppercase">{TbtnText}</p>
+        <p className="TransparentBtnText Libre Caslon uppercase">{TbtnText}</p>
       </button>
     </Link>
   );

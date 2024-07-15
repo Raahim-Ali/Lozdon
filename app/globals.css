@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,9 +22,7 @@
 .custom-text-64 {
   font-size: 64px;
 }
-p {
-  color: #3b3f5c;
-}
+
 .buttons {
   display: flex;
   gap: 20px;

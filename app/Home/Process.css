@@ -1,7 +1,5 @@
 .Process {
-  padding: 80px 150px;
-  background: var(--newG-Grey, #f9f9f9);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 120px 250px 120px 260px;
 }
 .ProcessHeading {
   color: #3b3f5c;
@@ -23,21 +21,25 @@
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+  padding: 20px 20px;
   justify-content: space-around;
 }
 .ProcessCard {
   display: flex;
   flex-direction: column;
   padding: 30px;
-  align-items: center;
-  border-radius: 15px;
-  gap: 22px;
-  background: var(--whitePrimary, #fff);
+  border: 1px solid;
+  padding: 30px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: -14px 10px 8px 0px rgba(9, 14, 152, 0.6);
 
+  gap: 22px;
   flex: 1 0 0;
   color: #3b3f5c;
   cursor: pointer;
 }
+
 .ProcessNumber {
   color: rgba(63, 186, 0, 0.2);
   font-family: Inter;
@@ -47,19 +49,17 @@
   line-height: normal;
 }
 .ProcessTitle {
-  color: #3b3f5c;
-  text-align: center;
+  color: #1c3c4a;
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 140%; /* 28px */
+  line-height: 140%;
   letter-spacing: 0.14px;
   text-transform: uppercase;
 }
 .ProcessDescription {
-  color: #3b3f5c;
-  text-align: center;
+  color: #343434;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
@@ -80,13 +80,13 @@
     flex-direction: column;
     padding: 30px;
     align-items: center;
-    border-radius: 15px;
     gap: 22px;
     background: var(--whitePrimary, #fff);
     width: 80%;
     flex: 1 0 0;
     color: #3b3f5c;
     cursor: pointer;
+    box-shadow: -4px 8px 1px rgba(9, 14, 152, 0.6);
   }
 }
 @media (width <1000px) {

@@ -1,85 +1,109 @@
+"use client";
+import { useEffect, useState } from "react";
+import "../../Home/Blog.css";
+import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-// import "./Blog.css";
-export default function BlogCard() {
-  const blogs = [
-    {
-      imageSrc: "/Assets/Home/react.jpg",
-      buttonText: "development",
-      read: "10 min read",
-      title: "Harnessing the Power of React.js A Comprehensive Guide",
-      description:
-        "In the ever-evolving world of web development, React.js has emerged as a game-changing library that has...",
-      link: "/Blog/Harnessing-the-power",
-    },
-    {
-      imageSrc: "/Assets/Home/ruby2.jpg",
-      buttonText: "development",
-      read: "10 min read",
-      title:
-        "The Power and Potential of Ruby on Rails Unveiling the Web Development Marvel",
-      description:
-        "The Power and Potential of Ruby on Rails Unveiling the Web Development Marvels...",
-      link: "/Blog/the-power-potential",
-    },
 
-    {
-      imageSrc: "/Assets/Blog/webdev.jpg",
-      buttonText: "development",
-      read: "10 min read",
-      title:
-        "Octal Code Your Trusted Partner in Web Development and Digital Solutions",
-      description:
-        "OctalCode is a leading provider of web development, mobile application development...",
-      link: "/Blog/Octalcode-trusted",
-    },
-  ];
+function Blog() {
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "http://localhost/rar/wp-json/wp/v2/posts?_embed"
+        );
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        const data = await response.json();
+
+        // Extract relevant data from API response
+        const formattedBlogs = await Promise.all(
+          data.map(async (post) => {
+            // Fetch category information using wp:term link
+            const categoryResponse = await fetch(
+              post._links["wp:term"][0].href
+            );
+            if (!categoryResponse.ok) {
+              throw new Error("Failed to fetch category data");
+            }
+            const categories = await categoryResponse.json();
+            const categoryName =
+              categories.length > 0 ? categories[0].name : "Uncategorized";
+
+            const formattedDate = new Date(post.date).toLocaleDateString(
+              "en-US",
+              {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              }
+            );
+
+            return {
+              imageSrc: post._embedded["wp:featuredmedia"][0].source_url,
+              buttonText: categoryName,
+              read: formattedDate,
+              title: post.title.rendered,
+              description: post.excerpt.rendered,
+              link: `/Blog/${post.slug}`,
+            };
+          })
+        );
+
+        setBlogs(formattedBlogs);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
-    <>
-      <div className="flex flex-wrap gap-8 w-full ">
+    <div className="Blogs">
+      <div className="blogContainer">
         {blogs.map((blog, index) => (
-          <div
-            className="md:flex-grow lg:flex-grow-0 flex flex-col w-full  md:w-1/3 lg:w-[31%] rounded-md self-stretch"
-            key={index}
-          >
-            <img
-              className="rounded-t-lg w-full"
-              src={blog.imageSrc}
-              alt={blog.title}
-            />
-            <div className="px-4  md:px-8 rounded-lg shadow-md w-full">
-              <div className="flex justify-between items-center py-4 ">
-                <div className="bg-gray-300  p-2 flex  sm:items-center sm:justify-center rounded-lg cursor-default uppercase">
-                  <p className="text-sm font-semibold text-gray-500">
-                    {blog.buttonText}
-                  </p>
+          <div className="blogCard" key={index}>
+            <div className="blogImageContainer">
+              <Image
+                className="blogImage"
+                src={blog.imageSrc}
+                alt=""
+                width={455}
+                height={269} // Adjust height as needed to maintain aspect ratio
+              />
+            </div>
+            <div className="blogCardTop">
+              <div className="buttonContainer">
+                <div className="devBtn">
+                  <p>{blog.buttonText}</p>
                 </div>
-                <p className="text-base font-medium text-gray-700">
-                  {blog.read}
-                </p>
+                <p className="readText">{blog.read}</p>
               </div>
-
-              <div className="mb-2">
-                <p className="text-xl font-semibold text-gray-700">
-                  {blog.title}
-                </p>
+              <div className="cardTitle">
+                <p dangerouslySetInnerHTML={{ __html: blog.title }}></p>
               </div>
-
-              <div className="mb-4">
-                <p className="text-base font-light text-gray-700">
-                  {blog.description}
-                </p>
-                <Link href={blog.link} className="flex w-fit">
-                  <p className="learnMore w-fit mt-3 hover:text-main">
-                    Learn more
-                  </p>
-                </Link>
+              <div className="cardDescription">
+                <p dangerouslySetInnerHTML={{ __html: blog.description }}></p>
               </div>
             </div>
+            <Link href={blog.link} className="flex w-fit">
+              <p
+                className="learnMore w-fit mt-3"
+                style={{
+                  color: "blue",
+                }}
+              >
+                Read more
+              </p>
+            </Link>
           </div>
         ))}
       </div>
-      {/* </div> */}
-    </>
+    </div>
   );
 }
+
+export default Blog;

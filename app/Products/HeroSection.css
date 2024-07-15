@@ -1,0 +1,6 @@
+.heroSection {
+  background: url("/Assets/Products/background.png");
+  padding: 220px 125px 0px 125px;
+  display: flex;
+  justify-content: space-around;
+}

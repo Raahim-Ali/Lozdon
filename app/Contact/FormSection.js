@@ -8,10 +8,9 @@ function FormSection() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    companyName: "",
-    budget: "",
-    service: "",
+    contact: "",
     message: "",
+    business: "",
   });
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -27,9 +26,8 @@ function FormSection() {
     if (
       formData.name.trim() === "" ||
       formData.email.trim() === "" ||
-      formData.companyName.trim() === "" ||
-      formData.budget.trim() === "" ||
-      formData.service.trim() === "" ||
+      formData.contact.trim() === "" ||
+      formData.business.trim() === "" ||
       formData.message.trim() === ""
     ) {
       alert("Please fill in all fields");
@@ -52,9 +50,8 @@ function FormSection() {
         setFormData({
           name: "",
           email: "",
-          companyName: "",
-          budget: "",
-          service: "",
+          contact: "",
+          business: "",
           message: "",
         });
         alert("Details Sent.");
@@ -67,87 +64,10 @@ function FormSection() {
       alert(`Error submitting form: ${error.message}`);
     }
   };
-  const lists = [
-    {
-      imageSrc: "/Assets/ContactUs/Tick.svg",
-      text: "Web Development",
-    },
-    {
-      imageSrc: "/Assets/ContactUs/Tick.svg",
-      text: "Mobile Development",
-    },
-    {
-      imageSrc: "/Assets/ContactUs/Tick.svg",
-      text: "DevOps",
-    },
-    {
-      imageSrc: "/Assets/ContactUs/Tick.svg",
-      text: "UI/UX Design",
-    },
-    {
-      imageSrc: "/Assets/ContactUs/Tick.svg",
-      text: "Software Testing",
-    },
-    {
-      imageSrc: "/Assets/ContactUs/Tick.svg",
-      text: "e-Commerce Development",
-    },
-  ];
-  const Logos = [
-    {
-      imageSrc: "/Assets/Work/work1Logo.JPG",
-    },
-    {
-      imageSrc: "/Assets/Work/work3Logo.JPG",
-    },
-    {
-      imageSrc: "/Assets/Work/work5Logo.JPG",
-    },
-    {
-      imageSrc: "/Assets/Work/work2Logo.JPG",
-    },
-  ];
+
   return (
     <div className="Contact">
-      <div className="firstSection">
-        <div className="listSection">
-          <p className="listHeading">
-            we are all about business tech and growth
-          </p>
-          <div className="list">
-            {lists.map((list, index) => (
-              <div className="listContent" key={index}>
-                <div className="tick">
-                  <Image src={list.imageSrc} alt="/" width={18} height={18} />
-                </div>
-                <div className="listText">{list.text}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="companiesInfo">
-          <div className="companiesInfoHeading">
-            <p className="companiesInfoHeadingText">trusted by</p>
-          </div>
-          <div className="companiesLogos">
-            {Logos.map((Logo, index) => (
-              <div className="companyLogo" key={index}>
-                <Image
-                  src={Logo.imageSrc}
-                  alt="/"
-                  height={150}
-                  width={150}
-                  style={{ borderRadius: "10px" }}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
       <div className="formSection">
-        <div className="formHeading">
-          <p className="formHeadingText">tell us about you.</p>
-        </div>
         <div className="form">
           <div className="formName">
             <input
@@ -174,94 +94,50 @@ function FormSection() {
           <div className="formName">
             <input
               type="text"
-              id="companyName"
-              name="companyName"
-              value={formData.companyName}
+              id="contact"
+              name="contact"
+              value={formData.contact}
               onChange={handleInputChange}
-              placeholder="ENTER YOUR COMPANY NAME"
+              placeholder="ENTER YOUR CONTACT NUMBER"
               required
             />
           </div>
           <div className="formName">
             <input
               type="text"
-              id="budget"
-              name="budget"
-              value={formData.budget}
+              id="business"
+              name="business"
+              value={formData.business}
               onChange={handleInputChange}
-              placeholder="ENTER YOUR BUDGET"
+              placeholder="ENTER YOUR BUSINESS"
               required
             />
           </div>
-          <div className="formName">
-            <select
-              id="service"
-              name="service"
-              value={formData.service}
-              onChange={handleInputChange}
-              className="w-full p-2 mt-1 border rounded-md"
-              style={{
-                color: "black",
-                fontWeight: 600,
-                border: "1px solid #6161619c",
-                background: "transparent",
-              }}
-              required
-            >
-              <option className="text-pTextColor" value="">
-                SELECT SERVICE
-              </option>
-              <option className="text-pTextColor" value="Web Development">
-                Web Development
-              </option>
-              <option
-                className="text-pTextColor"
-                value="  Application Development"
-              >
-                Application Development
-              </option>
-              <option className="text-pTextColor" value="DevOps">
-                DevOps
-              </option>
-              <option className="text-pTextColor" value="UI/UX">
-                UI/UX
-              </option>
-              <option className="text-pTextColor" value="Software Testing">
-                Software Testing
-              </option>
 
-              <option className="text-pTextColor" value=" Special Services">
-                Special Services
-              </option>
-
-              <option className="text-pTextColor" value="Other Services">
-                Other Services
-              </option>
-            </select>
-          </div>
           <div className="formName">
             <textarea
+              style={{ padding: "20px 15px" }}
               id="message"
               name="message"
               value={formData.message}
               onChange={handleInputChange}
               placeholder="ENTER YOUR MESSAGE"
               type="text"
-              className="message"
               required
             />
           </div>
         </div>
-        <div className="w-full flex">
+
+        <div className="w-full flex" style={{ paddingTop: "10px" }}>
           <button
             type="submit"
             disabled={formDisabled}
             onClick={handleSubmit}
             className={`w-48 bg-p text-btnTextColor text-lg uppercase st font-bold py-3 rounded-md transition-transform transform hover:-translate-y-1 sans ${
-              !formDisabled ? "bg-btnColor" : "bg-gray-200"
-            } `}
+              !formDisabled ? "enabledButton" : "disabledButton"
+            }`}
           >
-            Submit
+            SEND
           </button>
         </div>
       </div>

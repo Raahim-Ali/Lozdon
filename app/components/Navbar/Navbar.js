@@ -1,57 +1,84 @@
 "use client";
 import "./Navbar.css";
 import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation"; // Import usePathname
 import { useState } from "react";
 import Greenbtn from "../Greenbtn";
 import Link from "next/link";
+
 function Navbar() {
   const router = useRouter();
+  const pathname = usePathname(); // Get the current path
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const toggleDropdown = () => {
     setDropdownOpen((prev) => !prev);
   };
-  // const backgroundImageUrl = "/Assets/Herosection/heroBg.svg";
 
   return (
     <>
-      <div
-        className="navbar"
-        // style={{ backgroundImage: `url(${backgroundImageUrl})` }}
-      >
+      <div className="navbar">
+        <div className="social-icons">
+          <img className="iconStyle" src="/Assets/Navbar/facebookIcon.svg" />
+          <img className="iconStyle" src="/Assets/Navbar/instagramIcon.svg" />
+          <img className="iconStyle" src="/Assets/Navbar/twitterIcon.svg" />
+          <img className="iconStyle" src="/Assets/Navbar/linkedinIcon.svg" />
+        </div>
+        <div className="contacts">
+          <div className="phone">
+            <img src="/Assets/Navbar/phoneIcon.svg" />
+            <p style={{ fontFamily: "poppins", color: "white" }}>
+              +971 4 240 6453
+            </p>
+          </div>
+          <div className="mail">
+            <img src="/Assets/Navbar/mailIcon.svg" />
+            <p style={{ fontFamily: "poppins", color: "white" }}>
+              info@integris.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className={`header ${pathname === "/" ? "header-transparent" : ""}`}>
         <div
           className="logo"
           onClick={() => {
             router.push("/Home");
           }}
         >
-          <img className="logoImg" src="/Assets/Navbar/logo.svg" alt="logo" />
-          <p className="logoText">OCTALCODE</p>
+          <img className="logoImg" src="/Assets/Navbar/logo.png" alt="logo" />
         </div>
         <div className="navbar-items">
           <p
-            className="navbarIcon"
+            className={`navbarIcon ${pathname === "/" ? "active" : ""}`}
             onClick={() => {
               router.push("/");
             }}
           >
             HOME
           </p>
-
-          <p className="navbarIcon">
-            <Link href="/#Services">EXPERTISE</Link>
+          <p
+            className={`navbarIcon ${pathname === "/Products" ? "active" : ""}`}
+          >
+            <Link href="/Products">OUR PRODUCTS</Link>
           </p>
-          <p className="navbarIcon">
-            <Link href="/#Work">CATALOG</Link>
+          <p className={`navbarIcon ${pathname === "/Blog" ? "active" : ""}`}>
+            <Link href="/Blog">NEWS</Link>
           </p>
-          <p className="navbarIcon">
-            <Link href="/#Industries">INDUSTRIES</Link>
+          <p
+            className={`navbarIcon ${pathname === "/about-us" ? "active" : ""}`}
+          >
+            <Link href="/about-us">ABOUT US</Link>
           </p>
-          <p className="navbarIcon">
-            <Link href="/about-us">PROFILE</Link>
-          </p>
+        </div>
+        <div className="contactBttn" style={{ marginTop: "10px" }}>
           <Greenbtn buttonText="Contact us" href="/Contact" />
         </div>
-        <button className="sidebarBtn" onClick={toggleDropdown}>
+
+        <button
+          className="sidebarBtn"
+          onClick={toggleDropdown}
+          style={{ color: "white" }}
+        >
           ☰
         </button>
       </div>
@@ -72,7 +99,7 @@ function Navbar() {
               toggleDropdown();
             }}
           >
-            <Link href="/#Services">EXPERTISE</Link>
+            <Link href="/#Services">OUR PRODUCTS</Link>
           </div>
           <div
             className="navbarIcon"
@@ -80,7 +107,7 @@ function Navbar() {
               toggleDropdown();
             }}
           >
-            <Link href="/#Work">CATALOG</Link>
+            <Link href="/#Work">NEWS</Link>
           </div>
           <div
             className="navbarIcon"
@@ -88,16 +115,9 @@ function Navbar() {
               toggleDropdown();
             }}
           >
-            <Link href="/#Industries">INDUSTRIES</Link>
+            <Link href="/#Industries">ABOUT US</Link>
           </div>
-          <div
-            className="navbarIcon"
-            onClick={() => {
-              toggleDropdown();
-            }}
-          >
-            <Link href="/about-us">PROFILE</Link>
-          </div>
+
           <Greenbtn
             buttonText="Contact us"
             href="/Contact"

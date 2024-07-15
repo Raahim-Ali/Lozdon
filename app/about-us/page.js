@@ -1,17 +1,24 @@
 import React from "react";
-import HeroSection from "../components/HeroSection";
-import ContentAfterHeroSection from "./ContentAfterHeroSection";
+import HeroSection from "../Products/HeroSection";
+import ProductCategories from "../Products/ProductCategories";
+import Capabilities from "./Capabilities";
+import About from "../Home/About";
 
 export default function page() {
   return (
     <>
       <HeroSection
-        title="About Us"
-        paragraph="Crafting Digital Success Stories, One Innovation at a Time: Unveiling the Essence of Octal Code."
-        btnText="let’s work together"
-        imgSrc="/Assets/Herosection/HeroSectionImage.svg"
+        heading="who we are"
+        subHeading="A Trusted and Respected Partner"
+        text="In the international market, Integris International FZE is a specialist in the import and export of petrochemical."
+        imageSrc="/Assets/Products/Image1.svg"
       />
-      <ContentAfterHeroSection />
+      <ProductCategories
+        heading="capabilities"
+        subHeading={"our key capabilities "}
+      />
+      <Capabilities />
+      <About />
     </>
   );
 }

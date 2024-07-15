@@ -1,38 +1,20 @@
-import Link from "next/link";
+import "./Idea.css";
+import Greenbtn from "../components/Greenbtn";
 
 function Idea() {
-  const calendlyLink = "https://calendly.com/octalcode/it-consultation";
   return (
-    <div className="bg-primaryBlack text-gray-50 py-20 px-6 flex flex-col gap-10 justify-center items-center">
+    <div className="text-gray-50 py-20 px-6 flex flex-col gap-10 justify-center items-center background">
       <div className="flex flex-col jusify-center items-center gap-3">
-        <p className="text-center inter text-base font-normal text-white poppins sm:text-xl ">
+        <p className="text-center inter text-base font-normal text-white inter sm:text-xl ">
           Madeup your mind?
         </p>
-        <p className="text-3xl text-center text-white uppercase poppins font-bold sm:text-6xl">
-          Let&apos;s craft your idea 🚀
+        <p className="text-3xl text-center text-white uppercase font-bold sm:text-6xl libre-caslon">
+          Let&apos;s partner up 🚀
         </p>
       </div>
-      <Link href={calendlyLink} target="_blank" rel="noopener noreferrer">
-        <button
-          style={{
-            padding: "15px 15px",
-            borderRadius: "10px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            background: "#006BFF",
-            transition: "transform 0.5s ease-in-out",
-          }}
-          className="hover:scale-110"
-        >
-          <img
-            style={{ marginRight: "10px" }}
-            src={"/Assets/Home/calendly.svg"}
-            alt="/"
-          />
-          <p className="btnText poppins uppercase">Schedule Google Meeting</p>
-        </button>
-      </Link>
+      <div>
+        <Greenbtn buttonText=" Let's partner up" href="#" />
+      </div>
     </div>
   );
 }

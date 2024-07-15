@@ -25,8 +25,8 @@ const sendRegisterEmail = async ({
       message: message,
     });
     let emailMessage = {
-      from: "waqassarwar12@gmail.com",
-      to: "waqas12@gmail.com",
+      from: "",
+      to: "",
       subject: "Octal Code Service",
       html: data,
     };

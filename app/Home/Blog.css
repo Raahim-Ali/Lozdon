@@ -1,139 +1,125 @@
 .Blog {
-  padding: 120px 150px;
+  padding: 120px 250px 120px 260px;
+}
+
+.Heading {
+  color: #3b3f5c;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.Heading2 {
+  color: #3b3f5c;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .blogContainer {
   display: flex;
-  gap: 24px;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 24px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
+
 .blogCard {
-  padding: 32px 32px;
-  width: 31%;
-  border-radius: 11px;
+  width: 30%;
+  padding: 32px;
+  border-radius: 8px;
   box-shadow: 0px 4px 10px 0px rgba(211, 218, 226, 0.5);
-  margin-bottom: 38px;
-  transition: transform 0.5s ease;
-  cursor: pointer;
   transition: transform 0.5s ease;
 }
 
+@media screen and (max-width: 1000px) {
+  .blogCard {
+    width: 47%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .blogCard {
+    width: 100%;
+  }
+}
+
+.blogImageContainer {
+  height: 269px; /* Adjust as needed to maintain aspect ratio */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
 .blogImage {
-  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .buttonContainer {
   display: flex;
   justify-content: space-between;
-  padding: 15px 0px;
+  align-items: center;
+  padding: 15px 0;
 }
+
 .devBtn {
   background-color: #e8e5e5;
-  padding: 5px 5px;
-  display: flex;
-  align-items: center;
-  height: 30px;
-  justify-content: center;
+  padding: 8px 16px;
   border-radius: 10px;
-  cursor: pointer;
   text-transform: uppercase;
-}
-.devBtn > p {
-  font-family: Inter;
-  font-size: 14px;
   font-weight: 600;
-  line-height: 20px;
-  letter-spacing: 0em;
-  text-align: left;
-  text-transform: uppercase;
 }
+
+.devBtn > p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
 .readText {
-  font-family: Inter;
   font-size: 14px;
   font-weight: 500;
-  line-height: 20px;
-  letter-spacing: 0em;
-  text-align: left;
   color: rgba(156, 156, 156, 1);
+  margin-top: 8px;
 }
+
+.cardTitle {
+  margin-top: 16px;
+}
+
 .cardTitle > p {
-  font-family: Inter;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
-  line-height: 28px;
-  letter-spacing: 0.14000000059604645px;
-  text-align: left;
   color: rgba(59, 63, 92, 1);
+  margin: 0;
+}
+
+.cardDescription {
+  margin-top: 12px;
 }
 
 .cardDescription > p {
-  font-family: Inter;
   font-size: 16px;
   font-weight: 300;
-  line-height: 23px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: rgba(59, 63, 92, 1);
+  color: rgba(135, 136, 152, 1);
+  margin: 0;
 }
-@media (1000px<width<1400px) {
-  .blogContainer {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  }
 
-  .blogCard {
-    padding: 32px 32px;
-    width: 47%;
-    margin-bottom: 38px;
-    transition: transform 0.5s ease;
-    gap: 32px;
-    border-radius: 8px;
-    border: 1px solid rgba(59, 14, 97, 0.1);
-  }
+.learnMore {
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.3s;
 }
-@media (200px < width<1000px) {
-  .Blog {
-    padding: 80px 50px;
-    width: 100%;
-  }
-  .Heading {
-    color: #3b3f5c;
-    font-family: Poppins;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    text-transform: uppercase;
-    padding: 0px 0px 48px 0px;
-  }
-  .blogContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .blogCard {
-    padding: 32px 32px;
-    width: 100%;
-    margin-bottom: 38px;
-    transition: transform 0.5s ease;
-    gap: 32px;
-    border-radius: 8px;
-    border: 1px solid rgba(59, 14, 97, 0.1);
-  }
-  .blogCardTop {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    font-size: 5px;
-  }
 
-  .buttonContainer {
-    display: flex;
-    width: fit-content;
-    flex-direction: column;
-    text-align: left;
-  }
+.learnMore:hover {
+  color: #3b3f5c;
 }
