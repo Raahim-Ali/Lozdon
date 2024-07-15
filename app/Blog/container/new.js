@@ -1,3 +1,5 @@
+const { default: Link } = require("next/link");
+
 {
   blogs.map((blog, index) => (
     <div
