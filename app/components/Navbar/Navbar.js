@@ -69,6 +69,11 @@ function Navbar() {
           >
             <Link href="/about-us">ABOUT US</Link>
           </p>
+          <p
+            className={`navbarIcon ${pathname === "/Careers" ? "active" : ""}`}
+          >
+            <Link href="/Careers">CAREERS</Link>
+          </p>
         </div>
         <div className="contactBttn" style={{ marginTop: "10px" }}>
           <Greenbtn buttonText="Contact us" href="/Contact" />
@@ -77,7 +82,7 @@ function Navbar() {
         <button
           className="sidebarBtn"
           onClick={toggleDropdown}
-          style={{ color: "white" }}
+          style={{ color: "white", fontSize: "25px" }}
         >
           ☰
         </button>

@@ -1,9 +1,9 @@
 import HeroSection from "./HeroSection";
-// import Blog from "./Blog";
-// import Idea from "./Idea";
-// import Products from "./Products";
-// import Process from "./Process";
-// import About from "./About";
+import Blog from "./Blog";
+import Idea from "./Idea";
+import Products from "./Products";
+import Process from "./Process";
+import About from "./About";
 
 function HomePage() {
   const slides = [
@@ -27,11 +27,11 @@ and export of petrochemical products across a variety of countries."
         imgSrc="/Assets/Herosection/bg.png"
         slides={slides}
       />
-      {/* <About />
+      <About />
       <Products />
       <Process />
       <Idea />
-      <Blog /> */}
+      <Blog />
     </>
   );
 }

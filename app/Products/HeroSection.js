@@ -20,11 +20,7 @@ function HeroSection({ heading, subHeading, text, imageSrc }) {
           </div>
         </div>
         <div className="imageSection">
-          <img
-            src={imageSrc}
-            style={{ borderTopLeftRadius: "55px" }}
-            alt="Product"
-          />
+          <img src={imageSrc} style={{ borderTopLeftRadius: "55px" }} />
         </div>
       </div>
     </div>

@@ -1,0 +1,71 @@
+.benefits {
+  padding: 120px 250px 20px 260px;
+}
+.benefitsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.leftText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 35%;
+}
+.subHeading {
+  color: #1c3c4a;
+  line-height: normal;
+  text-transform: capitalize;
+  font-family: Libre Caslon Text;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.36px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+.benefitsText {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23.8px;
+  text-align: left;
+}
+.benefitsCards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 65%;
+}
+.cardMain {
+  width: 50%;
+  margin-bottom: 38px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 32px;
+  border-radius: 8px;
+}
+
+.cardIcon {
+  padding: 0px 0px 24px 0px;
+}
+
+.cardTitle {
+  color: #3b3f5c;
+  font-family: Poppins;
+  padding: 0px 0px 12px 0px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.14px;
+  text-transform: uppercase;
+}
+
+.cardDescription {
+  color: #3b3f5c;
+  font-family: Inter;
+  font-size: 13px;
+  padding: 0px 0px 20px 0px;
+  font-weight: 300;
+  line-height: 146.023%;
+}

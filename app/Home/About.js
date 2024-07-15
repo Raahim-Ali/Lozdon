@@ -16,8 +16,8 @@ function Services() {
           <p className="text">
             Our strategic partnerships and robust supply chain infrastructure
             ensure that we maintain flexibility and efficiency in our
-            operations, making us well-equipped to manage large-scale and
-            time-sensitive deliveries.
+            operations, making us well-equipped to manage large scale and time
+            sensitive deliveries.
           </p>
           <div style={{ paddingTop: "40px" }}>
             <Transparentbtn TbtnText="LEARN MORE" href="/about-us" />

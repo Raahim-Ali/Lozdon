@@ -1,0 +1,27 @@
+.positions {
+  padding: 100px 250px 120px 260px;
+  background-color: #f9f9f9;
+}
+
+.jobCards {
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.jobCardMain {
+  width: 50%;
+}
+
+.Jobcard {
+  width: 95%;
+  padding: 32px;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.applyButton {
+  color: blue;
+}

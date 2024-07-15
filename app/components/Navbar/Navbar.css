@@ -151,9 +151,6 @@ a {
 }
 
 @media (max-width: 700px) {
-  .logo {
-    display: none;
-  }
   .navbar {
     display: none;
   }
@@ -166,8 +163,8 @@ a {
   }
 
   .logoImg {
-    height: 30px;
-    width: 30px;
+    height: 70px;
+    width: 120px;
   }
   .logoText {
     font-size: 17px;
@@ -176,6 +173,7 @@ a {
   .sidebarBtn {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
   }
   .header {
     top: 0px;
@@ -184,7 +182,7 @@ a {
     z-index: 1000;
     position: absolute;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 1.2vw 8vw;
     height: 7vh;
     background: linear-gradient(107.85deg, #090e8e 5.36%, #030428 101.13%);
@@ -197,7 +195,7 @@ a {
     align-items: center;
     gap: 30px;
     width: 100vw;
-    top: 40px;
+    top: 65px;
     height: 120%;
     flex-direction: column;
     background-color: rgb(24, 23, 23);
