@@ -1,0 +1,48 @@
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 80px 150px;
+}
+
+.blog-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-text {
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.divbtn {
+  margin-top: auto;
+}
+
+.blog-image {
+  width: 50%;
+}
+
+.blogimg {
+  border-radius: 100px 20px 100px 20px;
+}
+
+/* Alternate layout for odd-indexed items */
+.blog-item.normal .blog-text {
+  order: 1; /* Text on left */
+}
+
+.blog-item.normal .blog-image {
+  order: 2; /* Image on right */
+}
+
+/* Alternate layout for even-indexed items */
+.blog-item.reversed .blog-text {
+  order: 2; /* Text on right */
+}
+
+.blog-item.reversed .blog-image {
+  order: 1; /* Image on left */
+}

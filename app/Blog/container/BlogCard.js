@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
-import "../../Home/Blog.css";
 import Image from "next/image";
-import Link from "next/link";
+import "./BlogCard.css";
+import Transparentbtn from "@/app/components/Transparentbtn";
 
 function Blog() {
   const [blogs, setBlogs] = useState([]);
@@ -18,10 +18,8 @@ function Blog() {
         }
         const data = await response.json();
 
-        // Extract relevant data from API response
         const formattedBlogs = await Promise.all(
           data.map(async (post) => {
-            // Fetch category information using wp:term link
             const categoryResponse = await fetch(
               post._links["wp:term"][0].href
             );
@@ -40,9 +38,8 @@ function Blog() {
                 day: "numeric",
               }
             );
-
             return {
-              imageSrc: post._embedded["wp:featuredmedia"][0].source_url,
+              imageSrc: post._embedded["wp:featuredmedia"][0].source_url || "",
               buttonText: categoryName,
               read: formattedDate,
               title: post.title.rendered,
@@ -62,46 +59,39 @@ function Blog() {
   }, []);
 
   return (
-    <div className="Blogs">
-      <div className="blogContainer">
-        {blogs.map((blog, index) => (
-          <div className="blogCard" key={index}>
-            <div className="blogImageContainer">
-              <Image
-                className="blogImage"
-                src={blog.imageSrc}
-                alt=""
-                width={455}
-                height={269} // Adjust height as needed to maintain aspect ratio
+    <div className="blog-container">
+      {blogs.map((blog, index) => (
+        <div
+          key={index}
+          className={`blog-item ${index % 2 === 0 ? "normal" : "reversed"}`}
+        >
+          <div className="blog-text">
+            <div>
+              <p className="Heading" style={{ paddingBottom: "20px" }}>
+                {blog.title}
+              </p>
+            </div>
+            <div>
+              <p
+                className="text1"
+                dangerouslySetInnerHTML={{ __html: blog.description }}
               />
             </div>
-            <div className="blogCardTop">
-              <div className="buttonContainer">
-                <div className="devBtn">
-                  <p>{blog.buttonText}</p>
-                </div>
-                <p className="readText">{blog.read}</p>
-              </div>
-              <div className="cardTitle">
-                <p dangerouslySetInnerHTML={{ __html: blog.title }}></p>
-              </div>
-              <div className="cardDescription">
-                <p dangerouslySetInnerHTML={{ __html: blog.description }}></p>
-              </div>
+            <div className="divbtn">
+              <Transparentbtn TbtnText="READ MORE" href={blog.link} />
             </div>
-            <Link href={blog.link} className="flex w-fit">
-              <p
-                className="learnMore w-fit mt-3"
-                style={{
-                  color: "blue",
-                }}
-              >
-                Read more
-              </p>
-            </Link>
           </div>
-        ))}
-      </div>
+          <div className="blog-image">
+            <Image
+              className="blogimg"
+              src={blog.imageSrc}
+              alt={blog.title}
+              width={800}
+              height={800}
+            />
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

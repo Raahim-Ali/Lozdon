@@ -18,6 +18,7 @@ function Blog() {
           throw new Error("Failed to fetch data");
         }
         const data = await response.json();
+        console.log("data", data);
 
         // Extract relevant data from API response
         const formattedBlogs = await Promise.all(

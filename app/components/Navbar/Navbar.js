@@ -61,9 +61,9 @@ function Navbar() {
           >
             <Link href="/Products">OUR PRODUCTS</Link>
           </p>
-          <p className={`navbarIcon ${pathname === "/Blog" ? "active" : ""}`}>
+          {/* <p className={`navbarIcon ${pathname === "/Blog" ? "active" : ""}`}>
             <Link href="/Blog">NEWS</Link>
-          </p>
+          </p> */}
           <p
             className={`navbarIcon ${pathname === "/about-us" ? "active" : ""}`}
           >
