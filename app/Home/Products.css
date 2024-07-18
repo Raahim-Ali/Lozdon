@@ -46,8 +46,9 @@
 .IndustrycardDescription {
   color: white;
   font-family: Inter;
+  align-self: center;
   padding-left: 37px;
-  font-size: 30px;
+  font-size: 1.75rem;
   font-style: normal;
   font-weight: bolder;
   z-index: 1;
@@ -57,6 +58,9 @@
   display: none;
 }
 @media (1000px<width<1400px) {
+  .Industries {
+    padding: 50px 50px;
+  }
   .IndustriesContainer {
     display: flex;
     align-items: center;
@@ -102,7 +106,6 @@
     border-radius: 8px;
   }
   .IndustrycardDescription {
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;

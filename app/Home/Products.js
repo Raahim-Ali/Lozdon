@@ -38,10 +38,10 @@ function Industries() {
             style={{ backgroundImage: `url(${industry.imageSrc})` }}
           >
             <div className="IndustrycardDescription">
-              <p style={{ fontSize: "28px" }}>{industry.description}</p>
-              <p style={{ fontSize: "18px", fontWeight: "300px" }}>
-                {industry.text}
-              </p>
+              <p>{industry.description}</p>
+              <div>
+                <p>{industry.text}</p>
+              </div>
             </div>
           </div>
         ))}

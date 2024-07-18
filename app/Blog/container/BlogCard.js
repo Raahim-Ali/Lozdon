@@ -69,6 +69,15 @@ function Blog() {
             <div>
               <p className="Heading" style={{ paddingBottom: "20px" }}>
                 {blog.title}
+                <div
+                  style={{
+                    fontFamily: "Inter",
+                    fontSize: "12px",
+                    fontWeight: "300",
+                  }}
+                >
+                  {blog.read}
+                </div>
               </p>
             </div>
             <div>
@@ -82,13 +91,7 @@ function Blog() {
             </div>
           </div>
           <div className="blog-image">
-            <Image
-              className="blogimg"
-              src={blog.imageSrc}
-              alt={blog.title}
-              width={800}
-              height={800}
-            />
+            <img className="blogimg" src={blog.imageSrc} alt={blog.title} />
           </div>
         </div>
       ))}

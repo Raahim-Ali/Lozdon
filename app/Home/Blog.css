@@ -1,5 +1,5 @@
 .Blog {
-  padding: 120px 250px 120px 260px;
+  padding: 120px 150px 120px 160px;
 }
 
 .Heading {
@@ -34,19 +34,36 @@
 
 .blogCard {
   width: 30%;
+  height: auto;
   padding: 32px;
   border-radius: 8px;
   box-shadow: 0px 4px 10px 0px rgba(211, 218, 226, 0.5);
   transition: transform 0.5s ease;
+  border: 1px solid #090e8e4d;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (width < 1400px) {
+  .Blog {
+    padding: 50px 50px;
+  }
   .blogCard {
     width: 47%;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (width < 1000px) {
+  .Blog {
+    padding: 30px 50px;
+  }
+  .blogCard {
+    width: 47%;
+  }
+}
+
+@media screen and (width < 700px) {
+  .Blog {
+    padding: 30px 50px;
+  }
   .blogCard {
     width: 100%;
   }

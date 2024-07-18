@@ -1,13 +1,13 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import "./footer.css";
 
 const Pages = [
-  { name: "Home", link: "#" },
-  { name: "Our Products", link: "#" },
-  { name: "News", link: "#" },
-  { name: "About Us", link: "#" },
+  { name: "Home", link: "/Home" },
+  { name: "Our Products", link: "/Products" },
+  { name: "News", link: "/Blog" },
+  { name: "About Us", link: "/about-us" },
 ];
 const Legal = [
   { name: "Terms", link: "#" },
@@ -25,10 +25,7 @@ export default function Footer() {
         boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
       }}
     >
-      <div
-        className="flex flex-col gap-10 md:flex-row px-10 py-11 lg:px-40 lg:py-32"
-        style={{ padding: "100px 250px" }}
-      >
+      <div className="flex flex-col gap-10 md:flex-row px-10 py-11 lg:px-40 lg:py-20">
         {/* Left Section */}
         <div className="flex flex-col w-full gap-6">
           <img className="logoImg" src="/Assets/Navbar/logo.png" alt="logo" />
@@ -110,10 +107,7 @@ export default function Footer() {
       </div>
 
       {/* Additional Content */}
-      <div
-        className="text-right text-white text-opacity-50 pt-5 pb-5"
-        style={{ paddingRight: "165px" }}
-      >
+      <div className="rights">
         © 2024 by Integris International FZE. All rights reserved.
       </div>
     </div>

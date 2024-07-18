@@ -11,12 +11,10 @@ function HeroSection({ heading, subHeading, text, imageSrc }) {
             <p>{heading}</p>
           </div>
           <div className="Heading2" style={{ paddingBottom: "20px" }}>
-            <p style={{ fontSize: "48px", width: "500px", lineHeight: "60px" }}>
-              {subHeading}
-            </p>
+            <p style={{ fontSize: "48px", lineHeight: "60px" }}>{subHeading}</p>
           </div>
-          <div className="text">
-            <p>{text}</p>
+          <div className="text1">
+            <p style={{ fontSize: "18px", lineHeight: "30px" }}>{text}</p>
           </div>
         </div>
         <div className="imageSection">

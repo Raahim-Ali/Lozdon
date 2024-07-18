@@ -3,4 +3,22 @@
   padding: 220px 125px 0px 125px;
   display: flex;
   justify-content: space-around;
+  gap: "30px";
+}
+
+@media screen and (width <1060px) {
+  .imageSection {
+    display: none;
+  }
+}
+@media screen and (width < 1000px) {
+  .heroSection {
+    background: url("/Assets/Products/background.png");
+    padding: 120px 25px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .textSection {
+    width: 100%;
+  }
 }

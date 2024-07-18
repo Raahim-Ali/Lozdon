@@ -12,7 +12,7 @@ function Careers() {
         imageSrc="/Assets/Products/Image1.svg"
       />
       <Benefits />
-      {/* <Positions /> */}
+      <Positions />
     </>
   );
 }

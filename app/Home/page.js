@@ -31,7 +31,7 @@ and export of petrochemical products across a variety of countries."
       <Products />
       <Process />
       <Idea />
-      {/* <Blog /> */}
+      <Blog />
     </>
   );
 }

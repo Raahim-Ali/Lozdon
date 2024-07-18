@@ -61,9 +61,9 @@ function Navbar() {
           >
             <Link href="/Products">OUR PRODUCTS</Link>
           </p>
-          {/* <p className={`navbarIcon ${pathname === "/Blog" ? "active" : ""}`}>
+          <p className={`navbarIcon ${pathname === "/Blog" ? "active" : ""}`}>
             <Link href="/Blog">NEWS</Link>
-          </p> */}
+          </p>
           <p
             className={`navbarIcon ${pathname === "/about-us" ? "active" : ""}`}
           >
@@ -112,7 +112,7 @@ function Navbar() {
               toggleDropdown();
             }}
           >
-            <Link href="/#Work">NEWS</Link>
+            <Link href="/Blog">NEWS</Link>
           </div>
           <div
             className="navbarIcon"
@@ -120,7 +120,7 @@ function Navbar() {
               toggleDropdown();
             }}
           >
-            <Link href="/#Industries">ABOUT US</Link>
+            <Link href="/about-us">ABOUT US</Link>
           </div>
 
           <Greenbtn
