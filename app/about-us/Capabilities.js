@@ -66,7 +66,7 @@ function Capabilities() {
           </div>
         ))}
       </div>
-      <div style={{ paddingLeft: "280px" }}>
+      <div className="contactButton">
         <Transparentbtn TbtnText="CONTACT US" href="#" />
       </div>
     </>

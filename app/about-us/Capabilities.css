@@ -13,11 +13,13 @@
   padding: 0px 250px;
   justify-content: space-around;
 }
+.contactButton {
+  padding-left: 280px;
+}
 
 .cardMain {
   width: 45%;
   margin-bottom: 38px;
-  background-color: #f9f9f9;
   transition: transform 0.5s ease;
 }
 
@@ -69,6 +71,9 @@
   .cardMain {
     width: 50%;
   }
+  .CardsContainer {
+    padding: 0px 150px;
+  }
 
   .card {
     padding: 32px 32px;
@@ -114,5 +119,17 @@
     align-items: center;
     text-align: center;
     font-size: 5px;
+  }
+}
+@media screen and (width < 700px) {
+  .CardsContainer {
+    padding: 0px 50px;
+  }
+  .card {
+    margin-bottom: 0px;
+  }
+
+  .contactButton {
+    padding-left: 50px;
   }
 }

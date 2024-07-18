@@ -22,7 +22,7 @@ function Process() {
               effectively. Our commitment to excellence is demonstrated by
               aligning our operations with the 10 principles of the UN Global
               Compact, ensuring efficiency and adherence to international
-              standards based on each client's country requirements.
+              standards based on each client`&apos;`s country requirements.
             </p>
           </div>
         </div>
