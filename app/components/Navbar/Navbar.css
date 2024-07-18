@@ -21,7 +21,7 @@ body {
   padding: 1.2vw 9vw;
   background: linear-gradient(107.85deg, #090e8e 5.36%, #030428 101.13%);
 }
-.header-transparent {
+.header-transparent + .navbar {
   background: transparent;
 }
 .social-icons {
