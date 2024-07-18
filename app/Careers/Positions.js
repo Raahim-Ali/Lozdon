@@ -24,7 +24,7 @@ function Positions() {
   };
 
   return (
-    <div className="positions">
+    <div className="positions" id="positions">
       <div className="positionsContainer">
         <p className="Heading">Positions</p>
         <p className="subHeading">Latest Open Positions</p>
@@ -35,7 +35,7 @@ function Positions() {
             <div className="Jobcard">
               <p
                 className="cardTitle"
-                style={{ fontFamily: "Liason Caslon", fontSize: "24px" }}
+                style={{ fontFamily: "Liason Caslon", fontSize: "20px" }}
               >
                 {opening.title.rendered}
               </p>
@@ -44,7 +44,7 @@ function Positions() {
                 dangerouslySetInnerHTML={{
                   __html: opening.position_description,
                 }}
-                style={{ color: "#343434", fontSize: "18px" }}
+                style={{ color: "#343434", fontSize: "16px" }}
               />
               <Link href={`/Careers/${opening.id}`}>
                 <button className="applyButton">Apply Now</button>

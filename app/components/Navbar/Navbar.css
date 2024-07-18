@@ -101,7 +101,7 @@ a {
   line-height: 23px;
   letter-spacing: 0em;
   text-align: center;
-  color: #090e8e;
+  color: #3b3f5c;
 }
 .TransparentBtn {
   padding: 15px 15px;
@@ -184,7 +184,7 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 1.2vw 8vw;
-    height: 7vh;
+    height: 9vh;
     background: linear-gradient(107.85deg, #090e8e 5.36%, #030428 101.13%);
   }
   .dropdownMenu {
@@ -195,8 +195,8 @@ a {
     align-items: center;
     gap: 30px;
     width: 100vw;
-    top: 65px;
-    height: 120%;
+    top: 56px;
+    height: 100%;
     flex-direction: column;
     background-color: rgb(24, 23, 23);
     z-index: 1000;

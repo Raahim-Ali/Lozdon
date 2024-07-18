@@ -6,7 +6,7 @@ function Careers() {
   return (
     <>
       <HeroSection
-        heading="Craeers"
+        heading="Careers"
         subHeading="Be a part of Integris"
         text="In the international market, Integris International FZE is a specialist in the import and export of petrochemical."
         imageSrc="/Assets/Products/Image1.svg"

@@ -21,7 +21,8 @@
 .Industrycard {
   display: flex;
   padding: 32px 0px;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Keep the content at the bottom */
+  align-items: flex-start; /* Align content to the left */
   width: 45%;
   height: 400px;
   margin-bottom: 38px;
@@ -46,14 +47,15 @@
 .IndustrycardDescription {
   color: white;
   font-family: Inter;
-  align-self: center;
-  padding-left: 37px;
-  font-size: 1.75rem;
+  padding-left: 20px; /* Add left padding to align text from left */
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: bolder;
   z-index: 1;
   line-height: 146.023%; /* 26.284px */
+  align-self: flex-start; /* Align text to the left */
 }
+
 .touch-slider {
   display: none;
 }
@@ -64,6 +66,7 @@
   .IndustriesContainer {
     display: flex;
     align-items: center;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
   }
 
@@ -78,7 +81,7 @@
 }
 @media (200px < width<1000px) {
   .Industries {
-    padding: 80px 50px;
+    padding: 40px 50px;
     width: 100%;
   }
   .IndustriesHeading {
@@ -106,9 +109,6 @@
     border-radius: 8px;
   }
   .IndustrycardDescription {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     font-size: 20px;
   }
 }

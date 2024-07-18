@@ -11,7 +11,7 @@ function Industries() {
     {
       imageSrc: "/Assets/Home/product2.svg",
       description: "Solvents",
-      text: "White Spirit • Mixed Xylene • Toluene",
+      text: "White Spirit • Xylene • Toluene",
     },
     {
       imageSrc: "/Assets/Home/product3.svg",
@@ -40,7 +40,16 @@ function Industries() {
             <div className="IndustrycardDescription">
               <p>{industry.description}</p>
               <div>
-                <p>{industry.text}</p>
+                <p
+                  style={{
+                    fontFamily: "Inter",
+                    fontSize: "16px",
+                    fontWeight: "300",
+                    color: "FFFFFF",
+                  }}
+                >
+                  {industry.text}
+                </p>
               </div>
             </div>
           </div>

@@ -44,10 +44,7 @@ export default function Footer() {
               <div className="flex gap-3" style={{ paddingBottom: "20px" }}>
                 <img src="/Assets/Footer/Address.svg" />
                 <Link href="tel:0342-32020441">
-                  <p
-                    className="inter text-white text-base font-normal"
-                    style={{ width: "350px" }}
-                  >
+                  <p className="inter text-white text-base font-normal">
                     Office No - 16G-14, Phase 1, Hamriyah Free Zone, Sharjah,
                     UAE
                   </p>

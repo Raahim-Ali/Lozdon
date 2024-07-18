@@ -2,7 +2,7 @@
 import HeroSection from "@/app/Products/HeroSection";
 import { useEffect, useState } from "react";
 import "./JobDetailss.css";
-import Transparentbtn from "@/app/components/Transparentbtn";
+import MyForm from "./applyForm";
 
 function JobDetails({ params }) {
   const id = params.id;
@@ -44,7 +44,9 @@ function JobDetails({ params }) {
       />
       <div className="JobDetailsContainer">
         <div className="jobDetails">
-          <p className="subHeading">Who are we Looking for</p>
+          <p className="subHeading" style={{ fontWeight: "400px" }}>
+            Who are we Looking for
+          </p>
           <p className="text">{jobDetails.position_description}</p>
         </div>
         <div className="jobDetails">
@@ -55,8 +57,7 @@ function JobDetails({ params }) {
           <p className="subHeading">Benefits of joining Integris </p>
           <p className="text">{jobDetails.position_job_benefits}</p>
         </div>
-
-        <Transparentbtn TbtnText="Apply Now" href="#" />
+        <MyForm position={jobDetails.title.rendered} />
       </div>
     </>
   );

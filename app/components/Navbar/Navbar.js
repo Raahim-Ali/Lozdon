@@ -104,7 +104,7 @@ function Navbar() {
               toggleDropdown();
             }}
           >
-            <Link href="/#Services">OUR PRODUCTS</Link>
+            <Link href="/Products">OUR PRODUCTS</Link>
           </div>
           <div
             className="navbarIcon"

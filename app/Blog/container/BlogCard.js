@@ -67,7 +67,13 @@ function Blog() {
         >
           <div className="blog-text">
             <div>
-              <p className="Heading" style={{ paddingBottom: "20px" }}>
+              <p
+                className="Heading"
+                style={{
+                  paddingBottom: "20px",
+                  fontSize: "35px",
+                }}
+              >
                 {blog.title}
                 <div
                   style={{
@@ -76,7 +82,26 @@ function Blog() {
                     fontWeight: "300",
                   }}
                 >
-                  {blog.read}
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "20px",
+                      alignItems: "center",
+                      marginTop: "10px",
+                    }}
+                  >
+                    <div>
+                      <img src="/Assets/Blog/authorimg.svg" />
+                    </div>
+                    <div>
+                      <p className="text" style={{ color: "#495367" }}>
+                        Integris Team
+                      </p>
+                      <p style={{ color: "#96A2BE" }}>
+                        {blog.read.split("T")[0]}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </p>
             </div>

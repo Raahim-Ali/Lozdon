@@ -69,3 +69,42 @@
   font-weight: 300;
   line-height: 146.023%;
 }
+
+@media screen and (width<1400px) {
+  .benefits {
+    padding: 120px 150px 20px 160px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    border-radius: 8px;
+  }
+}
+@media screen and (width<1000px) {
+  .benefits {
+    padding: 50px 60px;
+  }
+}
+@media screen and (width<700px) {
+  .leftText {
+    display: none;
+  }
+  .benefits {
+    padding: 50px 60px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .benefitsCards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .cardMain {
+    width: 100%;
+    margin-bottom: 38px;
+  }
+}

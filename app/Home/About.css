@@ -4,7 +4,7 @@
   align-items: center;
 }
 .Heading {
-  color: #090e8e;
+  color: #3b3f5c;
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -26,6 +26,7 @@
 }
 .textContent {
   display: flex;
+  width: 50%;
   flex-direction: column;
   justify-content: center;
 }
@@ -39,16 +40,17 @@
 .ServicesContainer {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
 }
 .roundBorderImage {
   border-radius: 100px 16px 100px 16px;
 }
 @media (1000px<width<1400px) {
+  .Services {
+    padding: 50px 50px;
+  }
   .ServicesContainer {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
   }
 }
 @media (200px < width<1000px) {
@@ -57,7 +59,7 @@
     width: 100%;
   }
   .Heading {
-    color: #3b3f5c;
+    color: #090e8e;
     font-family: Poppins;
     font-size: 20px;
     font-style: normal;
@@ -89,6 +91,12 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
+  }
+  .textContent {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     justify-content: center;
   }
 }
