@@ -25,13 +25,13 @@ const HeroSection = ({ slides, title, paragraph, imgSrc }) => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className=" md:min-h-screen bg-cover bg-center flex items-center justify-center shadow-md"
+          className="  bg-cover bg-center flex items-center justify-center shadow-md"
           style={{
             backgroundImage: `linear-gradient(256.89deg, rgba(9, 14, 142, 0) -17.66%, rgba(9, 14, 142, 0.9) 90%), url(${imgSrc})`,
           }}
         >
           <div className="text-white px-4 sm:px-8 max-w-full flex flex-col gap-[30px] py-[180px] items-start text-left">
-            <ul className="flex  gap-8 list-disc items-start md:text-left sm:text-xs md:text-[1.2rem] sm:text-center justify-start">
+            <ul className="flex gap-8 list-disc items-start md:text-base sm:text-xs text-[0.7rem] justify-start">
               <li className="marker:font-normal list-none uppercase">
                 Professionalism
               </li>

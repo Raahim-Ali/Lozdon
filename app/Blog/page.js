@@ -1,15 +1,15 @@
 import axios from "axios";
 import HeroSection from "../Products/HeroSection";
 import BlogCard from "./container/BlogCard";
-async function fetchPosts() {
-  const res = await axios.get(
-    "http://localhost/rar/wp-json/wp/v2/posts?_embed"
-  );
-  return res.data;
-}
+// async function fetchPosts() {
+//   const res = await axios.get(
+//     "http://localhost/rar/wp-json/wp/v2/posts?_embed"
+//   );
+//   return res.data;
+// }
 
 export default async function page() {
-  const posts = await fetchPosts();
+  // const posts = await fetchPosts();
   return (
     <>
       <HeroSection
@@ -19,7 +19,7 @@ export default async function page() {
         imageSrc="/Assets/Products/Image1.svg"
       />
 
-      <BlogCard posts={posts} />
+      <BlogCard posts={[]} />
     </>
   );
 }

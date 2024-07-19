@@ -7,21 +7,21 @@ function Positions() {
   const [jobOpenings, setJobOpenings] = useState([]);
 
   useEffect(() => {
-    fetchJobOpenings();
+    // fetchJobOpenings();
   }, []);
 
-  const fetchJobOpenings = async () => {
-    try {
-      const response = await fetch("http://localhost/rar/wp-json/wp/v2/jobs");
-      if (!response.ok) {
-        throw new Error("Failed to fetch job openings");
-      }
-      const data = await response.json();
-      setJobOpenings(data);
-    } catch (error) {
-      console.error("Error fetching job openings:", error);
-    }
-  };
+  // const fetchJobOpenings = async () => {
+  //   try {
+  //     const response = await fetch("http://localhost/rar/wp-json/wp/v2/jobs");
+  //     if (!response.ok) {
+  //       throw new Error("Failed to fetch job openings");
+  //     }
+  //     const data = await response.json();
+  //     setJobOpenings(data);
+  //   } catch (error) {
+  //     console.error("Error fetching job openings:", error);
+  //   }
+  // };
 
   return (
     <div className="positions" id="positions">
