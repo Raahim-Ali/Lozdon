@@ -43,7 +43,7 @@ export default function Footer() {
             <div className="flex flex-col gap-4">
               <div className="flex gap-3" style={{ paddingBottom: "20px" }}>
                 <img src="/Assets/Footer/Address.svg" />
-                <Link href="tel:0342-32020441">
+                <Link href="mailto:Info@integrisuae.com">
                   <p className="inter text-white text-base font-normal">
                     Office No - 16G-14, Phase 1, Hamriyah Free Zone, Sharjah,
                     UAE
@@ -52,7 +52,7 @@ export default function Footer() {
               </div>
               <div className="flex gap-3">
                 <img src="/Assets/Footer/Phone.svg" />
-                <Link href="mailto:Info@octalcode.com">
+                <Link href="tel:+97142406453">
                   <p className="inter text-white text-base font-normal">
                     +971 4 240 6453
                   </p>
