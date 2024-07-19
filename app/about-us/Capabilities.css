@@ -64,15 +64,20 @@
 @media (max-width: 1400px) {
   .ServicesContainer {
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .cardMain {
-    width: 50%;
+    width: 100%;
   }
   .CardsContainer {
     padding: 0px 150px;
+  }
+  .textContent {
+    width: 100%;
+    padding: 30px 0px;
   }
 
   .card {
