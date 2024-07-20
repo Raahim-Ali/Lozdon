@@ -13,7 +13,7 @@ function Idea() {
         </p>
       </div>
       <div>
-        <Greenbtn buttonText=" Let's partner up" href="#" />
+        <Greenbtn buttonText=" Let's partner up" href="/Contact" />
       </div>
     </div>
   );

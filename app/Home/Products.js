@@ -6,7 +6,7 @@ function Industries() {
     {
       imageSrc: "/Assets/Home/product1.svg",
       description: "Fertilizers",
-      text: "Urea Acid • DAP • MAP",
+      text: "Urea • DAP • MAP",
     },
     {
       imageSrc: "/Assets/Home/product2.svg",
@@ -16,7 +16,7 @@ function Industries() {
     {
       imageSrc: "/Assets/Home/product3.svg",
       description: "Glycols",
-      text: "MEG • DEF • TEQ",
+      text: "MEG • TEG • DEG",
     },
     {
       imageSrc: "/Assets/Home/product4.svg",

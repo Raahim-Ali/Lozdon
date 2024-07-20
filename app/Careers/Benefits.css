@@ -85,6 +85,10 @@
   .benefits {
     padding: 50px 60px;
   }
+  .benefitsContainer {
+    display: flex;
+    gap: 20px;
+  }
 }
 @media screen and (width<700px) {
   .leftText {
