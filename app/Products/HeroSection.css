@@ -1,9 +1,12 @@
 .heroSection {
   background: url("/Assets/Products/background.png");
-  padding: 220px 125px 0px 125px;
+  padding: 120px 125px 0px 125px;
   display: flex;
   justify-content: space-around;
   gap: "30px";
+}
+.heroImg {
+  height: 60vh;
 }
 
 @media screen and (width <1060px) {
