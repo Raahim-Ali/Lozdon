@@ -1,104 +1,70 @@
 "use client";
-import { useEffect, useState } from "react";
 import "./Blog.css";
 import Transparentbtn from "../components/Transparentbtn";
-import Image from "next/image";
 import Link from "next/link";
+import ContentfulImage from "../components/ContentfulImage";
 
-function Blog() {
-  const [blogs, setBlogs] = useState([]);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await fetch(
-  //         "http://localhost/rar/wp-json/wp/v2/posts?_embed"
-  //       );
-  //       if (!response.ok) {
-  //         throw new Error("Failed to fetch data");
-  //       }
-  //       const data = await response.json();
-  //       console.log("data", data);
-
-  //       // Extract relevant data from API response
-  //       const formattedBlogs = await Promise.all(
-  //         data.map(async (post) => {
-  //           // Fetch category information using wp:term link
-  //           const categoryResponse = await fetch(
-  //             post._links["wp:term"][0].href
-  //           );
-  //           if (!categoryResponse.ok) {
-  //             throw new Error("Failed to fetch category data");
-  //           }
-  //           const categories = await categoryResponse.json();
-  //           const categoryName =
-  //             categories.length > 0 ? categories[0].name : "Uncategorized";
-
-  //           const formattedDate = new Date(post.date).toLocaleDateString(
-  //             "en-US",
-  //             {
-  //               year: "numeric",
-  //               month: "long",
-  //               day: "numeric",
-  //             }
-  //           );
-
-  //           return {
-  //             imageSrc: post._embedded["wp:featuredmedia"][0].source_url,
-  //             buttonText: categoryName,
-  //             read: formattedDate,
-  //             title: post.title.rendered,
-  //             description: post.excerpt.rendered,
-  //             link: `/Blog/${post.slug}`,
-  //           };
-  //         })
-  //       );
-
-  //       setBlogs(formattedBlogs);
-  //     } catch (error) {
-  //       console.error("Error fetching data:", error);
-  //     }
-  //   };
-
-  //   fetchData();
-  // }, []);
-
+function Blog({ blogs }) {
   return (
     <div className="Blog">
       <p className="Heading">Our News</p>
       <p className="Heading2">What We Are Up To</p>
 
       <div className="blogContainer">
-        {blogs.slice(0, 3).map((blog, index) => (
-          <div className="blogCard" key={index}>
-            <div className="blogImageContainer">
-              <Image
-                className="blogImage"
-                src={blog.imageSrc}
-                alt=""
-                width={455}
-                height={269} // Adjust height as needed to maintain aspect ratio
-              />
+        {blogs.slice(0, 3).map((blog, index) => {
+          const { blogTitle, slug, excerpt, coverImage, blogDate } =
+            blog.fields;
+          return (
+            <div className="blogCard" key={blog.fields.slug}>
+              <div className="blogImageContainer">
+                <ContentfulImage
+                  alt={`Cover Image for ${blogTitle}`}
+                  src={coverImage.fields.file.url}
+                  width={coverImage.fields.file.details.image.width}
+                  height={coverImage.fields.file.details.image.height}
+                />
+              </div>
+              <div className="blogCardTop">
+                <div className="cardTitle">
+                  <p>{blogTitle}</p>
+                </div>
+                <div className="cardDescription">
+                  <p>{excerpt}</p>
+                </div>
+              </div>
+              <div
+                style={{
+                  fontFamily: "Inter",
+                  fontSize: "12px",
+                  fontWeight: "300",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "10px",
+                    alignItems: "center",
+                    marginTop: "20px",
+                    marginBottom: "20px",
+                  }}
+                >
+                  <div>
+                    <img src="/Assets/Blog/authorimg.svg" />
+                  </div>
+                  <div>
+                    <p className="text" style={{ color: "#495367" }}>
+                      Integris Team
+                    </p>
+                    <p>{blogDate}</p>
+                  </div>
+                </div>
+              </div>
+              <Link href={`/Blog/${slug}`}>
+                <p style={{ color: "#090e8e" }}>Read More</p>
+              </Link>
             </div>
-            <div className="blogCardTop">
-              <div className="buttonContainer">
-                <button className="devBtn">
-                  <p>{blog.buttonText}</p>
-                </button>
-                <p className="readText">{blog.read}</p>
-              </div>
-              <div className="cardTitle">
-                <p dangerouslySetInnerHTML={{ __html: blog.title }}></p>
-              </div>
-              <div className="cardDescription">
-                <p dangerouslySetInnerHTML={{ __html: blog.description }}></p>
-              </div>
-            </div>
-            <Link href={blog.link} className="flex w-fit">
-              <p className="learnMore w-fit mt-3 hover:text-main">Learn more</p>
-            </Link>
-          </div>
-        ))}
+          );
+        })}
       </div>
       <div className="buttons">
         <Transparentbtn TbtnText="VIEW ALL NEWS" href="/Blog" />

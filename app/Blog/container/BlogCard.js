@@ -1,121 +1,74 @@
 "use client";
-import { useEffect, useState } from "react";
-import Image from "next/image";
-import "./BlogCard.css";
+import "../../Home/Blog.css";
+import Link from "next/link";
+import ContentfulImage from "@/app/components/ContentfulImage";
 import Transparentbtn from "@/app/components/Transparentbtn";
 
-function Blog() {
-  const [blogs, setBlogs] = useState([]);
-
-  useEffect(() => {
-    // const fetchData = async () => {
-    //   try {
-    //     const response = await fetch(
-    //       "http://localhost/rar/wp-json/wp/v2/posts?_embed"
-    //     );
-    //     if (!response.ok) {
-    //       throw new Error("Failed to fetch data");
-    //     }
-    //     const data = await response.json();
-    //     const formattedBlogs = await Promise.all(
-    //       data.map(async (post) => {
-    //         const categoryResponse = await fetch(
-    //           post._links["wp:term"][0].href
-    //         );
-    //         if (!categoryResponse.ok) {
-    //           throw new Error("Failed to fetch category data");
-    //         }
-    //         const categories = await categoryResponse.json();
-    //         const categoryName =
-    //           categories.length > 0 ? categories[0].name : "Uncategorized";
-    //         const formattedDate = new Date(post.date).toLocaleDateString(
-    //           "en-US",
-    //           {
-    //             year: "numeric",
-    //             month: "long",
-    //             day: "numeric",
-    //           }
-    //         );
-    //         return {
-    //           imageSrc: post._embedded["wp:featuredmedia"][0].source_url || "",
-    //           buttonText: categoryName,
-    //           read: formattedDate,
-    //           title: post.title.rendered,
-    //           description: post.excerpt.rendered,
-    //           link: `/Blog/${post.slug}`,
-    //         };
-    //       })
-    //     );
-    //     setBlogs(formattedBlogs);
-    //   } catch (error) {
-    //     console.error("Error fetching data:", error);
-    //   }
-    // };
-    // fetchData();
-  }, []);
-
+function Blog({ blogs }) {
   return (
-    <div className="blog-container">
-      {blogs.map((blog, index) => (
-        <div
-          key={index}
-          className={`blog-item ${index % 2 === 0 ? "normal" : "reversed"}`}
-        >
-          <div className="blog-text">
-            <div>
-              <p
-                className="Heading"
+    <div className="Blog">
+      <p className="Heading">Our News</p>
+      <p className="Heading2">What We Are Up To</p>
+
+      <div className="blogContainer">
+        {blogs.map((blog, index) => {
+          const { blogTitle, slug, excerpt, coverImage, blogDate } =
+            blog.fields;
+          return (
+            <div className="blogCard" key={blog.fields.slug}>
+              <div className="blogImageContainer">
+                <ContentfulImage
+                  alt={`Cover Image for ${blogTitle}`}
+                  src={coverImage.fields.file.url}
+                  width={coverImage.fields.file.details.image.width}
+                  height={coverImage.fields.file.details.image.height}
+                />
+              </div>
+              <div className="blogCardTop">
+                <div className="cardTitle">
+                  <p>{blogTitle}</p>
+                </div>
+                <div className="cardDescription">
+                  <p>{excerpt}</p>
+                </div>
+              </div>
+              <div
                 style={{
-                  paddingBottom: "20px",
-                  fontSize: "35px",
+                  fontFamily: "Inter",
+                  fontSize: "12px",
+                  fontWeight: "300",
                 }}
               >
-                {blog.title}
                 <div
                   style={{
-                    fontFamily: "Inter",
-                    fontSize: "12px",
-                    fontWeight: "300",
+                    display: "flex",
+                    gap: "10px",
+                    alignItems: "center",
+                    marginTop: "20px",
+                    marginBottom: "20px",
                   }}
                 >
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "20px",
-                      alignItems: "center",
-                      marginTop: "10px",
-                    }}
-                  >
-                    <div>
-                      <img src="/Assets/Blog/authorimg.svg" />
-                    </div>
-                    <div>
-                      <p className="text" style={{ color: "#495367" }}>
-                        Integris Team
-                      </p>
-                      <p style={{ color: "#96A2BE" }}>
-                        {blog.read.split("T")[0]}
-                      </p>
-                    </div>
+                  <div>
+                    <img src="/Assets/Blog/authorimg.svg" />
+                  </div>
+                  <div>
+                    <p className="text" style={{ color: "#495367" }}>
+                      Integris Team
+                    </p>
+                    <p>{blogDate}</p>
                   </div>
                 </div>
-              </p>
+              </div>
+              <Link href={`/Blog/${slug}`}>
+                <p style={{ color: "#090e8e" }}>Read More</p>
+              </Link>
             </div>
-            <div>
-              <p
-                className="text1"
-                dangerouslySetInnerHTML={{ __html: blog.description }}
-              />
-            </div>
-            <div className="divbtn">
-              <Transparentbtn TbtnText="READ MORE" href={blog.link} />
-            </div>
-          </div>
-          <div className="blog-image">
-            <img className="blogimg" src={blog.imageSrc} alt={blog.title} />
-          </div>
-        </div>
-      ))}
+          );
+        })}
+      </div>
+      <div className="buttons">
+        <Transparentbtn TbtnText="VIEW ALL NEWS" href="/Blog" />
+      </div>
     </div>
   );
 }

@@ -1,15 +1,19 @@
+"use client";
 import axios from "axios";
 import HeroSection from "../Products/HeroSection";
 import BlogCard from "./container/BlogCard";
-// async function fetchPosts() {
-//   const res = await axios.get(
-//     "http://localhost/rar/wp-json/wp/v2/posts?_embed"
-//   );
-//   return res.data;
-// }
+import { useEffect, useState } from "react";
+import { client } from "../Library/contentful";
 
-export default async function page() {
-  // const posts = await fetchPosts();
+export default function page() {
+  const [fetchedBlogs, setFetchedBlogs] = useState([]);
+
+  useEffect(() => {
+    client.getEntries({ content_type: "blog" }).then((res) => {
+      console.log("res", res);
+      setFetchedBlogs(res.items);
+    });
+  }, []);
   return (
     <>
       <HeroSection
@@ -19,7 +23,7 @@ export default async function page() {
         imageSrc="/Assets/Products/Image1.svg"
       />
 
-      <BlogCard posts={[]} />
+      <BlogCard blogs={fetchedBlogs} />
     </>
   );
 }

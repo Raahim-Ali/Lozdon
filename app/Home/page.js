@@ -1,11 +1,23 @@
+"use client";
 import HeroSection from "./HeroSection";
 import Blog from "./Blog";
 import Idea from "./Idea";
 import Products from "./Products";
 import Process from "./Process";
 import About from "./About";
+import { client } from "../Library/contentful";
+import { useEffect, useState } from "react";
 
 function HomePage() {
+  const [fetchedBlogs, setFetchedBlogs] = useState([]);
+
+  useEffect(() => {
+    client.getEntries({ content_type: "blog" }).then((res) => {
+      console.log("res", res);
+      setFetchedBlogs(res.items);
+    });
+  }, []);
+
   const slides = [
     {
       imgSrc: "/Assets/Herosection/bg1.png",
@@ -31,7 +43,7 @@ and export of petrochemical products across a variety of countries."
       <Products />
       <Process />
       <Idea />
-      <Blog />
+      <Blog blogs={fetchedBlogs} />
     </>
   );
 }

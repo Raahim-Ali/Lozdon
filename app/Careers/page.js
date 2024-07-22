@@ -1,8 +1,19 @@
+"use client";
 import HeroSection from "../Products/HeroSection";
 import Benefits from "./Benefits";
 import Positions from "./Positions";
+import { client } from "../Library/contentful";
+import { useEffect, useState } from "react";
 
 function Careers() {
+  const [fetchedJobs, setFetchedJobs] = useState([]);
+
+  useEffect(() => {
+    client.getEntries({ content_type: "careers" }).then((res) => {
+      console.log("res", res);
+      setFetchedJobs(res.items);
+    });
+  }, []);
   return (
     <>
       <HeroSection
@@ -12,7 +23,7 @@ function Careers() {
         imageSrc="/Assets/Careers/heroSectionImg.svg"
       />
       <Benefits />
-      <Positions />
+      <Positions jobs={fetchedJobs} />
     </>
   );
 }
