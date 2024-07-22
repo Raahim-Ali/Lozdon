@@ -5,25 +5,25 @@ function Benefits() {
       icon: "/Assets/Careers/Team.svg",
       heading: "Team Work",
       CardText:
-        "Integris provides their employees a culture that encourage teamwork and collaboration. Our diverse team works together seamlessly to deliver excellence in trading ensuring collective success and mutual growth.",
+        "Integris provides a culture that fosters teamwork and collaboration. Our diverse team works seamlessly together to achieve excellence in trading, ensuring collective success and mutual growth. We are dedicated to nurturing careers that pave the way for a secure future.",
     },
     {
       icon: "/Assets/Careers/Secure.svg",
       heading: "Secured Future",
       CardText:
-        "At Integris, we believe in nurturing careers that pave the way for a secure future. We offer robust training programs, competitive benefits, and opportunities for growth to ensure our employees thrive professionally and personally. Join us in building a stable and fulfilling career with a company committed to your success.",
+        "At Integris, we offer robust training programs, competitive benefits, and growth opportunities to ensure our employees thrive both professionally and personally. Join us to build a stable and fulfilling career with a company committed to your success and well-being.",
     },
     {
       icon: "/Assets/Careers/Learn.svg",
       heading: "Learning Opportunity",
       CardText:
-        "Explore limitless learning opportunities at Integris where we empower you to expand your knowledge and skills in the dynamic field of commodity trading. From comprehensive training programs to hands-on experience, we support your professional development every step of the way.",
+        "Explore limitless learning opportunities with Integris, where we empower you to expand your knowledge and skills in the dynamic field of commodity trading. We provide comprehensive training and hands-on experience to support your professional development every step of the way.",
     },
     {
       icon: "/Assets/Careers/Upgrade.svg",
       heading: "Upgrade Skills",
       CardText:
-        "Integris is committed to enhancing your skills through continuous mentorship and exposure to cutting-edge industry practices. Join us to elevate your career and stay ahead in the competitive global marketplace, making a meaningful impact in our innovative and forward-thinking team.",
+        "Integris is committed to enhancing your skills through continuous mentorship and exposure to cutting-edge industry practices. By joining us, you will elevate your career and stay ahead in the competitive global marketplace, making a meaningful impact.",
     },
   ];
   return (

@@ -1,23 +1,27 @@
 .heroSection {
   background: url("/Assets/Products/background.png");
-  padding: 120px 125px 0px 125px;
+  padding: 60px 75px 0px 75px; /* Adjusted padding for reduced height */
+  height: 50vh;
   display: flex;
   justify-content: space-around;
-  gap: "30px";
-}
-.heroImg {
-  height: 60vh;
+  overflow: hidden; /* Ensure any overflowing content is hidden */
 }
 
-@media screen and (width <1060px) {
+.heroImg {
+  height: 60vh; /* Adjust the height to make the image smaller */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Crop image to cover the container */
+}
+
+@media screen and (max-width: 1060px) {
   .imageSection {
     display: none;
   }
 }
-@media screen and (width < 1000px) {
+
+@media screen and (max-width: 1000px) {
   .heroSection {
-    background: url("/Assets/Products/background.png");
-    padding: 120px 25px;
+    padding: 60px 25px; /* Adjust padding for smaller screens */
     display: flex;
     justify-content: space-around;
   }

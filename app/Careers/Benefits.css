@@ -1,9 +1,9 @@
 .benefits {
-  padding: 120px 250px 20px 260px;
+  padding: 120px 150px 20px 160px;
 }
 .benefitsContainer {
   display: flex;
-  justify-content: space-between;
+  gap: 100px;
 }
 .leftText {
   display: flex;
@@ -42,18 +42,18 @@
 .benefitcard {
   display: flex;
   flex-direction: column;
-  padding: 0px 32px;
+  padding: 0px 20px;
   border-radius: 8px;
 }
 
 .cardIcon {
-  padding: 0px 0px 24px 0px;
+  padding: 0px 0px 10px 0px;
 }
 
 .cardTitle {
   color: #3b3f5c;
   font-family: Poppins;
-  padding: 0px 0px 12px 0px;
+  padding: 0px 0px 15px 0px;
   font-size: 18px;
   font-weight: 600;
   line-height: 140%;
