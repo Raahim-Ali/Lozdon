@@ -6,7 +6,7 @@
   gap: "30px";
 }
 .heroImg {
-  height: 40vh;
+  height: 60vh;
 }
 
 @media screen and (width <1060px) {

@@ -1,6 +1,5 @@
 import React from "react";
 import Transparentbtn from "../components/Transparentbtn";
-
 const yourArray = [
   {
     title: "Fertilizers",
@@ -31,7 +30,6 @@ const yourArray = [
     list: ["Petroleum", "Gas Oil", "Gasoline", "LPG"],
   },
 ];
-
 export default function ImageAndDiv() {
   return (
     <>
@@ -39,15 +37,8 @@ export default function ImageAndDiv() {
         <div
           key={index}
           className={`flex flex-col ${
-            index % 2 === 0
-              ? "xl:flex-row-reverse bg-anotherColor"
-              : "xl:flex-row"
-          } md:py-20 md:px-36 gap-40 py-0 px-5`}
-          style={{
-            paddingLeft: "250px",
-            paddingRight: "150px",
-            paddingTop: "0px",
-          }}
+            index % 2 === 0 ? "xl:flex-row-reverse bg-[#F9F9F9]" : "xl:flex-row"
+          } md:py-20 md:px-36 gap-16 px-10 py-8  `}
         >
           <div
             className="xl:w-1/2"
@@ -78,22 +69,20 @@ export default function ImageAndDiv() {
               }}
             />
           </div>
-
-          <div className="flex gap-5 flex-col w-full xl:w-1/2 justify-center">
+          <div className="flex gap-5 flex-col w-full xl:w-1/2 justify-center pb-10">
             <h5 className="md:text-4xl text-2xl font-bold uppercase tracking-wider Heading2 ">
-              <p style={{ fontSize: "32px" }}>{item.title}</p>
+              <p className="text-[32px]">{item.title}</p>
             </h5>
-            <h5 className="text-xl font-medium uppercase inter tracking-wider md:flex hidden">
-              <p style={{ fontSize: "15px", color: "#343434" }}>
-                {item.description}
-              </p>
+            <h5 className="text-xl font-medium uppercase inter tracking-wider ">
+              <p className="text-[15px] text-[#343434]">{item.description}</p>
             </h5>
-            <ul className="text-lg" style={{ paddingBottom: "20px" }}>
+            <ul className="text-lg pb-5">
               {item.list &&
                 item.list.map((listItem, listIndex) => (
                   <li
+                    className="pb-2 font-normal"
                     key={listIndex}
-                    style={{ fontWeight: "500", paddingBottom: "8px" }}
+                    // style={{ fontWeight: "500", paddingBottom: "8px" }}
                   >
                     {">"} {"\u00A0"} {listItem}
                   </li>

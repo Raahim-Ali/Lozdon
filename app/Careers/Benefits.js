@@ -44,7 +44,7 @@ function Benefits() {
           <div className="benefitsCards">
             {benefits.map((card, index) => (
               <div className="cardMain" key={index}>
-                <div className="card">
+                <div className="benefitcard">
                   <div className="cardIcon">
                     <img src={card.icon} alt="/" />
                   </div>
