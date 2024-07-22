@@ -6,7 +6,7 @@ const HeroSection = ({ title, paragraph, imgSrc }) => {
     <div
       className="bg-cover bg-center flex items-center justify-center shadow-md"
       style={{
-        backgroundImage: `linear-gradient(256.89deg, rgba(9, 14, 142, 0) -17.66%, rgba(9, 14, 142, 0.9) 90%), url(${imgSrc})`,
+        backgroundImage: `url(${imgSrc})`,
       }}
     >
       <div className="text-white px-4 sm:px-8 max-w-full flex flex-col gap-[30px] py-[180px] items-start text-left">
