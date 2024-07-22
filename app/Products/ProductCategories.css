@@ -1,5 +1,26 @@
 .mainDiv {
-  padding: 120px 200px;
+  padding: 120px 160px;
+}
+.Heading {
+  font-size: 1.5rem;
+  color: #090e8e;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.Heading2 {
+  color: #1c3c4a;
+  line-height: normal;
+  text-transform: capitalize;
+  font-family: Libre Caslon Text;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.36px;
+  margin-bottom: 12px;
+  text-align: left;
 }
 @media screen and (width<1000px) {
   .mainDiv {
