@@ -12,6 +12,9 @@
   width: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Crop image to cover the container */
 }
+.text1 {
+  width: 30vw;
+}
 
 @media screen and (max-width: 1060px) {
   .imageSection {
@@ -27,5 +30,8 @@
   }
   .textSection {
     width: 100%;
+  }
+  .text1 {
+    width: 90vw;
   }
 }
