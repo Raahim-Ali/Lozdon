@@ -5,7 +5,7 @@ import BlogCard from "./container/BlogCard";
 import { useEffect, useState } from "react";
 import { client } from "../Library/contentful";
 
-export default function page() {
+export default function Blogs() {
   const [fetchedBlogs, setFetchedBlogs] = useState([]);
 
   useEffect(() => {

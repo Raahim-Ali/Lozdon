@@ -12,8 +12,8 @@ function Positions({ jobs }) {
       {jobs.slice(0, 3).map((job, index) => {
         const { jobTitle, excerpt, slug } = job.fields;
         return (
-          <div className="jobCards">
-            <div className="jobCardMain" key={job.fields.slug}>
+          <div className="jobCards" key={job.fields.slug}>
+            <div className="jobCardMain">
               <div className="Jobcard">
                 <p
                   className="cardTitle"

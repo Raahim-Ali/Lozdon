@@ -4,7 +4,7 @@ import ProductCategories from "../Products/ProductCategories";
 import Capabilities from "./Capabilities";
 import About from "../Home/About";
 
-export default function page() {
+export default function AboutUs() {
   return (
     <>
       <HeroSection
