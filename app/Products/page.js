@@ -7,7 +7,7 @@ function ProductsPage() {
       <HeroSection
         heading="Our Products"
         subHeading="Products with which we are great"
-        text="In the international market, Integris International FZE is a specialist in the import and export of petrochemical."
+        text="At Integris, we prioritize our employees' growth and well-being, offering continuous support and guidance. Through regular training sessions, we empower our team to excel and evolve professionally, ensuring their success aligns with our company's values."
         imageSrc="/Assets/Products/Image1.svg"
       />
       <ProductCategories

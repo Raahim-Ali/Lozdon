@@ -1,6 +1,5 @@
 import React from "react";
 import "./HeroSection.css";
-import "../Home/About.css";
 
 function HeroSection({ heading, subHeading, text, imageSrc }) {
   return (
@@ -11,7 +10,7 @@ function HeroSection({ heading, subHeading, text, imageSrc }) {
             <p>{heading}</p>
           </div>
           <div className="Heading2" style={{ paddingBottom: "20px" }}>
-            <p style={{ fontSize: "48px", lineHeight: "60px" }}>{subHeading}</p>
+            <p>{subHeading}</p>
           </div>
           <div className="text1">
             <p style={{ fontSize: "18px", lineHeight: "30px" }}>{text}</p>
