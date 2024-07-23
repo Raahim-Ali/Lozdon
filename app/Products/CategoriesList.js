@@ -38,7 +38,7 @@ export default function ImageAndDiv() {
           key={index}
           className={`flex flex-col ${
             index % 2 === 0 ? "xl:flex-row-reverse bg-[#F9F9F9]" : "xl:flex-row"
-          } md:py-20 md:px-36 gap-16 px-10 py-8  `}
+          } md:py-20 md:px-40 gap-16 px-10 py-8  `}
         >
           <div
             className="xl:w-1/2"

@@ -11,6 +11,16 @@
   gap: 10px;
   width: 35%;
 }
+.Heading {
+  font-size: 1.5rem;
+  color: #090e8e;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
 .subHeading {
   color: #1c3c4a;
   line-height: normal;
@@ -77,7 +87,7 @@
   .card {
     display: flex;
     flex-direction: column;
-    padding: 0px 10px;
+    padding: 10px 10px;
     border-radius: 8px;
   }
 }

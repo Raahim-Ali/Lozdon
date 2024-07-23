@@ -4,41 +4,65 @@ import "./form.css"; // Import the CSS file
 import Transparentbtn from "@/app/components/Transparentbtn";
 
 function MyForm({ position }) {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [rewardFile, setRewardFile] = useState(null);
+  const [formDisabled, setFormDisabled] = useState(false);
 
-  const handleFirstNameChange = (event) => {
-    setFirstName(event.target.value);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    rewardFile: "",
+  });
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
   };
 
-  const handleLastNameChange = (event) => {
-    setLastName(event.target.value);
-  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log("Submitting form...");
+    if (
+      formData.firstName.trim() === "" ||
+      formData.lastName.trim() === "" ||
+      formData.email.trim() === "" ||
+      formData.phone.trim() === "" ||
+      formData.rewardFile.trim() === ""
+    ) {
+      alert("Please fill in all fields");
+      return;
+    }
 
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
+    try {
+      setFormDisabled(true);
+      const response = await fetch("/api/JobApplication", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-  const handlePhoneChange = (event) => {
-    setPhone(event.target.value);
-  };
-
-  const handleRewardFileChange = (event) => {
-    setRewardFile(event.target.files[0]);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted!");
-    console.log("First name:", firstName);
-    console.log("Last name:", lastName);
-    console.log("Email:", email);
-    console.log("Phone:", phone);
-    console.log("Reward file:", rewardFile);
+      if (response.ok) {
+        console.log("Form submitted successfully");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          rewardFile: "",
+        });
+        alert("Details Sent.");
+      } else {
+        alert("Failed to send the details. Please try again.");
+      }
+      setFormDisabled(false);
+    } catch (error) {
+      setFormDisabled(false);
+      alert(`Error submitting form: ${error.message}`);
+    }
   };
 
   return (
@@ -52,7 +76,7 @@ function MyForm({ position }) {
             type="text"
             id="firstName"
             value={firstName}
-            onChange={handleFirstNameChange}
+            onChange={handleInputChange}
             className="input-field"
           />
         </div>
@@ -64,7 +88,7 @@ function MyForm({ position }) {
             type="text"
             id="lastName"
             value={lastName}
-            onChange={handleLastNameChange}
+            onChange={handleInputChange}
             className="input-field"
           />
         </div>
@@ -76,7 +100,7 @@ function MyForm({ position }) {
             type="email"
             id="email"
             value={email}
-            onChange={handleEmailChange}
+            onChange={handleInputChange}
             className="input-field"
           />
         </div>
@@ -88,7 +112,7 @@ function MyForm({ position }) {
             type="tel"
             id="phone"
             value={phone}
-            onChange={handlePhoneChange}
+            onChange={handleInputChange}
             className="input-field"
           />
         </div>
@@ -112,13 +136,17 @@ function MyForm({ position }) {
             type="file"
             id="Resume"
             accept=".jpg,.jpeg,.png"
-            onChange={handleRewardFileChange}
+            onChange={handleInputChange}
             className="input-field1"
           />
         </div>
       </form>
       <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-        <Transparentbtn TbtnText="APPLY NOW" href="#" />
+        <Transparentbtn
+          TbtnText="APPLY NOW"
+          disabled={formDisabled}
+          onClick={handleSubmit}
+        />
         <Transparentbtn TbtnText="<- CAREERS" href="/Careers/#positions" />
       </div>
     </>
