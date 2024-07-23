@@ -12,10 +12,10 @@ function FormSection() {
     business: "",
   });
   const handleInputChange = (e) => {
-    const { Name, value } = e.target;
+    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [Name]: value,
+      [name]: value,
     });
   };
   const handleSubmit = async (e) => {
