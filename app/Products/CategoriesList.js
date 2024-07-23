@@ -13,7 +13,7 @@ const yourArray = [
     description:
       "Here can be more details about the product category, which helps user to know more about that specific category of product. Please add there more details about the category.",
     imageSrc: "/Assets/Home/product2.svg",
-    list: ["MEF", "DEG", "TEQ", "BG"],
+    list: ["MEG", "TEG", "DEG"],
   },
   {
     title: "Solvents",
