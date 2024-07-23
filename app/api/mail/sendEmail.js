@@ -23,7 +23,7 @@ const sendRegisterEmail = async ({
       rewardFile: rewardFile,
     });
     let emailMessage = {
-      from: "waqassarwar12@gmail.com",
+      from: "khadijajamilwork@gmail.com",
       to: "raahimaligcu@gmail.com",
       subject: "Integris Services ",
       html: data,
