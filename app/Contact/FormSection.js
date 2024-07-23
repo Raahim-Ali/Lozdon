@@ -1,30 +1,28 @@
 "use client";
-import Image from "next/image";
 import { useState } from "react";
 import "./FormSection.css";
 
 function FormSection() {
   const [formDisabled, setFormDisabled] = useState(false);
   const [formData, setFormData] = useState({
-    name: "",
+    Name: "",
     email: "",
     contact: "",
     message: "",
     business: "",
   });
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
+    const { Name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value,
+      [Name]: value,
     });
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Submitting form...");
-    // Validate that all fields are filled
     if (
-      formData.name.trim() === "" ||
+      formData.Name.trim() === "" ||
       formData.email.trim() === "" ||
       formData.contact.trim() === "" ||
       formData.business.trim() === "" ||
@@ -36,7 +34,7 @@ function FormSection() {
 
     try {
       setFormDisabled(true);
-      const response = await fetch("/api/OctalCodeEmail", {
+      const response = await fetch("/api/Contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -48,7 +46,7 @@ function FormSection() {
         console.log("Form submitted successfully");
         // Optionally, you can reset the form here
         setFormData({
-          name: "",
+          Name: "",
           email: "",
           contact: "",
           business: "",
@@ -72,9 +70,9 @@ function FormSection() {
           <div className="formName">
             <input
               type="text"
-              id="name"
-              name="name"
-              value={formData.name}
+              id="Name"
+              name="Name"
+              value={formData.Name}
               onChange={handleInputChange}
               placeholder="ENTER YOUR NAME"
               required

@@ -24,7 +24,6 @@ function MyForm({ position }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Submitting form...");
-    // Validate that all fields are filled
     if (
       formData.firstName.trim() === "" ||
       formData.lastName.trim() === "" ||
@@ -38,7 +37,7 @@ function MyForm({ position }) {
 
     try {
       setFormDisabled(true);
-      const response = await fetch("/api/IntegrisEmail", {
+      const response = await fetch("/api/JobApplication", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

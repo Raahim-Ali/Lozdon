@@ -3,24 +3,24 @@ const ejs = require("ejs");
 const transport = require("./transport");
 
 const sendRegisterEmail = async ({
-  firstName,
-  lastName,
+  Name,
   email,
-  phone,
-  rewardFile,
+  contact,
+  message,
+  business,
 }) => {
   try {
     const requirePath = path.join(
       process.cwd(),
-      "app/api/viewsJob",
+      "app/api/viewsContact",
       "registerEmail.ejs"
     );
     const data = await ejs.renderFile(requirePath, {
-      firstName: firstName,
-      lastName: lastName,
+      Name: Name,
       email: email,
-      phone: phone,
-      rewardFile: rewardFile,
+      contact: contact,
+      message: message,
+      business: business,
     });
     let emailMessage = {
       from: "waqassarwar12@gmail.com",
