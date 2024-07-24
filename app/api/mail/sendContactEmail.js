@@ -8,7 +8,6 @@ const sendRegisterEmail = async ({
   contact,
   message,
   business,
-  resume,
 }) => {
   try {
     const requirePath = path.join(
@@ -28,7 +27,6 @@ const sendRegisterEmail = async ({
       to: "raahimaligcu@gmail.com",
       subject: "Integris Services ",
       html: data,
-      attachments: [resume],
     };
 
     return new Promise((resolve, reject) => {
