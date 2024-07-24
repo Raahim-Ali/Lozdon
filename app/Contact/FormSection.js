@@ -139,18 +139,6 @@ function FormSection() {
               required
             />
           </div>
-          <div className="form-group">
-            <label htmlFor="rewardFile" className="label">
-              Upload Resume
-            </label>
-            <input
-              type="file"
-              id="resume"
-              accept=".jpg,.jpeg,.png,.pdf"
-              onChange={handleRewardFileChange}
-              className="input-field1"
-            />
-          </div>
         </div>
 
         <div className="w-full flex" style={{ paddingTop: "10px" }}>
