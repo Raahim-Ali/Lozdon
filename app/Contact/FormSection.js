@@ -35,18 +35,13 @@ function FormSection() {
     }
 
     try {
-      const formDataWithFile = new FormData();
-
-      // Using forEach to append form data
-      Object.entries(formData).forEach(([key, value]) => {
-        formDataWithFile.append(key, value);
-      });
-
-      formDataWithFile.append("resume", rewardFile);
-
+      setFormDisabled(true);
       const response = await fetch("/api/Contact", {
         method: "POST",
-        body: formDataWithFile,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
@@ -58,7 +53,6 @@ function FormSection() {
           business: "",
           message: "",
         });
-        setRewardFile("");
         alert("Details Sent.");
       } else {
         alert("Failed to send the details. Please try again.");
