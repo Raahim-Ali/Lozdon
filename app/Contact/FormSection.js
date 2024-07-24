@@ -65,8 +65,8 @@ function FormSection() {
           contact: "",
           business: "",
           message: "",
-          resume: "",
         });
+        setRewardFile("");
         alert("Details Sent.");
       } else {
         alert("Failed to send the details. Please try again.");

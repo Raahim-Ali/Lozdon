@@ -29,6 +29,12 @@ const POST = async (req, res) => {
         { status: 200 }
       );
     }
+    return NextResponse.json(
+      {
+        message: "File Not Present.",
+      },
+      { status: 500 }
+    );
   } catch (error) {
     console.error(error);
     return NextResponse.json({ message: "Email Not Sent." }, { status: 500 });
