@@ -5,14 +5,18 @@ import Transparentbtn from "@/app/components/Transparentbtn";
 
 function MyForm({ position }) {
   const [formDisabled, setFormDisabled] = useState(false);
-
+  const [rewardFile, setRewardFile] = useState("");
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
     phone: "",
-    rewardFile: "",
   });
+  const handleRewardFileChange = (event) => {
+    const selectedFile = event.target.files[0];
+    console.log("Selected file:", selectedFile);
+    setRewardFile(selectedFile);
+  };
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -20,29 +24,36 @@ function MyForm({ position }) {
       [name]: value,
     });
   };
-
   const handleSubmit = async (e) => {
+    if (!rewardFile) {
+      alert("Please upload a resume");
+      return;
+    }
     e.preventDefault();
     console.log("Submitting form...");
     if (
       formData.firstName.trim() === "" ||
       formData.lastName.trim() === "" ||
       formData.email.trim() === "" ||
-      formData.phone.trim() === "" ||
-      formData.rewardFile.trim() === ""
+      formData.phone.trim() === ""
     ) {
       alert("Please fill in all fields");
       return;
     }
 
     try {
-      setFormDisabled(true);
+      const formDataWithFile = new FormData();
+
+      // Using forEach to append form data
+      Object.entries(formData).forEach(([key, value]) => {
+        formDataWithFile.append(key, value);
+      });
+
+      formDataWithFile.append("resume", rewardFile);
+
       const response = await fetch("/api/JobApplication", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+        body: formDataWithFile,
       });
 
       if (response.ok) {
@@ -52,8 +63,8 @@ function MyForm({ position }) {
           lastName: "",
           email: "",
           phone: "",
-          rewardFile: "",
         });
+        setRewardFile("");
         alert("Details Sent.");
       } else {
         alert("Failed to send the details. Please try again.");
@@ -135,8 +146,8 @@ function MyForm({ position }) {
           <input
             type="file"
             id="Resume"
-            accept=".jpg,.jpeg,.png"
-            onChange={handleInputChange}
+            accept=".jpg,.jpeg,.png,.pdf"
+            onChange={handleRewardFileChange}
             className="input-field1"
           />
         </div>

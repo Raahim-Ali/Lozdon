@@ -7,7 +7,7 @@ const sendRegisterEmail = async ({
   lastName,
   email,
   phone,
-  rewardFile,
+  resume,
 }) => {
   try {
     const requirePath = path.join(
@@ -20,13 +20,13 @@ const sendRegisterEmail = async ({
       lastName: lastName,
       email: email,
       phone: phone,
-      rewardFile: rewardFile,
     });
     let emailMessage = {
       from: "khadijajamilwork@gmail.com",
       to: "raahimaligcu@gmail.com",
       subject: "Integris Services ",
       html: data,
+      attachments: [resume],
     };
 
     return new Promise((resolve, reject) => {
