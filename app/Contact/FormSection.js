@@ -4,6 +4,7 @@ import "./FormSection.css";
 
 function FormSection() {
   const [formDisabled, setFormDisabled] = useState(false);
+  const [rewardFile, setRewardFile] = useState("");
   const [formData, setFormData] = useState({
     Name: "",
     email: "",
@@ -11,6 +12,11 @@ function FormSection() {
     message: "",
     business: "",
   });
+  const handleRewardFileChange = (event) => {
+    const selectedFile = event.target.files[0];
+    console.log("Selected file:", selectedFile);
+    setRewardFile(selectedFile);
+  };
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -19,6 +25,10 @@ function FormSection() {
     });
   };
   const handleSubmit = async (e) => {
+    if (!rewardFile) {
+      alert("Please upload a resume");
+      return;
+    }
     e.preventDefault();
     console.log("Submitting form...");
     if (
@@ -33,18 +43,22 @@ function FormSection() {
     }
 
     try {
-      setFormDisabled(true);
+      const formDataWithFile = new FormData();
+
+      // Using forEach to append form data
+      Object.entries(formData).forEach(([key, value]) => {
+        formDataWithFile.append(key, value);
+      });
+
+      formDataWithFile.append("resume", rewardFile);
+
       const response = await fetch("/api/Contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+        body: formDataWithFile,
       });
 
       if (response.ok) {
         console.log("Form submitted successfully");
-        // Optionally, you can reset the form here
         setFormData({
           Name: "",
           email: "",
@@ -52,6 +66,7 @@ function FormSection() {
           business: "",
           message: "",
         });
+        setRewardFile("");
         alert("Details Sent.");
       } else {
         alert("Failed to send the details. Please try again.");
@@ -122,6 +137,18 @@ function FormSection() {
               placeholder="ENTER YOUR MESSAGE"
               type="text"
               required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="rewardFile" className="label">
+              Upload Resume
+            </label>
+            <input
+              type="file"
+              id="resume"
+              accept=".jpg,.jpeg,.png,.pdf"
+              onChange={handleRewardFileChange}
+              className="input-field1"
             />
           </div>
         </div>

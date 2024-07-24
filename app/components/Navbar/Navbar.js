@@ -122,6 +122,14 @@ function Navbar() {
           >
             <Link href="/about-us">ABOUT US</Link>
           </div>
+          <div
+            className="navbarIcon"
+            onClick={() => {
+              toggleDropdown();
+            }}
+          >
+            <Link href="/Careers">CAREERS</Link>
+          </div>
 
           <Greenbtn
             buttonText="Contact us"
