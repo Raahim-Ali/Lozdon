@@ -12,11 +12,7 @@ function FormSection() {
     message: "",
     business: "",
   });
-  const handleRewardFileChange = (event) => {
-    const selectedFile = event.target.files[0];
-    console.log("Selected file:", selectedFile);
-    setRewardFile(selectedFile);
-  };
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -25,10 +21,6 @@ function FormSection() {
     });
   };
   const handleSubmit = async (e) => {
-    if (!rewardFile) {
-      alert("Please upload a resume");
-      return;
-    }
     e.preventDefault();
     console.log("Submitting form...");
     if (
