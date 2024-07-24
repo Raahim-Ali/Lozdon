@@ -3,7 +3,11 @@
   display: flex;
   justify-content: space-between;
 }
-
+.form-group {
+  margin-bottom: 20px;
+  flex-basis: 49%; /* Set the minimum width to 45% */
+  max-width: 45%; /* Set the maximum width to 45% */
+}
 .firstSection {
   display: flex;
   flex-direction: column;

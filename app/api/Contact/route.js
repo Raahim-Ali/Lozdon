@@ -1,25 +1,39 @@
+import sendRegisterEmail from "../mail/sendContactEmail";
 const { NextResponse } = require("next/server");
-const registerEmail = require("../mail/sendContactEmail");
 
-async function POST(request) {
+const fs = require("fs");
+const { createReadStream, createWriteStream } = require("fs");
+const path = require("path");
+
+const POST = async (req, res) => {
   try {
-    const body = await request.json();
-    const { Name, email, contact, message, business } = body;
+    const formData = await req.formData();
+    const resumeFile = formData.get("resume");
 
-    console.log("body:", body);
+    if (resumeFile instanceof File) {
+      const arrayBuffer = await resumeFile.arrayBuffer();
+      const buffer = Buffer.from(arrayBuffer);
 
-    await registerEmail({ Name, email, contact, message, business });
-    return NextResponse.json(
-      {
-        message: "Email Sent Successfully.",
-      },
-      { status: 200 }
-    );
+      await sendRegisterEmail({
+        Name: formData.get("Name"),
+        email: formData.get("email"),
+        contact: formData.get("contact"),
+        message: formData.get("message"),
+        business: formData.get("business"),
+        resume: { filename: resumeFile.name, content: buffer },
+      });
+      return NextResponse.json(
+        {
+          message: "Email Sent Successfully.",
+        },
+        { status: 200 }
+      );
+    }
   } catch (error) {
-    console.log("error 500:", error);
+    console.error(error);
     return NextResponse.json({ message: "Email Not Sent." }, { status: 500 });
   }
-}
+};
 
 module.exports = {
   POST,
