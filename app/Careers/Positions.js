@@ -3,6 +3,7 @@ import "./Positions.css";
 import Link from "next/link";
 
 function Positions({ jobs }) {
+  console.log("jobs.slice(0,3)", jobs.slice(0, 3));
   return (
     <div className="positions" id="positions">
       <div className="positionsContainer">
@@ -11,6 +12,7 @@ function Positions({ jobs }) {
       </div>
       {jobs.slice(0, 3).map((job, index) => {
         const { jobTitle, excerpt, slug } = job.fields;
+
         return (
           <div className="jobCards" key={job.fields.slug}>
             <div className="jobCardMain">
@@ -27,7 +29,7 @@ function Positions({ jobs }) {
                 >
                   {excerpt}
                 </div>
-                <Link href={`/Careers/${slug}`}>
+                <Link href={`/Careers/frontend-developer`}>
                   <button className="applyButton">Apply Now</button>
                 </Link>
               </div>

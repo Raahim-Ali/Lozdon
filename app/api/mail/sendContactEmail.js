@@ -24,7 +24,7 @@ const sendRegisterEmail = async ({
     });
     let emailMessage = {
       from: "khadijajamilwork@gmail.com",
-      to: "raahimaligcu@gmail.com",
+      to: "info@integrisuae.com",
       subject: "Integris Services ",
       html: data,
     };

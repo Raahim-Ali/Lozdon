@@ -14,6 +14,15 @@
   flex-basis: 49%; /* Set the minimum width to 45% */
   max-width: 45%; /* Set the maximum width to 45% */
 }
+.disabledBtn {
+  padding: 15px 15px;
+  border-radius: 12px 4px 12px 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid grey;
+  background: grey;
+}
 
 .label {
   display: block;

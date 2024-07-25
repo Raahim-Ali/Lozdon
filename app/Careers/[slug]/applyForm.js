@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./form.css"; // Import the CSS file
 import Transparentbtn from "@/app/components/Transparentbtn";
 
@@ -12,6 +12,7 @@ function MyForm({ position }) {
     email: "",
     phone: "",
   });
+  const fileInputRef = useRef(null);
   const handleRewardFileChange = (event) => {
     const selectedFile = event.target.files[0];
     console.log("Selected file:", selectedFile);
@@ -42,6 +43,7 @@ function MyForm({ position }) {
     }
 
     try {
+      setFormDisabled(true);
       const formDataWithFile = new FormData();
 
       // Using forEach to append form data
@@ -65,7 +67,11 @@ function MyForm({ position }) {
           phone: "",
         });
         setRewardFile("");
+        if (fileInputRef.current) {
+          fileInputRef.current.value = ""; // Clear the file input
+        }
         alert("Details Sent.");
+        setFormDisabled(false);
       } else {
         alert("Failed to send the details. Please try again.");
       }
@@ -85,8 +91,9 @@ function MyForm({ position }) {
           </label>
           <input
             type="text"
+            name="firstName"
             id="firstName"
-            value={firstName}
+            value={formData.firstName}
             onChange={handleInputChange}
             className="input-field"
           />
@@ -98,7 +105,8 @@ function MyForm({ position }) {
           <input
             type="text"
             id="lastName"
-            value={lastName}
+            name="lastName"
+            value={formData.lastName}
             onChange={handleInputChange}
             className="input-field"
           />
@@ -110,7 +118,8 @@ function MyForm({ position }) {
           <input
             type="email"
             id="email"
-            value={email}
+            name="email"
+            value={formData.email}
             onChange={handleInputChange}
             className="input-field"
           />
@@ -120,9 +129,10 @@ function MyForm({ position }) {
             Phone
           </label>
           <input
-            type="tel"
+            type="text"
             id="phone"
-            value={phone}
+            name="phone"
+            value={formData.phone}
             onChange={handleInputChange}
             className="input-field"
           />
@@ -132,7 +142,7 @@ function MyForm({ position }) {
             Position
           </label>
           <input
-            type="tel"
+            type="text"
             id="position"
             value={position}
             disabled={true}
@@ -146,19 +156,22 @@ function MyForm({ position }) {
           <input
             type="file"
             id="Resume"
+            ref={fileInputRef}
             accept=".jpg,.jpeg,.png,.pdf"
             onChange={handleRewardFileChange}
             className="input-field1"
           />
         </div>
       </form>
-      <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-        <Transparentbtn
-          TbtnText="APPLY NOW"
+      <div>
+        <button
+          type="submit"
           disabled={formDisabled}
           onClick={handleSubmit}
-        />
-        <Transparentbtn TbtnText="<- CAREERS" href="/Careers/#positions" />
+          className={`${!formDisabled ? "TransparentBtn" : "disabledBtn"}`}
+        >
+          <p className="TransparentBtnText">APPLY NOW</p>
+        </button>
       </div>
     </>
   );
