@@ -1,4 +1,4 @@
-import Transparentbtn from "../components/Transparentbtn";
+import Transparentbtn from "@/app/components/Transparentbtn";
 import "./Capabilities.css";
 
 function Capabilities() {
