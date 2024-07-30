@@ -1,6 +1,5 @@
 "use client";
 import HeroSection from "./HeroSection";
-import Blog from "./Blog";
 import Idea from "./Idea";
 import Products from "./Products";
 import Process from "./Process";
