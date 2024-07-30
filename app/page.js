@@ -18,7 +18,7 @@ export default function Home() {
     <div
       style={{
         display: "flex",
-        height: "75vh",
+        height: "81vh",
         alignItems: "center",
         justifyContent: "center",
         background: "linear-gradient(to top, #85c3f5, #ffffff)",
@@ -82,7 +82,7 @@ export default function Home() {
             border: "2px solid black",
             borderRadius: "20px",
             justifyContent:
-              "center" /* Align items to the start horizontally */,
+              "flex-start" /* Align items to the start horizontally */,
             alignItems: "center" /* Center items vertically */,
             textAlign: "left" /* Ensure text aligns to the left */,
           }}
