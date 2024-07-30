@@ -62,7 +62,7 @@ function Process() {
         </div>
       </div>
       <div style={{ paddingTop: "40px" }}>
-        <Transparentbtn TbtnText="CONTACT US" href="/Contact" />
+        <Transparentbtn TbtnText="CONTACT US" href="/IT/Contact" />
       </div>
     </div>
   );
