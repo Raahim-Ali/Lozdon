@@ -4,10 +4,10 @@ import React from "react";
 import "./footer.css";
 
 const Pages = [
-  { name: "Home", link: "/Home" },
-  { name: "Our Products", link: "/Products" },
-  { name: "News", link: "/Blog" },
-  { name: "About Us", link: "/about-us" },
+  { name: "Commercial Services", link: "/Commercial/Home" },
+  { name: "Security Services", link: "/Security/Home" },
+  { name: "IT Services Services", link: "/IT/Home" },
+  { name: "Contact Us", link: "/components/Contact" },
 ];
 const Legal = [
   { name: "Terms", link: "#" },
@@ -20,23 +20,22 @@ export default function Footer() {
     <div
       className="flex flex-col"
       style={{
-        background:
-          "linear-gradient(107.85deg, #090E8E 5.36%, #030428 101.13%)",
-        boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+        background: "linear-gradient(rgb(64 162 242), rgb(222 220 220))",
+        boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.50)",
       }}
     >
       <div className="flex flex-col gap-10 md:flex-row px-10 py-11 lg:px-40 lg:py-20">
         {/* Left Section */}
         <div className="flex flex-col w-full gap-6">
-          <img className="logoImg" src="/Assets/Navbar/logo.png" alt="logo" />
+          <img className="logoImg" src="/Assets/Navbar/logo1.png" alt="logo" />
           <div className="flex flex-col gap-8">
             <p
               className="text-base text-whitePrimary font-medium inter xl:w-3/4"
               // change thw width if wants
               style={{ lineHeight: 1.6 }}
             >
-              Integris has established its reputation over the years as a
-              reliable and innovative supplier, handling diverse needs across
+              Octal Securities has established its reputation over the years as
+              a reliable and innovative supplier, handling diverse needs across
               the agricultural and energy sectors.
             </p>
 
@@ -45,8 +44,7 @@ export default function Footer() {
                 <img src="/Assets/Footer/Address.svg" />
                 <Link href="mailto:Info@integrisuae.com">
                   <p className="inter text-white text-base font-normal">
-                    Office No - 16G-14, Phase 1, Hamriyah Free Zone, Sharjah,
-                    UAE
+                    Office No - 16G-14, Phase 1, DHA Lahore, Pakistan
                   </p>
                 </Link>
               </div>
@@ -54,7 +52,7 @@ export default function Footer() {
                 <img src="/Assets/Footer/Phone.svg" />
                 <Link href="tel:+97142406453">
                   <p className="inter text-white text-base font-normal">
-                    +971 4 240 6453
+                    +92 0000 000
                   </p>
                 </Link>
               </div>
@@ -105,7 +103,7 @@ export default function Footer() {
 
       {/* Additional Content */}
       <div className="rights">
-        © 2024 by Integris International FZE. All rights reserved.
+        © 2024 by Octal Securities. All rights reserved.
       </div>
     </div>
   );

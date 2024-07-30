@@ -23,6 +23,16 @@
   display: flex;
   gap: 20px;
 }
+.icon {
+  background-color: black; /* Set background color to black */
+  padding: 10px; /* Optional: Add padding if needed */
+  display: inline-block; /* Ensure the SVG respects the background color */
+  border-radius: 5px; /* Optional: Add rounded corners if desired */
+}
+
+.icon path {
+  fill: white; /* Set path color to white */
+}
 
 @media (200px<width<700px) {
   .buttons {

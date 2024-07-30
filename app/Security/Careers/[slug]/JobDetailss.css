@@ -1,0 +1,35 @@
+.JobDetailsContainer {
+  padding: 120px 125px 50px 250px;
+}
+.subHeading {
+  color: #1c3c4a;
+  line-height: normal;
+  text-transform: capitalize;
+  font-family: Libre Caslon Text;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 39.36px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+.jobDetails {
+  margin-bottom: 30px;
+}
+.text {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16.94px;
+  text-align: left;
+  color: "#001833";
+}
+@media screen and (width<1000px) {
+  .JobDetailsContainer {
+    padding: 50px 60px;
+  }
+}
+@media screen and (width<500px) {
+  .JobDetailsContainer {
+    padding: 20px 30px;
+  }
+}

@@ -1,0 +1,50 @@
+.positions {
+  padding: 100px 250px 120px 260px;
+  background-color: #f9f9f9;
+}
+
+.jobCards {
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.jobCardMain {
+  width: 50%;
+}
+
+.Jobcard {
+  width: 95%;
+  padding: 32px;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.applyButton {
+  color: blue;
+}
+
+@media screen and (width<1300px) {
+  .positions {
+    padding: 100px 150px 120px 160px;
+  }
+}
+@media screen and (width<900px) {
+  .positions {
+    padding: 50px 80px;
+  }
+}
+
+@media screen and (width<700px) {
+  .positions {
+    padding: 30px 30px;
+  }
+  .jobCardMain {
+    width: 100%;
+  }
+  .jobCards {
+    flex-direction: column;
+  }
+}

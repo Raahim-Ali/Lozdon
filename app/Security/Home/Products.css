@@ -1,0 +1,113 @@
+.Industries {
+  padding: 50px 180px 80px 260px;
+}
+.IndustriesHeading {
+  color: #3b3f5c;
+  font-family: Poppins;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 0px 0px 48px 0px;
+}
+
+.IndustriesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 50px;
+  padding-top: 20px;
+}
+.Industrycard {
+  display: flex;
+  padding: 32px 0px;
+  justify-content: flex-end; /* Keep the content at the bottom */
+  align-items: flex-start; /* Align content to the left */
+  width: 45%;
+  height: 400px;
+  margin-bottom: 38px;
+  background-size: cover;
+  flex-direction: column;
+  gap: 32px;
+  border-radius: 8px;
+  position: relative; /* Add relative positioning */
+  overflow: hidden;
+}
+.Industrycard::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70%; /* Adjust this value to control the gradient height */
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #090e8e 100%);
+  border-radius: 8px;
+}
+
+.IndustrycardDescription {
+  color: white;
+  font-family: Inter;
+  padding-left: 20px; /* Add left padding to align text from left */
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: bolder;
+  z-index: 1;
+  line-height: 146.023%; /* 26.284px */
+  align-self: flex-start; /* Align text to the left */
+}
+
+.touch-slider {
+  display: none;
+}
+@media (1000px<width<1400px) {
+  .Industries {
+    padding: 50px 50px;
+  }
+  .IndustriesContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .Industrycard {
+    padding: 32px 32px;
+    width: 47%;
+    margin-bottom: 38px;
+    transition: transform 0.5s ease;
+    gap: 32px;
+    border-radius: 8px;
+  }
+}
+@media (200px < width<1000px) {
+  .Industries {
+    padding: 40px 50px;
+    width: 100%;
+  }
+  .IndustriesHeading {
+    color: #3b3f5c;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 0px 0px 48px 0px;
+  }
+  .IndustriesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Industrycard {
+    padding: 32px 32px;
+    width: 100%;
+    margin-bottom: 38px;
+    transition: transform 0.5s ease;
+    gap: 32px;
+    border-radius: 8px;
+  }
+  .IndustrycardDescription {
+    font-size: 20px;
+  }
+}

@@ -1,15 +1,16 @@
 "use client";
 import "./Navbar.css";
 import { useRouter } from "next/navigation";
-import { usePathname } from "next/navigation"; // Import usePathname
+import { usePathname } from "next/navigation";
 import { useState } from "react";
-import Greenbtn from "../Greenbtn";
+import Transparentbtn from "../Transparentbtn";
 import Link from "next/link";
 
 function Navbar() {
   const router = useRouter();
-  const pathname = usePathname(); // Get the current path
+  const pathname = usePathname();
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+
   const toggleDropdown = () => {
     setDropdownOpen((prev) => !prev);
   };
@@ -27,56 +28,38 @@ function Navbar() {
           <div className="phone">
             <img src="/Assets/Navbar/phoneIcon.svg" />
             <p style={{ fontFamily: "poppins", color: "white" }}>
-              +971 4 240 6453
+              +92 000 0000
             </p>
           </div>
           <div className="mail">
             <img src="/Assets/Navbar/mailIcon.svg" />
             <p style={{ fontFamily: "poppins", color: "white" }}>
-              info@integris.com
+              info@octalsecurities.com
             </p>
           </div>
         </div>
       </div>
       <div className={`header ${pathname === "/" ? "header-transparent" : ""}`}>
-        <div
-          className="logo"
-          onClick={() => {
-            router.push("/Home");
-          }}
-        >
-          <img className="logoImg" src="/Assets/Navbar/logo.png" alt="logo" />
+        <div className="logo">
+          <img className="logoImg" src="/Assets/Navbar/logo1.png" alt="logo" />
         </div>
-        <div className="navbar-items">
-          <p
-            className={`navbarIcon ${pathname === "/" ? "active" : ""}`}
-            onClick={() => {
-              router.push("/");
-            }}
-          >
-            HOME
-          </p>
-          <p
-            className={`navbarIcon ${pathname === "/Products" ? "active" : ""}`}
-          >
-            <Link href="/Products">OUR PRODUCTS</Link>
-          </p>
-          <p className={`navbarIcon ${pathname === "/Blog" ? "active" : ""}`}>
-            <Link href="/Blog">NEWS</Link>
-          </p>
-          <p
-            className={`navbarIcon ${pathname === "/about-us" ? "active" : ""}`}
-          >
-            <Link href="/about-us">ABOUT US</Link>
-          </p>
-          <p
-            className={`navbarIcon ${pathname === "/Careers" ? "active" : ""}`}
-          >
-            <Link href="/Careers">CAREERS</Link>
-          </p>
-        </div>
+        {pathname !== "/" && (
+          <div className="navbar-items">
+            <div className="navbarIcon">
+              <p className={`navbarIcon`} style={{ paddingTop: "4px" }}>
+                <Link href="/Security/Home">SECURITY SERVICES</Link>
+              </p>
+            </div>
+            <p className={`navbarIcon`}>
+              <Link href="/Commercial/Home">COMMERCIAL SERVICES</Link>
+            </p>
+            <p className={`navbarIcon `}>
+              <Link href="/IT/Home">IT SERVICES</Link>
+            </p>
+          </div>
+        )}
         <div className="contactBttn" style={{ marginTop: "10px" }}>
-          <Greenbtn buttonText="Contact us" href="/Contact" />
+          <Transparentbtn TbtnText="Contact us" href="/components/Contact" />
         </div>
 
         <button
@@ -87,57 +70,60 @@ function Navbar() {
           ☰
         </button>
       </div>
-      {isDropdownOpen ? (
+      {isDropdownOpen && (
         <div className="dropdownMenu">
-          <div
-            className="navbarIcon"
-            onClick={() => {
-              router.push("/");
-              toggleDropdown();
-            }}
-          >
-            HOME
-          </div>
-          <div
-            className="navbarIcon"
-            onClick={() => {
-              toggleDropdown();
-            }}
-          >
-            <Link href="/Products">OUR PRODUCTS</Link>
-          </div>
-          <div
-            className="navbarIcon"
-            onClick={() => {
-              toggleDropdown();
-            }}
-          >
-            <Link href="/Blog">NEWS</Link>
-          </div>
-          <div
-            className="navbarIcon"
-            onClick={() => {
-              toggleDropdown();
-            }}
-          >
-            <Link href="/about-us">ABOUT US</Link>
-          </div>
-          <div
-            className="navbarIcon"
-            onClick={() => {
-              toggleDropdown();
-            }}
-          >
-            <Link href="/Careers">CAREERS</Link>
-          </div>
-
-          <Greenbtn
-            buttonText="Contact us"
+          {pathname !== "/" && (
+            <>
+              <div
+                className="navbarIcon"
+                onClick={() => {
+                  router.push("/");
+                  toggleDropdown();
+                }}
+              >
+                HOME
+              </div>
+              <div
+                className="navbarIcon"
+                onClick={() => {
+                  toggleDropdown();
+                }}
+              >
+                <Link href="/Products">OUR PRODUCTS</Link>
+              </div>
+              <div
+                className="navbarIcon"
+                onClick={() => {
+                  toggleDropdown();
+                }}
+              >
+                <Link href="/Blog">NEWS</Link>
+              </div>
+              <div
+                className="navbarIcon"
+                onClick={() => {
+                  toggleDropdown();
+                }}
+              >
+                <Link href="/about-us">ABOUT US</Link>
+              </div>
+              <div
+                className="navbarIcon"
+                onClick={() => {
+                  toggleDropdown();
+                }}
+              >
+                <Link href="/Careers">CAREERS</Link>
+              </div>
+            </>
+          )}
+          <Transparentbtn
+            TbtnText="Contact us"
             href="/Contact"
             onClick={toggleDropdown}
           />
         </div>
-      ) : null}
+      )}
     </>
   );
 }

@@ -1,0 +1,56 @@
+.heroSection {
+  background: url("/Assets/Products/background.png");
+  padding: 60px 75px 0px 60px; /* Adjusted padding for reduced height */
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden; /* Ensure any overflowing content is hidden */
+}
+
+.heroImg {
+  height: 50vh; /* Adjust the height to make the image smaller */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Crop image to cover the container */
+}
+.text1 {
+  width: 30vw;
+}
+
+.HeroHeading {
+  color: #090e8e;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.HeroHeading2 {
+  color: #1c3c4a;
+  font-family: Libre Caslon Text;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 59.04px;
+  text-align: left;
+}
+
+@media screen and (max-width: 1060px) {
+  .imageSection {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .heroSection {
+    height: 65vh;
+    padding: 60px 25px; /* Adjust padding for smaller screens */
+    display: flex;
+    justify-content: space-around;
+  }
+  .textSection {
+    width: 100%;
+  }
+  .text1 {
+    width: 90vw;
+  }
+}
