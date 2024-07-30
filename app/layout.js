@@ -6,9 +6,9 @@ import Footer from "./components/Footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Integris",
+  title: "Octal Securities",
   description:
-    "ntegris International FZE is a specialist in the import and export of petrochemical products across a variety of countries.",
+    "Octal Securities offers comprehensive security, commercial, and IT services to safeguard and enhance your business operations.",
 };
 
 export default function RootLayout({ children }) {
