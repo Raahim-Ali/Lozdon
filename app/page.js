@@ -6,15 +6,7 @@ export default function Home() {
   const router = useRouter();
 
   const handleButtonClick = (service) => {
-    if (service === "IT Services") {
-      router.push("/IT/Home");
-    }
-    if (service === "Security Services") {
-      router.push("/Security/Home");
-    }
-    if (service === "Commercial Services") {
-      router.push("/Commercial/Home");
-    }
+    router.push(service.link); // Correctly pass the URL directly
   };
 
   const services = [
@@ -22,22 +14,22 @@ export default function Home() {
       heading: "Commercial Services",
       description:
         "Experience cleanliness with our professional commercial cleaning services. We ensure your business environment remains spotless and inviting, enhancing both appearance and hygiene.",
-      text: "MORE",
       icon: "📦", // Example icon
+      link: "/Commercial/Home",
     },
     {
       heading: "Security Services",
       description:
         "Discover tailored security solutions crafted to meet your unique needs with innovative technology and personalized protection. We deliver exceptional safety designed specifically for you.",
-      text: "MORE",
       icon: "🔒", // Example icon
+      link: "/Security/Home",
     },
     {
       heading: "IT Services",
       description:
         "Unlock the full potential of your business with our experts providing cutting-edge IT solutions. Our expertise drives innovation, ensuring you stay ahead in a rapidly evolving digital landscape.",
-      text: "MORE",
       icon: "💻", // Example icon
+      link: "/IT/Home",
     },
   ];
 
@@ -48,13 +40,16 @@ export default function Home() {
       <div className="homeCardsMain">
         <div className="homeCardsContainer">
           {services.map((service, index) => (
-            <div className="homeCard" key={index}>
+            <div
+              className="homeCard"
+              key={index}
+              onClick={() => handleButtonClick(service)} // Use the correct function call
+            >
               <div className="iconCircle">{service.icon}</div>
               <p style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
                 {service.heading}
               </p>
               <p className="description">{service.description}</p>
-              <p>{service.text}</p>
             </div>
           ))}
         </div>
