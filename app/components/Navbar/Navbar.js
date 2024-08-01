@@ -40,8 +40,18 @@ function Navbar() {
         </div>
       </div>
       <div className={`header ${pathname === "/" ? "header-transparent" : ""}`}>
-        <div className="logo">
-          <img className="logoImg" src="/Assets/Navbar/logo1.png" alt="logo" />
+        <div
+          className="logo"
+          onClick={() => {
+            router.push("/");
+          }}
+        >
+          <img
+            className="logoImg"
+            style={{ cursor: "pointer" }}
+            src="/Assets/Navbar/logo1.png"
+            alt="logo"
+          />
         </div>
         {pathname !== "/" && (
           <div className="navbar-items">
@@ -89,7 +99,7 @@ function Navbar() {
                   toggleDropdown();
                 }}
               >
-                <Link href="/Products">OUR PRODUCTS</Link>
+                <Link href="/Commercial/Home">COMMERCIAL SERVICES</Link>
               </div>
               <div
                 className="navbarIcon"
@@ -97,7 +107,7 @@ function Navbar() {
                   toggleDropdown();
                 }}
               >
-                <Link href="/Blog">NEWS</Link>
+                <Link href="/Security/Home">SECURITY SERVICES</Link>
               </div>
               <div
                 className="navbarIcon"
@@ -105,21 +115,13 @@ function Navbar() {
                   toggleDropdown();
                 }}
               >
-                <Link href="/about-us">ABOUT US</Link>
-              </div>
-              <div
-                className="navbarIcon"
-                onClick={() => {
-                  toggleDropdown();
-                }}
-              >
-                <Link href="/Careers">CAREERS</Link>
+                <Link href="/IT/Home">IT SERVICES</Link>
               </div>
             </>
           )}
           <Transparentbtn
             TbtnText="Contact us"
-            href="/Contact"
+            href="/components/Contact"
             onClick={toggleDropdown}
           />
         </div>
