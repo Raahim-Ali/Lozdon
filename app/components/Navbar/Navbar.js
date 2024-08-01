@@ -28,7 +28,7 @@ function Navbar() {
           <div className="phone">
             <img src="/Assets/Navbar/phoneIcon.svg" />
             <p style={{ fontFamily: "poppins", color: "white" }}>
-              +92 000 0000
+              +44 7311 861572
             </p>
           </div>
           <div className="mail">

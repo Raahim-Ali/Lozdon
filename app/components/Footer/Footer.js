@@ -44,7 +44,7 @@ export default function Footer() {
                 <img src="/Assets/Footer/Address.svg" />
                 <Link href="mailto:Info@integrisuae.com">
                   <p className="inter text-white text-base font-normal">
-                    Office No - 16G-14, Phase 1, DHA Lahore, Pakistan
+                    116, Tamar Way Langley SL38TA
                   </p>
                 </Link>
               </div>
@@ -52,7 +52,7 @@ export default function Footer() {
                 <img src="/Assets/Footer/Phone.svg" />
                 <Link href="tel:+97142406453">
                   <p className="inter text-white text-base font-normal">
-                    +92 0000 000
+                    +44 7311 861572
                   </p>
                 </Link>
               </div>
