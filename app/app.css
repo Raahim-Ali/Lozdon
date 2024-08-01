@@ -14,8 +14,8 @@
 
 .homeCardsContainer {
   position: absolute; /* Position the cards absolutely within the .homeCardsMain */
-  margin-top: 250px;
   left: 0;
+  bottom: 70px;
   right: 0;
   display: flex;
   gap: 30px;
