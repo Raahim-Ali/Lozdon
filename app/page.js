@@ -1,8 +1,10 @@
 "use client";
 import { useRouter } from "next/navigation";
+import "./app.css";
 
 export default function Home() {
   const router = useRouter();
+
   const handleButtonClick = (service) => {
     if (service === "IT Services") {
       router.push("/IT/Home");
@@ -14,133 +16,49 @@ export default function Home() {
       router.push("/Commercial/Home");
     }
   };
-  return (
-    <div
-      style={{
-        display: "flex",
-        height: "81vh",
-        alignItems: "center",
-        justifyContent: "center",
-        background: "linear-gradient(to top, #85c3f5, #ffffff)",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "40px",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            width: "50vw",
-            paddingLeft: "50px",
-            height: "10vw",
-            color: "black",
-            padding: "10px 20px",
-            fontSize: "36px",
-            fontFamily: "Caslon",
-            cursor: "pointer",
-            border: "2px solid black",
-            borderRadius: "20px",
-            justifyContent:
-              "flex-start" /* Align items to the start horizontally */,
-            alignItems: "center" /* Center items vertically */,
-            textAlign: "left" /* Ensure text aligns to the left */,
-          }}
-          onClick={() => handleButtonClick("Commercial Services")}
-        >
-          Commercial Services
-          <svg
-            style={{ paddingTop: "5px" }}
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width={45}
-            height={45}
-            fill="none"
-            stroke="black"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M10 17l5-5-5-5" />
-          </svg>
-        </div>
 
-        <div
-          style={{
-            display: "flex",
-            width: "50vw",
-            paddingLeft: "50px",
-            height: "10vw",
-            color: "black",
-            padding: "10px 20px",
-            fontSize: "36px",
-            fontFamily: "Caslon",
-            cursor: "pointer",
-            border: "2px solid black",
-            borderRadius: "20px",
-            justifyContent:
-              "flex-start" /* Align items to the start horizontally */,
-            alignItems: "center" /* Center items vertically */,
-            textAlign: "left" /* Ensure text aligns to the left */,
-          }}
-          onClick={() => handleButtonClick("Security Services")}
-        >
-          Security Services
-          <svg
-            style={{ paddingTop: "5px" }}
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width={45}
-            height={45}
-            fill="none"
-            stroke="black"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M10 17l5-5-5-5" />
-          </svg>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            width: "50vw",
-            paddingLeft: "50px",
-            height: "10vw",
-            color: "black",
-            padding: "10px 20px",
-            fontSize: "36px",
-            fontFamily: "Caslon",
-            cursor: "pointer",
-            border: "2px solid black",
-            borderRadius: "20px",
-            justifyContent:
-              "flex-start" /* Align items to the start horizontally */,
-            alignItems: "center" /* Center items vertically */,
-            textAlign: "left" /* Ensure text aligns to the left */,
-          }}
-          onClick={() => handleButtonClick("IT Services")}
-        >
-          IT Services
-          <svg
-            style={{ paddingTop: "5px" }}
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width={45}
-            height={45}
-            fill="none"
-            stroke="black"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M10 17l5-5-5-5" />
-          </svg>
+  const services = [
+    {
+      heading: "Commercial Services",
+      description:
+        "Experience cleanliness with our professional commercial cleaning services. We ensure your business environment remains spotless and inviting, enhancing both appearance and hygiene.",
+      text: "MORE",
+      icon: "📦", // Example icon
+    },
+    {
+      heading: "Security Services",
+      description:
+        "Discover tailored security solutions crafted to meet your unique needs with innovative technology and personalized protection. We deliver exceptional safety designed specifically for you.",
+      text: "MORE",
+      icon: "🔒", // Example icon
+    },
+    {
+      heading: "IT Services",
+      description:
+        "Unlock the full potential of your business with our experts providing cutting-edge IT solutions. Our expertise drives innovation, ensuring you stay ahead in a rapidly evolving digital landscape.",
+      text: "MORE",
+      icon: "💻", // Example icon
+    },
+  ];
+
+  return (
+    <>
+      <div className="mainContainer" />
+      <h1 className="servicesHeadingHero">OUR SERVICES</h1>
+      <div className="homeCardsMain">
+        <div className="homeCardsContainer">
+          {services.map((service, index) => (
+            <div className="homeCard" key={index}>
+              <div className="iconCircle">{service.icon}</div>
+              <p style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
+                {service.heading}
+              </p>
+              <p className="description">{service.description}</p>
+              <p>{service.text}</p>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </>
   );
 }

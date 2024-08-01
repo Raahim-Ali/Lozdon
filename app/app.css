@@ -1,0 +1,187 @@
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  position: relative; /* Make the main container relative for absolute positioning of cards */
+  background-image: url("/Assets/Herosection/heroBg.jpg"); /* Corrected syntax for background image */
+  background-size: cover; /* Ensures the background image covers the container */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+
+.homeCardsMain {
+  position: relative; /* Ensure this is positioned relative to the .mainContainer */
+}
+
+.homeCardsContainer {
+  position: absolute; /* Position the cards absolutely within the .homeCardsMain */
+  margin-top: 250px;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.servicesHeadingHero {
+  color: white; /* Removed quotes and changed to CSS syntax */
+  font-size: 50px; /* Removed quotes and changed to CSS syntax */
+  font-family: "Libre Caslon Text"; /* Changed to CSS syntax and added quotes for font-family */
+  position: absolute; /* Correct CSS syntax */
+  width: 100vw; /* Correct CSS syntax */
+  display: flex; /* Correct CSS syntax */
+  align-items: center; /* Correct CSS syntax */
+  justify-content: center; /* Correct CSS syntax */
+  height: 20vh; /* Correct CSS syntax */
+  top: 300px; /* Correct CSS syntax */
+  z-index: 1; /* Correct CSS syntax */
+}
+
+.homeCard {
+  padding: 30px;
+  background-color: bisque;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 30%;
+}
+
+.iconCircle {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #000;
+  font-size: 24px;
+}
+
+/* Corrected media query */
+@media (width < 1400px) {
+  .mainContainer {
+    width: 100vw;
+    position: relative;
+  }
+  .servicesHeadingHero {
+    color: white; /* Removed quotes and changed to CSS syntax */
+    font-size: 50px; /* Removed quotes and changed to CSS syntax */
+    font-family: "Libre Caslon Text"; /* Changed to CSS syntax and added quotes for font-family */
+    position: absolute; /* Correct CSS syntax */
+    width: 100vw; /* Correct CSS syntax */
+    display: flex; /* Correct CSS syntax */
+    align-items: center; /* Correct CSS syntax */
+    justify-content: center; /* Correct CSS syntax */
+    height: 20vh; /* Correct CSS syntax */
+    top: 200px; /* Correct CSS syntax */
+    z-index: 1; /* Correct CSS syntax */
+  }
+  .homeCardsContainer {
+    position: absolute; /* Keep it absolute in smaller screens if needed */
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    bottom: 10px;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 70px 20px;
+  }
+}
+@media (width < 900px) {
+  .mainContainer {
+    width: 100vw;
+    position: relative;
+  }
+
+  .servicesHeadingHero {
+    color: white;
+    font-size: 50px;
+    font-family: "Libre Caslon Text";
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    top: 100px;
+    z-index: 1;
+  }
+
+  .homeCardsContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column; /* Stack cards in a column */
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    padding: 40px 0px;
+  }
+
+  .homeCard {
+    padding: 30px;
+    background-color: bisque;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column; /* Stack content within the card */
+    gap: 10px;
+    width: 80vw; /* Set card width to 60% of viewport width */
+  }
+  .description {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  /* Changed from width < 700px to max-width: 700px */
+  .mainContainer {
+    width: 100vw;
+    position: relative;
+  }
+
+  .servicesHeadingHero {
+    color: white;
+    font-size: 50px;
+    font-family: "Libre Caslon Text";
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    top: 20px; /* Move the heading upward */
+    z-index: 1;
+  }
+
+  .homeCardsContainer {
+    position: absolute;
+    left: 0;
+    bottom: -30px; /* Move cards downward */
+    right: 0;
+    display: flex;
+    flex-direction: column; /* Stack cards in a column */
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    padding: 40px 0;
+  }
+
+  .homeCard {
+    padding: 30px;
+    background-color: bisque;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column; /* Stack content within the card */
+    gap: 10px;
+    width: 80vw; /* Set card width to 80% of viewport width */
+  }
+
+  .description {
+    display: none;
+  }
+}
